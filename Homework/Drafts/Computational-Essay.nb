@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     86236,       2003]
-NotebookOptionsPosition[     78191,       1883]
-NotebookOutlinePosition[     78550,       1899]
-CellTagsIndexPosition[     78507,       1896]
+NotebookDataLength[    115713,       2612]
+NotebookOptionsPosition[    106533,       2463]
+NotebookOutlinePosition[    106870,       2478]
+CellTagsIndexPosition[    106827,       2475]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -21,17 +21,34 @@ Notebook[{
 
 Cell[CellGroupData[{
 Cell["\<\
+(* Essay text 
+inspired by THIS, decided to use the AdministrativeDivision in order to check \
+some theories 
+What is the relation between uninsured people, gini index and death rates \
+along the US states?
+blah blah blah, no significant correlation.
+
+What if we want to see entities that have the biggest impact on death rates \
+on US states?
+Go big or go home
 
 (* Introductions *)\
 \>", "Section",
  CellChangeTimes->{{3.77059176962582*^9, 3.770591773871428*^9}, 
-   3.77059199836139*^9},ExpressionUUID->"e12c2d0a-3338-4140-ae60-\
+   3.77059199836139*^9, {3.770644494730672*^9, 3.770644515075292*^9}, {
+   3.7706447374586077`*^9, 3.770644788454365*^9}, {3.770647659031125*^9, 
+   3.7706477640313883`*^9}},ExpressionUUID->"e12c2d0a-3338-4140-ae60-\
 2533643e9671"],
 
 Cell[BoxData[
- RowBox[{"EntityProperties", "[", "\"\<AdministrativeDivision\>\"", 
-  "]"}]], "Input",
- CellLabel->"In[56]:=",ExpressionUUID->"52604aa3-4fc5-4cc1-a23a-c5c55f36423b"],
+ RowBox[{
+  RowBox[{"EntityProperties", "[", "\"\<AdministrativeDivision\>\"", "]"}], 
+  ";"}]], "Input",
+ CellChangeTimes->{
+  3.770629622040441*^9, 3.770635595548245*^9, 3.770644960941841*^9, {
+   3.770645043679611*^9, 3.770645066789606*^9}, 3.77064510882411*^9, 
+   3.770645273836912*^9},
+ CellLabel->"In[18]:=",ExpressionUUID->"52604aa3-4fc5-4cc1-a23a-c5c55f36423b"],
 
 Cell[BoxData[
  RowBox[{
@@ -44,19 +61,6 @@ Cell[BoxData[
  CellChangeTimes->{{3.770408280454157*^9, 3.770408283024909*^9}, 
    3.770408923341444*^9},
  CellLabel->"In[1]:=",ExpressionUUID->"2d852044-00c8-4bf0-9efe-03a1aa569d41"],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"europeancountries", "=", 
-   RowBox[{"EntityList", "[", 
-    RowBox[{"EntityClass", "[", 
-     RowBox[{"\"\<Country\>\"", ",", "\"\<EuropeSovereign\>\""}], "]"}], 
-    "]"}]}], ";"}]], "Input",
- CellChangeTimes->{{3.770577456284884*^9, 3.770577464102541*^9}, 
-   3.7705774947959967`*^9, {3.770577592868417*^9, 3.770577653853359*^9}, {
-   3.770577721939024*^9, 3.770577734074492*^9}, {3.770577778788156*^9, 
-   3.770577806061043*^9}, {3.770578324460807*^9, 3.7705783438627167`*^9}},
- CellLabel->"In[15]:=",ExpressionUUID->"4ecb0a4f-0719-44e0-9f94-9a12b30f08c4"],
 
 Cell[BoxData[
  RowBox[{"GeoRegionValuePlot", "[", 
@@ -140,135 +144,63 @@ Cell["(* Preliminary for CE: *)", "Section",
 bdfe7f98677b"],
 
 Cell[BoxData[
- RowBox[{"populationentity", " ", "=", " ", 
-  RowBox[{
-   RowBox[{"Select", "[", 
-    RowBox[{
-     RowBox[{"EntityProperties", "[", "\"\<AdministrativeDivision\>\"", "]"}],
-      ",", 
+ RowBox[{
+  RowBox[{"data", "=", 
+   RowBox[{"Dataset", "[", 
+    RowBox[{"<|", 
      RowBox[{
-      RowBox[{"StringContainsQ", "[", 
+      RowBox[{"\"\<states\>\"", "\[Rule]", "usstates"}], ",", 
+      RowBox[{"\"\<noHI\>\"", "\[Rule]", 
+       RowBox[{"QuantityMagnitude", "@", " ", 
+        RowBox[{"EntityValue", "[", 
+         RowBox[{"usstates", ",", 
+          
+          TemplateBox[{
+           "\"uninsured population fraction\"",
+            RowBox[{"EntityProperty", "[", 
+              
+              RowBox[{"\"AdministrativeDivision\"", ",", 
+                "\"HealthInsuranceUncoveredRate\""}], "]"}],
+            "\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"HealthInsuranceUncoveredRate\\\"]\""},
+           "EntityProperty"]}], "]"}]}]}], ",", 
+      RowBox[{"\"\<deaths\>\"", "\[Rule]", 
        RowBox[{
-        RowBox[{"CanonicalName", "[", "#", "]"}], ",", " ", 
-        "\"\<Population\>\""}], "]"}], "&"}]}], "]"}], "[", 
-   RowBox[{"[", "1", "]"}], "]"}]}]], "Input",
- CellChangeTimes->{{3.770417378542589*^9, 3.770417382831875*^9}, {
-  3.770417421054613*^9, 3.770417443914328*^9}, {3.770577844498077*^9, 
-  3.7705778772930393`*^9}},
- CellLabel->"In[37]:=",ExpressionUUID->"f29a81ad-bb40-4f8a-9c01-ad377f5674b8"],
+        RowBox[{"QuantityMagnitude", "@", 
+         FractionBox[
+          RowBox[{"EntityValue", "[", 
+           RowBox[{"usstates", ",", 
+            TemplateBox[{"\"annual deaths\"",RowBox[{"EntityProperty", "[", 
+                
+                RowBox[{
+                 "\"AdministrativeDivision\"", ",", "\"AnnualDeaths\""}], 
+                "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"AnnualDeaths\\\"]\""},
+             "EntityProperty"]}], "]"}], 
+          RowBox[{"EntityValue", "[", 
+           RowBox[{"usstates", ",", 
+            TemplateBox[{"\"population\"",RowBox[{"EntityProperty", "[", 
+                RowBox[{"\"AdministrativeDivision\"", ",", "\"Population\""}],
+                 "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"Population\\\"]\""},
+             "EntityProperty"]}], "]"}]]}], "*", "100"}]}], ",", 
+      RowBox[{"\"\<gini\>\"", "\[Rule]", 
+       RowBox[{"QuantityMagnitude", "@", " ", 
+        RowBox[{"EntityValue", "[", 
+         RowBox[{"usstates", ",", 
+          TemplateBox[{"\"Gini index\"",RowBox[{"EntityProperty", "[", 
+              RowBox[{"\"AdministrativeDivision\"", ",", "\"GiniIndex\""}], 
+              "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"GiniIndex\\\"]\""},
+           "EntityProperty"]}], "]"}]}]}]}], "|>"}], "]"}]}], ";"}]], "Input",\
 
-Cell[BoxData[
- RowBox[{
-  RowBox[{"populationvalueus", " ", "=", 
-   RowBox[{"EntityValue", "[", 
-    RowBox[{"usstates", ",", "populationentity"}], "]"}]}], ";"}]], "Input",
- CellChangeTimes->{{3.770417586845627*^9, 3.77041760094335*^9}, 
-   3.770417633072064*^9, {3.770417771943688*^9, 3.770417780831764*^9}, {
-   3.770477098684342*^9, 3.770477099837099*^9}, {3.770577903024271*^9, 
-   3.77057790957095*^9}},
- CellLabel->"In[39]:=",ExpressionUUID->"13646d3f-44d4-4772-ad74-c2bbca49619f"],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"populationvalueeurope", "=", 
-   RowBox[{
-    RowBox[{
-     RowBox[{"CountryData", "[", 
-      RowBox[{"#", ",", "\"\<Population\>\""}], "]"}], "&"}], "/@", 
-    "europeancountries"}]}], ";"}]], "Input",
- CellChangeTimes->{{3.770577917837214*^9, 3.7705779259163437`*^9}, {
-  3.770578598695581*^9, 3.770578611327097*^9}},
- CellLabel->"In[69]:=",ExpressionUUID->"76ac3e56-d280-49cf-8c03-d0beca6a8977"],
-
-Cell[BoxData[
- RowBox[{"deathsentity", "=", "  ", 
-  RowBox[{
-   RowBox[{"Select", "[", 
-    RowBox[{
-     RowBox[{"EntityProperties", "[", "\"\<AdministrativeDivision\>\"", "]"}],
-      ",", 
-     RowBox[{
-      RowBox[{"StringContainsQ", "[", 
-       RowBox[{
-        RowBox[{"CanonicalName", "[", "#", "]"}], ",", " ", 
-        "\"\<Deaths\>\""}], "]"}], "&"}]}], "]"}], "[", 
-   RowBox[{"[", "1", "]"}], "]"}]}]], "Input",
- CellChangeTimes->{{3.770417451648848*^9, 3.770417472913364*^9}},
- CellLabel->"In[41]:=",ExpressionUUID->"fa78f66d-8f29-4464-87ae-2f7ce9ba7b37"],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"deathsvalueus", " ", "=", " ", 
-   FractionBox[
-    RowBox[{"EntityValue", "[", 
-     RowBox[{"usstates", ",", "deathsentity"}], "]"}], "populationvalueus"]}],
-   ";"}]], "Input",
- CellChangeTimes->{{3.770417619808951*^9, 3.770417635983019*^9}, {
-  3.770417783241605*^9, 3.7704177888524237`*^9}, {3.77045878565333*^9, 
-  3.770458788521401*^9}, {3.770473406175479*^9, 3.7704734135855618`*^9}, {
-  3.770477104171135*^9, 3.770477105043892*^9}, {3.77057794819096*^9, 
-  3.770577958334865*^9}},
- CellLabel->"In[42]:=",ExpressionUUID->"1e2194e5-2e69-42ba-898f-f143a9269df0"],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"deathsvalueeurope", " ", "=", " ", 
-   FractionBox[
-    RowBox[{
-     RowBox[{
-      RowBox[{"CountryData", "[", 
-       RowBox[{"#", ",", "\"\<AnnualDeaths\>\""}], "]"}], "&"}], "/@", 
-     "europeancountries"}], "populationvalueeurope"]}], ";"}]], "Input",
- CellChangeTimes->{{3.770577967932621*^9, 3.770577980196432*^9}, 
-   3.770578559768585*^9},
- CellLabel->"In[71]:=",ExpressionUUID->"ec1f5367-f54f-4be9-b28a-e2f599a696b0"],
-
-Cell[BoxData[
- RowBox[{"nohientity", " ", "=", " ", 
-  RowBox[{
-   RowBox[{"Select", "[", 
-    RowBox[{
-     RowBox[{"EntityProperties", "[", "\"\<AdministrativeDivision\>\"", "]"}],
-      ",", 
-     RowBox[{
-      RowBox[{"StringContainsQ", "[", 
-       RowBox[{
-        RowBox[{"CanonicalName", "[", "#", "]"}], ",", " ", 
-        "\"\<Insurance\>\""}], "]"}], "&"}]}], "]"}], "[", 
-   RowBox[{"[", "3", "]"}], "]"}]}]], "Input",
- CellChangeTimes->{{3.770417479070525*^9, 3.770417521005834*^9}},
- CellLabel->"In[1]:=",ExpressionUUID->"70400e0e-9b99-41e5-a8f4-da5d160d0755"],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"nohivalueus", " ", "=", " ", 
-   FractionBox[
-    RowBox[{"EntityValue", "[", 
-     RowBox[{"usstates", ",", "nohientity"}], "]"}], "populationvalueus"]}], 
-  ";"}]], "Input",
- CellChangeTimes->{{3.770417659362631*^9, 3.770417674024148*^9}, {
-  3.770417791776814*^9, 3.770417797873657*^9}, {3.770418633075364*^9, 
-  3.770418638012706*^9}, {3.770458792312562*^9, 3.770458794229022*^9}, {
-  3.770473421961803*^9, 3.7704734250342712`*^9}, {3.77047711078897*^9, 
-  3.770477111638679*^9}, {3.770577991247284*^9, 3.770577999191956*^9}},
- CellLabel->"In[45]:=",ExpressionUUID->"0e556f26-626a-486d-a9f4-360c09a0951e"],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"nohivalueeurope", " ", "=", " ", 
-   FractionBox[
-    RowBox[{"CountryData", "[", 
-     RowBox[{"#", ",", "\"\<]&/@europeancountries\>"}]}], 
-    "populationvalueeurope"]}], ";"}]], "Input",
- CellChangeTimes->{{3.770578012609921*^9, 3.77057802540084*^9}, {
-  3.770578705583259*^9, 3.770578735150483*^9}, {3.770578875170211*^9, 
-  3.770578880495068*^9}},ExpressionUUID->"1420d30a-ab28-4e99-8411-\
-d3f508be5c11"],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.7705805730612288`*^9, 
-  3.770580574326768*^9}},ExpressionUUID->"9531738a-4ab7-4659-83e7-\
-39066a218f12"]
+ CellChangeTimes->{{3.770633498200815*^9, 3.770633561137302*^9}, {
+   3.770634144642812*^9, 3.770634180656412*^9}, 3.770645016694585*^9, {
+   3.7706450926507187`*^9, 3.7706450948231*^9}, {3.770645182126606*^9, 
+   3.7706451838319473`*^9}, {3.770645242878921*^9, 3.7706452454936953`*^9}, {
+   3.7706454663650846`*^9, 3.7706454906586523`*^9}, {3.77064655343515*^9, 
+   3.7706465544380703`*^9}},
+ CellLabel->"In[37]:=",ExpressionUUID->"d67c020c-d4b2-4435-a80b-cd05b84e20ac"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -280,98 +212,759 @@ Cell["(* Working on the US *)", "Section",
 2b78f0f30f0c"],
 
 Cell[BoxData[
- RowBox[{
-  RowBox[{"dataus", " ", "=", " ", 
-   RowBox[{"Table", "[", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{
-       RowBox[{"usstates", "[", 
-        RowBox[{"[", "i", "]"}], "]"}], ",", 
-       RowBox[{"nohivalueus", "[", 
-        RowBox[{"[", "i", "]"}], "]"}], ",", 
-       RowBox[{"deathsvalueus", "[", 
-        RowBox[{"[", "i", "]"}], "]"}]}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"i", ",", 
-       RowBox[{"Length", "[", "usstates", "]"}]}], "}"}]}], "]"}]}], 
-  ";"}]], "Input",
- CellChangeTimes->{{3.770458525942748*^9, 3.770458551812745*^9}, {
-  3.7704586345987167`*^9, 3.7704587687155533`*^9}, {3.770578036468244*^9, 
-  3.770578049814937*^9}, {3.77059196311978*^9, 3.7705919774174347`*^9}},
- CellLabel->"In[47]:=",ExpressionUUID->"a0c30cec-8f13-4293-97de-fa71c180270d"],
+ RowBox[{"(*", 
+  RowBox[{"dataus", " ", "may", " ", "not", " ", "be", " ", "needed"}], 
+  "*)"}]], "Input",
+ CellChangeTimes->{{3.770634252956237*^9, 
+  3.770634259470742*^9}},ExpressionUUID->"736225cb-e32f-43c1-9e2e-\
+6255d758f5ae"],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"fitus", " ", "=", " ", 
+ RowBox[{"fithideath", " ", "=", " ", 
   RowBox[{"Fit", "[", 
    RowBox[{
-    RowBox[{"QuantityMagnitude", "@", 
-     RowBox[{"dataus", "[", 
-      RowBox[{"[", 
-       RowBox[{"All", ",", 
-        RowBox[{"2", ";;"}]}], "]"}], "]"}]}], ",", 
+    RowBox[{"Transpose", "@", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Normal", "@", 
+        RowBox[{"data", "[", "\"\<noHI\>\"", "]"}]}], ",", 
+       RowBox[{"Normal", "@", 
+        RowBox[{"data", "[", "\"\<deaths\>\"", "]"}]}]}], "}"}]}], ",", 
     RowBox[{"{", 
      RowBox[{"1", ",", "x"}], "}"}], ",", "x"}], "]"}]}]], "Input",
- CellChangeTimes->{{3.7704737278199997`*^9, 3.7704737774291477`*^9}, {
-  3.7705780746176*^9, 3.7705781037729397`*^9}},
- CellLabel->"In[50]:=",ExpressionUUID->"15d9a20c-b712-42cd-bd8f-7e1917448ffe"],
+ CellChangeTimes->{{3.770634988027421*^9, 3.7706350589524393`*^9}, {
+   3.770635097071988*^9, 3.770635097359357*^9}, {3.770635177893573*^9, 
+   3.770635182332898*^9}, {3.770635226328843*^9, 3.7706352282515497`*^9}, 
+   3.770645497794094*^9},
+ CellLabel->
+  "In[105]:=",ExpressionUUID->"478d215f-1dd7-4edc-8332-96bcb5975bab"],
 
 Cell[BoxData[
- RowBox[{
-  RowBox[{"plt1", "=", 
-   RowBox[{"ListPlot", "[", 
-    RowBox[{
-     RowBox[{"dataus", "[", 
-      RowBox[{"[", 
-       RowBox[{"All", ",", 
-        RowBox[{"2", ";;", "3"}]}], "]"}], "]"}], ",", 
-     RowBox[{"PlotRange", "\[Rule]", "All"}]}], "]"}]}], ";"}]], "Input",
- CellChangeTimes->{
-  3.7704734582743387`*^9, {3.770473583209401*^9, 3.770473587202856*^9}, {
-   3.770473786268435*^9, 3.7704737899669313`*^9}, {3.770578110686777*^9, 
-   3.770578110810453*^9}},
- CellLabel->"In[51]:=",ExpressionUUID->"7ce3fff4-a2e1-4fb8-be94-cb9a0e346cc8"],
+ RowBox[{"0.8863376318024978`", "\[VeryThinSpace]", "+", 
+  RowBox[{"0.0002069643848102086`", " ", "x"}]}]], "Output",
+ CellChangeTimes->{{3.7706350290657883`*^9, 3.770635059454823*^9}, 
+   3.770635098048016*^9, 3.770635183436948*^9, 3.7706352287338047`*^9, 
+   3.7706353973060703`*^9, 3.770645316945915*^9, 3.770645504348751*^9, {
+   3.770646559383163*^9, 3.7706465784921837`*^9}, 3.77064782151264*^9},
+ CellLabel->
+  "Out[105]=",ExpressionUUID->"88ddd455-08fa-4cf8-a93e-e2e55517043d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{
-  RowBox[{"plt2", " ", "=", " ", 
-   RowBox[{"Plot", "[", 
-    RowBox[{"fitus", ",", 
+ RowBox[{"fitdeathgini", " ", "=", 
+  RowBox[{"Fit", "[", 
+   RowBox[{
+    RowBox[{"Transpose", "@", 
      RowBox[{"{", 
-      RowBox[{"x", ",", 
-       RowBox[{"Min", "[", 
-        RowBox[{"dataus", "[", 
-         RowBox[{"[", 
-          RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}], ",", 
-       RowBox[{"Max", "[", 
-        RowBox[{"dataus", "[", 
-         RowBox[{"[", 
-          RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}]}], "}"}]}], "]"}]}], 
-  ";"}]], "Input",
- CellChangeTimes->{{3.7704737917317038`*^9, 3.7704738688188*^9}, {
-  3.77057811631728*^9, 3.770578122307259*^9}},
- CellLabel->"In[52]:=",ExpressionUUID->"30d230a1-dcb0-4ed2-a3f2-c5a195f7e727"],
+      RowBox[{
+       RowBox[{"Normal", "@", 
+        RowBox[{"data", "[", "\"\<gini\>\"", "]"}]}], ",", 
+       RowBox[{"Normal", "@", 
+        RowBox[{"data", "[", "\"\<deaths\>\"", "]"}]}]}], "}"}]}], ",", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "x"}], "}"}], ",", "x"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.770631880496408*^9, 3.7706319032418203`*^9}, {
+   3.7706353712274446`*^9, 3.7706353812538967`*^9}, 3.770645514249343*^9, {
+   3.770646498713655*^9, 3.770646500359363*^9}, {3.770647807887928*^9, 
+   3.7706478195357533`*^9}},
+ CellLabel->
+  "In[106]:=",ExpressionUUID->"ab41eb85-e810-4f14-b002-c57510ea49ab"],
+
+Cell[BoxData[
+ RowBox[{"0.28199412378786287`", "\[VeryThinSpace]", "+", 
+  RowBox[{"1.3091271411321934`", " ", "x"}]}]], "Output",
+ CellChangeTimes->{3.7706319037795153`*^9, 3.7706353996439734`*^9, 
+  3.770645318550646*^9, 3.7706455067618837`*^9, 3.770646232640245*^9, 
+  3.770646509461358*^9, 3.770646580447513*^9, 3.77064782312913*^9},
+ CellLabel->
+  "Out[106]=",ExpressionUUID->"a5640582-f455-403e-b3be-2214d81e6620"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"fithigini", " ", "=", " ", 
+  RowBox[{"Fit", "[", 
+   RowBox[{
+    RowBox[{"Transpose", "@", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Normal", "@", 
+        RowBox[{"data", "[", "\"\<gini\>\"", "]"}]}], ",", 
+       RowBox[{"Normal", "@", 
+        RowBox[{"data", "[", "\"\<noHI\>\"", "]"}]}]}], "}"}]}], ",", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "x"}], "}"}], ",", "x"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.770631911499558*^9, 3.770631932436405*^9}, {
+   3.770635389192127*^9, 3.770635394448429*^9}, 3.770645517235368*^9, {
+   3.77064779790145*^9, 3.770647802920595*^9}},
+ CellLabel->
+  "In[107]:=",ExpressionUUID->"b6a32829-0fe4-4bc1-84ab-e4916b8ea85f"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"-", "8.289734172954267`"}], "+", 
+  RowBox[{"48.50817327832415`", " ", "x"}]}]], "Output",
+ CellChangeTimes->{{3.770631922340538*^9, 3.770631932783136*^9}, 
+   3.770635402127014*^9, 3.770645320654593*^9, 3.770645517991819*^9, 
+   3.770646583093495*^9, 3.7706478253948593`*^9},
+ CellLabel->
+  "Out[107]=",ExpressionUUID->"e218f97a-c4d5-4f43-8791-78a094ab4c03"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Keys", "[", "data", "]"}]], "Input",
+ CellChangeTimes->{{3.770645379782754*^9, 3.770645384333091*^9}},
+ CellLabel->"In[44]:=",ExpressionUUID->"f5536e22-dbcd-4de4-8cdd-5b650ddf0be7"],
+
+Cell[BoxData[
+ TemplateBox[{TagBox[
+    DynamicModuleBox[{
+     TypeSystem`NestedGrid`PackagePrivate`$state$$ = 
+      Data`UnorderedAssociation[
+       "RowCount" -> 4, "Length" -> 4, "InitialType" -> TypeSystem`Vector[
+          TypeSystem`Atom[String], 4], "Shape" -> 
+        TypeSystem`PackageScope`Limited[
+          TypeSystem`PackageScope`ColumnShape[
+           TypeSystem`PackageScope`AtomShape[57.60000000000001]], 4, {}], 
+        "InitialData" -> TypeSystem`PackageScope`CacheHandle[1847782231], 
+        "Type" -> TypeSystem`Vector[
+          TypeSystem`Atom[String], 4], "HandleQ" -> True, "RowTarget" -> 20, 
+        "Data" -> TypeSystem`PackageScope`CacheHandle[1847782231]], 
+      TypeSystem`NestedGrid`PackagePrivate`$path$$ = {}, 
+      TypeSystem`NestedGrid`PackagePrivate`$pos$$ = 1, 
+      TypeSystem`NestedGrid`PackagePrivate`$grid$$ = 
+      DynamicModule[{
+        TypeSystem`NestedGrid`PackagePrivate`renderedGrid = Deploy[
+           Style[
+            Grid[{{
+               Pane[
+                Annotation["states", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[2004147704][
+                  GeneralUtilities`Slice[1]], "Mouse"], 
+                ImageSize -> {{57.60000000000001, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}]}, {
+               Pane[
+                Annotation["noHI", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[2004147704][
+                  GeneralUtilities`Slice[2]], "Mouse"], 
+                ImageSize -> {{57.60000000000001, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}]}, {
+               Pane[
+                Annotation["deaths", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[2004147704][
+                  GeneralUtilities`Slice[3]], "Mouse"], 
+                ImageSize -> {{57.60000000000001, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}]}, {
+               Pane[
+                Annotation["gini", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[2004147704][
+                  GeneralUtilities`Slice[4]], "Mouse"], 
+                ImageSize -> {{57.60000000000001, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}]}}, BaseStyle -> {ContextMenu -> {
+                 MenuItem["Copy position to clipboard", 
+                  KernelExecute[
+                   TypeSystem`NestedGrid`PackagePrivate`toCurrentPosition[
+                   TypeSystem`NestedGrid`PackagePrivate`copyClip]], 
+                  MenuEvaluator -> Automatic], 
+                 MenuItem["Copy data to clipboard", 
+                  KernelExecute[
+                   TypeSystem`NestedGrid`PackagePrivate`toCurrentData[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`copyClip]], 
+                  MenuEvaluator -> Automatic], Delimiter, 
+                 MenuItem["Paste position in new cell", 
+                  KernelExecute[
+                   TypeSystem`NestedGrid`PackagePrivate`toCurrentPosition[
+                   TypeSystem`NestedGrid`PackagePrivate`cellPaste]], 
+                  MenuEvaluator -> Automatic], 
+                 MenuItem["Paste data in new cell", 
+                  KernelExecute[
+                   TypeSystem`NestedGrid`PackagePrivate`toCurrentData[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`cellPaste]], 
+                  MenuEvaluator -> Automatic]}, FontFamily -> "Verdana", 
+               FontSize -> 12}, Alignment -> Left, RowMinHeight -> 1.5, 
+             Dividers -> All, FrameStyle -> GrayLevel[0.85], 
+             BaseStyle -> {FontFamily -> "Verdana", FontSize -> 12}], 
+            LineBreakWithin -> False, ContextMenu -> {}, NumberMarks -> False,
+             ShowAutoStyles -> False]], 
+         TypeSystem`NestedGrid`PackagePrivate`initialQ = True, 
+         TypeSystem`NestedGrid`PackagePrivate`self = $Failed}, 
+        Dynamic[
+         TypeSystem`NestedGrid`PackagePrivate`setupViewPath[
+         TypeSystem`NestedGrid`PackagePrivate`$path$$, If[
+            Not[TypeSystem`NestedGrid`PackagePrivate`initialQ], 
+            
+            Module[{TypeSystem`NestedGrid`PackagePrivate`tmpGrid$ = $Failed, 
+              TypeSystem`NestedGrid`PackagePrivate`tmpData$ = 
+              TypeSystem`NestedGrid`PackagePrivate`LookupCacheValue[
+                TypeSystem`NestedGrid`PackagePrivate`$state$$["Data"]]}, 
+             TypeSystem`NestedGrid`PackagePrivate`tmpGrid$ = 
+              If[TypeSystem`NestedGrid`PackagePrivate`tmpData$ === 
+                TypeSystem`NestedGrid`PackagePrivate`$NotCached, 
+                TypeSystem`NestedGrid`PackagePrivate`renderedGrid, 
+                TypeSystem`NestedGrid`PackagePrivate`renderGrid[
+                TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                 TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                 TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                 TypeSystem`NestedGrid`PackagePrivate`$grid$$, 2004147704][
+                TypeSystem`NestedGrid`PackagePrivate`tmpData$]]; If[
+               Not[
+                FailureQ[TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]], 
+               TypeSystem`NestedGrid`PackagePrivate`renderedGrid = 
+               TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]; Null]]; 
+          TypeSystem`NestedGrid`PackagePrivate`initialQ = False; 
+          TypeSystem`NestedGrid`PackagePrivate`$pos$$; If[
+            FailureQ[TypeSystem`NestedGrid`PackagePrivate`renderedGrid], 
+            TypeSystem`SparseGrid[
+             TypeSystem`H["(data no longer present)"]], 
+            If[GeneralUtilities`$DebugMode, 
+             Row[{TypeSystem`NestedGrid`PackagePrivate`renderedGrid, "  ", 
+               TypeSystem`NestedGrid`PackagePrivate`formatState[
+               TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                TypeSystem`NestedGrid`PackagePrivate`$pos$$]}], 
+             TypeSystem`NestedGrid`PackagePrivate`renderedGrid]]], 
+         TrackedSymbols :> {TypeSystem`NestedGrid`PackagePrivate`$pos$$}], 
+        DynamicModuleValues :> {}], 
+      TypeSystem`NestedGrid`PackagePrivate`$posCell$$, 
+      TypeSystem`NestedGrid`PackagePrivate`$topBar$$ = Dynamic[
+        TypeSystem`NestedGrid`PackagePrivate`alignBar[
+        TypeSystem`NestedGrid`PackagePrivate`$state$$][
+         TypeSystem`NestedGrid`PackagePrivate`makeFramedBar[
+          TypeSystem`PackageScope`Pathbar[
+          TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+           TypeSystem`NestedGrid`PackagePrivate`updateState[
+           TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+            TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+            TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+            TypeSystem`NestedGrid`PackagePrivate`$grid$$, 2004147704]]]], 
+        TrackedSymbols :> {TypeSystem`NestedGrid`PackagePrivate`$path$$}], 
+      TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$ = Framed[
+        Dynamic[
+         Replace[
+          MouseAnnotation[Null], {
+          TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[2004147704][Null] -> 
+           "", TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[2004147704][
+             Pattern[TypeSystem`NestedGrid`PackagePrivate`path, 
+              Blank[]]] :> (
+            TypeSystem`NestedGrid`PackagePrivate`$lastPath = 
+             TypeSystem`NestedGrid`PackagePrivate`path; 
+            TypeSystem`NestedGrid`PackagePrivate`makePathTrail[
+             TypeSystem`NestedGrid`PackagePrivate`path, 
+              TypeSystem`NestedGrid`PackagePrivate`makePathElements]), Null :> 
+           Spacer[10], Blank[] :> Spacer[10]}], TrackedSymbols :> {}], 
+        FrameStyle -> None, ImageMargins -> 0, FrameMargins -> 0, Alignment -> 
+        Top, ImageSize -> {Automatic, 14}]}, 
+     DynamicBox[
+      ToBoxes[
+       Column[
+        If[TypeSystem`NestedGrid`PackagePrivate`$path$$ == {}, {
+          TypeSystem`NestedGrid`PackagePrivate`displayScrollBar[
+          TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+           TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+           TypeSystem`NestedGrid`PackagePrivate`$pos$$], 
+          TypeSystem`NestedGrid`PackagePrivate`onDesktopShow[
+           TypeSystem`NestedGrid`PackagePrivate`alignBar[
+           TypeSystem`NestedGrid`PackagePrivate`$state$$][
+           TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$]]}, {
+         TypeSystem`NestedGrid`PackagePrivate`$topBar$$, 
+          TypeSystem`NestedGrid`PackagePrivate`displayScrollBar[
+          TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+           TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+           TypeSystem`NestedGrid`PackagePrivate`$pos$$], 
+          TypeSystem`NestedGrid`PackagePrivate`onDesktopShow[
+           TypeSystem`NestedGrid`PackagePrivate`alignBar[
+           TypeSystem`NestedGrid`PackagePrivate`$state$$][
+           TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$]]}], Spacings -> 
+        If[TypeSystem`NestedGrid`PackagePrivate`$path$$ == {}, 
+          0, {{}, {0, 0.05, 0}}]], StandardForm], 
+      ImageSizeCache -> {69., {55.134033203125, 60.865966796875}}, 
+      TrackedSymbols :> {
+       TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$grid$$}], 
+     BaseStyle -> {LineBreakWithin -> False}, Deinitialization :> 
+     TypeSystem`NestedGrid`PackagePrivate`deleteState[
+      TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+     DynamicModuleValues :> {}, Initialization :> 
+     Block[{$ContextPath = $ContextPath}, 
+       Needs["TypeSystem`"]]], Deploy, DefaultBaseStyle -> "Deploy"]},
+  "CopyTag",
+  DisplayFunction->(#& ),
+  InterpretationFunction->("Dataset[<>]"& )]], "Output",
+ CellChangeTimes->{3.770645384786025*^9, 3.770645520953722*^9, 
+  3.7706465863425913`*^9},
+ CellLabel->"Out[44]=",ExpressionUUID->"b5398657-fea7-4519-ae99-3f10f5f1a6be"]
+}, Open  ]],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"Show", "[", 
-  RowBox[{"plt1", ",", "plt2"}], "]"}]], "Input",
- CellChangeTimes->{{3.7704738158090677`*^9, 3.770473821272909*^9}},
- CellLabel->"In[53]:=",ExpressionUUID->"d751b4de-c521-4faf-a136-fd7098d64e53"],
+  RowBox[{
+   RowBox[{"ListPlot", "[", 
+    RowBox[{
+     RowBox[{"Transpose", "@", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Normal", "@", 
+         RowBox[{"data", "[", "\"\<noHI\>\"", "]"}]}], ",", 
+        RowBox[{"Normal", "@", 
+         RowBox[{"data", "[", "\"\<deaths\>\"", "]"}]}]}], "}"}]}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", "All"}]}], "]"}], ",", 
+   RowBox[{"Plot", "[", 
+    RowBox[{"fithideath", ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "25"}], "}"}]}], "]"}], ",", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\"\<No H.I. %\>\"", ",", "\"\<Death %\>\""}], "}"}]}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.7704738158090677`*^9, 3.770473821272909*^9}, {
+  3.770631967207106*^9, 3.770632065124115*^9}, {3.770632165451138*^9, 
+  3.770632169909966*^9}, {3.770632566711453*^9, 3.770632585601692*^9}, {
+  3.770645353858244*^9, 3.770645451089424*^9}, {3.770645533708219*^9, 
+  3.7706455544608192`*^9}, {3.770645604641593*^9, 3.770645642167349*^9}, {
+  3.770646871980645*^9, 3.770646873454062*^9}},
+ CellLabel->
+  "In[108]:=",ExpressionUUID->"d751b4de-c521-4faf-a136-fd7098d64e53"],
+
+Cell[BoxData[
+ GraphicsBox[{{{}, {
+     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+      0.012833333333333334`], AbsoluteThickness[1.6], PointBox[CompressedData["
+1:eJxTTMoPSmViYGAwAGIQPXsmCOg62Ci+Oi3u+dGeAQyMHHb9t/vIHPPaPg0M
+jBzWzvF+/yvlA4T/zNAhpXHjfrMZz+xTwQLaDodZLX/NjHlmbwwGCg5KevoX
+Hn1+ZT8LbL6qg8HJuJ89Z95BzG8wdeCdmuPfG/MBqt7Y4fBHhZkc/1/anz0D
+AvoO1gw2PP7lL+xNwNLaDiJlPxUtp76Cyms5lB6quPUu9C1Uv4oDn+3Tf3/U
+YXxNh6MXt1w+HQlzv74Dc/65SVJ6HyD6fYwcVt8pzHzL8B7qX2WH6hPbMl+1
+fbA/BzZfw2F9/16b/btfQfULOGh/LOU8/wxmv6pD6I6fqw8bvIP6T8Hhmd2m
+TcdTX9iDuTP1HFjds6ecrf8Alddy2O/jGlW6Fape0shh+/ONCnrm7+Dyp0UW
++h1neAUNH3OHBT+K/qYGvoa6T8OB4xIn24EHr+0ZwXwdB8fE+FsLmqHue2bq
+EHR1jvHG9NdQ89Qc7k8P1Ex68BIaHoYO7yTKs59tfwM1T92hZkOC3eZdL6Hq
+NRzkoxaFi+18D1f/gu3EDTlnaHid0XNYzV8eVbHoDdw9jyYd1Lhb9AGhf/9T
+NqeJb6F8HYdLESX6zNnvoeGp41D+tVDeQu41lK/twPTbwESDGabfwmGnmcOq
+eKnncPWzLybxPGV9BPWvjEOnV/EDAWGY/ZoOkSItax6teglPH//zKziap8L8
+q+swL9eH/abHZ2j8KTtU/L9fnpDxGu4f/0ktJT69r+wB6U1T7w==
+       "]]}, {
+      {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+       0.012833333333333334`], AbsoluteThickness[1.6]}, {}}, {
+      {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+       0.012833333333333334`], AbsoluteThickness[
+       1.6]}, {}}}, {{}, {}}}, {{{}, {}, 
+     TagBox[
+      {RGBColor[0.368417, 0.506779, 0.709798], AbsoluteThickness[1.6], 
+       Opacity[1.], LineBox[CompressedData["
+1:eJwV0Hs01HkYBvBhLTasiSKaIxQ1bcOMBr+Net/aIxGKtKRYuc245TbKLXdK
+bC6drTaazKrYOkdWKzsh5RCji1yO3egkW+tS39OxUkM17Hf/eM5zPn8+j0VI
+nE+4OovF8qT5vy1LVTVSM9m2Ao+e1heHCDRrc9fEirPg+32t7FfU91LqL28Q
+l8L6gIawSer7/ASRpvgSKETndd9S95QM7HovugFf54kPfaJWbMmTE1E7nJVr
+f14ZSKC3fDRhStQHddZuTrup3du0vCZEY/CA1Stvon6k5/CVRuAMPJtbJ6sK
+IrCj1OVu7Z55GPZyd5L8QCDc9qOeQI+FGurtF1yDCXhyw/81ctVA1VzJq02H
+CTQOHU9WMNo45mk1rh5CwMlg4w2NLF0snjDqeU0t+lRx8Yo/G6P/8pM8DiUQ
+d39y8w1PA7Tnhw7+EkbgVICmlSpmBSq6uzlF4QRCu9MjBGIj3Nn1YVVwBN2v
+ZeIdfWAVzq9OHrETERAszz47LTFFSaNHobGYQPC7rZu8Yjj4tP7tK0Itk3Zx
+lD+aofabad5QJIGbp7eMDviYY0y20Lk5ioDk9ta9Fz0sUJ7upjoVTaC998ps
+0UFL7L/VXBcfQyDS9du2SP+12O83o+kaS6CqTtAUHbUOq5jcPbZHCJS/a8uJ
+P2aFlYmhgYZxBCauJR8VJ1pjvoG+2RR1586K87m569Fx1lDxOJ6A2p6Rv0uz
+N+Cg40vrqwkEWNtvqVWncrFmWM09NZHASWOl58CJjbitKdUvKIlAfEBohzLv
+G7y30GIslBAYzxGGwU+bkJ3p17E6mcCKMz+PFMl4WHFwh90S9VX2xtTuShtc
+lCp9B4/SvxLXuKy/botCS80Q+TECUvNqzlZfPu7TGbMoSyHQlvGRJX7Cx1pP
+rdqQVAIWu7U+r/UTYFffSSPXNAK/93GLnw4J8GHzEMNJJ1Byf5FvHmiH0rFU
+ly8yCJxJmo4KfmaH/rHTGqPUGSvN9C0PbEZX37qi+uMEfuV+2St5sRnV0u/O
+n8kkoDmnZnIvSIg1WjWmUVkEavm/ZUonhcgeem7tk02AG3LNSxVrj40LkfP2
+OQRG3eSN+9/Yo3NBe8ayXAIDNWk8SHLA8r1H3sxQz9/0dracdcC+nEndnjwC
+S38kNhUeccTtug3vLuQT2M3f6ZLx3hEzh/s7swoIdAfaRkYnMXhZ886u/YUE
+DELFLReTGdQvslA/QB0kluk9OcZgmk5ByyHqD4mGjcIMBr3ZHjZh1OtOKj+q
+8hlcNBkxTKLObmwvKTvLoD/vw/My6i1aexua5Azq+dokP6Qu1C1Sn2phMGW4
+3OYJdf/yDl/TOwy+9H8/OUgt5ggXMjsYvB3YGjBKfU6waseuBwyKRO74mnru
+4IvBkWcMdqRF6GifIICHTaz1xhjkqRSdOtTFET4pMM7g+Sxepj61ZUIn5/I/
+DMblz80YUXsX1oXHvmWQczp32Iq6qni8+dIMgyfYE6Vc6qky02UDswzOVri5
+8aizK0vqHZQMKs6xW4XUD6u7WJELDApNJckMtfHVRZ/KTwxWV/1p40wdct3x
+yiMVgzprnKaAur4hXrm0xOBRmVT2HfV/9mJJIQ==
+        "]]},
+      Annotation[#, "Charting`Private`Tag$36065#1"]& ]}, {}}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{
+    FormBox["\"No H.I. %\"", TraditionalForm], 
+    FormBox["\"Death %\"", TraditionalForm]},
+  AxesOrigin->{3.6729166666666666`, 0},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  Method->{
+   "OptimizePlotMarkers" -> True, 
+    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& )}},
+  PlotRange->{{3.6729166666666666`, 24.6}, {0, 1.2052850995158688`}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.02], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{
+  3.770645453001988*^9, {3.77064552270019*^9, 3.77064554941393*^9}, 
+   3.770645611638435*^9, {3.770645642381274*^9, 3.770645659637549*^9}, 
+   3.770646588817584*^9, 3.770646874129154*^9, 3.770647866180087*^9},
+ CellLabel->
+  "Out[108]=",ExpressionUUID->"c4f50229-23c0-46bb-b0b8-d4098de58bf0"]
+}, Open  ]],
 
 Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.770473732438683*^9, 3.770473737336907*^9}, 
    3.77048217876017*^9},ExpressionUUID->"6a586888-f3fb-46c9-9497-\
 70b4bbe0fbd9"],
 
+Cell[CellGroupData[{
+
 Cell[BoxData[
  RowBox[{"Correlation", "[", 
   RowBox[{
-   RowBox[{"QuantityMagnitude", "@", "deathsvalueus"}], ",", 
-   RowBox[{"QuantityMagnitude", "@", "nohivalueus"}]}], "]"}]], "Input",
+   RowBox[{"Normal", "@", 
+    RowBox[{"data", "[", "\"\<noHI\>\"", "]"}]}], ",", 
+   RowBox[{"Normal", "@", 
+    RowBox[{"data", "[", "\"\<deaths\>\"", "]"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.770632725516415*^9, 3.770632727634033*^9}, {
+  3.7706460796180363`*^9, 3.770646100652253*^9}, {3.770647089936092*^9, 
+  3.770647097156259*^9}},
+ CellLabel->
+  "In[109]:=",ExpressionUUID->"c0c8d5f8-89dd-4669-8f93-58c3dbf8c085"],
+
+Cell[BoxData["0.007368413290898815`"], "Output",
+ CellChangeTimes->{3.770632728051218*^9, 3.7706354093951473`*^9, 
+  3.770647102410224*^9, 3.770647868308416*^9},
+ CellLabel->
+  "Out[109]=",ExpressionUUID->"7b007858-eb2b-4669-b7e6-0382376a2b8c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Show", "[", 
+  RowBox[{
+   RowBox[{"ListPlot", "[", 
+    RowBox[{
+     RowBox[{"Transpose", "@", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Normal", "@", 
+         RowBox[{"data", "[", "\"\<gini\>\"", "]"}]}], ",", 
+        RowBox[{"Normal", "@", 
+         RowBox[{"data", "[", "\"\<deaths\>\"", "]"}]}]}], "}"}]}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", "Full"}]}], "]"}], ",", 
+   RowBox[{"Plot", "[", 
+    RowBox[{"fitdeathgini", ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0.43", ",", "0.51"}], "}"}]}], "]"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", " ", "All"}], "  ", ",", " ", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\"\<gini\>\"", ",", "\"\<death %\>\""}], "}"}]}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.77063218406153*^9, 3.770632256475815*^9}, {
+  3.770632358020487*^9, 3.770632397580409*^9}, {3.770632484177019*^9, 
+  3.770632527693077*^9}, {3.770646116072343*^9, 3.7706461514471073`*^9}, {
+  3.770646626471899*^9, 3.770646647855362*^9}, {3.770646728105863*^9, 
+  3.7706468384893312`*^9}, {3.770647841265007*^9, 3.7706479110792418`*^9}},
+ CellLabel->
+  "In[114]:=",ExpressionUUID->"2f18ff7d-d1cd-4af1-a0cb-b21103580cd1"],
+
+Cell[BoxData[
+ GraphicsBox[{{{}, {
+     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+      0.012833333333333334`], AbsoluteThickness[1.6], PointBox[CompressedData["
+1:eJw9UnlM0nEcJQ3TdU/X4Soit7IsZWVqRrwulwfqsplBrhRlldrs0KDDWpMs
+W8eC7HSmdhJ22GFpB6VrWnYYHbP8fX8wliQ/BH5MO6yMoj/64+1tn+29vb3P
+48vyU+ReHA5H8Bce/nqcaPbuoSHkM62j41yIC3Xz+78SNLhFLu90GyKED1KO
+8WlcKU9w/shm4VszTpo914js3bX6iBMWNCdEli7IIGjizvlxMt2CzJmpgmla
+IyaFhrWZexicUpRXB9VTEDxd1XfguQOa6AGJqqFGDC3LSz6YzuJn9IaX+ww0
+mlwTT/q6rWhne+MlJRTmcoRDkhVdiN9eHCa+QCNgSx9/ThmD8Opbkd8bKRQ2
+Kj86Uu3gnlX/daQwbF7n719T7Ojtf6u0TiZ48vrWm1aJDbsnN5ZcTKPhnf9S
+HRjKQnsuab5/phE6auM6O8cJsSd+J4XtLXXrmBIWTW9C5GPNFK4dfiDU32Nw
+fvqicTYzjRBXod8rC4NodeuuWD1B6t0+XZPAgaCOvp059ylYRDduNMu70Ju3
+vOhqHQ3uktyjL3ax+FZoKh95nkAvjpEW3nZgW4ROlLaS4M7n2omhkQ4UYfaq
+hjgKrQFVSc0cBlr/tsXtLIXK75v65UttEG1dcWn2iw74Gvx8HplssFcIp789
+RWNB5uqPlcUMFDP4vN48GinvymfVrrFhVE5iz6FlJhiPL50qM1lBe/nt52XR
+cIxR5FrudKNOtaPtpoRgx/UM0c0GK8htz4GAJ61OG1XvRIKkJOr9E4Iun5b2
+CYtY/KtXRaAbrpAqq7vx+FlVTF0PgVn9OJhsYhE+0rMQGjx9p8/CI3bk3C/Q
+jBlIw7CiIMw714lYfdH4qDUUFF828qIm2PBb/u1TZhUNr5+C8GBvFtx/BjTq
+I+ZfXh34GVXvw51RMR04/Vo2pJNrxi+ty5Aoo1Aav9k0wr8bWQ7pQlEXgSRA
+VWO+bMXTLQ/PBIYRuPOVvsVlVpQaaNNgDUHFevGgD7E9//VKt1GRsdaG9Z73
+yDqQrFYViA8y+ANkEYwp
+       "]]}, {
+      {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+       0.012833333333333334`], AbsoluteThickness[1.6]}, {}}, {
+      {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+       0.012833333333333334`], AbsoluteThickness[
+       1.6]}, {}}}, {{}, {}}}, {{{}, {}, 
+     TagBox[
+      {RGBColor[0.368417, 0.506779, 0.709798], AbsoluteThickness[1.6], 
+       Opacity[1.], LineBox[CompressedData["
+1:eJwVzntUjHkYB/Cp6MpGHTYj1K5Dq3Lp0BLbV2uoZugmrTNaUSmXdgjZUquS
+5lSUVrmUNuXSikGmVLKNqDS1KGdza955523ton0vbcTpMtjf/vGc53zO85zv
+8zhH7gzZYioSidaQ+r9Lqu0apmfqcHfuq5kFVix2h8w/l0lc2LQ3/Qlx2cCa
+IxxxdIgpPcWahXFe9sYGpQ7m+6adLCOuUX0yDcvSwa9xrdVVGxYzKzhZ7mEd
+7suaeO14FmOK7ulHf9ahe2tR7ceJLFoO7Dd5XqrDy7Myv+1iFjnXd/o3NugQ
+d8QwTuXGwoVqjtZ265DXG+9Q/w0LxUNdXZBA9kfsshUBLEZmp9uYWVMozX5R
+fHQTi4ikTA/qSwqDGeq3++NZWHt8LjeAwqW3VXxXBovv1XE3IzZQODFbs/rR
+cRZZc5w58wQKTm3tb05XkDyrqBnP8ilYU2O8HtWzkPSazeq6ROFYuLe2q52F
+Z9rW6JUtFILKlbf295B/lPJzfxkoKDZ8DDzKsUg9dPnGpWEKc9L3uio+sHjS
+l60tnqSHn6P4Yp0th8eT3ewtF+hRnPww+7IzB9VS9wUlUj2yVqWrt3lwaG+7
+FSiP0aNHGZVyTMLhtqzSB2l6aD0kuZnrOIx6zlwYUKKHQ2goXsRyMPRFbuyp
+06NkyZ4wNonD6UJReO4jPTQ5+TWNORxKK1zl23k9lgfrq0dKOCRV3XBVWNCI
+zHAZMbnKwZhutqjfiUZ90sEL1RoOrQ20d/EyGoq/bd50dnGIZR0c48Jo3P2t
+ILO2l0NgBjMcu5tGopWswWKQ3P9zh21vLskTTww1M+fh6xU2lPYrjX9OPF7Y
+PpnHu6EHvdJmGt1Z7bXDLjxSrp0vXaqnIX95K3VwCY/L7iiofE9jsmXjlSIp
+Dyf72CwfOwM8zvApleE8FP/yQSI3A4Ryx4KMH3iYLjIV9/kaYC1OlmpTyTw+
+oXZoswEtH576Pc3ncTBBlZOZbID6wgpVfjkPitkVseykAaJmuqqmmoetpNBC
+fJ3kyRKNZ1t4ZH22ssr5gQHLpD59o094VJbdzK94bYBm3JSln17zCD6+6ouv
+TBjQXv1/3B/mMTD+R6O9LYNN9OD4seME/GT63XI7RwZp/FCexTQB+h4Hp04X
+Bt1NNgk17gKYGGdRuSeDHKsA4+8Q0Kl47q9cwYBqzOu4EiQgxrSZvk08wdvf
+bZjYeFy1Z5hYojHLkwQLmNOY+kuchIFKkxisIz5kM2sgZCWDlNuRzyzXClh8
+cfepGb4MxHc8X0atE1Dea/OqXsogrIU2EcvJPOFd8hviI5KiqC3EDy0NE9xk
+DDQta1uriI3z1F5niGe1arN8NwgIO7A+L3M1g/etatuEcAHWUy8sCglgUNim
+nNa1UUDZ1byOw8T3fH1Sp0YI+PrbxIhWYmPbKBNDHL1Nlr04kEGkdtf5D8Sa
+ugFqehADj3a5q+tmAaEyXfx64mj/Sbn7iFm6xfwYcXF7p3CH2MH81PyxwQxE
+HRL1+kgB14rSW72JPaWf7M8Tr3LfIU8k3t5xM6GfmGoK7b9OXCLd+9QrSsCe
+UO9DLHFXx9wlSuL/ANstfRg=
+        "]]},
+      Annotation[#, "Charting`Private`Tag$37556#1"]& ]}, {}}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{
+    FormBox["\"gini\"", TraditionalForm], 
+    FormBox["\"death %\"", TraditionalForm]},
+  AxesOrigin->{0.42434791666666694`, 0},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  Method->{
+   "OptimizePlotMarkers" -> True, 
+    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& )}},
+  PlotRange->All,
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.02], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{
+  3.770632201898802*^9, {3.770632233362954*^9, 3.770632256959989*^9}, {
+   3.770632362706437*^9, 3.7706323979078217`*^9}, {3.770632501212521*^9, 
+   3.77063252818255*^9}, 3.7706325898017597`*^9, 3.770632730592705*^9, 
+   3.770635411223119*^9, {3.770646138536332*^9, 3.770646151912711*^9}, 
+   3.770646241207428*^9, {3.770646610339005*^9, 3.770646648266521*^9}, 
+   3.770646708394169*^9, {3.77064674334816*^9, 3.770646838754199*^9}, {
+   3.770647870011627*^9, 3.770647911346991*^9}},
+ CellLabel->
+  "Out[114]=",ExpressionUUID->"d79bc8d6-d138-4591-9ce2-6e7873497884"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Correlation", "[", 
+  RowBox[{
+   RowBox[{"Normal", "@", 
+    RowBox[{"data", "[", "\"\<gini\>\"", "]"}]}], ",", 
+   RowBox[{"Normal", "@", 
+    RowBox[{"data", "[", "\"\<deaths\>\"", "]"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.770632626257586*^9, 3.7706327017726793`*^9}, 
+   3.7706471256235113`*^9, {3.77064801820503*^9, 3.7706480211581383`*^9}},
+ CellLabel->
+  "In[115]:=",ExpressionUUID->"b456957d-0f21-4d7f-984d-e90bf7aa1fa1"],
+
+Cell[BoxData["0.20206636399514286`"], "Output",
+ CellChangeTimes->{{3.770632629040666*^9, 3.770632732285347*^9}, 
+   3.770647127351523*^9, 3.770648024436335*^9},
+ CellLabel->
+  "Out[115]=",ExpressionUUID->"5f1a7ca2-22ba-4f66-857c-cc008fef342b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Show", "[", 
+  RowBox[{
+   RowBox[{"ListPlot", "[", 
+    RowBox[{
+     RowBox[{"Transpose", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Normal", "[", 
+         RowBox[{"data", "[", "\"\<gini\>\"", "]"}], "]"}], ",", 
+        RowBox[{"Normal", "[", 
+         RowBox[{"data", "[", "\"\<noHI\>\"", "]"}], "]"}]}], "}"}], "]"}], 
+     ",", 
+     RowBox[{"PlotRange", "\[Rule]", "Full"}]}], "]"}], ",", 
+   RowBox[{"Plot", "[", 
+    RowBox[{"fithigini", ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0.42", ",", "0.52"}], "}"}]}], "]"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\"\<gini\>\"", ",", "\"\<no H.I. %\>\""}], "}"}]}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.770632415294174*^9, 3.7706324590027733`*^9}, {
+  3.770632538314426*^9, 3.770632556210515*^9}, {3.7706469150366*^9, 
+  3.77064694725373*^9}, {3.770647238258041*^9, 3.770647258069525*^9}, {
+  3.770648072435717*^9, 3.770648122123789*^9}},
+ CellLabel->
+  "In[121]:=",ExpressionUUID->"520ae803-2786-4a53-a543-f9c71b25a81c"],
+
+Cell[BoxData[
+ GraphicsBox[{{{}, {
+     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+      0.012833333333333334`], AbsoluteThickness[1.6], PointBox[CompressedData["
+1:eJxTTMoPSmViYGAwAGIQ/W363cntrffsZ88EAV0HT73/in+/3bVnAAMjBzOb
+vUHTFO/Zp4GBkQPHGpmoFOv7EP4zQ4fj3uadjgl37VPBAtoOiUahBlor79sb
+g4GCw6zyOYuUd96xnwU2X9VhshWjbwvvfYj5DaYOv60KznVcugdVb+xw48MX
+r8i2O/Znz4CAvoNXdbO+z7J79iZgaW0Hk0VbzH8cgslrObAungQ08Q5Uv4rD
+l79XKl6q3YXyNR0a1Q61LQ+HuV/fYeUSPwfhxPsQ/T5GDj4g5z+9A/WvssPh
+y9qpko/u2J8Dm6/hsFTHWeb1I5h+AQerSafrPfbfhdqv6qB8+2dd1h6Y/xQc
+vuSE1a7bds8ezJ2p5/C99MEcwaV3ofJaDlVmq+3Co6F8SSOHWnvTuF2ed+Dy
+K4UvuNz4AHVPg7mDXWXECtOzt6Hu03B4O89G58qse/aMYL6OQ7muovyXHKj7
+npk6iGX5fu4LfgA1T83hHhNnl3wyLHwNHba11FzYHAmLX3WHu1tBAjD3aTh4
+R7ZZXDt6F64eHLwtMP/qORw8tdB12+e7cPeYCIJSyD24/qw9JZMlWGB8HQeP
+/bWyFumw8NRx+Jf6/UniwntQvrYDK9gAmHoLh4XXTN5buN6Gq/+z8uMl36Q7
+UP/KOCS/i3KyewGzX9PhZNm++VL6d+Hpo/PSvQfck2Hu14Xrh8SfskMuKHqS
+bsP9AwAyVFEh
+       "]]}, {
+      {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+       0.012833333333333334`], AbsoluteThickness[1.6]}, {}}, {
+      {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+       0.012833333333333334`], AbsoluteThickness[
+       1.6]}, {}}}, {{}, {}}}, {{{}, {}, 
+     TagBox[
+      {RGBColor[0.368417, 0.506779, 0.709798], AbsoluteThickness[1.6], 
+       Opacity[1.], LineBox[CompressedData["
+1:eJwV0HtUjHkYB/BqKWYxbA6tcky77Xinuf2UyoaeZ9UizGqQUum2aZEuTlHZ
+5Rit5rTZMVK7yemULhLVppIpp8RWrDWupcz17ar7rJLLRvbdP57zPZ/zPef7
+x2MfHrttj4WZmZmEuf9TmfBt5YYuDcjLYhUaRwp/+fHy9ruMz8w9psjlU5hy
+gv1mY7cGzsWcUoQKKDysfL52U48Gykmpol9IYVBZ9N9b+jTwuKZbMU4opHqz
++qWDGlja4Hua5UZh0/Z+u6CXGqhWr1a6e1JocpKnxZlrQT9mlZETSGFkVXKP
+xEEL5uoJ3wQlhWUvClq0XloYXXhRpr5F4c/PjgtbI7Qg6ZDoReMUxqeyF+2R
+ayHZxftdKZeHK0baUmtKtBD7gXW0yI+HVtabk1T3tCAO49xSneJhzMQhk82o
+Fr4Hvkt7Ew+L0jrGeHN1ECZ/P//gSx6O04MxJrEO+FH25VyuI7LHnBL3+Oig
+QTXnaqCfIzbUkJmr4nTw5/HR3my5I6asMVrfzNBBVq/9c9MNR7Q50nz5dZUO
+xFV2Lq0jjticFHC7u53pbaOktfZ8tFhRHMJ/q4PYjxW5Fb58ZOdxTzrY6MFa
+UiflpvJx5QN//hN3PaS4Lm69Xs/H5dW3dpFAPdSlrS64O8xHp13aWZ7H9NCQ
+VO0xwRHgQ1Xp2qp8Pbh1cz7l+gpw9YOKfx836SHx2g7oPCnAxqKIVRd7mD0H
+nXNRvQDnr5BOO84wwK4PPKVpWICvDo97z3EwQKFPtJ2nnRBNR70WFaw3wHWY
+sa/SR4h17ur9A5EGyMoOW5orE+J5lSX2pBkAfv0so7BWiOx/XuW4lxlg93uV
+a9WQEKX6z4+tu28Az/avPNFWhFfSTV3TYwaY9O5nD2wVYZtpSh3FNsJBKtqL
+LROhYm4DuIiNECIbvORxVYShIyKnaqkRbA/XqeV9IjSXdZR1HTRCXtvWAJ9F
+Yqx/Ri41ZxrB9ODrEqfNYvymu4nvf80IVs5DgZk/iTGgZKbLxnYjnF2gxOky
+MaYLpxpH3hhhOD2tT9YlxpaaswOcOTRYqhyS180mKHW2qCpeSsP7xArjoy8J
+Fs/b3NgpokEw6RTcs5Zgl9cf83o9aFhXkqN02UmwVBuV5+1Dg8dyQWFmHEF/
+tWeCPJQGO13+Puc0go9sX6fHx9Hg+t38jTsvEGy7Z9ZbJ2OsKLVMvUHwZhv3
+eOcZGmw+4SZPPiW4Rr3pCCeDBoX/u8zwNoKqlpiEvYwtKu5XPmRcWVu79y3j
+If/4gdJ2gvnZ66U2mTTUVzT5BXcQPBEU+YX/bzQEBwS63tEQXN9b3NyRQ8PF
+q8qJ7C6Ct3V/NS47T8MSqwi2ZTdBj/ZR1Q+MFUFu/HjGbq0u5W8YJ1kZwiU9
+BKlLLVmLc2nYtJv/xLyPIOtAX6RfHg1js1or9w8QTI2YHZbHODz43P0Oxha7
+hYEvGD+rPjDgNUhwSnJoa2I+DU3B1pxlQwRHxDNX/X6Bhoya0NNPhwnupXhO
+RsaWrJVXcIRgL0ciWF5Aw5EQqzvljHULsjjXGYezKqblo8x/WXVLPjLuDJEt
+mWTcZqFfuKGQhi3XdriGjxH0mTJjn2bcxKK2PWSsnnCY3cF4ZehU9BoTwf8A
+0xBN/w==
+        "]]},
+      Annotation[#, "Charting`Private`Tag$39002#1"]& ]}, {}}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{
+    FormBox["\"gini\"", TraditionalForm], 
+    FormBox["\"no H.I. %\"", TraditionalForm]},
+  AxesOrigin->{0.42434791666666694`, 0},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  Method->{
+   "OptimizePlotMarkers" -> True, 
+    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& )}},
+  PlotRange->All,
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.02], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{{3.7706324365031633`*^9, 3.770632459282859*^9}, {
+   3.770632548590864*^9, 3.770632558124557*^9}, 3.770632592256832*^9, {
+   3.770646937567346*^9, 3.770646947519187*^9}, 3.770648029793685*^9, {
+   3.770648089865424*^9, 3.770648122575375*^9}},
+ CellLabel->
+  "Out[121]=",ExpressionUUID->"c35a7f8d-1f22-4f95-bc6a-d5af73a79e50"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Correlation", "[", 
+  RowBox[{
+   RowBox[{"Normal", "@", 
+    RowBox[{"data", "[", "\"\<gini\>\"", "]"}]}], ",", 
+   RowBox[{"Normal", "@", 
+    RowBox[{"data", "[", "\"\<noHI\>\"", "]"}]}]}], "]"}]], "Input",
  CellChangeTimes->{{3.770418899739881*^9, 3.7704189407548018`*^9}, {
-  3.770419207496991*^9, 3.770419210340955*^9}, {3.770578158580946*^9, 
-  3.770578187026168*^9}},
- CellLabel->"In[55]:=",ExpressionUUID->"83dfbae1-fd06-4f4c-b6b9-4ddfbf325260"],
+   3.770419207496991*^9, 3.770419210340955*^9}, {3.770578158580946*^9, 
+   3.770578187026168*^9}, {3.7706327143486156`*^9, 3.770632716317692*^9}, 
+   3.770647151481347*^9, {3.77064813120739*^9, 3.770648135603614*^9}},
+ CellLabel->
+  "In[122]:=",ExpressionUUID->"83dfbae1-fd06-4f4c-b6b9-4ddfbf325260"],
+
+Cell[BoxData["0.21030459405761961`"], "Output",
+ CellChangeTimes->{3.770632717985147*^9, 3.7706471526770678`*^9, 
+  3.7706481360784817`*^9},
+ CellLabel->
+  "Out[122]=",ExpressionUUID->"cfcc084e-04fc-44c1-937c-92509b2055ec"]
+}, Open  ]],
 
 Cell[BoxData[
  RowBox[{"(*", " ", 
@@ -420,6 +1013,16 @@ Cell[BoxData[
    3.7704817597589083`*^9}, 3.770506640750678*^9, {3.770506781584218*^9, 
    3.7705067857777843`*^9}},ExpressionUUID->"50f9bd25-9435-47c0-ace5-\
 41463310fc48"],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "The", " ", "go", " ", "big", " ", "or", " ", "go", " ", "home", " ", 
+    "part"}], " ", "*)"}], "Section"]], "Input",
+ CellChangeTimes->{{3.770648149639175*^9, 
+  3.770648156206439*^9}},ExpressionUUID->"1a0bea85-0790-41db-85a3-\
+db162d688ced"],
 
 Cell[BoxData[
  StyleBox[
@@ -509,15 +1112,16 @@ Cell[BoxData[
   3.770552076998577*^9, 3.77055208025704*^9}, {3.770569133025305*^9, 
   3.770569133701202*^9}, {3.770570283396731*^9, 3.770570285353655*^9}, {
   3.770570569182498*^9, 3.770570576283935*^9}, {3.770592301361466*^9, 
-  3.770592369075966*^9}, {3.770592416833199*^9, 3.7705924187288103`*^9}},
- CellLabel->"In[2]:=",ExpressionUUID->"e92d77da-a171-4d07-8711-0b13c2d47dff"],
+  3.770592369075966*^9}, {3.770592416833199*^9, 3.7705924187288103`*^9}, {
+  3.770647397762198*^9, 3.770647399590322*^9}},
+ CellLabel->"In[73]:=",ExpressionUUID->"e92d77da-a171-4d07-8711-0b13c2d47dff"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData["rateentities"], "Input",
  CellChangeTimes->{{3.7705520836579037`*^9, 3.770552086431633*^9}, {
   3.770592105437109*^9, 3.770592106773839*^9}},
- CellLabel->"In[3]:=",ExpressionUUID->"7fba8e2d-7700-452c-bb29-f4cd22c9abd4"],
+ CellLabel->"In[5]:=",ExpressionUUID->"7fba8e2d-7700-452c-bb29-f4cd22c9abd4"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -892,8 +1496,8 @@ Cell[BoxData[
     "EntityProperty"]}], "}"}]], "Output",
  CellChangeTimes->{3.770586511230054*^9, 3.77059210730838*^9, 
   3.770592373464192*^9, 3.7705924223607616`*^9, 3.770592670648094*^9, 
-  3.770593902212599*^9},
- CellLabel->"Out[3]=",ExpressionUUID->"21de581a-8bb8-4f02-949e-6f881ab54e30"]
+  3.770593902212599*^9, 3.770629639805686*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"a98be211-3e87-4bde-8ac2-2c55f74c9a03"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -944,25 +1548,25 @@ Cell[BoxData[
   3.770549960795889*^9, 3.770549968817604*^9}, {3.770550020401709*^9, 
   3.770550043402169*^9}, {3.770551543943348*^9, 3.7705515449955482`*^9}, {
   3.770590477271298*^9, 3.770590504040573*^9}},
- CellLabel->"In[4]:=",ExpressionUUID->"3e88db9c-ab18-447a-919b-66682f9b495f"],
+ CellLabel->"In[74]:=",ExpressionUUID->"3e88db9c-ab18-447a-919b-66682f9b495f"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"Length", "@", "numbersentities"}]], "Input",
  CellChangeTimes->{{3.7705939687289267`*^9, 3.770593980541596*^9}},
- CellLabel->"In[11]:=",ExpressionUUID->"585d7f6a-1628-4430-96b6-fa54dd1465c2"],
+ CellLabel->"In[7]:=",ExpressionUUID->"585d7f6a-1628-4430-96b6-fa54dd1465c2"],
 
 Cell[BoxData["15"], "Output",
- CellChangeTimes->{3.770593981023755*^9},
- CellLabel->"Out[11]=",ExpressionUUID->"ad4632d3-7a9b-4150-b7ea-57577f57576b"]
+ CellChangeTimes->{3.770593981023755*^9, 3.77062966481651*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"9bd78a3b-1e70-4dae-8e84-3808fe9fb316"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData["numbersentities"], "Input",
  CellChangeTimes->{{3.770590370771428*^9, 3.770590372465399*^9}},
- CellLabel->"In[5]:=",ExpressionUUID->"508fbfa6-91b7-4bc5-bf43-5cc3e5920fdc"],
+ CellLabel->"In[8]:=",ExpressionUUID->"508fbfa6-91b7-4bc5-bf43-5cc3e5920fdc"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -1050,8 +1654,8 @@ Cell[BoxData[
     "EntityProperty"]}], "}"}]], "Output",
  CellChangeTimes->{3.770590372799317*^9, 3.7705905094422398`*^9, 
   3.770592152240409*^9, 3.770592396159829*^9, 3.770592675813833*^9, 
-  3.770593906997608*^9},
- CellLabel->"Out[5]=",ExpressionUUID->"78466cf7-6a57-42d7-98f1-35094083adbb"]
+  3.770593906997608*^9, 3.770629666452931*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"35a5979c-0547-413a-a101-71099989ab5c"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -1115,7 +1719,7 @@ Cell[BoxData[
    3.770569957277422*^9, 3.770569969759836*^9}, {3.770570632226571*^9, 
    3.7705707091196117`*^9}, 3.770570835307496*^9, {3.770571606916379*^9, 
    3.770571610545636*^9}, {3.7705927129106827`*^9, 3.7705927144468393`*^9}},
- CellLabel->"In[6]:=",ExpressionUUID->"7a918331-db58-4164-b99f-a192238a7795"],
+ CellLabel->"In[75]:=",ExpressionUUID->"7a918331-db58-4164-b99f-a192238a7795"],
 
 Cell[BoxData[
  RowBox[{
@@ -1131,7 +1735,7 @@ Cell[BoxData[
      "QuantityMagnitude"}]]}], ";"}]], "Input",
  CellChangeTimes->{{3.770592728283578*^9, 3.770592785735855*^9}, {
   3.770593830518668*^9, 3.770593834357663*^9}},
- CellLabel->"In[7]:=",ExpressionUUID->"db51e066-1004-47a7-bf20-7cfe9061e13d"],
+ CellLabel->"In[76]:=",ExpressionUUID->"db51e066-1004-47a7-bf20-7cfe9061e13d"],
 
 Cell[BoxData[
  RowBox[{
@@ -1142,29 +1746,21 @@ Cell[BoxData[
  CellChangeTimes->{{3.770593360943788*^9, 3.770593372199917*^9}, {
   3.7705934107690287`*^9, 3.770593462782539*^9}, {3.770594020907455*^9, 
   3.770594035249051*^9}},
- CellLabel->"In[17]:=",ExpressionUUID->"cf96ced9-1cfa-4ec4-89fe-53548099e92c"],
+ CellLabel->"In[77]:=",ExpressionUUID->"cf96ced9-1cfa-4ec4-89fe-53548099e92c"],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"allentities", "//", "Dimensions"}]], "Input",
  CellChangeTimes->{{3.770593582737276*^9, 3.770593586470593*^9}, {
   3.7705939946971693`*^9, 3.770593996080124*^9}},
- CellLabel->"In[18]:=",ExpressionUUID->"899b351b-d553-44a2-9179-526721ac913b"],
-
-Cell[CellGroupData[{
+ CellLabel->"In[78]:=",ExpressionUUID->"899b351b-d553-44a2-9179-526721ac913b"],
 
 Cell[BoxData[
- RowBox[{"ratesvalues", "//", "Dimensions"}]], "Input",
- CellChangeTimes->{{3.770593600433927*^9, 3.770593603430678*^9}, {
-  3.77059392943991*^9, 3.770593932036525*^9}, {3.7705940038195143`*^9, 
-  3.770594004679084*^9}},
- CellLabel->"In[21]:=",ExpressionUUID->"a6b7878e-3f2e-4b8c-bffc-465dad599265"],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{"48", ",", "57"}], "}"}]], "Output",
- CellChangeTimes->{3.770593605442897*^9, 3.7705938542379847`*^9, 
-  3.770593932689352*^9, 3.770594005051004*^9, 3.770594051772048*^9},
- CellLabel->"Out[21]=",ExpressionUUID->"308775e2-5003-42f6-af85-0562755390dd"]
+ RowBox[{"{", "72", "}"}]], "Output",
+ CellChangeTimes->{3.770629679013974*^9, 3.770647377912002*^9, 
+  3.770647410026375*^9},
+ CellLabel->"Out[78]=",ExpressionUUID->"7305b464-845c-4fc2-9511-11095352b017"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1174,14 +1770,16 @@ Cell[BoxData[
  CellChangeTimes->{{3.7705936083714123`*^9, 3.77059361160425*^9}, {
   3.770593923130549*^9, 3.770593937498386*^9}, {3.770594007281404*^9, 
   3.7705940082349653`*^9}},
- CellLabel->"In[22]:=",ExpressionUUID->"8f67f6d8-29d0-45f9-83ce-5a2c4a20a3d1"],
+ CellLabel->"In[79]:=",ExpressionUUID->"8f67f6d8-29d0-45f9-83ce-5a2c4a20a3d1"],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{"48", ",", "15"}], "}"}]], "Output",
- CellChangeTimes->{3.770593611940805*^9, 3.770593856358424*^9, 
-  3.7705939381927347`*^9, 3.7705940086385593`*^9, 3.770594053563487*^9},
- CellLabel->"Out[22]=",ExpressionUUID->"03468c02-898e-4d80-89e8-550ca2c02e02"]
+ CellChangeTimes->{
+  3.770593611940805*^9, 3.770593856358424*^9, 3.7705939381927347`*^9, 
+   3.7705940086385593`*^9, 3.770594053563487*^9, {3.7706473843689423`*^9, 
+   3.770647411338393*^9}},
+ CellLabel->"Out[79]=",ExpressionUUID->"e2c57993-8746-4b74-acb0-ae5858fcd069"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -1192,7 +1790,7 @@ Cell[BoxData[
   ";"}]], "Input",
  CellChangeTimes->{{3.770592790189147*^9, 3.770592802724783*^9}, {
   3.770593277759486*^9, 3.7705932780379257`*^9}},
- CellLabel->"In[23]:=",ExpressionUUID->"32c639e3-f1ab-493e-8556-11c0cc4b419c"],
+ CellLabel->"In[80]:=",ExpressionUUID->"32c639e3-f1ab-493e-8556-11c0cc4b419c"],
 
 Cell[CellGroupData[{
 
@@ -1202,12 +1800,12 @@ Cell[BoxData[
    RowBox[{"[", 
     RowBox[{"All", ",", "5"}], "]"}], "]"}], "//", "Length"}]], "Input",
  CellChangeTimes->{{3.7705937711445923`*^9, 3.770593791281086*^9}},
- CellLabel->"In[25]:=",ExpressionUUID->"2b1d8300-e7aa-414d-aa09-c348eac4c748"],
+ CellLabel->"In[81]:=",ExpressionUUID->"2b1d8300-e7aa-414d-aa09-c348eac4c748"],
 
 Cell[BoxData["48"], "Output",
  CellChangeTimes->{{3.7705937744090233`*^9, 3.770593791667541*^9}, 
-   3.770594070274295*^9},
- CellLabel->"Out[25]=",ExpressionUUID->"2a989567-ff4b-4389-b16b-d5cb63422b32"]
+   3.770594070274295*^9, 3.770629690826785*^9, 3.77064741504751*^9},
+ CellLabel->"Out[81]=",ExpressionUUID->"a196c333-1a81-4d8b-9fe4-5367e193d79c"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1216,14 +1814,15 @@ Cell[BoxData[
  RowBox[{"values", "//", "Dimensions"}]], "Input",
  CellChangeTimes->{{3.770593244651145*^9, 3.770593248485649*^9}, {
   3.7705935643883343`*^9, 3.770593567272591*^9}},
- CellLabel->"In[24]:=",ExpressionUUID->"f82c99b0-1280-4ac6-bfa6-bb44ae9a2011"],
+ CellLabel->"In[82]:=",ExpressionUUID->"f82c99b0-1280-4ac6-bfa6-bb44ae9a2011"],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{"48", ",", "72"}], "}"}]], "Output",
  CellChangeTimes->{3.7705932488557377`*^9, 3.770593292916358*^9, 
-  3.770593567643137*^9, 3.7705940673715353`*^9},
- CellLabel->"Out[24]=",ExpressionUUID->"8d23b525-90e2-43b9-8c21-f0566a459783"]
+  3.770593567643137*^9, 3.7705940673715353`*^9, 3.7706296954345503`*^9, 
+  3.770647416595992*^9},
+ CellLabel->"Out[82]=",ExpressionUUID->"19b7fc95-9722-4439-8853-3923dafcfb49"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -1252,21 +1851,22 @@ Cell[BoxData[
    3.770569040645256*^9, 3.7705690780575027`*^9}, {3.770569183361102*^9, 
    3.770569199558856*^9}, {3.770593465529356*^9, 3.770593466557173*^9}, {
    3.7705935505957537`*^9, 3.770593551557602*^9}},
- CellLabel->"In[26]:=",ExpressionUUID->"42b0ae32-d571-4b22-a98f-bc0cabd6b980"],
+ CellLabel->"In[83]:=",ExpressionUUID->"42b0ae32-d571-4b22-a98f-bc0cabd6b980"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"result", "//", "Dimensions"}]], "Input",
  CellChangeTimes->{{3.7705692035804863`*^9, 3.770569208481718*^9}},
- CellLabel->"In[27]:=",ExpressionUUID->"d58b0929-be33-4404-bd68-a0855809e483"],
+ CellLabel->"In[84]:=",ExpressionUUID->"d58b0929-be33-4404-bd68-a0855809e483"],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{"48", ",", "72", ",", "3"}], "}"}]], "Output",
  CellChangeTimes->{3.770586719031431*^9, 3.7705928097445393`*^9, 
-  3.770593554542989*^9, 3.770594075503312*^9},
- CellLabel->"Out[27]=",ExpressionUUID->"552532f7-198b-437a-bf91-010552b50d63"]
+  3.770593554542989*^9, 3.770594075503312*^9, 3.770629699994439*^9, 
+  3.7706474193322144`*^9},
+ CellLabel->"Out[84]=",ExpressionUUID->"8599afb4-5b7f-430d-a316-00a377233cd5"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -1392,7 +1992,32 @@ Cell[BoxData[
        "EntityProperty"]}], "]"}], "//", "QuantityMagnitude"}]}], 
   ";"}]], "Input",
  CellChangeTimes->{{3.7705948301940527`*^9, 3.770594924593297*^9}},
- CellLabel->"In[49]:=",ExpressionUUID->"933726d0-fe2c-4b1e-be7f-6a9c221d58cf"],
+ CellLabel->"In[85]:=",ExpressionUUID->"933726d0-fe2c-4b1e-be7f-6a9c221d58cf"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"deathsvalues", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"QuantityMagnitude", "@", 
+      FractionBox[
+       RowBox[{"EntityValue", "[", 
+        RowBox[{"usstates", ",", 
+         TemplateBox[{"\"annual deaths\"",RowBox[{"EntityProperty", "[", 
+             RowBox[{"\"AdministrativeDivision\"", ",", "\"AnnualDeaths\""}], 
+             "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"AnnualDeaths\\\"]\""},
+          "EntityProperty"]}], "]"}], 
+       RowBox[{"EntityValue", "[", 
+        RowBox[{"usstates", ",", 
+         TemplateBox[{"\"population\"",RowBox[{"EntityProperty", "[", 
+             RowBox[{"\"AdministrativeDivision\"", ",", "\"Population\""}], 
+             "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"Population\\\"]\""},
+          "EntityProperty"]}], "]"}]]}], "*", "100"}], "//", "N"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.770647529540065*^9, 3.7706475547858353`*^9}},
+ CellLabel->"In[98]:=",ExpressionUUID->"db76190b-28fe-4136-ac14-b64bd181f0e2"],
 
 Cell[BoxData[
  RowBox[{
@@ -1403,20 +2028,17 @@ Cell[BoxData[
       RowBox[{
        RowBox[{"allentities", "[", 
         RowBox[{"[", "i", "]"}], "]"}], ",", 
-       TemplateBox[{
-        "\"uninsured population fraction\"",RowBox[{"EntityProperty", "[", 
-           
-           RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"HealthInsuranceUncoveredRate\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"HealthInsuranceUncoveredRate\\\"]\""},
+       TemplateBox[{"\"annual deaths\"",RowBox[{"EntityProperty", "[", 
+           RowBox[{"\"AdministrativeDivision\"", ",", "\"AnnualDeaths\""}], 
+           "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"AnnualDeaths\\\"]\""},
         "EntityProperty"], ",", 
        RowBox[{"Correlation", "[", 
         RowBox[{
          RowBox[{"result", "[", 
           RowBox[{"[", 
            RowBox[{"All", ",", "i", ",", "3"}], "]"}], "]"}], ",", 
-         "uninsurancedvalues"}], "]"}]}], "}"}], ",", 
+         "deathsvalues"}], "]"}]}], "}"}], ",", 
      RowBox[{"{", 
       RowBox[{"i", ",", 
        RowBox[{"Length", "[", "allentities", "]"}]}], "}"}]}], "]"}]}], 
@@ -1437,8 +2059,9 @@ Cell[BoxData[
    3.770587295042839*^9}, {3.770587345562849*^9, 3.7705873509163113`*^9}, {
    3.770589763348378*^9, 3.7705897832194643`*^9}, {3.770590298263144*^9, 
    3.770590306892564*^9}, {3.770594111434184*^9, 3.770594128443734*^9}, {
-   3.770594893016555*^9, 3.770594920603229*^9}},
- CellLabel->"In[50]:=",ExpressionUUID->"8c9aacc1-2a6f-4d9d-9564-d72e23ec979b"],
+   3.770594893016555*^9, 3.770594920603229*^9}, {3.770647537808833*^9, 
+   3.77064753871931*^9}, 3.770647584576301*^9},
+ CellLabel->"In[99]:=",ExpressionUUID->"8c9aacc1-2a6f-4d9d-9564-d72e23ec979b"],
 
 Cell[CellGroupData[{
 
@@ -1447,15 +2070,19 @@ Cell[BoxData[
  CellChangeTimes->{{3.770588629926807*^9, 3.770588648559623*^9}, {
   3.7705897885912247`*^9, 3.770589804358778*^9}, {3.770594094532915*^9, 
   3.770594097853599*^9}},
- CellLabel->"In[51]:=",ExpressionUUID->"cf32dd3d-1d9d-4a69-b1aa-bc89880b2649"],
+ CellLabel->
+  "In[100]:=",ExpressionUUID->"cf32dd3d-1d9d-4a69-b1aa-bc89880b2649"],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{"72", ",", "3"}], "}"}]], "Output",
  CellChangeTimes->{{3.770589791645979*^9, 3.770589804760344*^9}, 
    3.770590314541511*^9, 3.770592884672359*^9, 3.7705930550766687`*^9, 
-   3.770594098519115*^9, 3.770594132530871*^9, 3.770594929755254*^9},
- CellLabel->"Out[51]=",ExpressionUUID->"4ee27f18-bbdc-4d77-b3cf-6b9d5325b64b"]
+   3.770594098519115*^9, 3.770594132530871*^9, 3.770594929755254*^9, 
+   3.770629718479045*^9, 3.7706474290287647`*^9, 3.770647543422735*^9, 
+   3.7706475881655283`*^9},
+ CellLabel->
+  "Out[100]=",ExpressionUUID->"2950080e-355e-4a5e-9c0b-83c96a61e32b"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -1474,7 +2101,25 @@ Cell[BoxData[
   3.7705885670683403`*^9, 3.770588606490087*^9}, {3.770588767870192*^9, 
   3.770588775436349*^9}, {3.770588897746044*^9, 3.770588898234517*^9}, {
   3.7705898657659893`*^9, 3.770589896440517*^9}},
- CellLabel->"In[52]:=",ExpressionUUID->"f92f1a25-f557-45cb-b0b7-0cfe07c4956f"],
+ CellLabel->
+  "In[101]:=",ExpressionUUID->"f92f1a25-f557-45cb-b0b7-0cfe07c4956f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"correlationlist", "//", "Dimensions"}]], "Input",
+ CellChangeTimes->{{3.770629728032393*^9, 3.7706297324909077`*^9}},
+ CellLabel->
+  "In[102]:=",ExpressionUUID->"8e8e487c-3f15-46c5-8533-981021d7747b"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"72", ",", "3"}], "}"}]], "Output",
+ CellChangeTimes->{3.770629733017256*^9, 3.770647431657935*^9, 
+  3.7706476027792187`*^9},
+ CellLabel->
+  "Out[102]=",ExpressionUUID->"83258dee-12d0-45f7-95d4-fc8d15b5982e"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -1483,371 +2128,184 @@ Cell[BoxData[
   RowBox[{"correlationlist", "[", 
    RowBox[{"[", 
     RowBox[{";;", "20"}], "]"}], "]"}], "//", "Column"}]], "Input",
- CellChangeTimes->{{3.770588777721737*^9, 3.7705887845239983`*^9}, {
-  3.770588905690501*^9, 3.770588929016646*^9}, {3.770589107757143*^9, 
-  3.770589109415345*^9}, {3.770589185629916*^9, 3.77058918737359*^9}, {
-  3.770589234919427*^9, 3.7705892369712048`*^9}, {3.7705892989248743`*^9, 
-  3.770589326351568*^9}, {3.77058990760297*^9, 3.7705899252387447`*^9}},
- CellLabel->"In[53]:=",ExpressionUUID->"5a7ed403-7ae4-40f5-a554-1eead73d2289"],
+ CellChangeTimes->{{3.770647436046094*^9, 3.770647442559976*^9}, {
+  3.770647618569593*^9, 3.770647626122142*^9}},
+ CellLabel->
+  "In[104]:=",ExpressionUUID->"ebe22cad-2248-4241-ad74-60d0fe31ee86"],
 
 Cell[BoxData[
  TagBox[GridBox[{
     {
      RowBox[{"{", 
       RowBox[{
-       TemplateBox[{
-        "\"uninsured population fraction\"",RowBox[{"EntityProperty", "[", 
-           
-           RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"HealthInsuranceUncoveredRate\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"HealthInsuranceUncoveredRate\\\"]\""},
-        "EntityProperty"], ",", 
-       TemplateBox[{
-        "\"uninsured population fraction\"",RowBox[{"EntityProperty", "[", 
-           
-           RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"HealthInsuranceUncoveredRate\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"HealthInsuranceUncoveredRate\\\"]\""},
-        "EntityProperty"], ",", "1.`"}], "}"}]},
-    {
-     RowBox[{"{", 
-      RowBox[{
-       TemplateBox[{
-        "\"insured population fraction\"",RowBox[{"EntityProperty", "[", 
-           
-           RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"HealthInsuranceCoverageRate\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"HealthInsuranceCoverageRate\\\"]\""},
-        "EntityProperty"], ",", 
-       TemplateBox[{
-        "\"uninsured population fraction\"",RowBox[{"EntityProperty", "[", 
-           
-           RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"HealthInsuranceUncoveredRate\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"HealthInsuranceUncoveredRate\\\"]\""},
-        "EntityProperty"], ",", 
-       RowBox[{"-", "0.9999999999999999`"}]}], "}"}]},
-    {
-     RowBox[{"{", 
-      RowBox[{
-       TemplateBox[{
-        "\"people without health insurance\"",RowBox[{"EntityProperty", "[", 
-           
-           RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"HealthInsurancePeopleNotCovered\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"HealthInsurancePeopleNotCovered\\\"]\""},
-        "EntityProperty"], ",", 
-       TemplateBox[{
-        "\"uninsured population fraction\"",RowBox[{"EntityProperty", "[", 
-           RowBox[{
-            "\"AdministrativeDivision\"", ",", 
-             "\"HealthInsuranceUncoveredRate\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"HealthInsuranceUncoveredRate\\\"]\""},
-        "EntityProperty"], ",", "0.998784773062773`"}], "}"}]},
-    {
-     RowBox[{"{", 
-      RowBox[{
-       TemplateBox[{
-        "\"people with health insurance\"",RowBox[{"EntityProperty", "[", 
-           
-           RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"HealthInsurancePeopleCovered\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"HealthInsurancePeopleCovered\\\"]\""},
-        "EntityProperty"], ",", 
-       TemplateBox[{
-        "\"uninsured population fraction\"",RowBox[{"EntityProperty", "[", 
-           
-           RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"HealthInsuranceUncoveredRate\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"HealthInsuranceUncoveredRate\\\"]\""},
-        "EntityProperty"], ",", 
-       RowBox[{"-", "0.9588625962471575`"}]}], "}"}]},
-    {
-     RowBox[{"{", 
-      RowBox[{
-       TemplateBox[{
-        "\"average ACT English score\"",RowBox[{"EntityProperty", "[", 
-           
-           RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"AverageACTEnglishScore\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"AverageACTEnglishScore\\\"]\""},
-        "EntityProperty"], ",", 
-       TemplateBox[{
-        "\"uninsured population fraction\"",RowBox[{"EntityProperty", "[", 
-           
-           RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"HealthInsuranceUncoveredRate\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"HealthInsuranceUncoveredRate\\\"]\""},
-        "EntityProperty"], ",", 
-       RowBox[{"-", "0.6502713667139172`"}]}], "}"}]},
-    {
-     RowBox[{"{", 
-      RowBox[{
-       TemplateBox[{
-        "\"average ACT science score\"",RowBox[{"EntityProperty", "[", 
-           
-           RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"AverageACTScienceScore\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"AverageACTScienceScore\\\"]\""},
-        "EntityProperty"], ",", 
-       TemplateBox[{
-        "\"uninsured population fraction\"",RowBox[{"EntityProperty", "[", 
-           
-           RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"HealthInsuranceUncoveredRate\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"HealthInsuranceUncoveredRate\\\"]\""},
-        "EntityProperty"], ",", 
-       RowBox[{"-", "0.6450019326612183`"}]}], "}"}]},
-    {
-     RowBox[{"{", 
-      RowBox[{
-       TemplateBox[{
-        "\"total number of crimes\"",RowBox[{"EntityProperty", "[", 
-           RowBox[{"\"AdministrativeDivision\"", ",", "\"CrimeTotal\""}], 
+       TemplateBox[{"\"annual deaths\"",RowBox[{"EntityProperty", "[", 
+           RowBox[{"\"AdministrativeDivision\"", ",", "\"AnnualDeaths\""}], 
            "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"CrimeTotal\\\"]\""},
+\\\"AnnualDeaths\\\"]\""},
         "EntityProperty"], ",", 
-       TemplateBox[{
-        "\"uninsured population fraction\"",RowBox[{"EntityProperty", "[", 
-           
-           RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"HealthInsuranceUncoveredRate\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"HealthInsuranceUncoveredRate\\\"]\""},
-        "EntityProperty"], ",", "0.6263891637531183`"}], "}"}]},
-    {
-     RowBox[{"{", 
-      RowBox[{
-       TemplateBox[{
-        "\"average ACT composite score\"",RowBox[{"EntityProperty", "[", 
-           
-           RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"AverageACTCompositeScore\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"AverageACTCompositeScore\\\"]\""},
-        "EntityProperty"], ",", 
-       TemplateBox[{
-        "\"uninsured population fraction\"",RowBox[{"EntityProperty", "[", 
-           
-           RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"HealthInsuranceUncoveredRate\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"HealthInsuranceUncoveredRate\\\"]\""},
-        "EntityProperty"], ",", 
-       RowBox[{"-", "0.6237778093281773`"}]}], "}"}]},
-    {
-     RowBox[{"{", 
-      RowBox[{
-       TemplateBox[{
-        "\"total number of property crimes\"",RowBox[{"EntityProperty", "[", 
-           
-           RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"PropertyCrimeTotal\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"PropertyCrimeTotal\\\"]\""},
-        "EntityProperty"], ",", 
-       TemplateBox[{
-        "\"uninsured population fraction\"",RowBox[{"EntityProperty", "[", 
-           
-           RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"HealthInsuranceUncoveredRate\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"HealthInsuranceUncoveredRate\\\"]\""},
-        "EntityProperty"], ",", "0.6130293934185324`"}], "}"}]},
-    {
-     RowBox[{"{", 
-      RowBox[{
-       TemplateBox[{"\"total rate of crime\"",RowBox[{"EntityProperty", "[", 
-           RowBox[{"\"AdministrativeDivision\"", ",", "\"CrimeRate\""}], 
+       TemplateBox[{"\"annual deaths\"",RowBox[{"EntityProperty", "[", 
+           RowBox[{"\"AdministrativeDivision\"", ",", "\"AnnualDeaths\""}], 
            "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"CrimeRate\\\"]\""},
+\\\"AnnualDeaths\\\"]\""},
+        "EntityProperty"], ",", "0.9999999999999999`"}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"\"disabled people\"",RowBox[{"EntityProperty", "[", 
+           RowBox[{"\"AdministrativeDivision\"", ",", "\"DisabledPersons\""}],
+            "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"DisabledPersons\\\"]\""},
         "EntityProperty"], ",", 
-       TemplateBox[{
-        "\"uninsured population fraction\"",RowBox[{"EntityProperty", "[", 
-           
-           RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"HealthInsuranceUncoveredRate\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"HealthInsuranceUncoveredRate\\\"]\""},
-        "EntityProperty"], ",", "0.6093442742454496`"}], "}"}]},
+       TemplateBox[{"\"annual deaths\"",RowBox[{"EntityProperty", "[", 
+           RowBox[{"\"AdministrativeDivision\"", ",", "\"AnnualDeaths\""}], 
+           "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"AnnualDeaths\\\"]\""},
+        "EntityProperty"], ",", "0.8200644294855309`"}], "}"}]},
     {
      RowBox[{"{", 
       RowBox[{
        TemplateBox[{
-        "\"average ACT reading score\"",RowBox[{"EntityProperty", "[", 
+        "\"median household income\"",RowBox[{"EntityProperty", "[", 
            
            RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"AverageACTReadingScore\""}], "]"}],
+             "\"MedianHouseholdIncome\""}], "]"}],
          "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"AverageACTReadingScore\\\"]\""},
+\\\"MedianHouseholdIncome\\\"]\""},
         "EntityProperty"], ",", 
-       TemplateBox[{
-        "\"uninsured population fraction\"",RowBox[{"EntityProperty", "[", 
-           
-           RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"HealthInsuranceUncoveredRate\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"HealthInsuranceUncoveredRate\\\"]\""},
+       TemplateBox[{"\"annual deaths\"",RowBox[{"EntityProperty", "[", 
+           RowBox[{"\"AdministrativeDivision\"", ",", "\"AnnualDeaths\""}], 
+           "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"AnnualDeaths\\\"]\""},
         "EntityProperty"], ",", 
-       RowBox[{"-", "0.6002111186157474`"}]}], "}"}]},
+       RowBox[{"-", "0.6105006692194594`"}]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"\"median age\"",RowBox[{"EntityProperty", "[", 
+           RowBox[{"\"AdministrativeDivision\"", ",", "\"MedianAge\""}], 
+           "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"MedianAge\\\"]\""},
+        "EntityProperty"], ",", 
+       TemplateBox[{"\"annual deaths\"",RowBox[{"EntityProperty", "[", 
+           RowBox[{"\"AdministrativeDivision\"", ",", "\"AnnualDeaths\""}], 
+           "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"AnnualDeaths\\\"]\""},
+        "EntityProperty"], ",", "0.6074286926399921`"}], "}"}]},
     {
      RowBox[{"{", 
       RowBox[{
        TemplateBox[{
-        "\"number of burglaries\"",RowBox[{"EntityProperty", "[", 
-           RowBox[{"\"AdministrativeDivision\"", ",", "\"Burglary\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"Burglary\\\"]\""},
-        "EntityProperty"], ",", 
-       TemplateBox[{
-        "\"uninsured population fraction\"",RowBox[{"EntityProperty", "[", 
-           
-           RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"HealthInsuranceUncoveredRate\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"HealthInsuranceUncoveredRate\\\"]\""},
-        "EntityProperty"], ",", "0.6001646107729706`"}], "}"}]},
-    {
-     RowBox[{"{", 
-      RowBox[{
-       TemplateBox[{
-        "\"total rate of property crime\"",RowBox[{"EntityProperty", "[", 
-           
-           RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"PropertyCrimeRate\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"PropertyCrimeRate\\\"]\""},
-        "EntityProperty"], ",", 
-       TemplateBox[{
-        "\"uninsured population fraction\"",RowBox[{"EntityProperty", "[", 
-           
-           RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"HealthInsuranceUncoveredRate\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"HealthInsuranceUncoveredRate\\\"]\""},
-        "EntityProperty"], ",", "0.5977227827145477`"}], "}"}]},
-    {
-     RowBox[{"{", 
-      RowBox[{
-       TemplateBox[{
-        "\"Hispanic business ownership fraction\"",
+        "\"coincident economic activity index\"",
          RowBox[{"EntityProperty", "[", 
            
            RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"BusinessEthnicOwnershipFractionsHispanic\""}], "]"}],
+             "\"CoincidentEconomicActivityIndex\""}], "]"}],
          "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"BusinessEthnicOwnershipFractionsHispanic\\\"]\""},
+\\\"CoincidentEconomicActivityIndex\\\"]\""},
         "EntityProperty"], ",", 
-       TemplateBox[{
-        "\"uninsured population fraction\"",RowBox[{"EntityProperty", "[", 
-           RowBox[{
-            "\"AdministrativeDivision\"", ",", 
-             "\"HealthInsuranceUncoveredRate\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"HealthInsuranceUncoveredRate\\\"]\""},
-        "EntityProperty"], ",", "0.5850035674040545`"}], "}"}]},
-    {
-     RowBox[{"{", 
-      RowBox[{
-       TemplateBox[{"\"rate of burglary\"",RowBox[{"EntityProperty", "[", 
-           RowBox[{"\"AdministrativeDivision\"", ",", "\"BurglaryRate\""}], 
+       TemplateBox[{"\"annual deaths\"",RowBox[{"EntityProperty", "[", 
+           RowBox[{"\"AdministrativeDivision\"", ",", "\"AnnualDeaths\""}], 
            "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"BurglaryRate\\\"]\""},
+\\\"AnnualDeaths\\\"]\""},
         "EntityProperty"], ",", 
-       TemplateBox[{
-        "\"uninsured population fraction\"",RowBox[{"EntityProperty", "[", 
-           
-           RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"HealthInsuranceUncoveredRate\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"HealthInsuranceUncoveredRate\\\"]\""},
-        "EntityProperty"], ",", "0.5813085959216064`"}], "}"}]},
+       RowBox[{"-", "0.5595758777413352`"}]}], "}"}]},
     {
      RowBox[{"{", 
       RowBox[{
        TemplateBox[{
-        "\"average ACT math score\"",RowBox[{"EntityProperty", "[", 
+        "\"median owner-occupied home value\"",
+         RowBox[{"EntityProperty", "[", 
            
            RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"AverageACTMathematicsScore\""}], "]"}],
+             "\"OwnerOccupiedHousingMedianValue\""}], "]"}],
          "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"AverageACTMathematicsScore\\\"]\""},
+\\\"OwnerOccupiedHousingMedianValue\\\"]\""},
         "EntityProperty"], ",", 
-       TemplateBox[{
-        "\"uninsured population fraction\"",RowBox[{"EntityProperty", "[", 
-           
-           RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"HealthInsuranceUncoveredRate\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"HealthInsuranceUncoveredRate\\\"]\""},
-        "EntityProperty"], ",", 
-       RowBox[{"-", "0.579349274237789`"}]}], "}"}]},
-    {
-     RowBox[{"{", 
-      RowBox[{
-       TemplateBox[{
-        "\"number of motor vehicle thefts\"",RowBox[{"EntityProperty", "[", 
-           
-           RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"MotorVehicleTheft\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"MotorVehicleTheft\\\"]\""},
-        "EntityProperty"], ",", 
-       TemplateBox[{
-        "\"uninsured population fraction\"",RowBox[{"EntityProperty", "[", 
-           
-           RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"HealthInsuranceUncoveredRate\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"HealthInsuranceUncoveredRate\\\"]\""},
-        "EntityProperty"], ",", "0.552037322796102`"}], "}"}]},
-    {
-     RowBox[{"{", 
-      RowBox[{
-       TemplateBox[{
-        "\"rate of motor vehicle thefts\"",RowBox[{"EntityProperty", "[", 
-           
-           RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"MotorVehicleTheftRate\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"MotorVehicleTheftRate\\\"]\""},
-        "EntityProperty"], ",", 
-       TemplateBox[{
-        "\"uninsured population fraction\"",RowBox[{"EntityProperty", "[", 
-           
-           RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"HealthInsuranceUncoveredRate\""}], "]"}],
-         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"HealthInsuranceUncoveredRate\\\"]\""},
-        "EntityProperty"], ",", "0.5452103621807354`"}], "}"}]},
-    {
-     RowBox[{"{", 
-      RowBox[{
-       TemplateBox[{"\"number of larcenies\"",RowBox[{"EntityProperty", "[", 
-           RowBox[{"\"AdministrativeDivision\"", ",", "\"LarcenyTheft\""}], 
+       TemplateBox[{"\"annual deaths\"",RowBox[{"EntityProperty", "[", 
+           RowBox[{"\"AdministrativeDivision\"", ",", "\"AnnualDeaths\""}], 
            "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"LarcenyTheft\\\"]\""},
+\\\"AnnualDeaths\\\"]\""},
         "EntityProperty"], ",", 
-       TemplateBox[{
-        "\"uninsured population fraction\"",RowBox[{"EntityProperty", "[", 
+       RowBox[{"-", "0.49011255647292695`"}]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"\"annual births\"",RowBox[{"EntityProperty", "[", 
+           RowBox[{"\"AdministrativeDivision\"", ",", "\"AnnualBirths\""}], 
+           "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"AnnualBirths\\\"]\""},
+        "EntityProperty"], ",", 
+       TemplateBox[{"\"annual deaths\"",RowBox[{"EntityProperty", "[", 
+           RowBox[{"\"AdministrativeDivision\"", ",", "\"AnnualDeaths\""}], 
+           "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"AnnualDeaths\\\"]\""},
+        "EntityProperty"], ",", 
+       RowBox[{"-", "0.4833347583837625`"}]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"\"fraction foreign born\"",RowBox[{"EntityProperty", "[", 
            
            RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"HealthInsuranceUncoveredRate\""}], "]"}],
+             "\"ForeignBornFraction\""}], "]"}],
          "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"HealthInsuranceUncoveredRate\\\"]\""},
-        "EntityProperty"], ",", "0.5447436431795439`"}], "}"}]},
+\\\"ForeignBornFraction\\\"]\""},
+        "EntityProperty"], ",", 
+       TemplateBox[{"\"annual deaths\"",RowBox[{"EntityProperty", "[", 
+           RowBox[{"\"AdministrativeDivision\"", ",", "\"AnnualDeaths\""}], 
+           "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"AnnualDeaths\\\"]\""},
+        "EntityProperty"], ",", 
+       RowBox[{"-", "0.4590521371131265`"}]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{
+        "\"per capita personal income\"",RowBox[{"EntityProperty", "[", 
+           
+           RowBox[{"\"AdministrativeDivision\"", ",", 
+             "\"PerCapitaPersonalIncome\""}], "]"}],
+         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"PerCapitaPersonalIncome\\\"]\""},
+        "EntityProperty"], ",", 
+       TemplateBox[{"\"annual deaths\"",RowBox[{"EntityProperty", "[", 
+           RowBox[{"\"AdministrativeDivision\"", ",", "\"AnnualDeaths\""}], 
+           "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"AnnualDeaths\\\"]\""},
+        "EntityProperty"], ",", 
+       RowBox[{"-", "0.4419003126179219`"}]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{
+        "\"median home sale price\"",RowBox[{"EntityProperty", "[", 
+           RowBox[{"\"AdministrativeDivision\"", ",", "\"MedianSalePrice\""}],
+            "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"MedianSalePrice\\\"]\""},
+        "EntityProperty"], ",", 
+       TemplateBox[{"\"annual deaths\"",RowBox[{"EntityProperty", "[", 
+           RowBox[{"\"AdministrativeDivision\"", ",", "\"AnnualDeaths\""}], 
+           "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"AnnualDeaths\\\"]\""},
+        "EntityProperty"], ",", 
+       RowBox[{"-", "0.43655400402057015`"}]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{
+        "\"average home sale price\"",RowBox[{"EntityProperty", "[", 
+           
+           RowBox[{"\"AdministrativeDivision\"", ",", 
+             "\"AverageSalePrice\""}], "]"}],
+         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"AverageSalePrice\\\"]\""},
+        "EntityProperty"], ",", 
+       TemplateBox[{"\"annual deaths\"",RowBox[{"EntityProperty", "[", 
+           RowBox[{"\"AdministrativeDivision\"", ",", "\"AnnualDeaths\""}], 
+           "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"AnnualDeaths\\\"]\""},
+        "EntityProperty"], ",", 
+       RowBox[{"-", "0.4338440941067361`"}]}], "}"}]},
     {
      RowBox[{"{", 
       RowBox[{
@@ -1856,34 +2314,155 @@ Cell[BoxData[
             "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
 \\\"PerCapitaIncome\\\"]\""},
         "EntityProperty"], ",", 
+       TemplateBox[{"\"annual deaths\"",RowBox[{"EntityProperty", "[", 
+           RowBox[{"\"AdministrativeDivision\"", ",", "\"AnnualDeaths\""}], 
+           "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"AnnualDeaths\\\"]\""},
+        "EntityProperty"], ",", 
+       RowBox[{"-", "0.4249413275532252`"}]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{
        TemplateBox[{
-        "\"uninsured population fraction\"",RowBox[{"EntityProperty", "[", 
+        "\"Pacific Islander business ownership fraction\"",
+         RowBox[{"EntityProperty", "[", 
            
            RowBox[{"\"AdministrativeDivision\"", ",", 
-             "\"HealthInsuranceUncoveredRate\""}], "]"}],
+             "\"BusinessEthnicOwnershipFractionsPacificIslander\""}], "]"}],
          "\"EntityProperty[\\\"AdministrativeDivision\\\", \
-\\\"HealthInsuranceUncoveredRate\\\"]\""},
+\\\"BusinessEthnicOwnershipFractionsPacificIslander\\\"]\""},
         "EntityProperty"], ",", 
-       RowBox[{"-", "0.5431500512335324`"}]}], "}"}]}
+       TemplateBox[{"\"annual deaths\"",RowBox[{"EntityProperty", "[", 
+           RowBox[{"\"AdministrativeDivision\"", ",", "\"AnnualDeaths\""}], 
+           "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"AnnualDeaths\\\"]\""},
+        "EntityProperty"], ",", 
+       RowBox[{"-", "0.3955201942885582`"}]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{
+        "\"rate of murder and nonnegligent manslaughter\"",
+         RowBox[{"EntityProperty", "[", 
+           
+           RowBox[{"\"AdministrativeDivision\"", ",", 
+             "\"MurderNonnegligentManslaughterRate\""}], "]"}],
+         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"MurderNonnegligentManslaughterRate\\\"]\""},
+        "EntityProperty"], ",", 
+       TemplateBox[{"\"annual deaths\"",RowBox[{"EntityProperty", "[", 
+           RowBox[{"\"AdministrativeDivision\"", ",", "\"AnnualDeaths\""}], 
+           "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"AnnualDeaths\\\"]\""},
+        "EntityProperty"], ",", "0.3933446071990981`"}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"\"home ownership rate\"",RowBox[{"EntityProperty", "[", 
+           
+           RowBox[{"\"AdministrativeDivision\"", ",", 
+             "\"HomeOwnershipRate\""}], "]"}],
+         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"HomeOwnershipRate\\\"]\""},
+        "EntityProperty"], ",", 
+       TemplateBox[{"\"annual deaths\"",RowBox[{"EntityProperty", "[", 
+           RowBox[{"\"AdministrativeDivision\"", ",", "\"AnnualDeaths\""}], 
+           "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"AnnualDeaths\\\"]\""},
+        "EntityProperty"], ",", "0.39088162502038454`"}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"\"home vacancy rate\"",RowBox[{"EntityProperty", "[", 
+           RowBox[{"\"AdministrativeDivision\"", ",", "\"HomeVacancyRate\""}],
+            "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"HomeVacancyRate\\\"]\""},
+        "EntityProperty"], ",", 
+       TemplateBox[{"\"annual deaths\"",RowBox[{"EntityProperty", "[", 
+           RowBox[{"\"AdministrativeDivision\"", ",", "\"AnnualDeaths\""}], 
+           "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"AnnualDeaths\\\"]\""},
+        "EntityProperty"], ",", "0.3850976660419561`"}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{
+        "\"Asian business ownership fraction\"",RowBox[{"EntityProperty", "[", 
+           
+           RowBox[{"\"AdministrativeDivision\"", ",", 
+             "\"BusinessEthnicOwnershipFractionsAsian\""}], "]"}],
+         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"BusinessEthnicOwnershipFractionsAsian\\\"]\""},
+        "EntityProperty"], ",", 
+       TemplateBox[{"\"annual deaths\"",RowBox[{"EntityProperty", "[", 
+           RowBox[{"\"AdministrativeDivision\"", ",", "\"AnnualDeaths\""}], 
+           "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"AnnualDeaths\\\"]\""},
+        "EntityProperty"], ",", 
+       RowBox[{"-", "0.3745747175041088`"}]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{
+        "\"housing in multiple unit structures\"",
+         RowBox[{"EntityProperty", "[", 
+           
+           RowBox[{"\"AdministrativeDivision\"", ",", 
+             "\"HousingUnitsInMultipleUnitStructuresFraction\""}], "]"}],
+         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"HousingUnitsInMultipleUnitStructuresFraction\\\"]\""},
+        "EntityProperty"], ",", 
+       TemplateBox[{"\"annual deaths\"",RowBox[{"EntityProperty", "[", 
+           RowBox[{"\"AdministrativeDivision\"", ",", "\"AnnualDeaths\""}], 
+           "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"AnnualDeaths\\\"]\""},
+        "EntityProperty"], ",", 
+       RowBox[{"-", "0.37047628347475947`"}]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{
+        "\"owner-occupied housing\"",RowBox[{"EntityProperty", "[", 
+           
+           RowBox[{"\"AdministrativeDivision\"", ",", 
+             "\"OwnerOccupiedHousingUnitsFraction\""}], "]"}],
+         "\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"OwnerOccupiedHousingUnitsFraction\\\"]\""},
+        "EntityProperty"], ",", 
+       TemplateBox[{"\"annual deaths\"",RowBox[{"EntityProperty", "[", 
+           RowBox[{"\"AdministrativeDivision\"", ",", "\"AnnualDeaths\""}], 
+           "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"AnnualDeaths\\\"]\""},
+        "EntityProperty"], ",", "0.3614169551909957`"}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{
+        "\"average earnings per job\"",RowBox[{"EntityProperty", "[", 
+           RowBox[{"\"AdministrativeDivision\"", ",", "\"EarningsAverage\""}],
+            "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"EarningsAverage\\\"]\""},
+        "EntityProperty"], ",", 
+       TemplateBox[{"\"annual deaths\"",RowBox[{"EntityProperty", "[", 
+           RowBox[{"\"AdministrativeDivision\"", ",", "\"AnnualDeaths\""}], 
+           "]"}],"\"EntityProperty[\\\"AdministrativeDivision\\\", \
+\\\"AnnualDeaths\\\"]\""},
+        "EntityProperty"], ",", 
+       RowBox[{"-", "0.338781870351483`"}]}], "}"}]}
    },
    DefaultBaseStyle->"Column",
    GridBoxAlignment->{"Columns" -> {{Left}}},
    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
   "Column"]], "Output",
- CellChangeTimes->{
-  3.770588785087984*^9, {3.770588901467517*^9, 3.7705889293894053`*^9}, 
-   3.7705891098148727`*^9, 3.770589187744787*^9, 3.770589237500482*^9, {
-   3.7705893020127897`*^9, 3.770589327170603*^9}, {3.7705899106822*^9, 
-   3.770589925981879*^9}, 3.770590320847266*^9, 3.7705930621757174`*^9, 
-   3.7705941460957747`*^9, 3.770594935004735*^9},
- CellLabel->"Out[53]=",ExpressionUUID->"6afe6d01-a5de-452a-b22d-ca58c9bbb2f0"]
+ CellChangeTimes->{3.77064762661812*^9},
+ CellLabel->
+  "Out[104]=",ExpressionUUID->"5123af66-4303-4315-a260-23bcca7d14c7"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
 WindowSize->{Full, Full},
 WindowMargins->{{4, Automatic}, {Automatic, 4}},
-WindowStatusArea->"",
 FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 8, 2019)",
 StyleDefinitions->"Default.nb"
 ]
@@ -1899,109 +2478,139 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 194, 6, 105, "Section",ExpressionUUID->"e12c2d0a-3338-4140-ae60-2533643e9671"],
-Cell[777, 30, 180, 3, 30, "Input",ExpressionUUID->"52604aa3-4fc5-4cc1-a23a-c5c55f36423b"],
-Cell[960, 35, 415, 10, 30, "Input",ExpressionUUID->"2d852044-00c8-4bf0-9efe-03a1aa569d41"],
-Cell[1378, 47, 595, 11, 30, "Input",ExpressionUUID->"4ecb0a4f-0719-44e0-9f94-9a12b30f08c4"],
-Cell[1976, 60, 476, 8, 30, "Input",ExpressionUUID->"ad0b59fb-0310-4e70-a4bc-59a92493c30e"],
-Cell[2455, 70, 1196, 23, 115, "Input",ExpressionUUID->"d688ee8e-ec87-4581-a4c3-720519002269"],
-Cell[3654, 95, 466, 11, 52, "Input",ExpressionUUID->"ea1d5473-f21d-4759-a80a-360bb1923cf4"],
-Cell[4123, 108, 540, 13, 30, "Input",ExpressionUUID->"70ec655c-d0cf-40b9-bced-193d07f6df3f"],
-Cell[4666, 123, 337, 8, 30, "Input",ExpressionUUID->"f8d70cf8-6ec0-453b-9408-ddf17fe83f86"]
+Cell[580, 22, 706, 18, 371, "Section",ExpressionUUID->"e12c2d0a-3338-4140-ae60-2533643e9671"],
+Cell[1289, 42, 384, 8, 30, "Input",ExpressionUUID->"52604aa3-4fc5-4cc1-a23a-c5c55f36423b"],
+Cell[1676, 52, 415, 10, 30, "Input",ExpressionUUID->"2d852044-00c8-4bf0-9efe-03a1aa569d41"],
+Cell[2094, 64, 476, 8, 30, "Input",ExpressionUUID->"ad0b59fb-0310-4e70-a4bc-59a92493c30e"],
+Cell[2573, 74, 1196, 23, 115, "Input",ExpressionUUID->"d688ee8e-ec87-4581-a4c3-720519002269"],
+Cell[3772, 99, 466, 11, 52, "Input",ExpressionUUID->"ea1d5473-f21d-4759-a80a-360bb1923cf4"],
+Cell[4241, 112, 540, 13, 30, "Input",ExpressionUUID->"70ec655c-d0cf-40b9-bced-193d07f6df3f"],
+Cell[4784, 127, 337, 8, 30, "Input",ExpressionUUID->"f8d70cf8-6ec0-453b-9408-ddf17fe83f86"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5040, 136, 192, 3, 67, "Section",ExpressionUUID->"8ad46592-1622-4bad-b15f-bdfe7f98677b"],
-Cell[5235, 141, 683, 16, 30, "Input",ExpressionUUID->"f29a81ad-bb40-4f8a-9c01-ad377f5674b8"],
-Cell[5921, 159, 489, 9, 30, "Input",ExpressionUUID->"13646d3f-44d4-4772-ad74-c2bbca49619f"],
-Cell[6413, 170, 434, 10, 30, "Input",ExpressionUUID->"76ac3e56-d280-49cf-8c03-d0beca6a8977"],
-Cell[6850, 182, 571, 14, 30, "Input",ExpressionUUID->"fa78f66d-8f29-4464-87ae-2f7ce9ba7b37"],
-Cell[7424, 198, 603, 12, 51, "Input",ExpressionUUID->"1e2194e5-2e69-42ba-898f-f143a9269df0"],
-Cell[8030, 212, 464, 11, 51, "Input",ExpressionUUID->"ec1f5367-f54f-4be9-b28a-e2f599a696b0"],
-Cell[8497, 225, 575, 14, 30, "Input",ExpressionUUID->"70400e0e-9b99-41e5-a8f4-da5d160d0755"],
-Cell[9075, 241, 644, 12, 51, "Input",ExpressionUUID->"0e556f26-626a-486d-a9f4-360c09a0951e"],
-Cell[9722, 255, 445, 10, 51, "Input",ExpressionUUID->"1420d30a-ab28-4e99-8411-d3f508be5c11"],
-Cell[10170, 267, 154, 3, 30, "Input",ExpressionUUID->"9531738a-4ab7-4659-83e7-39066a218f12"]
+Cell[5158, 140, 192, 3, 67, "Section",ExpressionUUID->"8ad46592-1622-4bad-b15f-bdfe7f98677b"],
+Cell[5353, 145, 2641, 57, 107, "Input",ExpressionUUID->"d67c020c-d4b2-4435-a80b-cd05b84e20ac"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[10361, 275, 244, 4, 67, "Section",ExpressionUUID->"86137ffe-c96c-4b1e-8d65-2b78f0f30f0c"],
-Cell[10608, 281, 813, 20, 30, "Input",ExpressionUUID->"a0c30cec-8f13-4293-97de-fa71c180270d"],
-Cell[11424, 303, 535, 13, 30, "Input",ExpressionUUID->"15d9a20c-b712-42cd-bd8f-7e1917448ffe"],
-Cell[11962, 318, 570, 14, 30, "Input",ExpressionUUID->"7ce3fff4-a2e1-4fb8-be94-cb9a0e346cc8"],
-Cell[12535, 334, 674, 18, 30, "Input",ExpressionUUID->"30d230a1-dcb0-4ed2-a3f2-c5a195f7e727"],
-Cell[13212, 354, 233, 4, 30, "Input",ExpressionUUID->"d751b4de-c521-4faf-a136-fd7098d64e53"],
-Cell[13448, 360, 174, 3, 30, "Input",ExpressionUUID->"6a586888-f3fb-46c9-9497-70b4bbe0fbd9"],
-Cell[13625, 365, 434, 8, 30, "Input",ExpressionUUID->"83dfbae1-fd06-4f4c-b6b9-4ddfbf325260"],
-Cell[14062, 375, 336, 8, 30, "Input",ExpressionUUID->"86aeae95-cb59-4817-9277-8c6aa5ca8118"],
-Cell[14401, 385, 369, 8, 30, "Input",ExpressionUUID->"cd5f0702-07df-471f-9147-865252fa7b75"],
-Cell[14773, 395, 337, 6, 30, "Input",ExpressionUUID->"e671f930-e9fb-439b-aff2-f7410d85fb6c"],
-Cell[15113, 403, 237, 4, 30, "Input",ExpressionUUID->"d2b60ce1-8f3a-4bd8-949c-9c172d0aa581"],
-Cell[15353, 409, 554, 12, 30, "Input",ExpressionUUID->"50f9bd25-9435-47c0-ace5-41463310fc48"],
-Cell[15910, 423, 289, 7, 50, "Input",ExpressionUUID->"6bbe10e3-6208-4d89-b6a8-59d6d55f1e07"],
-Cell[16202, 432, 3666, 80, 151, "Input",ExpressionUUID->"e92d77da-a171-4d07-8711-0b13c2d47dff"],
+Cell[8031, 207, 244, 4, 67, "Section",ExpressionUUID->"86137ffe-c96c-4b1e-8d65-2b78f0f30f0c"],
+Cell[8278, 213, 248, 6, 30, "Input",ExpressionUUID->"736225cb-e32f-43c1-9e2e-6255d758f5ae"],
 Cell[CellGroupData[{
-Cell[19893, 516, 233, 3, 30, "Input",ExpressionUUID->"7fba8e2d-7700-452c-bb29-f4cd22c9abd4"],
-Cell[20129, 521, 17800, 374, 286, "Output",ExpressionUUID->"21de581a-8bb8-4f02-949e-6f881ab54e30"]
+Cell[8551, 223, 758, 18, 30, "Input",ExpressionUUID->"478d215f-1dd7-4edc-8332-96bcb5975bab"],
+Cell[9312, 243, 500, 8, 34, "Output",ExpressionUUID->"88ddd455-08fa-4cf8-a93e-e2e55517043d"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[37966, 900, 209, 3, 30, "Input",ExpressionUUID->"c5a272e0-3ea1-4c27-9d26-3761c13a4922"],
-Cell[38178, 905, 150, 2, 34, "Output",ExpressionUUID->"553b5298-4e4f-4842-a22a-154fa784cc9c"]
-}, Open  ]],
-Cell[38343, 910, 1506, 36, 88, "Input",ExpressionUUID->"3e88db9c-ab18-447a-919b-66682f9b495f"],
-Cell[CellGroupData[{
-Cell[39874, 950, 215, 3, 30, "Input",ExpressionUUID->"585d7f6a-1628-4430-96b6-fa54dd1465c2"],
-Cell[40092, 955, 150, 2, 34, "Output",ExpressionUUID->"ad4632d3-7a9b-4150-b7ea-57577f57576b"]
+Cell[9849, 256, 759, 18, 30, "Input",ExpressionUUID->"ab41eb85-e810-4f14-b002-c57510ea49ab"],
+Cell[10611, 276, 420, 7, 34, "Output",ExpressionUUID->"a5640582-f455-403e-b3be-2214d81e6620"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[40279, 962, 185, 2, 30, "Input",ExpressionUUID->"508fbfa6-91b7-4bc5-bf43-5cc3e5920fdc"],
-Cell[40467, 966, 4493, 87, 106, "Output",ExpressionUUID->"78466cf7-6a57-42d7-98f1-35094083adbb"]
-}, Open  ]],
-Cell[44975, 1056, 359, 8, 30, "Input",ExpressionUUID->"0f4d5c81-3414-44dc-b6b3-3bb22e7a02a7"],
-Cell[45337, 1066, 307, 8, 50, "Input",ExpressionUUID->"64edbf1e-51cc-4d0d-9af8-5d912b0d3d79"],
-Cell[45647, 1076, 542, 13, 30, "Input",ExpressionUUID->"c0f733a0-1286-484d-aedc-6422ff7e3088"],
-Cell[46192, 1091, 433, 11, 30, "Input",ExpressionUUID->"6e38e8b9-b5c1-4648-b26b-c5f703a16615"],
-Cell[46628, 1104, 728, 13, 30, "Input",ExpressionUUID->"7a918331-db58-4164-b99f-a192238a7795"],
-Cell[47359, 1119, 576, 14, 51, "Input",ExpressionUUID->"db51e066-1004-47a7-bf20-7cfe9061e13d"],
-Cell[47938, 1135, 406, 9, 30, "Input",ExpressionUUID->"cf96ced9-1cfa-4ec4-89fe-53548099e92c"],
-Cell[48347, 1146, 265, 4, 30, "Input",ExpressionUUID->"899b351b-d553-44a2-9179-526721ac913b"],
-Cell[CellGroupData[{
-Cell[48637, 1154, 313, 5, 30, "Input",ExpressionUUID->"a6b7878e-3f2e-4b8c-bffc-465dad599265"],
-Cell[48953, 1161, 289, 5, 34, "Output",ExpressionUUID->"308775e2-5003-42f6-af85-0562755390dd"]
+Cell[11068, 288, 700, 17, 30, "Input",ExpressionUUID->"b6a32829-0fe4-4bc1-84ab-e4916b8ea85f"],
+Cell[11771, 307, 394, 8, 34, "Output",ExpressionUUID->"e218f97a-c4d5-4f43-8791-78a094ab4c03"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[49279, 1171, 317, 5, 30, "Input",ExpressionUUID->"8f67f6d8-29d0-45f9-83ce-5a2c4a20a3d1"],
-Cell[49599, 1178, 291, 5, 34, "Output",ExpressionUUID->"03468c02-898e-4d80-89e8-550ca2c02e02"]
-}, Open  ]],
-Cell[49905, 1186, 360, 8, 30, "Input",ExpressionUUID->"32c639e3-f1ab-493e-8556-11c0cc4b419c"],
-Cell[CellGroupData[{
-Cell[50290, 1198, 286, 6, 30, "Input",ExpressionUUID->"2b1d8300-e7aa-414d-aa09-c348eac4c748"],
-Cell[50579, 1206, 202, 3, 34, "Output",ExpressionUUID->"2a989567-ff4b-4389-b16b-d5cb63422b32"]
+Cell[12202, 320, 205, 3, 30, "Input",ExpressionUUID->"f5536e22-dbcd-4de4-8cdd-5b650ddf0be7"],
+Cell[12410, 325, 10041, 178, 135, "Output",ExpressionUUID->"b5398657-fea7-4519-ae99-3f10f5f1a6be"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[50818, 1214, 260, 4, 30, "Input",ExpressionUUID->"f82c99b0-1280-4ac6-bfa6-bb44ae9a2011"],
-Cell[51081, 1220, 269, 5, 34, "Output",ExpressionUUID->"8d23b525-90e2-43b9-8c21-f0566a459783"]
+Cell[22488, 508, 1192, 28, 30, "Input",ExpressionUUID->"d751b4de-c521-4faf-a136-fd7098d64e53"],
+Cell[23683, 538, 4468, 92, 231, "Output",ExpressionUUID->"c4f50229-23c0-46bb-b0b8-d4098de58bf0"]
 }, Open  ]],
-Cell[51365, 1228, 1060, 26, 30, "Input",ExpressionUUID->"42b0ae32-d571-4b22-a98f-bc0cabd6b980"],
+Cell[28166, 633, 174, 3, 30, "Input",ExpressionUUID->"6a586888-f3fb-46c9-9497-70b4bbe0fbd9"],
 Cell[CellGroupData[{
-Cell[52450, 1258, 211, 3, 30, "Input",ExpressionUUID->"d58b0929-be33-4404-bd68-a0855809e483"],
-Cell[52664, 1263, 277, 5, 34, "Output",ExpressionUUID->"552532f7-198b-437a-bf91-010552b50d63"]
+Cell[28365, 640, 484, 11, 30, "Input",ExpressionUUID->"c0c8d5f8-89dd-4669-8f93-58c3dbf8c085"],
+Cell[28852, 653, 244, 4, 34, "Output",ExpressionUUID->"7b007858-eb2b-4669-b7e6-0382376a2b8c"]
 }, Open  ]],
-Cell[52956, 1271, 2042, 43, 30, "Input",ExpressionUUID->"351c0558-ecde-47ab-8283-5cb29fe164a8"],
-Cell[55001, 1316, 770, 20, 30, "Input",ExpressionUUID->"1a6ce97e-29ba-4383-934e-21fa91c7da04"],
 Cell[CellGroupData[{
-Cell[55796, 1340, 182, 3, 45, "Subsubsection",ExpressionUUID->"fb3cf7f9-3efb-48aa-8b10-bc6c5d8483f2"],
-Cell[55981, 1345, 542, 13, 30, "Input",ExpressionUUID->"373d5e79-3f12-4ace-a513-24fc6e69067e"],
-Cell[56526, 1360, 433, 11, 30, "Input",ExpressionUUID->"61f966fc-f448-4d5b-b8e2-6c60c7f05570"],
-Cell[56962, 1373, 152, 3, 30, InheritFromParent,ExpressionUUID->"a44f0bd1-6c5d-412a-ba6d-5f42f62a7b61"],
-Cell[57117, 1378, 695, 16, 40, "Input",ExpressionUUID->"933726d0-fe2c-4b1e-be7f-6a9c221d58cf"],
-Cell[57815, 1396, 2248, 44, 40, "Input",ExpressionUUID->"8c9aacc1-2a6f-4d9d-9564-d72e23ec979b"],
-Cell[CellGroupData[{
-Cell[60088, 1444, 315, 5, 30, "Input",ExpressionUUID->"cf32dd3d-1d9d-4a69-b1aa-bc89880b2649"],
-Cell[60406, 1451, 361, 6, 34, "Output",ExpressionUUID->"4ee27f18-bbdc-4d77-b3cf-6b9d5325b64b"]
+Cell[29133, 662, 1213, 28, 52, "Input",ExpressionUUID->"2f18ff7d-d1cd-4af1-a0cb-b21103580cd1"],
+Cell[30349, 692, 4941, 101, 249, "Output",ExpressionUUID->"d79bc8d6-d138-4591-9ce2-6e7873497884"]
 }, Open  ]],
-Cell[60782, 1460, 688, 16, 30, "Input",ExpressionUUID->"f92f1a25-f557-45cb-b0b7-0cfe07c4956f"],
 Cell[CellGroupData[{
-Cell[61495, 1480, 582, 10, 30, "Input",ExpressionUUID->"5a7ed403-7ae4-40f5-a554-1eead73d2289"],
-Cell[62080, 1492, 16071, 386, 615, "Output",ExpressionUUID->"6afe6d01-a5de-452a-b22d-ca58c9bbb2f0"]
+Cell[35327, 798, 461, 10, 30, "Input",ExpressionUUID->"b456957d-0f21-4d7f-984d-e90bf7aa1fa1"],
+Cell[35791, 810, 244, 4, 34, "Output",ExpressionUUID->"5f1a7ca2-22ba-4f66-857c-cc008fef342b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[36072, 819, 1114, 28, 52, "Input",ExpressionUUID->"520ae803-2786-4a53-a543-f9c71b25a81c"],
+Cell[37189, 849, 4434, 93, 254, "Output",ExpressionUUID->"c35a7f8d-1f22-4f95-bc6a-d5af73a79e50"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[41660, 947, 603, 12, 30, "Input",ExpressionUUID->"83dfbae1-fd06-4f4c-b6b9-4ddfbf325260"],
+Cell[42266, 961, 223, 4, 34, "Output",ExpressionUUID->"cfcc084e-04fc-44c1-937c-92509b2055ec"]
+}, Open  ]],
+Cell[42504, 968, 336, 8, 30, "Input",ExpressionUUID->"86aeae95-cb59-4817-9277-8c6aa5ca8118"],
+Cell[42843, 978, 369, 8, 30, "Input",ExpressionUUID->"cd5f0702-07df-471f-9147-865252fa7b75"],
+Cell[43215, 988, 337, 6, 30, "Input",ExpressionUUID->"e671f930-e9fb-439b-aff2-f7410d85fb6c"],
+Cell[43555, 996, 237, 4, 30, "Input",ExpressionUUID->"d2b60ce1-8f3a-4bd8-949c-9c172d0aa581"],
+Cell[43795, 1002, 554, 12, 30, "Input",ExpressionUUID->"50f9bd25-9435-47c0-ace5-41463310fc48"],
+Cell[44352, 1016, 307, 8, 50, "Input",ExpressionUUID->"1a0bea85-0790-41db-85a3-db162d688ced"],
+Cell[44662, 1026, 289, 7, 50, "Input",ExpressionUUID->"6bbe10e3-6208-4d89-b6a8-59d6d55f1e07"],
+Cell[44954, 1035, 3716, 81, 151, "Input",ExpressionUUID->"e92d77da-a171-4d07-8711-0b13c2d47dff"],
+Cell[CellGroupData[{
+Cell[48695, 1120, 233, 3, 30, "Input",ExpressionUUID->"7fba8e2d-7700-452c-bb29-f4cd22c9abd4"],
+Cell[48931, 1125, 17822, 374, 286, "Output",ExpressionUUID->"a98be211-3e87-4bde-8ac2-2c55f74c9a03"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[66790, 1504, 209, 3, 30, "Input",ExpressionUUID->"c5a272e0-3ea1-4c27-9d26-3761c13a4922"],
+Cell[67002, 1509, 150, 2, 34, "Output",ExpressionUUID->"553b5298-4e4f-4842-a22a-154fa784cc9c"]
+}, Open  ]],
+Cell[67167, 1514, 1507, 36, 88, "Input",ExpressionUUID->"3e88db9c-ab18-447a-919b-66682f9b495f"],
+Cell[CellGroupData[{
+Cell[68699, 1554, 214, 3, 30, "Input",ExpressionUUID->"585d7f6a-1628-4430-96b6-fa54dd1465c2"],
+Cell[68916, 1559, 170, 2, 34, "Output",ExpressionUUID->"9bd78a3b-1e70-4dae-8e84-3808fe9fb316"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[69123, 1566, 185, 2, 30, "Input",ExpressionUUID->"508fbfa6-91b7-4bc5-bf43-5cc3e5920fdc"],
+Cell[69311, 1570, 4515, 87, 106, "Output",ExpressionUUID->"35a5979c-0547-413a-a101-71099989ab5c"]
+}, Open  ]],
+Cell[73841, 1660, 359, 8, 30, "Input",ExpressionUUID->"0f4d5c81-3414-44dc-b6b3-3bb22e7a02a7"],
+Cell[74203, 1670, 307, 8, 50, "Input",ExpressionUUID->"64edbf1e-51cc-4d0d-9af8-5d912b0d3d79"],
+Cell[74513, 1680, 542, 13, 30, "Input",ExpressionUUID->"c0f733a0-1286-484d-aedc-6422ff7e3088"],
+Cell[75058, 1695, 433, 11, 30, "Input",ExpressionUUID->"6e38e8b9-b5c1-4648-b26b-c5f703a16615"],
+Cell[75494, 1708, 729, 13, 30, "Input",ExpressionUUID->"7a918331-db58-4164-b99f-a192238a7795"],
+Cell[76226, 1723, 577, 14, 51, "Input",ExpressionUUID->"db51e066-1004-47a7-bf20-7cfe9061e13d"],
+Cell[76806, 1739, 406, 9, 30, "Input",ExpressionUUID->"cf96ced9-1cfa-4ec4-89fe-53548099e92c"],
+Cell[CellGroupData[{
+Cell[77237, 1752, 265, 4, 30, "Input",ExpressionUUID->"899b351b-d553-44a2-9179-526721ac913b"],
+Cell[77505, 1758, 219, 4, 34, "Output",ExpressionUUID->"7305b464-845c-4fc2-9511-11095352b017"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[77761, 1767, 317, 5, 30, "Input",ExpressionUUID->"8f67f6d8-29d0-45f9-83ce-5a2c4a20a3d1"],
+Cell[78081, 1774, 347, 7, 34, "Output",ExpressionUUID->"e2c57993-8746-4b74-acb0-ae5858fcd069"]
+}, Open  ]],
+Cell[78443, 1784, 360, 8, 30, "Input",ExpressionUUID->"32c639e3-f1ab-493e-8556-11c0cc4b419c"],
+Cell[CellGroupData[{
+Cell[78828, 1796, 286, 6, 30, "Input",ExpressionUUID->"2b1d8300-e7aa-414d-aa09-c348eac4c748"],
+Cell[79117, 1804, 245, 3, 34, "Output",ExpressionUUID->"a196c333-1a81-4d8b-9fe4-5367e193d79c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[79399, 1812, 260, 4, 30, "Input",ExpressionUUID->"f82c99b0-1280-4ac6-bfa6-bb44ae9a2011"],
+Cell[79662, 1818, 318, 6, 34, "Output",ExpressionUUID->"19b7fc95-9722-4439-8853-3923dafcfb49"]
+}, Open  ]],
+Cell[79995, 1827, 1060, 26, 30, "Input",ExpressionUUID->"42b0ae32-d571-4b22-a98f-bc0cabd6b980"],
+Cell[CellGroupData[{
+Cell[81080, 1857, 211, 3, 30, "Input",ExpressionUUID->"d58b0929-be33-4404-bd68-a0855809e483"],
+Cell[81294, 1862, 326, 6, 34, "Output",ExpressionUUID->"8599afb4-5b7f-430d-a316-00a377233cd5"]
+}, Open  ]],
+Cell[81635, 1871, 2042, 43, 30, "Input",ExpressionUUID->"351c0558-ecde-47ab-8283-5cb29fe164a8"],
+Cell[83680, 1916, 770, 20, 30, "Input",ExpressionUUID->"1a6ce97e-29ba-4383-934e-21fa91c7da04"],
+Cell[CellGroupData[{
+Cell[84475, 1940, 182, 3, 45, "Subsubsection",ExpressionUUID->"fb3cf7f9-3efb-48aa-8b10-bc6c5d8483f2"],
+Cell[84660, 1945, 542, 13, 30, "Input",ExpressionUUID->"373d5e79-3f12-4ace-a513-24fc6e69067e"],
+Cell[85205, 1960, 433, 11, 30, "Input",ExpressionUUID->"61f966fc-f448-4d5b-b8e2-6c60c7f05570"],
+Cell[85641, 1973, 152, 3, 30, "Input",ExpressionUUID->"a44f0bd1-6c5d-412a-ba6d-5f42f62a7b61"],
+Cell[85796, 1978, 695, 16, 40, "Input",ExpressionUUID->"933726d0-fe2c-4b1e-be7f-6a9c221d58cf"],
+Cell[86494, 1996, 1050, 23, 72, "Input",ExpressionUUID->"db76190b-28fe-4136-ac14-b64bd181f0e2"],
+Cell[87547, 2021, 2232, 42, 40, "Input",ExpressionUUID->"8c9aacc1-2a6f-4d9d-9564-d72e23ec979b"],
+Cell[CellGroupData[{
+Cell[89804, 2067, 319, 6, 30, "Input",ExpressionUUID->"cf32dd3d-1d9d-4a69-b1aa-bc89880b2649"],
+Cell[90126, 2075, 465, 9, 34, "Output",ExpressionUUID->"2950080e-355e-4a5e-9c0b-83c96a61e32b"]
+}, Open  ]],
+Cell[90606, 2087, 692, 17, 30, "Input",ExpressionUUID->"f92f1a25-f557-45cb-b0b7-0cfe07c4956f"],
+Cell[CellGroupData[{
+Cell[91323, 2108, 224, 4, 30, "Input",ExpressionUUID->"8e8e487c-3f15-46c5-8533-981021d7747b"],
+Cell[91550, 2114, 248, 6, 34, "Output",ExpressionUUID->"83258dee-12d0-45f7-95d4-fc8d15b5982e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[91835, 2125, 341, 8, 30, "Input",ExpressionUUID->"ebe22cad-2248-4241-ad74-60d0fe31ee86"],
+Cell[92179, 2135, 14314, 323, 615, "Output",ExpressionUUID->"5123af66-4303-4315-a260-23bcca7d14c7"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
