@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    160210,       3392]
-NotebookOptionsPosition[    156816,       3327]
-NotebookOutlinePosition[    157153,       3342]
-CellTagsIndexPosition[    157110,       3339]
+NotebookDataLength[     91555,       2336]
+NotebookOptionsPosition[     80597,       2152]
+NotebookOutlinePosition[     80934,       2167]
+CellTagsIndexPosition[     80891,       2164]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -31,2251 +31,12 @@ Cell[BoxData[
  CellLabel->"Out[24]=",ExpressionUUID->"459142af-9e68-4246-ad5e-303af8e8b62f"]
 }, Open  ]],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[
- RowBox[{"WolframLanguageData", "[", "]"}]], "Input",
- CellChangeTimes->{{3.770582155019126*^9, 3.770582157436327*^9}},
- CellLabel->"In[25]:=",ExpressionUUID->"844a4c8c-d393-42c5-bc96-c2aa0af65358"],
-
-Cell[BoxData[
- InterpretationBox[
-  TagBox[
-   FrameBox[GridBox[{
-      {
-       ItemBox[
-        TagBox[
-         RowBox[{"{", 
-          RowBox[{
-           TemplateBox[{"\"$Aborted\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$Aborted\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$Aborted\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$ActivationKey\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$ActivationKey\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$ActivationKey\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           
-           TemplateBox[{
-            "\"$AllowExternalChannelFunctions\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"$AllowExternalChannelFunctions\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$AllowExternalChannelFunctions\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$AssertFunction\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$AssertFunction\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$AssertFunction\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$Assumptions\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$Assumptions\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$Assumptions\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$AudioInputDevices\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$AudioInputDevices\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$AudioInputDevices\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$AudioOutputDevices\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$AudioOutputDevices\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$AudioOutputDevices\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$BaseDirectory\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$BaseDirectory\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$BaseDirectory\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$BatchInput\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$BatchInput\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"$BatchInput\
-\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$BatchOutput\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$BatchOutput\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$BatchOutput\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$BlockchainBase\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$BlockchainBase\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$BlockchainBase\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$ByteOrdering\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$ByteOrdering\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$ByteOrdering\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$CacheBaseDirectory\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$CacheBaseDirectory\""}],
-                "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \\\"$CacheBaseDirectory\
-\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$Canceled\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$Canceled\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"$Canceled\\\
-\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$ChannelBase\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$ChannelBase\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$ChannelBase\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$CharacterEncoding\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$CharacterEncoding\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$CharacterEncoding\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$CharacterEncodings\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$CharacterEncodings\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$CharacterEncodings\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$CloudBase\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$CloudBase\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$CloudBase\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$CloudConnected\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$CloudConnected\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$CloudConnected\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$CloudCreditsAvailable\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"$CloudCreditsAvailable\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$CloudCreditsAvailable\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$CloudEvaluation\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$CloudEvaluation\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$CloudEvaluation\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$CloudExpressionBase\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"$CloudExpressionBase\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$CloudExpressionBase\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$CloudObjectNameFormat\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"$CloudObjectNameFormat\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$CloudObjectNameFormat\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$CloudObjectURLType\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$CloudObjectURLType\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$CloudObjectURLType\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$CloudRootDirectory\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$CloudRootDirectory\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$CloudRootDirectory\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$CloudSymbolBase\"",RowBox[{"Entity", "[", 
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$CloudSymbolBase\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$CloudSymbolBase\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$CloudUserID\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$CloudUserID\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$CloudUserID\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$CloudUserUUID\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$CloudUserUUID\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$CloudUserUUID\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$CloudVersion\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$CloudVersion\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$CloudVersion\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$CommandLine\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$CommandLine\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$CommandLine\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$CompilationTarget\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$CompilationTarget\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$CompilationTarget\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$ConfiguredKernels\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$ConfiguredKernels\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$ConfiguredKernels\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$Context\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$Context\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$Context\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$ContextPath\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$ContextPath\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$ContextPath\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$ControlActiveSetting\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"$ControlActiveSetting\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$ControlActiveSetting\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$CookieStore\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$CookieStore\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$CookieStore\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$Cookies\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$Cookies\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$Cookies\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$CreationDate\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$CreationDate\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$CreationDate\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$CurrentLink\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$CurrentLink\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$CurrentLink\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$CurrentTask\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$CurrentTask\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$CurrentTask\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$CurrentWebSession\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$CurrentWebSession\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$CurrentWebSession\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$DateStringFormat\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$DateStringFormat\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$DateStringFormat\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           
-           TemplateBox[{
-            "\"$DefaultAudioInputDevice\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"$DefaultAudioInputDevice\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$DefaultAudioInputDevice\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$DefaultAudioOutputDevice\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"$DefaultAudioOutputDevice\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$DefaultAudioOutputDevice\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$DefaultImagingDevice\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"$DefaultImagingDevice\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$DefaultImagingDevice\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$DefaultLocalBase\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$DefaultLocalBase\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$DefaultLocalBase\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           
-           TemplateBox[{
-            "\"$DefaultNetworkInterface\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"$DefaultNetworkInterface\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$DefaultNetworkInterface\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$Display\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$Display\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$Display\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$DisplayFunction\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$DisplayFunction\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$DisplayFunction\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$DistributedContexts\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"$DistributedContexts\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$DistributedContexts\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$DynamicEvaluation\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$DynamicEvaluation\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$DynamicEvaluation\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$Echo\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$Echo\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \\\"$Echo\\\"]\"",
-             "\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$EmbedCodeEnvironments\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"$EmbedCodeEnvironments\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$EmbedCodeEnvironments\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$EmbeddableServices\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$EmbeddableServices\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$EmbeddableServices\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$Epilog\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$Epilog\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$Epilog\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$EvaluationCloudBase\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"$EvaluationCloudBase\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$EvaluationCloudBase\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$EvaluationCloudObject\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"$EvaluationCloudObject\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$EvaluationCloudObject\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$EvaluationEnvironment\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"$EvaluationEnvironment\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$EvaluationEnvironment\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$ExportFormats\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$ExportFormats\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$ExportFormats\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$Failed\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$Failed\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$Failed\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$FontFamilies\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$FontFamilies\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$FontFamilies\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$FrontEnd\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$FrontEnd\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"$FrontEnd\\\
-\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$FrontEndSession\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$FrontEndSession\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$FrontEndSession\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$GeoLocation\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$GeoLocation\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$GeoLocation\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$GeoLocationCity\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$GeoLocationCity\""}], 
-               "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$GeoLocationCity\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$GeoLocationCountry\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$GeoLocationCountry\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$GeoLocationCountry\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$GeoLocationSource\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$GeoLocationSource\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$GeoLocationSource\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$HistoryLength\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$HistoryLength\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$HistoryLength\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$HomeDirectory\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$HomeDirectory\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$HomeDirectory\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$IgnoreEOF\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$IgnoreEOF\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$IgnoreEOF\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$ImageFormattingWidth\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"$ImageFormattingWidth\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$ImageFormattingWidth\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$ImagingDevice\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$ImagingDevice\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$ImagingDevice\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$ImagingDevices\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$ImagingDevices\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$ImagingDevices\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$ImportFormats\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$ImportFormats\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$ImportFormats\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$IncomingMailSettings\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"$IncomingMailSettings\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$IncomingMailSettings\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$InitialDirectory\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$InitialDirectory\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$InitialDirectory\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$Initialization\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$Initialization\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$Initialization\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$InitializationContexts\"",RowBox[{"Entity", "[", 
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"$InitializationContexts\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$InitializationContexts\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$Input\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$Input\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"$Input\\\"]\
-\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$InputFileName\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$InputFileName\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$InputFileName\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$InputStreamMethods\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$InputStreamMethods\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$InputStreamMethods\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$Inspector\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$Inspector\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$Inspector\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$InstallationDirectory\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"$InstallationDirectory\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$InstallationDirectory\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$InterpreterTypes\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$InterpreterTypes\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$InterpreterTypes\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$IterationLimit\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$IterationLimit\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$IterationLimit\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$KernelCount\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$KernelCount\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$KernelCount\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$KernelID\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$KernelID\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"$KernelID\\\
-\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$Language\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$Language\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"$Language\\\
-\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$LibraryPath\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$LibraryPath\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$LibraryPath\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$LicenseExpirationDate\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"$LicenseExpirationDate\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$LicenseExpirationDate\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$LicenseID\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$LicenseID\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$LicenseID\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$LicenseServer\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$LicenseServer\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$LicenseServer\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$Line\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$Line\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \\\"$Line\\\"]\"",
-             "\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$Linked\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$Linked\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$Linked\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$LocalBase\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$LocalBase\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$LocalBase\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$LocalSymbolBase\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$LocalSymbolBase\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$LocalSymbolBase\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$MachineAddresses\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$MachineAddresses\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$MachineAddresses\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$MachineDomains\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$MachineDomains\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$MachineDomains\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$MachineEpsilon\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$MachineEpsilon\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$MachineEpsilon\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$MachineID\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$MachineID\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$MachineID\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$MachineName\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$MachineName\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$MachineName\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$MachinePrecision\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$MachinePrecision\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$MachinePrecision\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$MachineType\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$MachineType\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$MachineType\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$MaxExtraPrecision\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$MaxExtraPrecision\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$MaxExtraPrecision\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$MaxMachineNumber\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$MaxMachineNumber\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$MaxMachineNumber\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$MaxNumber\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$MaxNumber\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$MaxNumber\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$MaxPiecewiseCases\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$MaxPiecewiseCases\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$MaxPiecewiseCases\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$MaxPrecision\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$MaxPrecision\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$MaxPrecision\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$MaxRootDegree\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$MaxRootDegree\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$MaxRootDegree\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$MessageGroups\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$MessageGroups\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$MessageGroups\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$MessageList\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$MessageList\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$MessageList\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$MessagePrePrint\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$MessagePrePrint\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$MessagePrePrint\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$Messages\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$Messages\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"$Messages\\\
-\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$MinMachineNumber\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$MinMachineNumber\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$MinMachineNumber\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$MinNumber\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$MinNumber\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$MinNumber\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$MinPrecision\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$MinPrecision\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$MinPrecision\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$MobilePhone\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$MobilePhone\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$MobilePhone\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$ModuleNumber\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$ModuleNumber\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$ModuleNumber\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$NetworkConnected\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$NetworkConnected\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$NetworkConnected\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$NetworkInterfaces\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$NetworkInterfaces\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$NetworkInterfaces\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$NewMessage\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$NewMessage\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"$NewMessage\
-\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$NewSymbol\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$NewSymbol\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$NewSymbol\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$NoValue\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$NoValue\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$NoValue\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$Notebooks\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$Notebooks\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$Notebooks\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$NumberMarks\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$NumberMarks\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$NumberMarks\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$OperatingSystem\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$OperatingSystem\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$OperatingSystem\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$Output\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$Output\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$Output\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$OutputSizeLimit\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$OutputSizeLimit\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$OutputSizeLimit\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$OutputStreamMethods\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"$OutputStreamMethods\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$OutputStreamMethods\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$Packages\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$Packages\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"$Packages\\\
-\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$ParentLink\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$ParentLink\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"$ParentLink\
-\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$ParentProcessID\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$ParentProcessID\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$ParentProcessID\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$Path\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$Path\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \\\"$Path\\\"]\"",
-             "\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$PathnameSeparator\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$PathnameSeparator\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$PathnameSeparator\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$PerformanceGoal\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$PerformanceGoal\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$PerformanceGoal\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$Permissions\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$Permissions\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$Permissions\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$PersistenceBase\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$PersistenceBase\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$PersistenceBase\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$PersistencePath\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$PersistencePath\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$PersistencePath\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$PlotTheme\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$PlotTheme\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$PlotTheme\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$Post\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$Post\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \\\"$Post\\\"]\"",
-             "\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$Pre\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$Pre\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \\\"$Pre\\\"]\"",
-             "\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$PreInitialization\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$PreInitialization\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$PreInitialization\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$PrePrint\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$PrePrint\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"$PrePrint\\\
-\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$PreRead\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$PreRead\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$PreRead\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$Printout3DPreviewer\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"$Printout3DPreviewer\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$Printout3DPreviewer\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$ProcessID\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$ProcessID\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$ProcessID\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$ProcessorCount\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$ProcessorCount\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$ProcessorCount\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$ProcessorType\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$ProcessorType\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$ProcessorType\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$PublisherID\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"$PublisherID\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$PublisherID\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$RecursionLimit\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$RecursionLimit\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$RecursionLimit\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$ReleaseNumber\"",RowBox[{"Entity", "[", 
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$ReleaseNumber\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$ReleaseNumber\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$RequesterAddress\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$RequesterAddress\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$RequesterAddress\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$RequesterWolframID\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$RequesterWolframID\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$RequesterWolframID\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$RequesterWolframUUID\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"$RequesterWolframUUID\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$RequesterWolframUUID\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$RootDirectory\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$RootDirectory\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$RootDirectory\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$SSHAuthentication\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$SSHAuthentication\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$SSHAuthentication\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$ScriptCommandLine\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$ScriptCommandLine\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$ScriptCommandLine\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"$ScriptInputString\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"$ScriptInputString\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"$ScriptInputString\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"5120"},
-            "OutputSizeLimit`Skeleton"], ",", 
-           TemplateBox[{"\"ViewRange\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"ViewRange\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"ViewRange\\\
-\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"ViewVector\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"ViewVector\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"ViewVector\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"ViewVertical\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"ViewVertical\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"ViewVertical\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"Visible\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"Visible\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"Visible\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"VoiceStyleData\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"VoiceStyleData\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"VoiceStyleData\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"VoigtDistribution\"",RowBox[{"Entity", "[", 
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"VoigtDistribution\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"VoigtDistribution\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"VolcanoData\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"VolcanoData\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"VolcanoData\
-\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"Volume\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"Volume\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"Volume\\\"]\
-\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"VonMisesDistribution\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"VonMisesDistribution\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"VonMisesDistribution\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"VoronoiMesh\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"VoronoiMesh\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"VoronoiMesh\
-\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WaitAll\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WaitAll\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WaitAll\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WaitNext\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WaitNext\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WaitNext\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WakebyDistribution\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WakebyDistribution\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WakebyDistribution\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           
-           TemplateBox[{
-            "\"WalleniusHypergeometricDistribution\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"WalleniusHypergeometricDistribution\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WalleniusHypergeometricDistribution\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WaringYuleDistribution\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"WaringYuleDistribution\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WaringYuleDistribution\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WarpingCorrespondence\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"WarpingCorrespondence\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WarpingCorrespondence\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WarpingDistance\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WarpingDistance\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WarpingDistance\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WatershedComponents\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WatershedComponents\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WatershedComponents\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WatsonUSquareTest\"",RowBox[{"Entity", "[", 
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WatsonUSquareTest\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WatsonUSquareTest\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           
-           TemplateBox[{
-            "\"WattsStrogatzGraphDistribution\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"WattsStrogatzGraphDistribution\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WattsStrogatzGraphDistribution\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WaveletBestBasis\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WaveletBestBasis\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WaveletBestBasis\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WaveletFilterCoefficients\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"WaveletFilterCoefficients\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WaveletFilterCoefficients\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WaveletImagePlot\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WaveletImagePlot\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WaveletImagePlot\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WaveletListPlot\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WaveletListPlot\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WaveletListPlot\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WaveletMapIndexed\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WaveletMapIndexed\""}], 
-               "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \\\"WaveletMapIndexed\\\
-\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WaveletMatrixPlot\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WaveletMatrixPlot\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WaveletMatrixPlot\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WaveletPhi\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WaveletPhi\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WaveletPhi\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WaveletPsi\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WaveletPsi\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WaveletPsi\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WaveletScale\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WaveletScale\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WaveletScale\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WaveletScalogram\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WaveletScalogram\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WaveletScalogram\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WaveletThreshold\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WaveletThreshold\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WaveletThreshold\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WeakStationarity\"",RowBox[{"Entity", "[", 
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WeakStationarity\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WeakStationarity\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WeaklyConnectedComponents\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"WeaklyConnectedComponents\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WeaklyConnectedComponents\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           
-           TemplateBox[{
-            "\"WeaklyConnectedGraphComponents\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"WeaklyConnectedGraphComponents\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WeaklyConnectedGraphComponents\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WeaklyConnectedGraphQ\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"WeaklyConnectedGraphQ\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WeaklyConnectedGraphQ\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WeatherData\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WeatherData\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"WeatherData\
-\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WeatherForecastData\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WeatherForecastData\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WeatherForecastData\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WebAudioSearch\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WebAudioSearch\""}], 
-               "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \\\"WebAudioSearch\\\"]\
-\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WebElementObject\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WebElementObject\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WebElementObject\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WebExecute\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WebExecute\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WebExecute\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WebImage\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WebImage\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WebImage\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WebImageSearch\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WebImageSearch\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WebImageSearch\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WebSearch\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WebSearch\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"WebSearch\\\
-\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WebSessionObject\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WebSessionObject\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WebSessionObject\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WebSessions\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WebSessions\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"WebSessions\
-\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WebWindowObject\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WebWindowObject\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WebWindowObject\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WeberE\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WeberE\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"WeberE\\\"]\
-\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"Wedge\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"Wedge\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \\\"Wedge\\\"]\"",
-             "\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"Wednesday\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"Wednesday\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"Wednesday\\\
-\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WeibullDistribution\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WeibullDistribution\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WeibullDistribution\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WeierstrassE1\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WeierstrassE1\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WeierstrassE1\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WeierstrassE2\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WeierstrassE2\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WeierstrassE2\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WeierstrassE3\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WeierstrassE3\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WeierstrassE3\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WeierstrassEta1\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WeierstrassEta1\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WeierstrassEta1\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WeierstrassEta2\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WeierstrassEta2\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WeierstrassEta2\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WeierstrassEta3\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WeierstrassEta3\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WeierstrassEta3\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WeierstrassHalfPeriodW1\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"WeierstrassHalfPeriodW1\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WeierstrassHalfPeriodW1\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WeierstrassHalfPeriodW2\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"WeierstrassHalfPeriodW2\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WeierstrassHalfPeriodW2\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WeierstrassHalfPeriodW3\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"WeierstrassHalfPeriodW3\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WeierstrassHalfPeriodW3\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WeierstrassHalfPeriods\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"WeierstrassHalfPeriods\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WeierstrassHalfPeriods\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WeierstrassInvariantG2\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"WeierstrassInvariantG2\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WeierstrassInvariantG2\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WeierstrassInvariantG3\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"WeierstrassInvariantG3\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WeierstrassInvariantG3\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WeierstrassInvariants\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"WeierstrassInvariants\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WeierstrassInvariants\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WeierstrassP\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WeierstrassP\""}],
-                "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WeierstrassP\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WeierstrassPPrime\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WeierstrassPPrime\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WeierstrassPPrime\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WeierstrassSigma\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WeierstrassSigma\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WeierstrassSigma\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WeierstrassZeta\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WeierstrassZeta\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WeierstrassZeta\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WeightedAdjacencyGraph\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"WeightedAdjacencyGraph\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WeightedAdjacencyGraph\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WeightedAdjacencyMatrix\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"WeightedAdjacencyMatrix\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WeightedAdjacencyMatrix\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WeightedData\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WeightedData\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WeightedData\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WeightedGraphQ\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WeightedGraphQ\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WeightedGraphQ\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"Weights\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"Weights\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"Weights\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WelchWindow\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WelchWindow\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"WelchWindow\
-\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WheelGraph\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WheelGraph\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WheelGraph\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WhenEvent\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WhenEvent\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"WhenEvent\\\
-\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"Which\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"Which\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \\\"Which\\\"]\"",
-             "\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"While\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"While\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \\\"While\\\"]\"",
-             "\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"White\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"White\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \\\"White\\\"]\"",
-             "\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WhiteNoiseProcess\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WhiteNoiseProcess\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WhiteNoiseProcess\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WhitePoint\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WhitePoint\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WhitePoint\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"Whitespace\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"Whitespace\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"Whitespace\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WhitespaceCharacter\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WhitespaceCharacter\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WhitespaceCharacter\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WhittakerM\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WhittakerM\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WhittakerM\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WhittakerW\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WhittakerW\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WhittakerW\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WienerFilter\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WienerFilter\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WienerFilter\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WienerProcess\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WienerProcess\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WienerProcess\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WignerD\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WignerD\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WignerD\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           
-           TemplateBox[{
-            "\"WignerSemicircleDistribution\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"WignerSemicircleDistribution\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WignerSemicircleDistribution\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WikipediaData\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WikipediaData\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WikipediaData\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WikipediaSearch\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WikipediaSearch\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WikipediaSearch\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WilksW\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WilksW\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"WilksW\\\"]\
-\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WilksWTest\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WilksWTest\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WilksWTest\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WindDirectionData\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WindDirectionData\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WindDirectionData\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WindSpeedData\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WindSpeedData\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WindSpeedData\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WindVectorData\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WindVectorData\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WindVectorData\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WindingCount\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WindingCount\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WindingCount\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WindingPolygon\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WindingPolygon\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WindingPolygon\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WindowClickSelect\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WindowClickSelect\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WindowClickSelect\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WindowElements\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WindowElements\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WindowElements\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WindowFloating\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WindowFloating\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WindowFloating\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WindowFrame\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WindowFrame\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"WindowFrame\
-\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WindowFrameElements\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WindowFrameElements\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WindowFrameElements\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WindowMargins\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WindowMargins\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WindowMargins\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WindowOpacity\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WindowOpacity\""}], 
-               "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WindowOpacity\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WindowSize\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WindowSize\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WindowSize\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WindowStatusArea\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WindowStatusArea\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WindowStatusArea\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WindowTitle\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WindowTitle\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"WindowTitle\
-\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WindowToolbars\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WindowToolbars\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WindowToolbars\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WinsorizedMean\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WinsorizedMean\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WinsorizedMean\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WinsorizedVariance\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WinsorizedVariance\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WinsorizedVariance\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WishartMatrixDistribution\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"WishartMatrixDistribution\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WishartMatrixDistribution\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"With\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"With\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \\\"With\\\"]\"",
-             "\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WolframAlpha\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WolframAlpha\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WolframAlpha\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WolframLanguageData\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WolframLanguageData\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WolframLanguageData\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"Word\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"Word\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \\\"Word\\\"]\"",
-             "\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WordBoundary\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WordBoundary\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WordBoundary\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WordCharacter\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WordCharacter\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WordCharacter\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WordCloud\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WordCloud\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"WordCloud\\\
-\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WordCount\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WordCount\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"WordCount\\\
-\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WordCounts\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WordCounts\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WordCounts\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WordData\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WordData\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WordData\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WordDefinition\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WordDefinition\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WordDefinition\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WordFrequency\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WordFrequency\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WordFrequency\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WordFrequencyData\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WordFrequencyData\""}], 
-               "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \\\"WordFrequencyData\\\
-\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WordList\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WordList\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WordList\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WordOrientation\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WordOrientation\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WordOrientation\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WordSearch\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WordSearch\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WordSearch\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WordSelectionFunction\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", 
-                 "\"WordSelectionFunction\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WordSelectionFunction\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WordSeparators\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WordSeparators\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WordSeparators\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WordSpacings\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WordSpacings\""}],
-                "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WordSpacings\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WordStem\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WordStem\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WordStem\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WordTranslation\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WordTranslation\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WordTranslation\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WorkingPrecision\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"WorkingPrecision\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WorkingPrecision\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WrapAround\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WrapAround\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"WrapAround\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"Write\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"Write\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \\\"Write\\\"]\"",
-             "\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WriteLine\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WriteLine\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"WriteLine\\\
-\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"WriteString\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"WriteString\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"WriteString\
-\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"Wronskian\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"Wronskian\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"Wronskian\\\
-\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"XMLElement\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"XMLElement\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"XMLElement\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"XMLObject\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"XMLObject\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"XMLObject\\\
-\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"XMLTemplate\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"XMLTemplate\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"XMLTemplate\
-\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"XYZColor\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"XYZColor\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"XYZColor\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"Xnor\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"Xnor\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \\\"Xnor\\\"]\"",
-             "\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"Xor\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"Xor\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \\\"Xor\\\"]\"",
-             "\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"Yellow\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"Yellow\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"Yellow\\\"]\
-\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"Yesterday\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"Yesterday\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"Yesterday\\\
-\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"YuleDissimilarity\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"YuleDissimilarity\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"YuleDissimilarity\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"ZIPCodeData\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"ZIPCodeData\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \\\"ZIPCodeData\
-\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"ZTest\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"ZTest\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \\\"ZTest\\\"]\"",
-             "\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"ZTransform\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"ZTransform\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"ZTransform\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"ZernikeR\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"ZernikeR\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"ZernikeR\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"ZeroSymmetric\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"ZeroSymmetric\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"ZeroSymmetric\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"ZeroTest\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"ZeroTest\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"ZeroTest\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"Zeta\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"Zeta\""}], "]"}],
-             "\"Entity[\\\"WolframLanguageSymbol\\\", \\\"Zeta\\\"]\"",
-             "\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"ZetaZero\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"ZetaZero\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"ZetaZero\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"ZipfDistribution\"",RowBox[{"Entity", "[", 
-               
-               RowBox[{
-                "\"WolframLanguageSymbol\"", ",", "\"ZipfDistribution\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"ZipfDistribution\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"ZoomCenter\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"ZoomCenter\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"ZoomCenter\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"], ",", 
-           TemplateBox[{"\"ZoomFactor\"",RowBox[{"Entity", "[", 
-               RowBox[{"\"WolframLanguageSymbol\"", ",", "\"ZoomFactor\""}], 
-               "]"}],"\"Entity[\\\"WolframLanguageSymbol\\\", \
-\\\"ZoomFactor\\\"]\"","\"Wolfram Language symbol\""},
-            "Entity"]}], "}"}],
-         Short[#, 5]& ],
-        BaseStyle->{Deployed -> False},
-        StripOnInput->False]},
-      {GridBox[{
-         {
-          PaneBox[
-           TagBox[
-            TooltipBox[
-             StyleBox[
-              StyleBox[
-               DynamicBox[ToBoxes[
-                 FEPrivate`FrontEndResource[
-                 "FEStrings", "sizeBriefExplanation"], StandardForm],
-                ImageSizeCache->{58., {2., 8.}}],
-               StripOnInput->False,
-               DynamicUpdating->True,
-               LineSpacing->{1, 2},
-               LineIndent->0,
-               LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLText",
-              StripOnInput->False],
-             StyleBox[
-              DynamicBox[
-               ToBoxes[
-                FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
-                StandardForm]], DynamicUpdating -> True, LineIndent -> 0, 
-              LinebreakAdjustments -> {1., 100, 0, 0, 0}, 
-              LineSpacing -> {1, 2}, StripOnInput -> False]],
-            Annotation[#, 
-             Style[
-              Dynamic[
-               FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"]], 
-              DynamicUpdating -> True, LineIndent -> 0, 
-              LinebreakAdjustments -> {1., 100, 0, 0, 0}, 
-              LineSpacing -> {1, 2}], "Tooltip"]& ],
-           Alignment->Center,
-           BaselinePosition->Baseline,
-           ImageSize->{Automatic, {25, Full}}], 
-          ButtonBox[
-           PaneSelectorBox[{False->
-            StyleBox[
-             StyleBox[
-              DynamicBox[ToBoxes[
-                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
-                StandardForm],
-               ImageSizeCache->{50., {0., 8.}}],
-              StripOnInput->False,
-              DynamicUpdating->True,
-              LineSpacing->{1, 2},
-              LineIndent->0,
-              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControl",
-             StripOnInput->False], True->
-            StyleBox[
-             StyleBox[
-              DynamicBox[ToBoxes[
-                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
-                StandardForm],
-               ImageSizeCache->{50., {0., 8.}}],
-              StripOnInput->False,
-              DynamicUpdating->True,
-              LineSpacing->{1, 2},
-              LineIndent->0,
-              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControlActive",
-             StripOnInput->False]}, Dynamic[
-             CurrentValue["MouseOver"]],
-            Alignment->Center,
-            FrameMargins->0,
-            ImageSize->{Automatic, {25, Full}}],
-           Appearance->None,
-           BaselinePosition->Baseline,
-           
-           ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            OutputSizeLimit`Defer, 25, 20113121408822073586, 5/2],
-           Enabled->True,
-           Evaluator->Automatic,
-           Method->"Queued"], 
-          ButtonBox[
-           PaneSelectorBox[{False->
-            StyleBox[
-             StyleBox[
-              DynamicBox[ToBoxes[
-                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
-                StandardForm],
-               ImageSizeCache->{56., {0., 8.}}],
-              StripOnInput->False,
-              DynamicUpdating->True,
-              LineSpacing->{1, 2},
-              LineIndent->0,
-              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControl",
-             StripOnInput->False], True->
-            StyleBox[
-             StyleBox[
-              DynamicBox[ToBoxes[
-                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
-                StandardForm]],
-              StripOnInput->False,
-              DynamicUpdating->True,
-              LineSpacing->{1, 2},
-              LineIndent->0,
-              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControlActive",
-             StripOnInput->False]}, Dynamic[
-             CurrentValue["MouseOver"]],
-            Alignment->Center,
-            FrameMargins->0,
-            ImageSize->{Automatic, {25, Full}}],
-           Appearance->None,
-           BaselinePosition->Baseline,
-           
-           ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            OutputSizeLimit`Defer, 25, 20113121408822073586, 5 2],
-           Enabled->True,
-           Evaluator->Automatic,
-           Method->"Queued"], 
-          ButtonBox[
-           PaneSelectorBox[{False->
-            StyleBox[
-             StyleBox[
-              DynamicBox[ToBoxes[
-                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
-                StandardForm],
-               ImageSizeCache->{42., {0., 8.}}],
-              StripOnInput->False,
-              DynamicUpdating->True,
-              LineSpacing->{1, 2},
-              LineIndent->0,
-              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControl",
-             StripOnInput->False], True->
-            StyleBox[
-             StyleBox[
-              DynamicBox[ToBoxes[
-                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
-                StandardForm],
-               ImageSizeCache->{42., {0., 8.}}],
-              StripOnInput->False,
-              DynamicUpdating->True,
-              LineSpacing->{1, 2},
-              LineIndent->0,
-              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControlActive",
-             StripOnInput->False]}, Dynamic[
-             CurrentValue["MouseOver"]],
-            Alignment->Center,
-            FrameMargins->0,
-            ImageSize->{Automatic, {25, Full}}],
-           Appearance->None,
-           BaselinePosition->Baseline,
-           
-           ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            OutputSizeLimit`Defer, 25, 20113121408822073586, Infinity],
-           Enabled->True,
-           Evaluator->Automatic,
-           Method->"Queued"], 
-          ButtonBox[
-           PaneSelectorBox[{False->
-            StyleBox[
-             StyleBox[
-              DynamicBox[ToBoxes[
-                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
-                StandardForm],
-               ImageSizeCache->{74., {0., 8.}}],
-              StripOnInput->False,
-              DynamicUpdating->True,
-              LineSpacing->{1, 2},
-              LineIndent->0,
-              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControl",
-             StripOnInput->False], True->
-            StyleBox[
-             StyleBox[
-              DynamicBox[ToBoxes[
-                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
-                StandardForm]],
-              StripOnInput->False,
-              DynamicUpdating->True,
-              LineSpacing->{1, 2},
-              LineIndent->0,
-              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControlActive",
-             StripOnInput->False]}, Dynamic[
-             CurrentValue["MouseOver"]],
-            Alignment->Center,
-            FrameMargins->0,
-            ImageSize->{Automatic, {25, Full}}],
-           Appearance->None,
-           BaselinePosition->Baseline,
-           ButtonFunction:>FrontEndExecute[{
-              FrontEnd`SetOptions[
-              FrontEnd`$FrontEnd, 
-               FrontEnd`PreferencesSettings -> {"Page" -> "Advanced"}], 
-              FrontEnd`FrontEndToken["PreferencesDialog"]}],
-           Evaluator->None,
-           Method->"Preemptive"]}
-        },
-        AutoDelete->False,
-        FrameStyle->GrayLevel[0.85],
-        GridBoxDividers->{"Columns" -> {False, {True}}},
-        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
-        GridBoxSpacings->{"Columns" -> {{2}}}]}
-     },
-     DefaultBaseStyle->"Column",
-     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
-     GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
-     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{1.}}},
-     GridBoxSpacings->{"Columns" -> {
-         Offset[0.27999999999999997`], {
-          Offset[0.5599999999999999]}, 
-         Offset[0.27999999999999997`]}, "Rows" -> {
-         Offset[0.2], 
-         Offset[1.2], {
-          Offset[0.4]}, 
-         Offset[0.2]}}],
-    BaseStyle->"OutputSizeLimit",
-    FrameMargins->{{12, 12}, {0, 15}},
-    FrameStyle->GrayLevel[0.85],
-    RoundingRadius->5,
-    StripOnInput->False],
-   Deploy,
-   DefaultBaseStyle->"Deploy"],
-  If[20113121408822073586 === $SessionID, 
-   Out[25], Message[
-     MessageName[Syntax, "noinfoker"]]; Missing["NotAvailable"]; 
-   Null]]], "Output",
- CellChangeTimes->{3.770582161214179*^9},
- CellLabel->"Out[25]=",ExpressionUUID->"a98cbaa4-ac13-48ca-9afa-ea584694a7c6"]
-}, Open  ]],
+ RowBox[{
+  RowBox[{"WolframLanguageData", "[", "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.770582155019126*^9, 3.770582157436327*^9}, 
+   3.770715146961671*^9},
+ CellLabel->"In[1]:=",ExpressionUUID->"844a4c8c-d393-42c5-bc96-c2aa0af65358"],
 
 Cell[CellGroupData[{
 
@@ -2754,146 +515,6 @@ channel.\"\>"], "Output",
  CellLabel->"Out[30]=",ExpressionUUID->"1e52d129-1864-40a8-9706-607c831b57a9"]
 }, Open  ]],
 
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"Plot", "[", 
-  RowBox[{
-   RowBox[{"5", 
-    SuperscriptBox["x", "2"]}], ",", 
-   RowBox[{"{", 
-    RowBox[{"x", ",", "0", ",", "2"}], "}"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.770582689503558*^9, 3.7705827483933697`*^9}, {
-  3.7705827806951303`*^9, 3.770582786091427*^9}},
- CellLabel->"In[42]:=",ExpressionUUID->"baee4d88-1c46-4fae-87ea-9c0edb14b5dc"],
-
-Cell[BoxData[
- GraphicsBox[{{{}, {}, 
-    TagBox[
-     {RGBColor[0.368417, 0.506779, 0.709798], AbsoluteThickness[1.6], Opacity[
-      1.], LineBox[CompressedData["
-1:eJwV1Pc/1nsDx3GjcUUZJeKQ6DKy64ucivenFIWG0dCQUioqSnVIlA4VmSdd
-FMqsEFfi4ljHulBWklHEVSgjM5kH3/vcP7wez//gpXDSxeq0AB8fX8x//V+z
-073vi/tOG318MFPYXCJguMBYxpUnvR0/LI8GiIQVGVFPI6MzpW0wMVvf7RvK
-M+qWZfr8oWwHoZ/1ozolo0bmtS2vY6RPwa/dczkJpY2YgXJJtPw5fLz1ePfz
-FwzMmjlEnFC+iDgpWlGqRBz9vo3cE6xL4PfS9TistgoHT00W/iV9BcGuF5Ll
-QuXBNZbJKYu+BuZ0o63O9FrorDV89UveA5L849VhL1QRLWCfrJTgCdl6SXWq
-WROMztvxB5S9IUfFbBYqWY+8Lw21ZTa3wPmq/VGmWReu+06ZHWX5oNXN2Nlc
-zQDt2neNg6R9wd02eGVpKBD+dFWx0hE/VBSVXK2r3woz0ZQt/0TfwdDe3S+V
-p42RPVSjNyzvj+ByJeG7L3bivJ3d67snArAg9TIVom0OxbphrTUJ97FNgO+g
-SvNuBKctV7VUDsYiwaFKwRJL7JBLTOw7E4I9tg8bnhtbw7visViJTSg8ej+3
-rmi2ga6+RpAtKwxXMiy6jdUOIXbl3jsB0uEQHkpvFQw9Ds/aCO6BvHBkLdTo
-c3tjjwN+XwTWHnmID6/qu97Wn8DS8Us386NZcDwa0KQw7QD3xnD3AflHaGcU
-pfi8OAvrwPbsv4sfQdJTImZF7zlobVce9z3xGMVLNgX7azujOzPnklxCFM7e
-GD+v0HwBlg9anfYoP8GdNslgvpJL0DBfmyxT+QTnFt2+bXvrMhiC53u+n3kK
-X+y/lmjshuO58xlFNrE49Zk6KtZ8BSvXhWodYsWhqvj9GqLmDh9Gpoq/dCIM
-dEOD6JCbUDMNu/faNRHHljpLLLa6hQY/l762ykRohoj1He+4BaagRqrWtST8
-aeKgsmjeBxVziVqNDc8w6qkyxbT1xdIxlp58YDJG+NX7U739wVl/lbWzKxmb
-5yaeV2sGwM7VevLSphRI+pcPbOEFgD0omsvtTYGXlZOwxK5AWPXe2+K04yVW
-vmyIDjcIQWT7dWPOfDp0DEXvuZT9ha2ytokd+9k4UrTk6X3NB+g/vHEhI42N
-On8/j/rIB1g94OGQpvkKgZN8Ho2Xw+FyTl+J7/MrOOkvji/XZWH5KfaLJIPX
-yNlqGW0x8giHbOPYI6NZMKkcjJxQjMNwm41QvAwH0zzp4NrTcbhjxzhtbcxB
-uOGBr0rJcch0cJHJDufAu5KOO7w+HiIXDf08N2ZDU1IysNE0AeW3Px1e5JWD
-sSd7BYWCkrDhpfgiWUYepO0mvDzdU/BWq9y+VicPBSvU9byrU2Cf4Z7vbZuH
-HSKuZgLyqQjK5rl+TcnDsga1kODKVPQWp7U9250Pj3AHn5zVaXjStCtj/YMC
-cBZ0Msy/sSFM+xw1XV0Ex11LrAr6XiPy3EE7DZMi5Bhn99jKZILZqGEvfrEI
-ki5KyXrmmTBKbnFoKyyCgK0Z+3laJnKTWZwcrWIEe6S/uXo1C4PWAwXmdcVw
-G+Rp54llY/+LiGq3ZaVwje1513U1F9HHbls4KpQitqC13SQ9F53LL9Qe0itF
-+5JQqd7vuXDx2vbO8Fgp/DZuFfl2KA/+VoMNi9NKcZdXyHiLfBTObmuNsijD
-4ZNrNvwuXQgly6HesvtcPJLeoX7MqxgyN003nYnjwp5fuk8tthhiabH3hXK4
-iE8Y2yRXVowZhrWWZScXLKnCxy5LSlBfnOPWYVAO08JYs+qIElzX8Zmf+laO
-XDrF2S6/FHWiEhJapBJD9tWvx+TK8Ufd74j89RZR4Zv3t+6rgogW59tbRhWm
-ePTqdo8qJAbpBP4rW4WfgmlcOr4K7y1UPtntqEJtU0lC4ngV1Ksl3JRYVRCK
-a3p1ProavMrhZ683ViO2KWnRxHANTEuSRGqv12B7Tm/sYPo7SGWJd/Dzv4Oe
-1qypQUUDsjuNa95tacAN28qD62Y/odQp5jfbgUbsM91l+l76K8aVDUXTLrSg
-ODi5pdf1GwSmU8V+U2rF6jX6peGZ/dCn7bOt0z9jW9i87JzYCGp8desq1HiQ
-/PT1+sjUT8iH/phOHvqChvmoGSHHCfyY5HU06XSiaLyhcUXrNBL786tEgrsg
-qKhwu5s3BxG558Pd3d1gG5+wSFzGTwLPcRxjmd8hk/FQSlVFkEyQ1O6zN3tQ
-s39PhFPYQnJlAzdLsqwXBrxBk0djiwkvnXv/vUI/nMVb9nW8FCL/OjVGrbv+
-A6vHAnMnvJYR9a2L5x3zB3CAM/PgmbwYMY1XOJMhNYStJYltdWxx8ofcccWv
-R4fBfhYqq6C/gmgM7Bdu2T0CBn/W9GWuBFkhOsLgzowgP5LdJnNHkiwoimKv
-jR6Fe1KGq/amVcRZN//TEvOf6IxriipjypDUXSdj/5n4CXtF+5jAVbJk/IeM
-2HfW2H83FBsZnJEjHGtTwfDtvxCb8GamQ3gNubnT72nW91+wFa61fiSmQBTa
-zT4m+I1D9Yuj24yUItm00TdcesMEPvzcKehttJYcXf1umv/DBFxXDj29Zssk
-41VBna4+k+BVZ9ooPVQikQvsrlgxp/CQqbB2D1eZrOjgxAtwp5BZ4Zp7YlyF
-LPTysfn90jRyrVILV+1aR/iS7didy2dwbV3zSadgNXL5MTtoeekMfMOWjf6a
-VCeF6vcY4hf/xYcuZ9WFpzSJuNlljdsisygI0JnhFmmRz5r1HzwKZhEo4SHa
-tkaHvHoCZrfdHPb8U7hH65MOOcbWF5ebn0OJ4aRCVdh6cssvzudzyjwOvfkR
-ccVuA0nrlYsSsaCh36WfGqBAkXsxfvYde2hEF+pVzDApcspqUCndkkbY31t1
-nFUpIltQ8Gr3QRrqYj6jFtoUCQg5UhF4ksYqkxhVCUOKnNV/NCrkQeNrjfm5
-jEMUUfSV2Ln4GQ0lEx9dlVCKzBvcWNbygob3Bub6uAcU+TTY1fAslYYjGm/8
-FkGR0IOZx0wyaHzPO8Iv/oQitJqVm18BjTgDRhGdSpHP70OeCH6gsWBvy9KB
-Sor8fWfS4UMTjYPbLWacqikSvvn4uoSPNDYdrtPvr6OIeZJW1rYOGmk909F9
-TRTJc69969NHY6//kNxAF0VYmnohlgM05P+s+fNCD0UudUbbKAzT8IrJMRju
-p4iqxXle8S8afRQnZGyUIgv4GxNDJ2lMsSvXXxunyBfOZif7GRosix7F6SmK
-FDglaOvM0ShbIuFwY5YiEfLC4zRN42bP7p80TZH/AYQJu6Q=
-       "]]},
-     Annotation[#, "Charting`Private`Tag$214378#1"]& ]}, {}},
-  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
-  Axes->{True, True},
-  AxesLabel->{None, None},
-  AxesOrigin->{0, 0},
-  DisplayFunction->Identity,
-  Frame->{{False, False}, {False, False}},
-  FrameLabel->{{None, None}, {None, None}},
-  FrameTicks->{{Automatic, 
-     Charting`ScaledFrameTicks[{Identity, Identity}]}, {Automatic, 
-     Charting`ScaledFrameTicks[{Identity, Identity}]}},
-  GridLines->{None, None},
-  GridLinesStyle->Directive[
-    GrayLevel[0.5, 0.4]],
-  ImagePadding->All,
-  ImageSize->{356., Automatic},
-  Method->{
-   "DefaultBoundaryStyle" -> Automatic, 
-    "DefaultGraphicsInteraction" -> {
-     "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-      "Effects" -> {
-       "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
-        "Droplines" -> {
-         "freeformCursorMode" -> True, 
-          "placement" -> {"x" -> "All", "y" -> "None"}}}}, "DefaultMeshStyle" -> 
-    AbsolutePointSize[6], "ScalingFunctions" -> None, 
-    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
-        (Identity[#]& )[
-         Part[#, 1]], 
-        (Identity[#]& )[
-         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-        (Identity[#]& )[
-         Part[#, 1]], 
-        (Identity[#]& )[
-         Part[#, 2]]}& )}},
-  PlotRange->{{0, 2}, {0., 19.999999183673477`}},
-  PlotRangeClipping->True,
-  PlotRangePadding->{{
-     Scaled[0.02], 
-     Scaled[0.02]}, {
-     Scaled[0.05], 
-     Scaled[0.05]}},
-  Ticks->{Automatic, Automatic}]], "Output",
- CellChangeTimes->{3.770582786627081*^9},
- CellLabel->"Out[42]=",ExpressionUUID->"73801f06-eea0-4c23-8682-daaf0c28da62"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"f", "[", 
-  RowBox[{"y", ",", "x", ",", 
-   RowBox[{"g", "[", 
-    RowBox[{"q", ",", "w", ",", "e"}], "]"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.770582792789365*^9, 3.7705828087927523`*^9}},
- CellLabel->"In[43]:=",ExpressionUUID->"aa230ab1-4345-4468-ad66-495b21136013"],
-
-Cell[BoxData[
- RowBox[{"f", "[", 
-  RowBox[{"y", ",", "x", ",", 
-   RowBox[{"g", "[", 
-    RowBox[{"q", ",", "w", ",", "e"}], "]"}]}], "]"}]], "Output",
- CellChangeTimes->{3.77058280972715*^9},
- CellLabel->"Out[43]=",ExpressionUUID->"88b1faf1-720f-4ce2-b060-48b3f441f40b"]
-}, Open  ]],
-
 Cell[BoxData[
  RowBox[{"(*", " ", 
   RowBox[{"For", " ", "which", " ", "errors", " ", 
@@ -3302,7 +923,7 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"SyntaxInformation", "[", "GaussianFilter", "]"}]], "Input",
  CellChangeTimes->{{3.7705834469007*^9, 3.770583457466185*^9}},
- CellLabel->"In[55]:=",ExpressionUUID->"59abf1f7-8446-4984-86ca-5376df698658"],
+ CellLabel->"In[2]:=",ExpressionUUID->"59abf1f7-8446-4984-86ca-5376df698658"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -3312,8 +933,8 @@ Cell[BoxData[
      RowBox[{"Optional", "[", 
       RowBox[{"{", "__", "}"}], "]"}], ",", 
      RowBox[{"OptionsPattern", "[", "]"}]}], "}"}]}], "}"}]], "Output",
- CellChangeTimes->{3.770583458007111*^9},
- CellLabel->"Out[55]=",ExpressionUUID->"30487844-d43a-48bb-9701-a9654a5b07c4"]
+ CellChangeTimes->{3.770583458007111*^9, 3.770715237914658*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"1199b622-ff07-4b50-92df-7adcf75c974f"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -3323,7 +944,1211 @@ Cell[BoxData[
 
  CellChangeTimes->{{3.7705835786089897`*^9, 
   3.770583593127945*^9}},ExpressionUUID->"c804ff78-d71c-422b-b05d-\
-73c55ca294d3"]
+73c55ca294d3"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TreeForm", "[", "%2", "]"}]], "Input",
+ CellChangeTimes->{{3.7707152393103237`*^9, 3.770715284759635*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"27555c37-6467-4cd4-b5b8-1476ace73ccd"],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[GraphicsComplexBox[{{0.7878385971583354, 3.939192985791677}, {
+    0.7878385971583354, 3.1513543886333415`}, {0.3939192985791677, 
+    2.363515791475006}, {1.181757895737503, 2.363515791475006}, {0., 
+    1.575677194316671}, {0.7878385971583354, 1.575677194316671}, {
+    1.5756771943166707`, 1.575677194316671}, {1.5756771943166707`, 
+    0.7878385971583355}, {1.5756771943166707`, 0.}, {2.363515791475006, 
+    1.575677194316671}}, {
+     {RGBColor[0.55, 0.45, 0.45], 
+      LineBox[{{1, 2}, {2, 3}, {2, 4}, {4, 5}, {4, 6}, {4, 7}, {4, 10}, {7, 
+       8}, {8, 9}}]}, {
+      TagBox[
+       TooltipBox[InsetBox[
+         FrameBox[
+          StyleBox["List", "StandardForm", "Output",
+           StripOnInput->False,
+           LineColor->GrayLevel[0],
+           FrontFaceColor->GrayLevel[0],
+           BackFaceColor->GrayLevel[0],
+           GraphicsColor->GrayLevel[0],
+           FontSize->Scaled[0.03076923076923077],
+           FontColor->GrayLevel[0]],
+          Background->RGBColor[1., 1., 0.871],
+          FrameStyle->GrayLevel[0.5],
+          StripOnInput->False], 1],
+        TagBox[
+         RowBox[{"{", 
+           RowBox[{"\"ArgumentsPattern\"", "\[Rule]", 
+             RowBox[{"{", 
+               RowBox[{"_", ",", "_", ",", 
+                 RowBox[{"Optional", "[", 
+                   RowBox[{"{", "__", "}"}], "]"}], ",", 
+                 RowBox[{"OptionsPattern", "[", "]"}]}], "}"}]}], "}"}], 
+         HoldForm]],
+       Annotation[#, 
+        HoldForm[{"ArgumentsPattern" -> {
+            Blank[], 
+            Blank[], 
+            Optional[{
+              BlankSequence[]}], 
+            OptionsPattern[]}}], "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[InsetBox[
+         FrameBox[
+          StyleBox["Rule", "StandardForm", "Output",
+           StripOnInput->False,
+           LineColor->GrayLevel[0],
+           FrontFaceColor->GrayLevel[0],
+           BackFaceColor->GrayLevel[0],
+           GraphicsColor->GrayLevel[0],
+           FontSize->Scaled[0.03076923076923077],
+           FontColor->GrayLevel[0]],
+          Background->RGBColor[1., 1., 0.871],
+          FrameStyle->GrayLevel[0.5],
+          StripOnInput->False], 2],
+        TagBox[
+         RowBox[{"\"ArgumentsPattern\"", "\[Rule]", 
+           RowBox[{"{", 
+             RowBox[{"_", ",", "_", ",", 
+               RowBox[{"Optional", "[", 
+                 RowBox[{"{", "__", "}"}], "]"}], ",", 
+               RowBox[{"OptionsPattern", "[", "]"}]}], "}"}]}], HoldForm]],
+       Annotation[#, 
+        HoldForm["ArgumentsPattern" -> {
+           Blank[], 
+           Blank[], 
+           Optional[{
+             BlankSequence[]}], 
+           OptionsPattern[]}], "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[InsetBox[
+         FrameBox[
+          StyleBox[
+           TagBox["\<\"ArgumentsPattern\"\>",
+            HoldForm], "StandardForm", "Output",
+           StripOnInput->False,
+           LineColor->GrayLevel[0],
+           FrontFaceColor->GrayLevel[0],
+           BackFaceColor->GrayLevel[0],
+           GraphicsColor->GrayLevel[0],
+           FontSize->Scaled[0.03076923076923077],
+           FontColor->GrayLevel[0]],
+          Background->RGBColor[1., 1., 0.871],
+          FrameStyle->GrayLevel[0.5],
+          StripOnInput->False], 3],
+        TagBox["\"ArgumentsPattern\"", HoldForm]],
+       Annotation[#, 
+        HoldForm["ArgumentsPattern"], "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[InsetBox[
+         FrameBox[
+          StyleBox["List", "StandardForm", "Output",
+           StripOnInput->False,
+           LineColor->GrayLevel[0],
+           FrontFaceColor->GrayLevel[0],
+           BackFaceColor->GrayLevel[0],
+           GraphicsColor->GrayLevel[0],
+           FontSize->Scaled[0.03076923076923077],
+           FontColor->GrayLevel[0]],
+          Background->RGBColor[1., 1., 0.871],
+          FrameStyle->GrayLevel[0.5],
+          StripOnInput->False], 4],
+        TagBox[
+         RowBox[{"{", 
+           RowBox[{"_", ",", "_", ",", 
+             RowBox[{"Optional", "[", 
+               RowBox[{"{", "__", "}"}], "]"}], ",", 
+             RowBox[{"OptionsPattern", "[", "]"}]}], "}"}], HoldForm]],
+       Annotation[#, 
+        HoldForm[{
+          Blank[], 
+          Blank[], 
+          Optional[{
+            BlankSequence[]}], 
+          OptionsPattern[]}], "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[InsetBox[
+         FrameBox[
+          StyleBox[
+           TagBox["_",
+            HoldForm], "StandardForm", "Output",
+           StripOnInput->False,
+           LineColor->GrayLevel[0],
+           FrontFaceColor->GrayLevel[0],
+           BackFaceColor->GrayLevel[0],
+           GraphicsColor->GrayLevel[0],
+           FontSize->Scaled[0.03076923076923077],
+           FontColor->GrayLevel[0]],
+          Background->RGBColor[1., 1., 0.871],
+          FrameStyle->GrayLevel[0.5],
+          StripOnInput->False], 5],
+        TagBox["_", HoldForm]],
+       Annotation[#, 
+        HoldForm[
+         Blank[]], "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[InsetBox[
+         FrameBox[
+          StyleBox[
+           TagBox["_",
+            HoldForm], "StandardForm", "Output",
+           StripOnInput->False,
+           LineColor->GrayLevel[0],
+           FrontFaceColor->GrayLevel[0],
+           BackFaceColor->GrayLevel[0],
+           GraphicsColor->GrayLevel[0],
+           FontSize->Scaled[0.03076923076923077],
+           FontColor->GrayLevel[0]],
+          Background->RGBColor[1., 1., 0.871],
+          FrameStyle->GrayLevel[0.5],
+          StripOnInput->False], 6],
+        TagBox["_", HoldForm]],
+       Annotation[#, 
+        HoldForm[
+         Blank[]], "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[InsetBox[
+         FrameBox[
+          StyleBox["Optional", "StandardForm", "Output",
+           StripOnInput->False,
+           LineColor->GrayLevel[0],
+           FrontFaceColor->GrayLevel[0],
+           BackFaceColor->GrayLevel[0],
+           GraphicsColor->GrayLevel[0],
+           FontSize->Scaled[0.03076923076923077],
+           FontColor->GrayLevel[0]],
+          Background->RGBColor[1., 1., 0.871],
+          FrameStyle->GrayLevel[0.5],
+          StripOnInput->False], 7],
+        TagBox[
+         RowBox[{"Optional", "[", 
+           RowBox[{"{", "__", "}"}], "]"}], HoldForm]],
+       Annotation[#, 
+        HoldForm[
+         Optional[{
+           BlankSequence[]}]], "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[InsetBox[
+         FrameBox[
+          StyleBox["List", "StandardForm", "Output",
+           StripOnInput->False,
+           LineColor->GrayLevel[0],
+           FrontFaceColor->GrayLevel[0],
+           BackFaceColor->GrayLevel[0],
+           GraphicsColor->GrayLevel[0],
+           FontSize->Scaled[0.03076923076923077],
+           FontColor->GrayLevel[0]],
+          Background->RGBColor[1., 1., 0.871],
+          FrameStyle->GrayLevel[0.5],
+          StripOnInput->False], 8],
+        TagBox[
+         RowBox[{"{", "__", "}"}], HoldForm]],
+       Annotation[#, 
+        HoldForm[{
+          BlankSequence[]}], "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[InsetBox[
+         FrameBox[
+          StyleBox[
+           TagBox["__",
+            HoldForm], "StandardForm", "Output",
+           StripOnInput->False,
+           LineColor->GrayLevel[0],
+           FrontFaceColor->GrayLevel[0],
+           BackFaceColor->GrayLevel[0],
+           GraphicsColor->GrayLevel[0],
+           FontSize->Scaled[0.03076923076923077],
+           FontColor->GrayLevel[0]],
+          Background->RGBColor[1., 1., 0.871],
+          FrameStyle->GrayLevel[0.5],
+          StripOnInput->False], 9],
+        TagBox["__", HoldForm]],
+       Annotation[#, 
+        HoldForm[
+         BlankSequence[]], "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[InsetBox[
+         FrameBox[
+          StyleBox[
+           TagBox[
+            RowBox[{"OptionsPattern", "[", "]"}],
+            HoldForm], "StandardForm", "Output",
+           StripOnInput->False,
+           LineColor->GrayLevel[0],
+           FrontFaceColor->GrayLevel[0],
+           BackFaceColor->GrayLevel[0],
+           GraphicsColor->GrayLevel[0],
+           FontSize->Scaled[0.03076923076923077],
+           FontColor->GrayLevel[0]],
+          Background->RGBColor[1., 1., 0.871],
+          FrameStyle->GrayLevel[0.5],
+          StripOnInput->False], 10],
+        TagBox[
+         RowBox[{"OptionsPattern", "[", "]"}], HoldForm]],
+       Annotation[#, 
+        HoldForm[
+         OptionsPattern[]], "Tooltip"]& ]}}],
+   Annotation[#, 
+    VertexCoordinateRules -> {{0.7878385971583354, 3.939192985791677}, {
+     0.7878385971583354, 3.1513543886333415`}, {0.3939192985791677, 
+     2.363515791475006}, {1.181757895737503, 2.363515791475006}, {0., 
+     1.575677194316671}, {0.7878385971583354, 1.575677194316671}, {
+     1.5756771943166707`, 1.575677194316671}, {1.5756771943166707`, 
+     0.7878385971583355}, {1.5756771943166707`, 0.}, {2.363515791475006, 
+     1.575677194316671}}]& ],
+  AspectRatio->NCache[Rational[6, 13]^Rational[1, 2], 0.6793662204867574],
+  FormatType:>StandardForm,
+  FrameTicks->Automatic,
+  PlotRange->All,
+  PlotRangePadding->Scaled[0.1]]], "Output",
+ CellChangeTimes->{
+  3.770715244414555*^9, {3.770715274964141*^9, 3.7707152854719973`*^9}},
+ CellLabel->
+  "Out[6]//TreeForm=",ExpressionUUID->"5a04a0e7-7b17-43eb-8f29-cbf477df7bdc"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"%2", "[", 
+  RowBox[{"[", 
+   RowBox[{"1", ",", "2"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.770715287643032*^9, 3.7707152985075817`*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"bd9ad2fd-9213-4a21-82b7-94e107de14a3"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"thislist", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+    "1", ",", "1", ",", "2", ",", "1", ",", "4", ",", "3", ",", "4", ",", "3",
+      ",", "2", ",", "4", ",", "2"}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.77071570929453*^9, 3.770715710024822*^9}},
+ CellLabel->
+  "In[106]:=",ExpressionUUID->"5a33b1f5-9caa-4041-b953-0a14f7ad65fb"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"GaussianFilter", "[", 
+  RowBox[{"thislist", ",", "2"}], "]"}]], "Input",
+ CellChangeTimes->{{3.770715713060555*^9, 3.770715713447433*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"8e2e3421-ccd8-4aea-85e2-8fd0b2e226a6"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1.050882235711701`", ",", "1.2118383232162249`", ",", 
+   "1.6272055892792516`", ",", "1.9491177642882995`", ",", 
+   "3.050882235711701`", ",", "3.321912175009048`", ",", "3.47455888214415`", 
+   ",", "3.050882235711701`", ",", "2.7372794410720753`", ",", "3.`", ",", 
+   "2.4236766464324497`"}], "}"}]], "Output",
+ CellChangeTimes->{3.770715473841137*^9, 3.770715714260764*^9, 
+  3.77071576112344*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"47efaee6-bf48-4754-a72a-dedb4209eeb0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SyntaxInformation", "[", "GaussianFilter", "]"}], "[", 
+  RowBox[{"[", 
+   RowBox[{"1", ",", "2"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.770715523116428*^9, 3.7707155587512293`*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"6614f3e0-4e21-4eaf-be4f-a36d19bfa4af"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"_", ",", "_", ",", 
+   RowBox[{"Optional", "[", 
+    RowBox[{"{", "__", "}"}], "]"}], ",", 
+   RowBox[{"OptionsPattern", "[", "]"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.770715521171967*^9, 3.7707155594519777`*^9}, 
+   3.770715716159686*^9, 3.7707157634432993`*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"bd821f81-aba4-4b00-9d38-9e9c58c281bf"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Hold", "[", 
+  RowBox[{"GaussianFilter", "[", 
+   RowBox[{"thislist", ",", "2"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.770715581814392*^9, 3.77071563623678*^9}, {
+  3.770715687789989*^9, 3.770715700738596*^9}, {3.77071573525072*^9, 
+  3.7707157362709703`*^9}, {3.770715768443016*^9, 3.770715843542252*^9}, {
+  3.770715951650943*^9, 3.770715952369533*^9}},
+ CellLabel->
+  "In[107]:=",ExpressionUUID->"da8760e7-0730-46d2-96fd-23dacba3c5a7"],
+
+Cell[BoxData[
+ RowBox[{"Hold", "[", 
+  RowBox[{"GaussianFilter", "[", 
+   RowBox[{"thislist", ",", "2"}], "]"}], "]"}]], "Output",
+ CellChangeTimes->{{3.770715586060898*^9, 3.77071563704007*^9}, {
+   3.7707156901122*^9, 3.7707157372926903`*^9}, {3.770715770321994*^9, 
+   3.770715822117648*^9}, 3.7707159529210367`*^9, {3.770721004755704*^9, 
+   3.770721007928606*^9}, 3.77072155068045*^9},
+ CellLabel->
+  "Out[107]=",ExpressionUUID->"99a40c67-d998-47c7-be21-6086f790b34e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["%11"], "Input",
+ CellChangeTimes->{{3.770720924827199*^9, 3.770720925355042*^9}},
+ CellLabel->"In[81]:=",ExpressionUUID->"93b4d5e5-cc66-4e75-88a7-613ee4cb32be"],
+
+Cell[BoxData[
+ RowBox[{"Hold", "[", 
+  RowBox[{"GaussianFilter", "[", 
+   RowBox[{"thislist", ",", "2"}], "]"}], "]"}]], "Output",
+ CellChangeTimes->{3.770720925636579*^9},
+ CellLabel->"Out[81]=",ExpressionUUID->"a0c60f41-546e-4f19-8e0e-2441226b9cce"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"thislist", "=."}]], "Input",
+ CellChangeTimes->{{3.770720988236891*^9, 3.770720996870555*^9}},
+ CellLabel->"In[89]:=",ExpressionUUID->"38e5305f-7a92-4ad7-8911-a644f71199bc"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"%11", "//", "TreeForm"}]], "Input",
+ CellChangeTimes->{{3.770720680463056*^9, 3.770720737448163*^9}},
+ CellLabel->"In[66]:=",ExpressionUUID->"99e67d35-36f1-474d-a24f-f3d430e0ee3e"],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[GraphicsComplexBox[{{0.4629100498862757, 1.8516401995451028`}, {
+    0.4629100498862757, 0.9258200997725514}, {0., 0.}, {0.9258200997725514, 
+    0.}}, {
+     {RGBColor[0.55, 0.45, 0.45], LineBox[{{1, 2}, {2, 3}, {2, 4}}]}, {
+      TagBox[
+       TooltipBox[InsetBox[
+         FrameBox[
+          StyleBox["Hold", "StandardForm", "Output",
+           StripOnInput->False,
+           LineColor->GrayLevel[0],
+           FrontFaceColor->GrayLevel[0],
+           BackFaceColor->GrayLevel[0],
+           GraphicsColor->GrayLevel[0],
+           FontSize->Scaled[0.05],
+           FontColor->GrayLevel[0]],
+          Background->RGBColor[1., 1., 0.871],
+          FrameStyle->GrayLevel[0.5],
+          StripOnInput->False], 1],
+        TagBox[
+         RowBox[{"Hold", "[", 
+           RowBox[{"GaussianFilter", "[", 
+             RowBox[{"thislist", ",", "2"}], "]"}], "]"}], HoldForm]],
+       Annotation[#, 
+        HoldForm[
+         Hold[
+          GaussianFilter[$CellContext`thislist, 2]]], "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[InsetBox[
+         FrameBox[
+          StyleBox["GaussianFilter", "StandardForm", "Output",
+           StripOnInput->False,
+           LineColor->GrayLevel[0],
+           FrontFaceColor->GrayLevel[0],
+           BackFaceColor->GrayLevel[0],
+           GraphicsColor->GrayLevel[0],
+           FontSize->Scaled[0.05],
+           FontColor->GrayLevel[0]],
+          Background->RGBColor[1., 1., 0.871],
+          FrameStyle->GrayLevel[0.5],
+          StripOnInput->False], 2],
+        TagBox[
+         RowBox[{"GaussianFilter", "[", 
+           RowBox[{"thislist", ",", "2"}], "]"}], HoldForm]],
+       Annotation[#, 
+        HoldForm[
+         GaussianFilter[$CellContext`thislist, 2]], "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[InsetBox[
+         FrameBox[
+          StyleBox[
+           TagBox["thislist",
+            HoldForm], "StandardForm", "Output",
+           StripOnInput->False,
+           LineColor->GrayLevel[0],
+           FrontFaceColor->GrayLevel[0],
+           BackFaceColor->GrayLevel[0],
+           GraphicsColor->GrayLevel[0],
+           FontSize->Scaled[0.05],
+           FontColor->GrayLevel[0]],
+          Background->RGBColor[1., 1., 0.871],
+          FrameStyle->GrayLevel[0.5],
+          StripOnInput->False], 3],
+        TagBox["thislist", HoldForm]],
+       Annotation[#, 
+        HoldForm[$CellContext`thislist], "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[InsetBox[
+         FrameBox[
+          StyleBox[
+           TagBox["2",
+            HoldForm], "StandardForm", "Output",
+           StripOnInput->False,
+           LineColor->GrayLevel[0],
+           FrontFaceColor->GrayLevel[0],
+           BackFaceColor->GrayLevel[0],
+           GraphicsColor->GrayLevel[0],
+           FontSize->Scaled[0.05],
+           FontColor->GrayLevel[0]],
+          Background->RGBColor[1., 1., 0.871],
+          FrameStyle->GrayLevel[0.5],
+          StripOnInput->False], 4],
+        TagBox["2", HoldForm]],
+       Annotation[#, 
+        HoldForm[2], "Tooltip"]& ]}}],
+   Annotation[#, 
+    VertexCoordinateRules -> {{0.4629100498862757, 1.8516401995451028`}, {
+     0.4629100498862757, 0.9258200997725514}, {0., 0.}, {0.9258200997725514, 
+     0.}}]& ],
+  AspectRatio->NCache[Rational[3, 7]^Rational[1, 2], 0.6546536707079771],
+  FormatType:>StandardForm,
+  FrameTicks->Automatic,
+  PlotRange->All,
+  PlotRangePadding->Scaled[0.1]]], "Output",
+ CellChangeTimes->{{3.7707206923049803`*^9, 3.770720737810474*^9}},
+ CellLabel->
+  "Out[66]//TreeForm=",ExpressionUUID->"0471e7a9-9a08-4001-b676-4ada1019f084"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Apply", "[", 
+   RowBox[{"Head", ",", "%91", ",", "1"}], "]"}], "//", " ", 
+  "ReleaseHold"}]], "Input",
+ CellChangeTimes->{{3.7707207485819483`*^9, 3.770720860447888*^9}, {
+  3.7707210112704897`*^9, 3.770721011412084*^9}},
+ CellLabel->"In[92]:=",ExpressionUUID->"b624bfc5-f3b8-4393-b46f-f931284547b8"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Head","argx",
+   "\"\\!\\(\\*RowBox[{\\\"Head\\\"}]\\) called with \\!\\(\\*RowBox[{\\\"2\\\
+\"}]\\) arguments; 1 argument is expected.\"",2,92,15,20114005947973569827,
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7707208618725567`*^9, 3.770721011803005*^9},
+ CellLabel->
+  "During evaluation of \
+In[92]:=",ExpressionUUID->"4fe5395d-ad95-42be-bb5f-1eb34ec8305e"],
+
+Cell[BoxData[
+ RowBox[{"Head", "[", 
+  RowBox[{"thislist", ",", "2"}], "]"}]], "Output",
+ CellChangeTimes->{{3.770720775260331*^9, 3.770720861881496*^9}, 
+   3.770721011816573*^9},
+ CellLabel->"Out[92]=",ExpressionUUID->"1038eebc-1b9e-4b69-9b01-563f674f0833"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Thread", "[", 
+  RowBox[{
+   RowBox[{"f", "[", "%91", "]"}], ",", "3"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7707208752319403`*^9, 3.770720889533333*^9}, {
+  3.7707210227436323`*^9, 3.7707210721881313`*^9}},
+ CellLabel->"In[98]:=",ExpressionUUID->"0da02a56-a04b-43b6-adde-1ceb73aebb2e"],
+
+Cell[BoxData[
+ RowBox[{"f", "[", 
+  RowBox[{"Hold", "[", 
+   RowBox[{"GaussianFilter", "[", 
+    RowBox[{"thislist", ",", "2"}], "]"}], "]"}], "]"}]], "Output",
+ CellChangeTimes->{{3.770721055403029*^9, 3.770721072408581*^9}},
+ CellLabel->"Out[98]=",ExpressionUUID->"5ee39c26-ce53-48b9-9b6e-64fe10912613"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"CMD", " ", "+", " ", "SHIFT", " ", "+", " ", "E"}]], "Input",
+ CellChangeTimes->{{3.770736803538566*^9, 
+  3.770736812142281*^9}},ExpressionUUID->"e2753345-1f65-4bb4-9244-\
+b1a88cbe1281"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Apply", "@", "%11"}]], "Input",
+ CellChangeTimes->{{3.770720950232004*^9, 3.770720979137711*^9}},
+ CellLabel->"In[88]:=",ExpressionUUID->"d3234552-af56-4f52-85a7-c04e8966b335"],
+
+Cell[RawData["\<\
+Cell[BoxData[
+ RowBox[{\"Apply\", \"[\", 
+  RowBox[{\"Hold\", \"[\", 
+   RowBox[{\"GaussianFilter\", \"[\", 
+    RowBox[{\"thislist\", \",\", \"2\"}], \"]\"}], \"]\"}]}]], \"Output\",
+ CellChangeTimes->{{3.770720966573884*^9, 3.770720979950595*^9}},
+ CellLabel->\"Out[88]=\"]\
+\>"], "Output",
+ CellChangeTimes->{{3.770720966573884*^9, 3.770720979950595*^9}},
+ CellLabel->"Out[88]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"%107", "//", "TreeForm"}]], "Input",
+ CellChangeTimes->{{3.770721480803179*^9, 3.77072160896796*^9}},
+ CellLabel->
+  "In[112]:=",ExpressionUUID->"37bdc476-2c3e-4116-b538-bf63c36150ad"],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[GraphicsComplexBox[{{0.4629100498862757, 1.8516401995451028`}, {
+    0.4629100498862757, 0.9258200997725514}, {0., 0.}, {0.9258200997725514, 
+    0.}}, {
+     {RGBColor[0.55, 0.45, 0.45], LineBox[{{1, 2}, {2, 3}, {2, 4}}]}, {
+      TagBox[
+       TooltipBox[InsetBox[
+         FrameBox[
+          StyleBox["Hold", "StandardForm", "Output",
+           StripOnInput->False,
+           LineColor->GrayLevel[0],
+           FrontFaceColor->GrayLevel[0],
+           BackFaceColor->GrayLevel[0],
+           GraphicsColor->GrayLevel[0],
+           FontSize->Scaled[0.05],
+           FontColor->GrayLevel[0]],
+          Background->RGBColor[1., 1., 0.871],
+          FrameStyle->GrayLevel[0.5],
+          StripOnInput->False], 1],
+        TagBox[
+         RowBox[{"Hold", "[", 
+           RowBox[{"GaussianFilter", "[", 
+             RowBox[{"thislist", ",", "2"}], "]"}], "]"}], HoldForm]],
+       Annotation[#, 
+        HoldForm[
+         Hold[
+          GaussianFilter[$CellContext`thislist, 2]]], "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[InsetBox[
+         FrameBox[
+          StyleBox["GaussianFilter", "StandardForm", "Output",
+           StripOnInput->False,
+           LineColor->GrayLevel[0],
+           FrontFaceColor->GrayLevel[0],
+           BackFaceColor->GrayLevel[0],
+           GraphicsColor->GrayLevel[0],
+           FontSize->Scaled[0.05],
+           FontColor->GrayLevel[0]],
+          Background->RGBColor[1., 1., 0.871],
+          FrameStyle->GrayLevel[0.5],
+          StripOnInput->False], 2],
+        TagBox[
+         RowBox[{"GaussianFilter", "[", 
+           RowBox[{"thislist", ",", "2"}], "]"}], HoldForm]],
+       Annotation[#, 
+        HoldForm[
+         GaussianFilter[$CellContext`thislist, 2]], "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[InsetBox[
+         FrameBox[
+          StyleBox[
+           TagBox["thislist",
+            HoldForm], "StandardForm", "Output",
+           StripOnInput->False,
+           LineColor->GrayLevel[0],
+           FrontFaceColor->GrayLevel[0],
+           BackFaceColor->GrayLevel[0],
+           GraphicsColor->GrayLevel[0],
+           FontSize->Scaled[0.05],
+           FontColor->GrayLevel[0]],
+          Background->RGBColor[1., 1., 0.871],
+          FrameStyle->GrayLevel[0.5],
+          StripOnInput->False], 3],
+        TagBox["thislist", HoldForm]],
+       Annotation[#, 
+        HoldForm[$CellContext`thislist], "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[InsetBox[
+         FrameBox[
+          StyleBox[
+           TagBox["2",
+            HoldForm], "StandardForm", "Output",
+           StripOnInput->False,
+           LineColor->GrayLevel[0],
+           FrontFaceColor->GrayLevel[0],
+           BackFaceColor->GrayLevel[0],
+           GraphicsColor->GrayLevel[0],
+           FontSize->Scaled[0.05],
+           FontColor->GrayLevel[0]],
+          Background->RGBColor[1., 1., 0.871],
+          FrameStyle->GrayLevel[0.5],
+          StripOnInput->False], 4],
+        TagBox["2", HoldForm]],
+       Annotation[#, 
+        HoldForm[2], "Tooltip"]& ]}}],
+   Annotation[#, 
+    VertexCoordinateRules -> {{0.4629100498862757, 1.8516401995451028`}, {
+     0.4629100498862757, 0.9258200997725514}, {0., 0.}, {0.9258200997725514, 
+     0.}}]& ],
+  AspectRatio->NCache[Rational[3, 7]^Rational[1, 2], 0.6546536707079771],
+  FormatType:>StandardForm,
+  FrameTicks->Automatic,
+  PlotRange->All,
+  PlotRangePadding->Scaled[0.1]]], "Output",
+ CellChangeTimes->{{3.770721488535088*^9, 3.770721609634804*^9}},
+ CellLabel->
+  "Out[112]//TreeForm=",ExpressionUUID->"8a2da91f-dd37-4c7e-8060-\
+f6eefe91627a"]
+}, Open  ]],
+
+Cell["direct call to the parser:  ", "Text",
+ CellChangeTimes->{{3.77073689956275*^9, 
+  3.770736929025517*^9}},ExpressionUUID->"207adb62-9a62-4ca4-b35c-\
+ecf6201bed32"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FrontEndExecute", "[", 
+  RowBox[{"FrontEnd`ReparseBoxStructurePacket", "[", "\"\<Exp[1+2\>\"", "]"}],
+   "]"}]], "Input",
+ CellChangeTimes->{{3.770737075651976*^9, 3.77073707800848*^9}},
+ CellLabel->
+  "In[127]:=",ExpressionUUID->"8019f14b-cc3f-4cb6-b199-a4f5892e9d95"],
+
+Cell[BoxData[
+ RowBox[{"RowBox", "[", 
+  RowBox[{"{", 
+   RowBox[{"\<\"Exp\"\>", ",", "\<\"[\"\>", ",", 
+    RowBox[{"RowBox", "[", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1\"\>", ",", "\<\"+\"\>", ",", "\<\"2\"\>"}], "}"}], 
+     "]"}]}], "}"}], "]"}]], "Output",
+ CellChangeTimes->{3.770737079296948*^9},
+ CellLabel->
+  "Out[127]=",ExpressionUUID->"68abd715-b953-4c31-9a38-460604588580"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FrontEndExecute", "[", 
+  RowBox[{
+  "FrontEnd`ReparseBoxStructurePacket", "[", "\"\<Exp[1+2]\>\"", "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.7707369374757433`*^9, 3.770737012108081*^9}},
+ CellLabel->
+  "In[126]:=",ExpressionUUID->"d8a551cc-cce6-4c47-9a81-913027f0165d"],
+
+Cell[BoxData[
+ RowBox[{"RowBox", "[", 
+  RowBox[{"{", 
+   RowBox[{"\<\"Exp\"\>", ",", "\<\"[\"\>", ",", 
+    RowBox[{"RowBox", "[", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1\"\>", ",", "\<\"+\"\>", ",", "\<\"2\"\>"}], "}"}], "]"}],
+     ",", "\<\"]\"\>"}], "}"}], "]"}]], "Output",
+ CellChangeTimes->{{3.770736996254249*^9, 3.77073701271942*^9}},
+ CellLabel->
+  "Out[126]=",ExpressionUUID->"0c9630d5-fbe9-47fd-8c06-f0284c39d089"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"parseString", "[", "str_String", "]"}], ":=", 
+   RowBox[{"FrontEndExecute", "[", 
+    RowBox[{"FrontEnd`ReparseBoxStructurePacket", "[", "str", "]"}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.770737334730442*^9, 3.7707373558033657`*^9}},
+ CellLabel->
+  "In[132]:=",ExpressionUUID->"eb4f320c-ff64-4b6a-8622-b145dc22d129"],
+
+Cell[BoxData[
+ RowBox[{"g", "[", 
+  RowBox[{"f", "[", "x", "]"}]}]], "Input",
+ CellChangeTimes->{{3.770737122440524*^9, 3.770737129603384*^9}},
+ EmphasizeSyntaxErrors->True,
+ CellLabel->
+  "In[128]:=",ExpressionUUID->"50d290cd-b6a0-4368-ac0f-9e76ac03b49c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FrontEndExecute", "[", 
+  RowBox[{"FrontEnd`ReparseBoxStructurePacket", "[", "\"\<g[f[x]\>\"", "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.770737138777379*^9, 3.770737157470149*^9}},
+ CellLabel->
+  "In[129]:=",ExpressionUUID->"018da56a-ce44-4869-88d4-4b754c409a73"],
+
+Cell[BoxData[
+ RowBox[{"RowBox", "[", 
+  RowBox[{"{", 
+   RowBox[{"\<\"g\"\>", ",", "\<\"[\"\>", ",", 
+    RowBox[{"RowBox", "[", 
+     RowBox[{"{", 
+      RowBox[{"\<\"f\"\>", ",", "\<\"[\"\>", ",", "\<\"x\"\>", 
+       ",", "\<\"]\"\>"}], "}"}], "]"}]}], "}"}], "]"}]], "Output",
+ CellChangeTimes->{{3.770737150365695*^9, 3.770737159401054*^9}},
+ CellLabel->
+  "Out[129]=",ExpressionUUID->"46820cde-b728-44c6-937e-059202ef06ae"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Flatten", "@", 
+  RowBox[{"ReplaceRepeated", "[", 
+   RowBox[{
+    RowBox[{"RowBox", "[", 
+     RowBox[{"{", 
+      RowBox[{"\"\<g\>\"", ",", "\"\<[\>\"", ",", 
+       RowBox[{"RowBox", "[", 
+        RowBox[{"{", 
+         RowBox[{
+         "\"\<f\>\"", ",", "\"\<[\>\"", ",", "\"\<x\>\"", ",", "\"\<]\>\""}], 
+         "}"}], "]"}]}], "}"}], "]"}], ",", " ", 
+    RowBox[{
+     RowBox[{"RowBox", "[", 
+      RowBox[{"{", "anything___", "}"}], "]"}], "\[RuleDelayed]", 
+     RowBox[{"{", "anything", "}"}]}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.770737182724403*^9, 3.770737286555958*^9}},
+ CellLabel->
+  "In[131]:=",ExpressionUUID->"f108cda0-dce1-48b0-b4c6-494b4ab38128"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"g\"\>", ",", "\<\"[\"\>", ",", "\<\"f\"\>", ",", "\<\"[\"\>", 
+   ",", "\<\"x\"\>", ",", "\<\"]\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.770737278237938*^9, 3.770737287285666*^9}},
+ CellLabel->
+  "Out[131]=",ExpressionUUID->"bb0cfa18-16db-4d0a-a403-307e173b03ce"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.77073731014734*^9, 
+  3.770737316045013*^9}},ExpressionUUID->"e70316a8-b324-4d04-8978-\
+96985f6094a3"],
+
+Cell[BoxData[
+ RowBox[{"Flatten", "@", 
+  RowBox[{"ReplaceRepeated", "[", 
+   RowBox[{
+    RowBox[{"RowBox", "[", 
+     RowBox[{"{", 
+      RowBox[{"\"\<g\>\"", ",", "\"\<[\>\"", ",", 
+       RowBox[{"RowBox", "[", 
+        RowBox[{"{", 
+         RowBox[{
+         "\"\<f\>\"", ",", "\"\<[\>\"", ",", "\"\<x\>\"", ",", "\"\<]\>\""}], 
+         "}"}], "]"}]}], "}"}], "]"}], ",", " ", 
+    RowBox[{
+     RowBox[{"RowBox", "[", 
+      RowBox[{"{", "anything___", "}"}], "]"}], "\[RuleDelayed]", 
+     RowBox[{"{", "anything", "}"}]}]}], "]"}]}]], "Input",ExpressionUUID->\
+"85f41dc1-b399-403a-aeab-8c9812edbfa0"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"flattenParse", "[", "exp_", "]"}], ":=", 
+  RowBox[{"Flatten", "@", 
+   RowBox[{"ReplaceRepeated", "[", 
+    RowBox[{"exp", ",", " ", 
+     RowBox[{
+      RowBox[{"RowBox", "[", 
+       RowBox[{"{", "anything___", "}"}], "]"}], "\[RuleDelayed]", 
+      RowBox[{"{", "anything", "}"}]}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.77073738662195*^9, 3.770737402575675*^9}},
+ CellLabel->
+  "In[134]:=",ExpressionUUID->"1bbeb9b7-6381-419e-9411-ddaaabc5db60"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"flattenParse", "@", 
+  RowBox[{"parseString", "[", "\"\<Exp[1+2*(Sin[x]]\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.770737362820447*^9, 3.770737429192069*^9}},
+ CellLabel->
+  "In[136]:=",ExpressionUUID->"4e84cc8d-7e05-4c9c-b736-569601c4b206"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Exp\"\>", ",", "\<\"[\"\>", ",", "\<\"1\"\>", ",", "\<\"+\"\>",
+    ",", "\<\"2\"\>", ",", "\<\"*\"\>", ",", "\<\"(\"\>", ",", "\<\"Sin\"\>", 
+   ",", "\<\"[\"\>", ",", "\<\"x\"\>", ",", "\<\"]\"\>", ",", "\<\"]\"\>"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.770737380369033*^9, 3.7707374307681723`*^9}},
+ CellLabel->
+  "Out[136]=",ExpressionUUID->"2079ac1c-54bd-42c9-9095-e3b6050e72a6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Names", "[", "\"\<\>\"", "]"}]], "Input",
+ CellChangeTimes->{
+  3.7707375079137793`*^9, {3.770737599060021*^9, 
+   3.7707376020139313`*^9}},ExpressionUUID->"5572f694-07a1-4425-9f83-\
+2fd30e876251"],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ CellChangeTimes->{3.7707375082596807`*^9},
+ CellLabel->
+  "Out[138]=",ExpressionUUID->"bfc9dbe5-b091-462d-9bcb-0bd94a189ac0"]
+}, Open  ]],
+
+Cell["\<\
+If names return a non empty list, I can use that as the head of the symbol \
+//Cases\
+\>", "Text",
+ CellChangeTimes->{{3.770737541616151*^9, 3.770737555136936*^9}, {
+  3.770737664722142*^9, 
+  3.7707376661190357`*^9}},ExpressionUUID->"62882e56-5e1a-4853-afe1-\
+9ff5bb99f76e"],
+
+Cell["then get the syntax", "Text",
+ CellChangeTimes->{{3.770737579589467*^9, 
+  3.7707375875248613`*^9}},ExpressionUUID->"d987eff7-971e-4e6b-84ff-\
+bcfea0aa6f5a"],
+
+Cell["Maybe list all the possible combinations of brackets...", "Text",
+ CellChangeTimes->{{3.7707377420514297`*^9, 
+  3.770737765027659*^9}},ExpressionUUID->"ef256a64-73c6-466c-862e-\
+ffc2e25d19a4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Names", "[", "\"\<Exp\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.7707374868443623`*^9, 3.770737527599235*^9}},
+ CellLabel->
+  "In[140]:=",ExpressionUUID->"8f8797df-ae58-4901-a83b-21355f49be60"],
+
+Cell[BoxData[
+ RowBox[{"{", "\<\"Exp\"\>", "}"}]], "Output",
+ CellChangeTimes->{3.770737501036458*^9, 3.770737531752911*^9},
+ CellLabel->
+  "Out[140]=",ExpressionUUID->"885c2d5b-2a5e-4f33-917d-4b539f198dd5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SyntaxInformation", "[", "Exp", "]"}]], "Input",
+ CellChangeTimes->{{3.7707376165937443`*^9, 3.77073762025371*^9}},
+ CellLabel->
+  "In[141]:=",ExpressionUUID->"24699094-cd87-4ef0-8815-a8fff4efd55c"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"\<\"ArgumentsPattern\"\>", "\[Rule]", 
+    RowBox[{"{", "_", "}"}]}], ",", 
+   RowBox[{"\<\"LocalVariables\"\>", "\[Rule]", "None"}], ",", 
+   RowBox[{"\<\"ColorEqualSigns\"\>", "\[Rule]", "None"}]}], "}"}]], "Output",\
+
+ CellChangeTimes->{3.7707376211075706`*^9},
+ CellLabel->
+  "Out[141]=",ExpressionUUID->"e3613d5e-9783-4b82-aaf3-93db8d53109d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Names", "[", "\"\<2\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.770737633196542*^9, 3.770737642750572*^9}},
+ CellLabel->
+  "In[142]:=",ExpressionUUID->"1c4e4b10-c5e2-49b4-8cc7-3e697cd8b26f"],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ CellChangeTimes->{3.770737643923492*^9},
+ CellLabel->
+  "Out[142]=",ExpressionUUID->"aa5a68ea-5da6-4e06-9812-1c1ce4463ce4"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"...", 
+   RowBox[{"Exp", "[", 
+    RowBox[{
+     RowBox[{"1", "+", "2", "+", 
+      RowBox[{"f", "[", 
+       RowBox[{"x", ",", "y"}], "]"}]}], ",", "5"}], "]"}]}], 
+  "..."}]], "Input",
+ CellChangeTimes->{{3.770737700224334*^9, 3.77073772194022*^9}, {
+  3.7707377837833242`*^9, 
+  3.770737838795559*^9}},ExpressionUUID->"ab90689c-47eb-42c8-9c18-\
+fa9389a733c0"],
+
+Cell["\<\
+Try to construct all the possible trees: add bracket, remove bracket, moving \
+bracket\
+\>", "Text",
+ CellChangeTimes->{{3.770737866018919*^9, 
+  3.770737928602888*^9}},ExpressionUUID->"d6dd016f-167f-47c9-9505-\
+77f6636ea532"],
+
+Cell[BoxData[
+ RowBox[{"SetAttributes", "[", 
+  RowBox[{"f", ",", 
+   RowBox[{"{", "HoldFirst", "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7707395767029448`*^9, 3.770739587941416*^9}},
+ CellLabel->
+  "In[154]:=",ExpressionUUID->"8fd767a4-e94b-48e6-8b98-5608caf53436"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"f", "[", 
+  RowBox[{
+   RowBox[{"2", "+", "2"}], ",", 
+   RowBox[{"2", "+", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.770739561290407*^9, 3.770739565809276*^9}, {
+  3.770739604699164*^9, 3.770739616314095*^9}, {3.7707396468502417`*^9, 
+  3.770739647334445*^9}},
+ CellLabel->
+  "In[157]:=",ExpressionUUID->"5cd14c86-6b0f-4d79-9fe7-d8475caa612a"],
+
+Cell[BoxData[
+ RowBox[{"f", "[", 
+  RowBox[{
+   RowBox[{"2", "+", "2"}], ",", "5"}], "]"}]], "Output",
+ CellChangeTimes->{{3.770739566842969*^9, 3.770739617246932*^9}, 
+   3.770739647651452*^9},
+ CellLabel->
+  "Out[157]=",ExpressionUUID->"e09cdad2-286f-4a99-af23-922c6d527ecd"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"ToString", "[", 
+  RowBox[{
+   RowBox[{"2", "+", "2"}], ",", "InputForm"}], "]"}]], "Input",
+ CellChangeTimes->{{3.770739654691236*^9, 3.7707396710152607`*^9}},
+ CellLabel->
+  "In[158]:=",ExpressionUUID->"a4b2f480-78a5-4450-87e4-0e0369305796"],
+
+Cell[BoxData[
+ RowBox[{"\"\<4\>\"", " "}]], "Input",
+ CellChangeTimes->{{3.7707396738043947`*^9, 
+  3.7707396738083963`*^9}},ExpressionUUID->"a02286c7-c4e1-45c6-8773-\
+3e305cc6401b"],
+
+Cell[BoxData[
+ RowBox[{"ToString", "[", 
+  RowBox[{"...", ",", " ", "InputForm"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7707392281850767`*^9, 
+  3.7707392364375563`*^9}},ExpressionUUID->"ac4e270f-829e-424c-a722-\
+cb26e326de92"],
+
+Cell[BoxData[{
+ RowBox[{"SetAttributes", "[", 
+  RowBox[{"makeExpressionString", ",", " ", 
+   RowBox[{"{", "HoldFirst", "}"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"makeExpressionString", "[", "exp_", "]"}], ":=", 
+  RowBox[{"StringTake", "[", 
+   RowBox[{
+    RowBox[{"ToString", "[", 
+     RowBox[{
+      RowBox[{"HoldComplete", "[", "exp", "]"}], ",", " ", "InputForm"}], 
+     "]"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"StringLength", "[", "\"\<HoldComplete[\>\"", "]"}], "+", 
+       "1"}], ",", 
+      RowBox[{
+       RowBox[{"-", 
+        RowBox[{"StringLength", "[", "\"\<]\>\"", "]"}]}], "-", "1"}]}], 
+     "}"}]}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.770739241703521*^9, 3.770739265337171*^9}, {
+  3.7707394493198547`*^9, 3.770739534311908*^9}},
+ CellLabel->
+  "In[159]:=",ExpressionUUID->"1794071d-b376-4279-b127-501adf040f4d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"makeExpressionString", "[", 
+  RowBox[{"Exp", "[", 
+   RowBox[{"1", "+", 
+    RowBox[{"2", " ", "*", " ", "3"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.770739722736211*^9, 3.770739793134521*^9}},
+ CellLabel->
+  "In[165]:=",ExpressionUUID->"b57e0f29-baf2-4a56-8527-151d0121c643"],
+
+Cell[BoxData["\<\"Exp[1 + 2*3]\"\>"], "Output",
+ CellChangeTimes->{{3.770739743030905*^9, 3.770739794621273*^9}},
+ CellLabel->
+  "Out[165]=",ExpressionUUID->"7b002241-c476-4054-9fa8-4dbed7496faf"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"makeExpressionString", "[", 
+  RowBox[{"Plot", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Sin", "[", "x", "]"}], "+", 
+       RowBox[{"x", "/", "2"}]}], ",", 
+      RowBox[{
+       RowBox[{"Sin", "[", "x", "]"}], "+", "x"}]}], "}"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", " ", "0", ",", " ", "10"}], "}"}], ",", 
+    RowBox[{"Filling", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"1", "\[Rule]", 
+       RowBox[{"{", "2", "}"}]}], "}"}]}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.770739815049198*^9, 3.770739834884019*^9}},
+ CellLabel->
+  "In[166]:=",ExpressionUUID->"815b1a61-b9dd-463b-acc6-3455fe167c29"],
+
+Cell[BoxData["\<\"Plot[{Sin[x] + x/2, Sin[x] + x}, {x, 0, 10}, Filling -> {1 \
+-> {2}}]\"\>"], "Output",
+ CellChangeTimes->{3.7707398358598137`*^9},
+ CellLabel->
+  "Out[166]=",ExpressionUUID->"42d7166e-2079-46ba-a6c7-1e91e2c7b5d3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StringPosition", "[", 
+  RowBox[{
+  "\"\<Plot[{Sin[x] + x/2, Sin[x] + x}, {x, 0, 10}, Filling -> {1 -> \
+{2}}]\>\"", ",", "\"\<]\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.770739854642769*^9, 3.770739865364505*^9}},
+ CellLabel->
+  "In[167]:=",ExpressionUUID->"40bee2d1-79ff-43ae-a7bb-ae43d320dd14"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"12", ",", "12"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"26", ",", "26"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"67", ",", "67"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.770739865950392*^9},
+ CellLabel->
+  "Out[167]=",ExpressionUUID->"61fc6187-f7cf-4dc0-8ffa-0f846fb26191"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StringDrop", "[", 
+  RowBox[{
+  "\"\<Plot[{Sin[x] + x/2, Sin[x] + x}, {x, 0, 10}, Filling -> {1 -> \
+{2}}]\>\"", ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"26", ",", "26"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.770739871601527*^9, 3.770739891151775*^9}},
+ CellLabel->
+  "In[169]:=",ExpressionUUID->"20ef172e-e668-40b4-b6a3-4e52f8b9ed8b"],
+
+Cell[BoxData["\<\"Plot[{Sin[x] + x/2, Sin[x + x}, {x, 0, 10}, Filling -> {1 \
+-> {2}}]\"\>"], "Output",
+ CellChangeTimes->{{3.770739883639201*^9, 3.770739893158061*^9}},
+ CellLabel->
+  "Out[169]=",ExpressionUUID->"cfa12f21-3764-4976-ad7b-1c348dcb0e74"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeleteCases", "[", 
+  RowBox[{
+   RowBox[{"flattenParse", "@", 
+    RowBox[{
+    "parseString", "[", 
+     "\"\<Plot[{Sin[x] + x/2, Sin[x + x}, {x, 0, 10}, Filling -> {1 -> \
+{2}}]\>\"", "]"}]}], ",", " ", "\"\< \>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.770739923838513*^9, 3.7707399569202843`*^9}},
+ CellLabel->
+  "In[172]:=",ExpressionUUID->"485ebb41-dbb4-472b-9271-a85889383d23"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"{", 
+   RowBox[{
+   "\"\<Plot\>\"", ",", "\"\<[\>\"", ",", "\"\<{\>\"", ",", "\"\<Sin\>\"", 
+    ",", "\"\<[\>\"", ",", "\"\<x\>\"", ",", "\"\<]\>\"", ",", "\"\<+\>\"", 
+    ",", "\"\<x\>\"", ",", "\"\</\>\"", ",", "\"\<2\>\"", ",", "\"\<,\>\"", 
+    ",", "\"\<Sin\>\"", ",", "\"\<[\>\"", ",", "\"\<x\>\"", ",", "\"\<+\>\"", 
+    ",", "\"\<x\>\"", ",", "\"\<}\>\"", ",", "\"\<,\>\"", ",", "\"\<{\>\"", 
+    ",", "\"\<x\>\"", ",", "\"\<,\>\"", ",", "\"\<0\>\"", ",", "\"\<,\>\"", 
+    ",", "\"\<10\>\"", ",", "\"\<}\>\"", ",", "\"\<,\>\"", ",", 
+    "\"\<Filling\>\"", ",", "\"\<->\>\"", ",", "\"\<{\>\"", ",", "\"\<1\>\"", 
+    ",", "\"\<->\>\"", ",", "\"\<{\>\"", ",", "\"\<2\>\"", ",", "\"\<}\>\"", 
+    ",", "\"\<}\>\"", ",", "\"\<]\>\""}], "}"}], " "}]], "Input",
+ CellChangeTimes->{{3.7707399871703863`*^9, 
+  3.7707399871762133`*^9}},ExpressionUUID->"ca38cfa3-a233-44d7-a0f7-\
+49127f6b2253"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"\"\<2 + 2\>\"", " "}]], "Input",
+ CellChangeTimes->{{3.770739736227159*^9, 
+  3.7707397362310867`*^9}},ExpressionUUID->"2bf9dbd7-f198-4f70-a873-\
+b2ae2042d965"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"stringExp", "=", 
+  RowBox[{"StringTake", "[", 
+   RowBox[{"\"\<HoldComplete[Exp[1 + 2 + Sin[x]]]\>\"", " ", ",", " ", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"StringLength", "[", "\"\<HoldComplete[\>\"", "]"}], "+", 
+       "1"}], ",", 
+      RowBox[{
+       RowBox[{"-", 
+        RowBox[{"StringLength", "[", "\"\<]\>\"", "]"}]}], "-", "1"}]}], 
+     "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.770739304253986*^9, 3.7707394080553913`*^9}},
+ CellLabel->
+  "In[146]:=",ExpressionUUID->"6a5dbb23-e6c7-40d1-bc04-9882d6860176"],
+
+Cell[BoxData["\<\"Exp[1 + 2 + Sin[x]]\"\>"], "Output",
+ CellChangeTimes->{{3.770739365864005*^9, 3.770739408545377*^9}},
+ CellLabel->
+  "Out[146]=",ExpressionUUID->"0de1287a-2bdb-4bf5-82ba-bac16ccbcd46"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"flattenParse", "@", 
+  RowBox[{"parseString", "[", "stringExp", "]"}]}]], "Input",
+ CellChangeTimes->{{3.770739414076527*^9, 
+  3.7707394370413837`*^9}},ExpressionUUID->"ff9f89cf-94cd-4853-adbd-\
+f93c6015eb18"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Exp\"\>", ",", "\<\"[\"\>", ",", "\<\"1\"\>", ",", "\<\" \"\>",
+    ",", "\<\"+\"\>", ",", "\<\" \"\>", ",", "\<\"2\"\>", ",", "\<\" \"\>", 
+   ",", "\<\"+\"\>", ",", "\<\" \"\>", ",", "\<\"Sin\"\>", ",", "\<\"[\"\>", 
+   ",", "\<\"x\"\>", ",", "\<\"]\"\>", ",", "\<\"]\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.770739416042203*^9, 3.770739424869425*^9}},
+ CellLabel->
+  "Out[148]=",ExpressionUUID->"d3c83b85-2f52-4f98-bf1d-69aa12e94d8e"]
+}, Open  ]]
 },
 WindowSize->{Full, Full},
 WindowMargins->{{4, Automatic}, {Automatic, 0}},
@@ -3345,58 +2170,175 @@ Cell[CellGroupData[{
 Cell[580, 22, 214, 3, 30, "Input",ExpressionUUID->"01fd0102-244c-4c28-8930-882320a62643"],
 Cell[797, 27, 189, 3, 34, "Output",ExpressionUUID->"459142af-9e68-4246-ad5e-303af8e8b62f"]
 }, Open  ]],
+Cell[1001, 33, 255, 5, 30, "Input",ExpressionUUID->"844a4c8c-d393-42c5-bc96-c2aa0af65358"],
 Cell[CellGroupData[{
-Cell[1023, 35, 212, 3, 30, "Input",ExpressionUUID->"844a4c8c-d393-42c5-bc96-c2aa0af65358"],
-Cell[1238, 40, 111693, 2236, 1066, "Output",ExpressionUUID->"a98cbaa4-ac13-48ca-9afa-ea584694a7c6"]
+Cell[1281, 42, 207, 3, 30, "Input",ExpressionUUID->"c7487061-bb6e-4feb-b1ba-be2d455b0ee0"],
+Cell[1491, 47, 15511, 343, 214, "Output",ExpressionUUID->"7b353442-2f13-44c6-be38-b6322c4d8b78"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[112968, 2281, 207, 3, 30, "Input",ExpressionUUID->"c7487061-bb6e-4feb-b1ba-be2d455b0ee0"],
-Cell[113178, 2286, 15511, 343, 214, "Output",ExpressionUUID->"7b353442-2f13-44c6-be38-b6322c4d8b78"]
+Cell[17039, 395, 439, 9, 30, "Input",ExpressionUUID->"cc440e1f-5cb7-411a-9de5-1546c3b217db"],
+Cell[17481, 406, 3565, 90, 110, "Output",ExpressionUUID->"05cb08c4-8fce-49a3-a76d-e0ebef7da766"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[128726, 2634, 439, 9, 30, "Input",ExpressionUUID->"cc440e1f-5cb7-411a-9de5-1546c3b217db"],
-Cell[129168, 2645, 3565, 90, 110, "Output",ExpressionUUID->"05cb08c4-8fce-49a3-a76d-e0ebef7da766"]
+Cell[21083, 501, 281, 7, 30, "Input",ExpressionUUID->"9b8fc563-abc0-463f-9cab-519c51845d32"],
+Cell[21367, 510, 299, 4, 34, "Output",ExpressionUUID->"1e52d129-1864-40a8-9706-607c831b57a9"]
+}, Open  ]],
+Cell[21681, 517, 385, 8, 30, "Input",ExpressionUUID->"72a33496-f6b4-4480-b364-6e7afe6b72da"],
+Cell[22069, 527, 286, 7, 30, "Input",ExpressionUUID->"18fae4c1-69ba-4fe8-b3ef-cb3dc4b99cb5"],
+Cell[22358, 536, 318, 8, 30, "Input",ExpressionUUID->"cbe5e2e5-daef-4623-8fb5-5af33b203496"],
+Cell[22679, 546, 154, 3, 30, "Input",ExpressionUUID->"804966f1-c670-426f-a108-323d859f2301"],
+Cell[CellGroupData[{
+Cell[22858, 553, 220, 3, 30, "Input",ExpressionUUID->"f0a14ca4-0048-4d5e-8901-25a5367e4bd4"],
+Cell[23081, 558, 490, 12, 34, "Output",ExpressionUUID->"1ac6fa3e-67b3-487f-8f80-97f84b6b43f6"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[132770, 2740, 281, 7, 30, "Input",ExpressionUUID->"9b8fc563-abc0-463f-9cab-519c51845d32"],
-Cell[133054, 2749, 299, 4, 34, "Output",ExpressionUUID->"1e52d129-1864-40a8-9706-607c831b57a9"]
+Cell[23608, 575, 219, 3, 30, "Input",ExpressionUUID->"df1a0b0d-9608-4faa-8ba3-d2d6c076ddb3"],
+Cell[23830, 580, 274, 5, 34, "Output",ExpressionUUID->"a0184b3b-4607-4965-bbe0-e8bc4189e903"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[133390, 2758, 382, 9, 33, "Input",ExpressionUUID->"baee4d88-1c46-4fae-87ea-9c0edb14b5dc"],
-Cell[133775, 2769, 5205, 105, 238, "Output",ExpressionUUID->"73801f06-eea0-4c23-8682-daaf0c28da62"]
+Cell[24141, 590, 320, 5, 30, "Input",ExpressionUUID->"30434035-820b-4209-bacf-8a9b51b7b2c0"],
+Cell[24464, 597, 205, 4, 24, "Print",ExpressionUUID->"83b2220e-6d03-402e-ac09-21ddbdda907d"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[139017, 2879, 298, 6, 30, "Input",ExpressionUUID->"aa230ab1-4345-4468-ad66-495b21136013"],
-Cell[139318, 2887, 272, 6, 34, "Output",ExpressionUUID->"88b1faf1-720f-4ce2-b060-48b3f441f40b"]
-}, Open  ]],
-Cell[139605, 2896, 385, 8, 30, "Input",ExpressionUUID->"72a33496-f6b4-4480-b364-6e7afe6b72da"],
-Cell[139993, 2906, 286, 7, 30, "Input",ExpressionUUID->"18fae4c1-69ba-4fe8-b3ef-cb3dc4b99cb5"],
-Cell[140282, 2915, 318, 8, 30, "Input",ExpressionUUID->"cbe5e2e5-daef-4623-8fb5-5af33b203496"],
-Cell[140603, 2925, 154, 3, 30, "Input",ExpressionUUID->"804966f1-c670-426f-a108-323d859f2301"],
-Cell[CellGroupData[{
-Cell[140782, 2932, 220, 3, 30, "Input",ExpressionUUID->"f0a14ca4-0048-4d5e-8901-25a5367e4bd4"],
-Cell[141005, 2937, 490, 12, 34, "Output",ExpressionUUID->"1ac6fa3e-67b3-487f-8f80-97f84b6b43f6"]
+Cell[24706, 606, 195, 3, 30, "Input",ExpressionUUID->"9edbc96c-361c-4ed3-ae10-57a452043e8b"],
+Cell[24904, 611, 13032, 306, 96, "Output",ExpressionUUID->"9fe9128a-67ad-4a6f-bbb5-5e6a294cf5db"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[141532, 2954, 219, 3, 30, "Input",ExpressionUUID->"df1a0b0d-9608-4faa-8ba3-d2d6c076ddb3"],
-Cell[141754, 2959, 274, 5, 34, "Output",ExpressionUUID->"a0184b3b-4607-4965-bbe0-e8bc4189e903"]
+Cell[37973, 922, 225, 3, 30, "Input",ExpressionUUID->"59abf1f7-8446-4984-86ca-5376df698658"],
+Cell[38201, 927, 418, 9, 34, "Output",ExpressionUUID->"1199b622-ff07-4b50-92df-7adcf75c974f"]
+}, Open  ]],
+Cell[38634, 939, 274, 7, 30, "Input",ExpressionUUID->"c804ff78-d71c-422b-b05d-73c55ca294d3"],
+Cell[CellGroupData[{
+Cell[38933, 950, 208, 3, 30, "Input",ExpressionUUID->"27555c37-6467-4cd4-b5b8-1476ace73ccd"],
+Cell[39144, 955, 9331, 254, 258, "Output",ExpressionUUID->"5a04a0e7-7b17-43eb-8f29-cbf477df7bdc"]
+}, Open  ]],
+Cell[48490, 1212, 248, 5, 30, "Input",ExpressionUUID->"bd9ad2fd-9213-4a21-82b7-94e107de14a3"],
+Cell[48741, 1219, 377, 9, 30, "Input",ExpressionUUID->"5a33b1f5-9caa-4041-b953-0a14f7ad65fb"],
+Cell[CellGroupData[{
+Cell[49143, 1232, 241, 4, 30, "Input",ExpressionUUID->"8e2e3421-ccd8-4aea-85e2-8fd0b2e226a6"],
+Cell[49387, 1238, 524, 10, 34, "Output",ExpressionUUID->"47efaee6-bf48-4754-a72a-dedb4209eeb0"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[142065, 2969, 320, 5, 30, "Input",ExpressionUUID->"30434035-820b-4209-bacf-8a9b51b7b2c0"],
-Cell[142388, 2976, 205, 4, 24, "Print",ExpressionUUID->"83b2220e-6d03-402e-ac09-21ddbdda907d"]
+Cell[49948, 1253, 304, 6, 30, "Input",ExpressionUUID->"6614f3e0-4e21-4eaf-be4f-a36d19bfa4af"],
+Cell[50255, 1261, 388, 8, 34, "Output",ExpressionUUID->"bd821f81-aba4-4b00-9d38-9e9c58c281bf"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[142630, 2985, 195, 3, 30, "Input",ExpressionUUID->"9edbc96c-361c-4ed3-ae10-57a452043e8b"],
-Cell[142828, 2990, 13032, 306, 96, "Output",ExpressionUUID->"9fe9128a-67ad-4a6f-bbb5-5e6a294cf5db"]
+Cell[50680, 1274, 471, 9, 30, "Input",ExpressionUUID->"da8760e7-0730-46d2-96fd-23dacba3c5a7"],
+Cell[51154, 1285, 473, 9, 34, "Output",ExpressionUUID->"99a40c67-d998-47c7-be21-6086f790b34e"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[155897, 3301, 226, 3, 30, "Input",ExpressionUUID->"59abf1f7-8446-4984-86ca-5376df698658"],
-Cell[156126, 3306, 397, 9, 34, "Output",ExpressionUUID->"30487844-d43a-48bb-9701-a9654a5b07c4"]
+Cell[51664, 1299, 174, 2, 30, "Input",ExpressionUUID->"93b4d5e5-cc66-4e75-88a7-613ee4cb32be"],
+Cell[51841, 1303, 251, 5, 34, "Output",ExpressionUUID->"a0c60f41-546e-4f19-8e0e-2441226b9cce"]
 }, Open  ]],
-Cell[156538, 3318, 274, 7, 30, "Input",ExpressionUUID->"c804ff78-d71c-422b-b05d-73c55ca294d3"]
+Cell[52107, 1311, 197, 3, 30, "Input",ExpressionUUID->"38e5305f-7a92-4ad7-8911-a644f71199bc"],
+Cell[CellGroupData[{
+Cell[52329, 1318, 204, 3, 30, "Input",ExpressionUUID->"99e67d35-36f1-474d-a24f-f3d430e0ee3e"],
+Cell[52536, 1323, 3601, 97, 256, "Output",ExpressionUUID->"0471e7a9-9a08-4001-b676-4ada1019f084"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[56174, 1425, 337, 7, 30, "Input",ExpressionUUID->"b624bfc5-f3b8-4393-b46f-f931284547b8"],
+Cell[56514, 1434, 425, 10, 24, "Message",ExpressionUUID->"4fe5395d-ad95-42be-bb5f-1eb34ec8305e"],
+Cell[56942, 1446, 259, 5, 34, "Output",ExpressionUUID->"1038eebc-1b9e-4b69-9b01-563f674f0833"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[57238, 1456, 313, 6, 30, "Input",ExpressionUUID->"0da02a56-a04b-43b6-adde-1ceb73aebb2e"],
+Cell[57554, 1464, 305, 6, 34, "Output",ExpressionUUID->"5ee39c26-ce53-48b9-9b6e-64fe10912613"]
+}, Open  ]],
+Cell[57874, 1473, 211, 4, 30, "Input",ExpressionUUID->"e2753345-1f65-4bb4-9244-b1a88cbe1281"],
+Cell[CellGroupData[{
+Cell[58110, 1481, 200, 3, 30, "Input",ExpressionUUID->"d3234552-af56-4f52-85a7-c04e8966b335"],
+Cell[58313, 1486, 400, 10, 126, "Output",ExpressionUUID->"2be38a3c-b5d8-40a0-875f-e5e5cab14896"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[58750, 1501, 208, 4, 30, "Input",ExpressionUUID->"37bdc476-2c3e-4116-b538-bf63c36150ad"],
+Cell[58961, 1507, 3602, 98, 256, "Output",ExpressionUUID->"8a2da91f-dd37-4c7e-8060-f6eefe91627a"]
+}, Open  ]],
+Cell[62578, 1608, 169, 3, 35, "Text",ExpressionUUID->"207adb62-9a62-4ca4-b35c-ecf6201bed32"],
+Cell[CellGroupData[{
+Cell[62772, 1615, 294, 6, 30, "Input",ExpressionUUID->"8019f14b-cc3f-4cb6-b199-a4f5892e9d95"],
+Cell[63069, 1623, 388, 10, 34, "Output",ExpressionUUID->"68abd715-b953-4c31-9a38-460604588580"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[63494, 1638, 301, 7, 30, "Input",ExpressionUUID->"d8a551cc-cce6-4c47-9a81-913027f0165d"],
+Cell[63798, 1647, 428, 10, 34, "Output",ExpressionUUID->"0c9630d5-fbe9-47fd-8c06-f0284c39d089"]
+}, Open  ]],
+Cell[64241, 1660, 378, 9, 30, "Input",ExpressionUUID->"eb4f320c-ff64-4b6a-8622-b145dc22d129"],
+Cell[64622, 1671, 256, 6, 30, "Input",ExpressionUUID->"50d290cd-b6a0-4368-ac0f-9e76ac03b49c"],
+Cell[CellGroupData[{
+Cell[64903, 1681, 294, 6, 30, "Input",ExpressionUUID->"018da56a-ce44-4869-88d4-4b754c409a73"],
+Cell[65200, 1689, 430, 10, 34, "Output",ExpressionUUID->"46820cde-b728-44c6-937e-059202ef06ae"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[65667, 1704, 702, 18, 30, "Input",ExpressionUUID->"f108cda0-dce1-48b0-b4c6-494b4ab38128"],
+Cell[66372, 1724, 314, 6, 34, "Output",ExpressionUUID->"bb0cfa18-16db-4d0a-a403-307e173b03ce"]
+}, Open  ]],
+Cell[66701, 1733, 151, 3, 30, "Input",ExpressionUUID->"e70316a8-b324-4d04-8978-96985f6094a3"],
+Cell[66855, 1738, 610, 16, 30, "Input",ExpressionUUID->"85f41dc1-b399-403a-aeab-8c9812edbfa0"],
+Cell[67468, 1756, 492, 12, 30, "Input",ExpressionUUID->"1bbeb9b7-6381-419e-9411-ddaaabc5db60"],
+Cell[CellGroupData[{
+Cell[67985, 1772, 270, 5, 30, "Input",ExpressionUUID->"4e84cc8d-7e05-4c9c-b736-569601c4b206"],
+Cell[68258, 1779, 435, 8, 34, "Output",ExpressionUUID->"2079ac1c-54bd-42c9-9095-e3b6050e72a6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[68730, 1792, 221, 5, 30, "Input",ExpressionUUID->"5572f694-07a1-4425-9f83-2fd30e876251"],
+Cell[68954, 1799, 172, 4, 34, "Output",ExpressionUUID->"bfc9dbe5-b091-462d-9bcb-0bd94a189ac0"]
+}, Open  ]],
+Cell[69141, 1806, 285, 7, 35, "Text",ExpressionUUID->"62882e56-5e1a-4853-afe1-9ff5bb99f76e"],
+Cell[69429, 1815, 163, 3, 35, "Text",ExpressionUUID->"d987eff7-971e-4e6b-84ff-bcfea0aa6f5a"],
+Cell[69595, 1820, 199, 3, 35, "Text",ExpressionUUID->"ef256a64-73c6-466c-862e-ffc2e25d19a4"],
+Cell[CellGroupData[{
+Cell[69819, 1827, 219, 4, 30, "Input",ExpressionUUID->"8f8797df-ae58-4901-a83b-21355f49be60"],
+Cell[70041, 1833, 207, 4, 34, "Output",ExpressionUUID->"885c2d5b-2a5e-4f33-917d-4b539f198dd5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[70285, 1842, 222, 4, 30, "Input",ExpressionUUID->"24699094-cd87-4ef0-8815-a8fff4efd55c"],
+Cell[70510, 1848, 399, 10, 34, "Output",ExpressionUUID->"e3613d5e-9783-4b82-aaf3-93db8d53109d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[70946, 1863, 215, 4, 30, "Input",ExpressionUUID->"1c4e4b10-c5e2-49b4-8cc7-3e697cd8b26f"],
+Cell[71164, 1869, 170, 4, 34, "Output",ExpressionUUID->"aa5a68ea-5da6-4e06-9812-1c1ce4463ce4"]
+}, Open  ]],
+Cell[71349, 1876, 397, 12, 30, "Input",ExpressionUUID->"ab90689c-47eb-42c8-9c18-fa9389a733c0"],
+Cell[71749, 1890, 236, 6, 35, "Text",ExpressionUUID->"d6dd016f-167f-47c9-9505-77f6636ea532"],
+Cell[71988, 1898, 272, 6, 30, "Input",ExpressionUUID->"8fd767a4-e94b-48e6-8b98-5608caf53436"],
+Cell[CellGroupData[{
+Cell[72285, 1908, 374, 9, 30, "Input",ExpressionUUID->"5cd14c86-6b0f-4d79-9fe7-d8475caa612a"],
+Cell[72662, 1919, 277, 7, 34, "Output",ExpressionUUID->"e09cdad2-286f-4a99-af23-922c6d527ecd"]
+}, Open  ]],
+Cell[72954, 1929, 267, 6, 30, "Input",ExpressionUUID->"a4b2f480-78a5-4450-87e4-0e0369305796"],
+Cell[73224, 1937, 182, 4, 30, InheritFromParent,ExpressionUUID->"a02286c7-c4e1-45c6-8773-3e305cc6401b"],
+Cell[73409, 1943, 229, 5, 30, "Input",ExpressionUUID->"ac4e270f-829e-424c-a722-cb26e326de92"],
+Cell[73641, 1950, 900, 24, 52, "Input",ExpressionUUID->"1794071d-b376-4279-b127-501adf040f4d"],
+Cell[CellGroupData[{
+Cell[74566, 1978, 311, 7, 30, "Input",ExpressionUUID->"b57e0f29-baf2-4a56-8527-151d0121c643"],
+Cell[74880, 1987, 196, 3, 34, "Output",ExpressionUUID->"7b002241-c476-4054-9fa8-4dbed7496faf"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[75113, 1995, 691, 19, 30, "Input",ExpressionUUID->"815b1a61-b9dd-463b-acc6-3455fe167c29"],
+Cell[75807, 2016, 231, 4, 34, "Output",ExpressionUUID->"42d7166e-2079-46ba-a6c7-1e91e2c7b5d3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[76075, 2025, 326, 7, 30, "Input",ExpressionUUID->"40bee2d1-79ff-43ae-a7bb-ae43d320dd14"],
+Cell[76404, 2034, 361, 11, 34, "Output",ExpressionUUID->"61fc6187-f7cf-4dc0-8ffa-0f846fb26191"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[76802, 2050, 370, 9, 30, "Input",ExpressionUUID->"20ef172e-e668-40b4-b6a3-4e52f8b9ed8b"],
+Cell[77175, 2061, 252, 4, 34, "Output",ExpressionUUID->"cfa12f21-3764-4976-ad7b-1c348dcb0e74"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[77464, 2070, 412, 10, 30, "Input",ExpressionUUID->"485ebb41-dbb4-472b-9271-a85889383d23"],
+Cell[77879, 2082, 932, 16, 52, InheritFromParent,ExpressionUUID->"ca38cfa3-a233-44d7-a0f7-49127f6b2253"]
+}, Open  ]],
+Cell[78826, 2101, 184, 4, 30, InheritFromParent,ExpressionUUID->"2bf9dbd7-f198-4f70-a873-b2ae2042d965"],
+Cell[CellGroupData[{
+Cell[79035, 2109, 578, 15, 30, InheritFromParent,ExpressionUUID->"6a5dbb23-e6c7-40d1-bc04-9882d6860176"],
+Cell[79616, 2126, 203, 3, 34, "Output",ExpressionUUID->"0de1287a-2bdb-4bf5-82ba-bac16ccbcd46"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[79856, 2134, 234, 5, 30, "Input",ExpressionUUID->"ff9f89cf-94cd-4853-adbd-f93c6015eb18"],
+Cell[80093, 2141, 488, 8, 34, "Output",ExpressionUUID->"d3c83b85-2f52-4f98-bf1d-69aa12e94d8e"]
+}, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
