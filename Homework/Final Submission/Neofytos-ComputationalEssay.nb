@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   3088626,      51768]
-NotebookOptionsPosition[   3082417,      51660]
-NotebookOutlinePosition[   3083386,      51693]
-CellTagsIndexPosition[   3083314,      51688]
+NotebookDataLength[   3087803,      51718]
+NotebookOptionsPosition[   3081604,      51610]
+NotebookOutlinePosition[   3082573,      51643]
+CellTagsIndexPosition[   3082501,      51638]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -150,8 +150,7 @@ Cell[BoxData[
      RowBox[{
      "\"\<AdministrativeDivision\>\"", ",", "\"\<ContinentalUSStates\>\""}], 
      "]"}], "]"}]}], ";"}]], "Input",
- CellLabel->
-  "In[175]:=",ExpressionUUID->"39cfd5b7-7e2f-4343-8ade-d05c25beb930"],
+ CellLabel->"In[1]:=",ExpressionUUID->"39cfd5b7-7e2f-4343-8ade-d05c25beb930"],
 
 Cell[CellGroupData[{
 
@@ -309,8 +308,7 @@ Cell[BoxData[
    3.770667959960528*^9, 3.770667961684095*^9}, {3.770669631864744*^9, 
    3.770669632348275*^9}, {3.7706697418567753`*^9, 3.7706697424022427`*^9}, {
    3.770725096788912*^9, 3.770725097854928*^9}},
- CellLabel->
-  "In[178]:=",ExpressionUUID->"855ef9fa-5b0f-47dd-94e4-ccedfe4108bd"],
+ CellLabel->"In[2]:=",ExpressionUUID->"855ef9fa-5b0f-47dd-94e4-ccedfe4108bd"],
 
 Cell[TextData[StyleBox["A list of names for those quantities in order to \
 select them from the dataset, further down the road.",
@@ -357,8 +355,7 @@ Cell[BoxData[
    3.770725812068163*^9}, {3.770725871495071*^9, 3.770725872957981*^9}, {
    3.770726051278023*^9, 3.7707260579693327`*^9}, {3.7707265188877583`*^9, 
    3.770726519963612*^9}},
- CellLabel->
-  "In[179]:=",ExpressionUUID->"38c05087-c58e-473a-8bbb-06392ae90ab9"],
+ CellLabel->"In[3]:=",ExpressionUUID->"38c05087-c58e-473a-8bbb-06392ae90ab9"],
 
 Cell[TextData[StyleBox["\nSome of the selected variables : number of \
 businesses, disabled people, and annual deaths are not normalised. To \
@@ -450,9 +447,9 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"data", "//", "Dataset"}]], "Input",
  CellChangeTimes->{{3.770672616881792*^9, 3.770672617374013*^9}, {
-  3.7707258877283077`*^9, 3.7707258893100853`*^9}},
- CellLabel->
-  "In[184]:=",ExpressionUUID->"d8e50387-8471-4dc7-a3a9-8c871344c58c"],
+  3.7707258877283077`*^9, 3.7707258893100853`*^9}, {3.770763294672908*^9, 
+  3.770763305638627*^9}, {3.770763342910783*^9, 3.770763373605502*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"d8e50387-8471-4dc7-a3a9-8c871344c58c"],
 
 Cell[BoxData[
  TemplateBox[{TagBox[
@@ -474,13 +471,13 @@ Cell[BoxData[
               TypeSystem`PackageScope`KeyValueShape[
                TypeSystem`PackageScope`AtomShape[150], 
                TypeSystem`PackageScope`AtomShape[60]]], 2, {All}]]], 10, {}], 
-        "InitialData" -> TypeSystem`PackageScope`CacheHandle[1992921843], 
+        "InitialData" -> TypeSystem`PackageScope`CacheHandle[935113812], 
         "Type" -> TypeSystem`Assoc[TypeSystem`AnyType, 
           TypeSystem`Assoc[
            TypeSystem`Atom[
             Entity["AdministrativeDivision"]], 
            TypeSystem`Atom[Real], 48], 11], "HandleQ" -> True, "RowTarget" -> 
-        20, "Data" -> TypeSystem`PackageScope`CacheHandle[1992921843]], 
+        20, "Data" -> TypeSystem`PackageScope`CacheHandle[935113812]], 
       TypeSystem`NestedGrid`PackagePrivate`$path$$ = {}, 
       TypeSystem`NestedGrid`PackagePrivate`$pos$$ = 1, 
       TypeSystem`NestedGrid`PackagePrivate`$grid$$ = 
@@ -498,7 +495,7 @@ Cell[BoxData[
                     Rational[27, 74], 
                     Rational[117, 370]}]]], 
                    TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
-                   239435360][
+                   1299793296][
                     GeneralUtilities`Slice[
                     Key[
                     EntityProperty["AdministrativeDivision", "GiniIndex"]]]], 
@@ -532,15 +529,15 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
                     Key[
                     EntityProperty["AdministrativeDivision", "GiniIndex"]], 
                     Key[
                     Entity[
                     "AdministrativeDivision", {
                     "Alabama", "UnitedStates"}]]}]], 
-                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
+                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                  1299793296][
                    GeneralUtilities`Slice[
                     Key[
                     EntityProperty["AdministrativeDivision", "GiniIndex"]], 
@@ -552,8 +549,7 @@ Cell[BoxData[
                Pane[
                 Annotation[
                  RawBoxes["0.4769"], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
                   GeneralUtilities`Slice[
                    Key[
                     EntityProperty["AdministrativeDivision", "GiniIndex"]], 
@@ -588,15 +584,15 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
                     Key[
                     EntityProperty["AdministrativeDivision", "GiniIndex"]], 
                     Key[
                     Entity[
                     "AdministrativeDivision", {
                     "Arizona", "UnitedStates"}]]}]], 
-                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
+                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                  1299793296][
                    GeneralUtilities`Slice[
                     Key[
                     EntityProperty["AdministrativeDivision", "GiniIndex"]], 
@@ -608,8 +604,7 @@ Cell[BoxData[
                Pane[
                 Annotation[
                  RawBoxes["0.4682"], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
                   GeneralUtilities`Slice[
                    Key[
                     EntityProperty["AdministrativeDivision", "GiniIndex"]], 
@@ -633,12 +628,10 @@ Cell[BoxData[
                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
                     Key[
                     EntityProperty["AdministrativeDivision", "GiniIndex"]]}]], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
                   GeneralUtilities`Slice[
                    Key[
                     EntityProperty["AdministrativeDivision", "GiniIndex"]]]], 
@@ -653,8 +646,8 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
                     1]& , {All}]], MenuEvaluator -> Automatic], 
                     MenuItem["Show 5 more rows at this level", 
                     KernelExecute[
@@ -663,8 +656,8 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
                     5]& , {All}]], MenuEvaluator -> Automatic], Delimiter, 
                     MenuItem["Show 1 fewer row at this level", 
                     KernelExecute[
@@ -673,9 +666,9 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -1]& \
-, {All}]], MenuEvaluator -> Automatic], 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, \
+-1]& , {All}]], MenuEvaluator -> Automatic], 
                     MenuItem["Show 5 fewer rows at this level", 
                     KernelExecute[
                     
@@ -683,9 +676,9 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -5]& \
-, {All}]], MenuEvaluator -> Automatic]}}, Alignment -> {Left, Baseline}, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, \
+-5]& , {All}]], MenuEvaluator -> Automatic]}}, Alignment -> {Left, Baseline}, 
                 Background -> GrayLevel[0.98]], SpanFromLeft}, {
                Item[
                 Pane[
@@ -697,7 +690,7 @@ Cell[BoxData[
                     Rational[27, 74], 
                     Rational[117, 370]}]]], 
                    TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
-                   239435360][
+                   1299793296][
                     GeneralUtilities`Slice[
                     Key[
                     EntityProperty["AdministrativeDivision", "Population"]]]],
@@ -731,15 +724,15 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
                     Key[
                     EntityProperty["AdministrativeDivision", "Population"]], 
                     Key[
                     Entity[
                     "AdministrativeDivision", {
                     "Alabama", "UnitedStates"}]]}]], 
-                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
+                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                  1299793296][
                    GeneralUtilities`Slice[
                     Key[
                     EntityProperty["AdministrativeDivision", "Population"]], 
@@ -751,8 +744,7 @@ Cell[BoxData[
                Pane[
                 Annotation[
                  RawBoxes["4849377"], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
                   GeneralUtilities`Slice[
                    Key[
                     EntityProperty["AdministrativeDivision", "Population"]], 
@@ -787,15 +779,15 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
                     Key[
                     EntityProperty["AdministrativeDivision", "Population"]], 
                     Key[
                     Entity[
                     "AdministrativeDivision", {
                     "Arizona", "UnitedStates"}]]}]], 
-                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
+                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                  1299793296][
                    GeneralUtilities`Slice[
                     Key[
                     EntityProperty["AdministrativeDivision", "Population"]], 
@@ -807,8 +799,7 @@ Cell[BoxData[
                Pane[
                 Annotation[
                  RawBoxes["6731484"], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
                   GeneralUtilities`Slice[
                    Key[
                     EntityProperty["AdministrativeDivision", "Population"]], 
@@ -832,13 +823,11 @@ Cell[BoxData[
                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
                     Key[
                     EntityProperty[
                     "AdministrativeDivision", "Population"]]}]], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
                   GeneralUtilities`Slice[
                    Key[
                     EntityProperty["AdministrativeDivision", "Population"]]]],
@@ -853,8 +842,8 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
                     1]& , {All}]], MenuEvaluator -> Automatic], 
                     MenuItem["Show 5 more rows at this level", 
                     KernelExecute[
@@ -863,8 +852,8 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
                     5]& , {All}]], MenuEvaluator -> Automatic], Delimiter, 
                     MenuItem["Show 1 fewer row at this level", 
                     KernelExecute[
@@ -872,9 +861,9 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -1]& \
-, {All}]], MenuEvaluator -> Automatic], 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, \
+-1]& , {All}]], MenuEvaluator -> Automatic], 
                     MenuItem["Show 5 fewer rows at this level", 
                     KernelExecute[
                     
@@ -882,9 +871,206 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -5]& \
-, {All}]], MenuEvaluator -> Automatic]}}, Alignment -> {Left, Baseline}, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, \
+-5]& , {All}]], MenuEvaluator -> Automatic]}}, Alignment -> {Left, Baseline}, 
+                Background -> GrayLevel[0.98]], SpanFromLeft}, {
+               Item[
+                Pane[
+                 Pane[
+                  Annotation[
+                   RawBoxes[
+                    StyleBox[
+                    "\"number of businesses\"", FontColor -> RGBColor[{
+                    Rational[33, 74], 
+                    Rational[27, 74], 
+                    Rational[117, 370]}]]], 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                   1299793296][
+                    GeneralUtilities`Slice[
+                    Key[
+                    EntityProperty["AdministrativeDivision", "Businesses"]]]],
+                    "Mouse"], ImageSize -> {{60, Full}, Automatic}, 
+                  Alignment -> {Left, Baseline}], 
+                 ImageSize -> {{60, Full}, Automatic}], Background -> 
+                GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Item[
+                Pane[
+                 Annotation[
+                  EventHandler[
+                   MouseAppearance[
+                    Mouseover[
+                    RawBoxes[
+                    StyleBox[
+                    "\"Alabama, United States\"", FontColor -> RGBColor[{
+                    Rational[33, 74], 
+                    Rational[27, 74], 
+                    Rational[117, 370]}]]], 
+                    Style[
+                    RawBoxes[
+                    StyleBox[
+                    "\"Alabama, United States\"", FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                   TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
+                    Key[
+                    EntityProperty["AdministrativeDivision", "Businesses"]], 
+                    Key[
+                    Entity[
+                    "AdministrativeDivision", {
+                    "Alabama", "UnitedStates"}]]}]], 
+                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                  1299793296][
+                   GeneralUtilities`Slice[
+                    Key[
+                    EntityProperty["AdministrativeDivision", "Businesses"]], 
+                    Key[
+                    Entity[
+                    "AdministrativeDivision", {"Alabama", "UnitedStates"}]]]],
+                   "Mouse"], ImageSize -> {{150, Full}, Automatic}], 
+                Background -> GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["382350"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
+                  GeneralUtilities`Slice[
+                   Key[
+                    EntityProperty["AdministrativeDivision", "Businesses"]], 
+                   Key[
+                    Entity[
+                    "AdministrativeDivision", {"Alabama", "UnitedStates"}]]]],
+                  "Mouse"], ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}]}, {SpanFromAbove, 
+               Item[
+                Pane[
+                 Annotation[
+                  EventHandler[
+                   MouseAppearance[
+                    Mouseover[
+                    RawBoxes[
+                    StyleBox[
+                    "\"Arizona, United States\"", FontColor -> RGBColor[{
+                    Rational[33, 74], 
+                    Rational[27, 74], 
+                    Rational[117, 370]}]]], 
+                    Style[
+                    RawBoxes[
+                    StyleBox[
+                    "\"Arizona, United States\"", FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                   TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
+                    Key[
+                    EntityProperty["AdministrativeDivision", "Businesses"]], 
+                    Key[
+                    Entity[
+                    "AdministrativeDivision", {
+                    "Arizona", "UnitedStates"}]]}]], 
+                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                  1299793296][
+                   GeneralUtilities`Slice[
+                    Key[
+                    EntityProperty["AdministrativeDivision", "Businesses"]], 
+                    Key[
+                    Entity[
+                    "AdministrativeDivision", {"Arizona", "UnitedStates"}]]]],
+                   "Mouse"], ImageSize -> {{150, Full}, Automatic}], 
+                Background -> GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["491529"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
+                  GeneralUtilities`Slice[
+                   Key[
+                    EntityProperty["AdministrativeDivision", "Businesses"]], 
+                   Key[
+                    Entity[
+                    "AdministrativeDivision", {"Arizona", "UnitedStates"}]]]],
+                  "Mouse"], ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}]}, {SpanFromAbove, 
+               Item[
+                Annotation[
+                 EventHandler[
+                  MouseAppearance[
+                   Mouseover[
+                    Superscript["48 total \:203a ", ""], 
+                    Style[
+                    Superscript["48 total \:203a ", ""], FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
+                    Key[
+                    EntityProperty[
+                    "AdministrativeDivision", "Businesses"]]}]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
+                  GeneralUtilities`Slice[
+                   Key[
+                    EntityProperty["AdministrativeDivision", "Businesses"]]]],
+                  "Mouse"], BaseStyle -> {{
+                   RGBColor[
+                   0.5098039215686274, 0.5098039215686274, 
+                    0.5098039215686274], 8}, ContextMenu -> {
+                    MenuItem["Show 1 more row at this level", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    1]& , {All}]], MenuEvaluator -> Automatic], 
+                    MenuItem["Show 5 more rows at this level", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    5]& , {All}]], MenuEvaluator -> Automatic], Delimiter, 
+                    MenuItem["Show 1 fewer row at this level", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, \
+-1]& , {All}]], MenuEvaluator -> Automatic], 
+                    MenuItem["Show 5 fewer rows at this level", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, \
+-5]& , {All}]], MenuEvaluator -> Automatic]}}, Alignment -> {Left, Baseline}, 
                 Background -> GrayLevel[0.98]], SpanFromLeft}, {
                Item[
                 Pane[
@@ -896,7 +1082,7 @@ Cell[BoxData[
                     Rational[27, 74], 
                     Rational[117, 370]}]]], 
                    TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
-                   239435360][
+                   1299793296][
                     GeneralUtilities`Slice[
                     Key[
                     EntityProperty["AdministrativeDivision", "CrimeRate"]]]], 
@@ -930,15 +1116,15 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
                     Key[
                     EntityProperty["AdministrativeDivision", "CrimeRate"]], 
                     Key[
                     Entity[
                     "AdministrativeDivision", {
                     "Alabama", "UnitedStates"}]]}]], 
-                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
+                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                  1299793296][
                    GeneralUtilities`Slice[
                     Key[
                     EntityProperty["AdministrativeDivision", "CrimeRate"]], 
@@ -950,8 +1136,7 @@ Cell[BoxData[
                Pane[
                 Annotation[
                  RawBoxes["0.034815"], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
                   GeneralUtilities`Slice[
                    Key[
                     EntityProperty["AdministrativeDivision", "CrimeRate"]], 
@@ -986,15 +1171,15 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
                     Key[
                     EntityProperty["AdministrativeDivision", "CrimeRate"]], 
                     Key[
                     Entity[
                     "AdministrativeDivision", {
                     "Arizona", "UnitedStates"}]]}]], 
-                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
+                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                  1299793296][
                    GeneralUtilities`Slice[
                     Key[
                     EntityProperty["AdministrativeDivision", "CrimeRate"]], 
@@ -1006,8 +1191,7 @@ Cell[BoxData[
                Pane[
                 Annotation[
                  RawBoxes["0.034229"], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
                   GeneralUtilities`Slice[
                    Key[
                     EntityProperty["AdministrativeDivision", "CrimeRate"]], 
@@ -1031,12 +1215,10 @@ Cell[BoxData[
                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
                     Key[
                     EntityProperty["AdministrativeDivision", "CrimeRate"]]}]], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
                   GeneralUtilities`Slice[
                    Key[
                     EntityProperty["AdministrativeDivision", "CrimeRate"]]]], 
@@ -1051,8 +1233,8 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
                     1]& , {All}]], MenuEvaluator -> Automatic], 
                     MenuItem["Show 5 more rows at this level", 
                     KernelExecute[
@@ -1061,8 +1243,8 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
                     5]& , {All}]], MenuEvaluator -> Automatic], Delimiter, 
                     MenuItem["Show 1 fewer row at this level", 
                     KernelExecute[
@@ -1071,9 +1253,9 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -1]& \
-, {All}]], MenuEvaluator -> Automatic], 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, \
+-1]& , {All}]], MenuEvaluator -> Automatic], 
                     MenuItem["Show 5 fewer rows at this level", 
                     KernelExecute[
                     
@@ -1081,9 +1263,411 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -5]& \
-, {All}]], MenuEvaluator -> Automatic]}}, Alignment -> {Left, Baseline}, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, \
+-5]& , {All}]], MenuEvaluator -> Automatic]}}, Alignment -> {Left, Baseline}, 
+                Background -> GrayLevel[0.98]], SpanFromLeft}, {
+               Item[
+                Pane[
+                 Pane[
+                  Annotation[
+                   RawBoxes[
+                    StyleBox["\"disabled people\"", FontColor -> RGBColor[{
+                    Rational[33, 74], 
+                    Rational[27, 74], 
+                    Rational[117, 370]}]]], 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                   1299793296][
+                    GeneralUtilities`Slice[
+                    Key[
+                    EntityProperty[
+                    "AdministrativeDivision", "DisabledPersons"]]]], "Mouse"],
+                   ImageSize -> {{60, Full}, Automatic}, 
+                  Alignment -> {Left, Baseline}], 
+                 ImageSize -> {{60, Full}, Automatic}], Background -> 
+                GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Item[
+                Pane[
+                 Annotation[
+                  EventHandler[
+                   MouseAppearance[
+                    Mouseover[
+                    RawBoxes[
+                    StyleBox[
+                    "\"Alabama, United States\"", FontColor -> RGBColor[{
+                    Rational[33, 74], 
+                    Rational[27, 74], 
+                    Rational[117, 370]}]]], 
+                    Style[
+                    RawBoxes[
+                    StyleBox[
+                    "\"Alabama, United States\"", FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                   TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
+                    Key[
+                    EntityProperty[
+                    "AdministrativeDivision", "DisabledPersons"]], 
+                    Key[
+                    Entity[
+                    "AdministrativeDivision", {
+                    "Alabama", "UnitedStates"}]]}]], 
+                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                  1299793296][
+                   GeneralUtilities`Slice[
+                    Key[
+                    EntityProperty[
+                    "AdministrativeDivision", "DisabledPersons"]], 
+                    Key[
+                    Entity[
+                    "AdministrativeDivision", {"Alabama", "UnitedStates"}]]]],
+                   "Mouse"], ImageSize -> {{150, Full}, Automatic}], 
+                Background -> GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["945705"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
+                  GeneralUtilities`Slice[
+                   Key[
+                    EntityProperty[
+                    "AdministrativeDivision", "DisabledPersons"]], 
+                   Key[
+                    Entity[
+                    "AdministrativeDivision", {"Alabama", "UnitedStates"}]]]],
+                  "Mouse"], ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}]}, {SpanFromAbove, 
+               Item[
+                Pane[
+                 Annotation[
+                  EventHandler[
+                   MouseAppearance[
+                    Mouseover[
+                    RawBoxes[
+                    StyleBox[
+                    "\"Arizona, United States\"", FontColor -> RGBColor[{
+                    Rational[33, 74], 
+                    Rational[27, 74], 
+                    Rational[117, 370]}]]], 
+                    Style[
+                    RawBoxes[
+                    StyleBox[
+                    "\"Arizona, United States\"", FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                   TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
+                    Key[
+                    EntityProperty[
+                    "AdministrativeDivision", "DisabledPersons"]], 
+                    Key[
+                    Entity[
+                    "AdministrativeDivision", {
+                    "Arizona", "UnitedStates"}]]}]], 
+                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                  1299793296][
+                   GeneralUtilities`Slice[
+                    Key[
+                    EntityProperty[
+                    "AdministrativeDivision", "DisabledPersons"]], 
+                    Key[
+                    Entity[
+                    "AdministrativeDivision", {"Arizona", "UnitedStates"}]]]],
+                   "Mouse"], ImageSize -> {{150, Full}, Automatic}], 
+                Background -> GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["902252"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
+                  GeneralUtilities`Slice[
+                   Key[
+                    EntityProperty[
+                    "AdministrativeDivision", "DisabledPersons"]], 
+                   Key[
+                    Entity[
+                    "AdministrativeDivision", {"Arizona", "UnitedStates"}]]]],
+                  "Mouse"], ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}]}, {SpanFromAbove, 
+               Item[
+                Annotation[
+                 EventHandler[
+                  MouseAppearance[
+                   Mouseover[
+                    Superscript["48 total \:203a ", ""], 
+                    Style[
+                    Superscript["48 total \:203a ", ""], FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
+                    Key[
+                    EntityProperty[
+                    "AdministrativeDivision", "DisabledPersons"]]}]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
+                  GeneralUtilities`Slice[
+                   Key[
+                    EntityProperty[
+                    "AdministrativeDivision", "DisabledPersons"]]]], "Mouse"],
+                 BaseStyle -> {{
+                   RGBColor[
+                   0.5098039215686274, 0.5098039215686274, 
+                    0.5098039215686274], 8}, ContextMenu -> {
+                    MenuItem["Show 1 more row at this level", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    1]& , {All}]], MenuEvaluator -> Automatic], 
+                    MenuItem["Show 5 more rows at this level", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    5]& , {All}]], MenuEvaluator -> Automatic], Delimiter, 
+                    MenuItem["Show 1 fewer row at this level", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, \
+-1]& , {All}]], MenuEvaluator -> Automatic], 
+                    MenuItem["Show 5 fewer rows at this level", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, \
+-5]& , {All}]], MenuEvaluator -> Automatic]}}, Alignment -> {Left, Baseline}, 
+                Background -> GrayLevel[0.98]], SpanFromLeft}, {
+               Item[
+                Pane[
+                 Pane[
+                  Annotation[
+                   RawBoxes[
+                    StyleBox["\"annual deaths\"", FontColor -> RGBColor[{
+                    Rational[33, 74], 
+                    Rational[27, 74], 
+                    Rational[117, 370]}]]], 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                   1299793296][
+                    GeneralUtilities`Slice[
+                    Key[
+                    EntityProperty[
+                    "AdministrativeDivision", "AnnualDeaths"]]]], "Mouse"], 
+                  ImageSize -> {{60, Full}, Automatic}, 
+                  Alignment -> {Left, Baseline}], 
+                 ImageSize -> {{60, Full}, Automatic}], Background -> 
+                GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Item[
+                Pane[
+                 Annotation[
+                  EventHandler[
+                   MouseAppearance[
+                    Mouseover[
+                    RawBoxes[
+                    StyleBox[
+                    "\"Alabama, United States\"", FontColor -> RGBColor[{
+                    Rational[33, 74], 
+                    Rational[27, 74], 
+                    Rational[117, 370]}]]], 
+                    Style[
+                    RawBoxes[
+                    StyleBox[
+                    "\"Alabama, United States\"", FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                   TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
+                    Key[
+                    EntityProperty["AdministrativeDivision", "AnnualDeaths"]], 
+                    Key[
+                    Entity[
+                    "AdministrativeDivision", {
+                    "Alabama", "UnitedStates"}]]}]], 
+                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                  1299793296][
+                   GeneralUtilities`Slice[
+                    Key[
+                    EntityProperty["AdministrativeDivision", "AnnualDeaths"]], 
+                    Key[
+                    Entity[
+                    "AdministrativeDivision", {"Alabama", "UnitedStates"}]]]],
+                   "Mouse"], ImageSize -> {{150, Full}, Automatic}], 
+                Background -> GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["52390"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
+                  GeneralUtilities`Slice[
+                   Key[
+                    EntityProperty["AdministrativeDivision", "AnnualDeaths"]], 
+                   Key[
+                    Entity[
+                    "AdministrativeDivision", {"Alabama", "UnitedStates"}]]]],
+                  "Mouse"], ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}]}, {SpanFromAbove, 
+               Item[
+                Pane[
+                 Annotation[
+                  EventHandler[
+                   MouseAppearance[
+                    Mouseover[
+                    RawBoxes[
+                    StyleBox[
+                    "\"Arizona, United States\"", FontColor -> RGBColor[{
+                    Rational[33, 74], 
+                    Rational[27, 74], 
+                    Rational[117, 370]}]]], 
+                    Style[
+                    RawBoxes[
+                    StyleBox[
+                    "\"Arizona, United States\"", FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                   TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
+                    Key[
+                    EntityProperty["AdministrativeDivision", "AnnualDeaths"]], 
+                    Key[
+                    Entity[
+                    "AdministrativeDivision", {
+                    "Arizona", "UnitedStates"}]]}]], 
+                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                  1299793296][
+                   GeneralUtilities`Slice[
+                    Key[
+                    EntityProperty["AdministrativeDivision", "AnnualDeaths"]], 
+                    Key[
+                    Entity[
+                    "AdministrativeDivision", {"Arizona", "UnitedStates"}]]]],
+                   "Mouse"], ImageSize -> {{150, Full}, Automatic}], 
+                Background -> GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["57553"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
+                  GeneralUtilities`Slice[
+                   Key[
+                    EntityProperty["AdministrativeDivision", "AnnualDeaths"]], 
+                   Key[
+                    Entity[
+                    "AdministrativeDivision", {"Arizona", "UnitedStates"}]]]],
+                  "Mouse"], ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}]}, {SpanFromAbove, 
+               Item[
+                Annotation[
+                 EventHandler[
+                  MouseAppearance[
+                   Mouseover[
+                    Superscript["48 total \:203a ", ""], 
+                    Style[
+                    Superscript["48 total \:203a ", ""], FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
+                    Key[
+                    EntityProperty[
+                    "AdministrativeDivision", "AnnualDeaths"]]}]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
+                  GeneralUtilities`Slice[
+                   Key[
+                    EntityProperty[
+                    "AdministrativeDivision", "AnnualDeaths"]]]], "Mouse"], 
+                BaseStyle -> {{
+                   RGBColor[
+                   0.5098039215686274, 0.5098039215686274, 
+                    0.5098039215686274], 8}, ContextMenu -> {
+                    MenuItem["Show 1 more row at this level", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    1]& , {All}]], MenuEvaluator -> Automatic], 
+                    MenuItem["Show 5 more rows at this level", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    5]& , {All}]], MenuEvaluator -> Automatic], Delimiter, 
+                    MenuItem["Show 1 fewer row at this level", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, \
+-1]& , {All}]], MenuEvaluator -> Automatic], 
+                    MenuItem["Show 5 fewer rows at this level", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, \
+-5]& , {All}]], MenuEvaluator -> Automatic]}}, Alignment -> {Left, Baseline}, 
                 Background -> GrayLevel[0.98]], SpanFromLeft}, {
                Item[
                 Pane[
@@ -1097,7 +1681,7 @@ Cell[BoxData[
                     Rational[27, 74], 
                     Rational[117, 370]}]]], 
                    TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
-                   239435360][
+                   1299793296][
                     GeneralUtilities`Slice[
                     Key[
                     EntityProperty[
@@ -1133,8 +1717,7 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
                     Key[
                     EntityProperty[
                     "AdministrativeDivision", 
@@ -1143,7 +1726,8 @@ Cell[BoxData[
                     Entity[
                     "AdministrativeDivision", {
                     "Alabama", "UnitedStates"}]]}]], 
-                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
+                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                  1299793296][
                    GeneralUtilities`Slice[
                     Key[
                     EntityProperty[
@@ -1157,8 +1741,7 @@ Cell[BoxData[
                Pane[
                 Annotation[
                  RawBoxes["14.8"], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
                   GeneralUtilities`Slice[
                    Key[
                     EntityProperty[
@@ -1195,8 +1778,7 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
                     Key[
                     EntityProperty[
                     "AdministrativeDivision", 
@@ -1205,7 +1787,8 @@ Cell[BoxData[
                     Entity[
                     "AdministrativeDivision", {
                     "Arizona", "UnitedStates"}]]}]], 
-                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
+                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                  1299793296][
                    GeneralUtilities`Slice[
                     Key[
                     EntityProperty[
@@ -1219,8 +1802,7 @@ Cell[BoxData[
                Pane[
                 Annotation[
                  RawBoxes["18.0"], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
                   GeneralUtilities`Slice[
                    Key[
                     EntityProperty[
@@ -1246,14 +1828,12 @@ Cell[BoxData[
                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
                     Key[
                     EntityProperty[
                     "AdministrativeDivision", 
                     "HealthInsuranceUncoveredRate"]]}]], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
                   GeneralUtilities`Slice[
                    Key[
                     EntityProperty[
@@ -1270,8 +1850,8 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
                     1]& , {All}]], MenuEvaluator -> Automatic], 
                     MenuItem["Show 5 more rows at this level", 
                     KernelExecute[
@@ -1280,8 +1860,8 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
                     5]& , {All}]], MenuEvaluator -> Automatic], Delimiter, 
                     MenuItem["Show 1 fewer row at this level", 
                     KernelExecute[
@@ -1290,9 +1870,9 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -1]& \
-, {All}]], MenuEvaluator -> Automatic], 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, \
+-1]& , {All}]], MenuEvaluator -> Automatic], 
                     MenuItem["Show 5 fewer rows at this level", 
                     KernelExecute[
                     
@@ -1300,9 +1880,9 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -5]& \
-, {All}]], MenuEvaluator -> Automatic]}}, Alignment -> {Left, Baseline}, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, \
+-5]& , {All}]], MenuEvaluator -> Automatic]}}, Alignment -> {Left, Baseline}, 
                 Background -> GrayLevel[0.98]], SpanFromLeft}, {
                Item[
                 Pane[
@@ -1314,7 +1894,7 @@ Cell[BoxData[
                     Rational[27, 74], 
                     Rational[117, 370]}]]], 
                    TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
-                   239435360][
+                   1299793296][
                     GeneralUtilities`Slice[
                     Key[
                     EntityProperty[
@@ -1349,8 +1929,7 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
                     Key[
                     EntityProperty[
                     "AdministrativeDivision", "HomeOwnershipRate"]], 
@@ -1358,7 +1937,8 @@ Cell[BoxData[
                     Entity[
                     "AdministrativeDivision", {
                     "Alabama", "UnitedStates"}]]}]], 
-                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
+                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                  1299793296][
                    GeneralUtilities`Slice[
                     Key[
                     EntityProperty[
@@ -1371,8 +1951,7 @@ Cell[BoxData[
                Pane[
                 Annotation[
                  RawBoxes["70.3"], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
                   GeneralUtilities`Slice[
                    Key[
                     EntityProperty[
@@ -1408,8 +1987,7 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
                     Key[
                     EntityProperty[
                     "AdministrativeDivision", "HomeOwnershipRate"]], 
@@ -1417,7 +1995,8 @@ Cell[BoxData[
                     Entity[
                     "AdministrativeDivision", {
                     "Arizona", "UnitedStates"}]]}]], 
-                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
+                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                  1299793296][
                    GeneralUtilities`Slice[
                     Key[
                     EntityProperty[
@@ -1430,8 +2009,7 @@ Cell[BoxData[
                Pane[
                 Annotation[
                  RawBoxes["65.7"], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
                   GeneralUtilities`Slice[
                    Key[
                     EntityProperty[
@@ -1456,13 +2034,11 @@ Cell[BoxData[
                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
                     Key[
                     EntityProperty[
                     "AdministrativeDivision", "HomeOwnershipRate"]]}]], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
                   GeneralUtilities`Slice[
                    Key[
                     EntityProperty[
@@ -1478,8 +2054,8 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
                     1]& , {All}]], MenuEvaluator -> Automatic], 
                     MenuItem["Show 5 more rows at this level", 
                     KernelExecute[
@@ -1488,8 +2064,8 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
                     5]& , {All}]], MenuEvaluator -> Automatic], Delimiter, 
                     MenuItem["Show 1 fewer row at this level", 
                     KernelExecute[
@@ -1498,9 +2074,9 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -1]& \
-, {All}]], MenuEvaluator -> Automatic], 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, \
+-1]& , {All}]], MenuEvaluator -> Automatic], 
                     MenuItem["Show 5 fewer rows at this level", 
                     KernelExecute[
                     
@@ -1508,9 +2084,9 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -5]& \
-, {All}]], MenuEvaluator -> Automatic]}}, Alignment -> {Left, Baseline}, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, \
+-5]& , {All}]], MenuEvaluator -> Automatic]}}, Alignment -> {Left, Baseline}, 
                 Background -> GrayLevel[0.98]], SpanFromLeft}, {
                Item[
                 Pane[
@@ -1522,7 +2098,7 @@ Cell[BoxData[
                     Rational[27, 74], 
                     Rational[117, 370]}]]], 
                    TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
-                   239435360][
+                   1299793296][
                     GeneralUtilities`Slice[
                     Key[
                     EntityProperty[
@@ -1557,8 +2133,7 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
                     Key[
                     EntityProperty["AdministrativeDivision", "MinimumWage"]], 
                     
@@ -1566,7 +2141,8 @@ Cell[BoxData[
                     Entity[
                     "AdministrativeDivision", {
                     "Alabama", "UnitedStates"}]]}]], 
-                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
+                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                  1299793296][
                    GeneralUtilities`Slice[
                     Key[
                     EntityProperty["AdministrativeDivision", "MinimumWage"]], 
@@ -1579,8 +2155,7 @@ Cell[BoxData[
                Pane[
                 Annotation[
                  RawBoxes["7.25"], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
                   GeneralUtilities`Slice[
                    Key[
                     EntityProperty["AdministrativeDivision", "MinimumWage"]], 
@@ -1616,8 +2191,7 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
                     Key[
                     EntityProperty["AdministrativeDivision", "MinimumWage"]], 
                     
@@ -1625,7 +2199,8 @@ Cell[BoxData[
                     Entity[
                     "AdministrativeDivision", {
                     "Arizona", "UnitedStates"}]]}]], 
-                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
+                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                  1299793296][
                    GeneralUtilities`Slice[
                     Key[
                     EntityProperty["AdministrativeDivision", "MinimumWage"]], 
@@ -1638,8 +2213,7 @@ Cell[BoxData[
                Pane[
                 Annotation[
                  RawBoxes["11.0"], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
                   GeneralUtilities`Slice[
                    Key[
                     EntityProperty["AdministrativeDivision", "MinimumWage"]], 
@@ -1664,13 +2238,11 @@ Cell[BoxData[
                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
                     Key[
                     EntityProperty[
                     "AdministrativeDivision", "MinimumWage"]]}]], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
                   GeneralUtilities`Slice[
                    Key[
                     EntityProperty[
@@ -1686,8 +2258,8 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
                     1]& , {All}]], MenuEvaluator -> Automatic], 
                     MenuItem["Show 5 more rows at this level", 
                     KernelExecute[
@@ -1696,8 +2268,8 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
                     5]& , {All}]], MenuEvaluator -> Automatic], Delimiter, 
                     MenuItem["Show 1 fewer row at this level", 
                     KernelExecute[
@@ -1706,9 +2278,9 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -1]& \
-, {All}]], MenuEvaluator -> Automatic], 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, \
+-1]& , {All}]], MenuEvaluator -> Automatic], 
                     MenuItem["Show 5 fewer rows at this level", 
                     KernelExecute[
                     
@@ -1716,7 +2288,8 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     
                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -5]& \
 , {All}]], MenuEvaluator -> Automatic]}}, Alignment -> {Left, Baseline}, 
                 Background -> GrayLevel[0.98]], SpanFromLeft}, {
@@ -1730,7 +2303,7 @@ Cell[BoxData[
                     Rational[27, 74], 
                     Rational[117, 370]}]]], 
                    TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
-                   239435360][
+                   1299793296][
                     GeneralUtilities`Slice[
                     Key[
                     EntityProperty[
@@ -1765,8 +2338,7 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
                     Key[
                     EntityProperty[
                     "AdministrativeDivision", "TotalVotingRate"]], 
@@ -1774,7 +2346,8 @@ Cell[BoxData[
                     Entity[
                     "AdministrativeDivision", {
                     "Alabama", "UnitedStates"}]]}]], 
-                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
+                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                  1299793296][
                    GeneralUtilities`Slice[
                     Key[
                     EntityProperty[
@@ -1787,8 +2360,7 @@ Cell[BoxData[
                Pane[
                 Annotation[
                  RawBoxes["56.3712"], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
                   GeneralUtilities`Slice[
                    Key[
                     EntityProperty[
@@ -1824,8 +2396,7 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
                     Key[
                     EntityProperty[
                     "AdministrativeDivision", "TotalVotingRate"]], 
@@ -1833,7 +2404,8 @@ Cell[BoxData[
                     Entity[
                     "AdministrativeDivision", {
                     "Arizona", "UnitedStates"}]]}]], 
-                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
+                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                  1299793296][
                    GeneralUtilities`Slice[
                     Key[
                     EntityProperty[
@@ -1846,8 +2418,7 @@ Cell[BoxData[
                Pane[
                 Annotation[
                  RawBoxes["53.288"], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
                   GeneralUtilities`Slice[
                    Key[
                     EntityProperty[
@@ -1872,13 +2443,11 @@ Cell[BoxData[
                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][{
                     Key[
                     EntityProperty[
                     "AdministrativeDivision", "TotalVotingRate"]]}]], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
                   GeneralUtilities`Slice[
                    Key[
                     EntityProperty[
@@ -1894,8 +2463,8 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
                     1]& , {All}]], MenuEvaluator -> Automatic], 
                     MenuItem["Show 5 more rows at this level", 
                     KernelExecute[
@@ -1904,8 +2473,8 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
                     5]& , {All}]], MenuEvaluator -> Automatic], Delimiter, 
                     MenuItem["Show 1 fewer row at this level", 
                     KernelExecute[
@@ -1914,9 +2483,9 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -1]& \
-, {All}]], MenuEvaluator -> Automatic], 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, \
+-1]& , {All}]], MenuEvaluator -> Automatic], 
                     MenuItem["Show 5 fewer rows at this level", 
                     KernelExecute[
                     
@@ -1924,627 +2493,9 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -5]& \
-, {All}]], MenuEvaluator -> Automatic]}}, Alignment -> {Left, Baseline}, 
-                Background -> GrayLevel[0.98]], SpanFromLeft}, {
-               Item[
-                Pane[
-                 Pane[
-                  Annotation[
-                   RawBoxes[
-                    StyleBox[
-                    "\"civilian unemployment rate\"", FontColor -> RGBColor[{
-                    Rational[33, 74], 
-                    Rational[27, 74], 
-                    Rational[117, 370]}]]], 
-                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
-                   239435360][
-                    GeneralUtilities`Slice[
-                    Key[
-                    EntityProperty[
-                    "AdministrativeDivision", "CivilianUnemploymentRate"]]]], 
-                   "Mouse"], ImageSize -> {{60, Full}, Automatic}, 
-                  Alignment -> {Left, Baseline}], 
-                 ImageSize -> {{60, Full}, Automatic}], Background -> 
-                GrayLevel[0.95], Alignment -> {Left, Baseline}], 
-               Item[
-                Pane[
-                 Annotation[
-                  EventHandler[
-                   MouseAppearance[
-                    Mouseover[
-                    RawBoxes[
-                    StyleBox[
-                    "\"Alabama, United States\"", FontColor -> RGBColor[{
-                    Rational[33, 74], 
-                    Rational[27, 74], 
-                    Rational[117, 370]}]]], 
-                    Style[
-                    RawBoxes[
-                    StyleBox[
-                    "\"Alabama, United States\"", FontColor -> 
-                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], FontColor -> 
-                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
-                   TypeSystem`NestedGrid`PackagePrivate`updateState[
-                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
-                    Key[
-                    EntityProperty[
-                    "AdministrativeDivision", "CivilianUnemploymentRate"]], 
-                    Key[
-                    Entity[
-                    "AdministrativeDivision", {
-                    "Alabama", "UnitedStates"}]]}]], 
-                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                   GeneralUtilities`Slice[
-                    Key[
-                    EntityProperty[
-                    "AdministrativeDivision", "CivilianUnemploymentRate"]], 
-                    Key[
-                    Entity[
-                    "AdministrativeDivision", {"Alabama", "UnitedStates"}]]]],
-                   "Mouse"], ImageSize -> {{150, Full}, Automatic}], 
-                Background -> GrayLevel[0.95], Alignment -> {Left, Baseline}], 
-               Pane[
-                Annotation[
-                 RawBoxes["3.7"], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
-                  GeneralUtilities`Slice[
-                   Key[
-                    EntityProperty[
-                    "AdministrativeDivision", "CivilianUnemploymentRate"]], 
-                   Key[
-                    Entity[
-                    "AdministrativeDivision", {"Alabama", "UnitedStates"}]]]],
-                  "Mouse"], ImageSize -> {{60, Full}, Automatic}, 
-                Alignment -> {Left, Baseline}]}, {SpanFromAbove, 
-               Item[
-                Pane[
-                 Annotation[
-                  EventHandler[
-                   MouseAppearance[
-                    Mouseover[
-                    RawBoxes[
-                    StyleBox[
-                    "\"Arizona, United States\"", FontColor -> RGBColor[{
-                    Rational[33, 74], 
-                    Rational[27, 74], 
-                    Rational[117, 370]}]]], 
-                    Style[
-                    RawBoxes[
-                    StyleBox[
-                    "\"Arizona, United States\"", FontColor -> 
-                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], FontColor -> 
-                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
-                   TypeSystem`NestedGrid`PackagePrivate`updateState[
-                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
-                    Key[
-                    EntityProperty[
-                    "AdministrativeDivision", "CivilianUnemploymentRate"]], 
-                    Key[
-                    Entity[
-                    "AdministrativeDivision", {
-                    "Arizona", "UnitedStates"}]]}]], 
-                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                   GeneralUtilities`Slice[
-                    Key[
-                    EntityProperty[
-                    "AdministrativeDivision", "CivilianUnemploymentRate"]], 
-                    Key[
-                    Entity[
-                    "AdministrativeDivision", {"Arizona", "UnitedStates"}]]]],
-                   "Mouse"], ImageSize -> {{150, Full}, Automatic}], 
-                Background -> GrayLevel[0.95], Alignment -> {Left, Baseline}], 
-               Pane[
-                Annotation[
-                 RawBoxes["4.9"], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
-                  GeneralUtilities`Slice[
-                   Key[
-                    EntityProperty[
-                    "AdministrativeDivision", "CivilianUnemploymentRate"]], 
-                   Key[
-                    Entity[
-                    "AdministrativeDivision", {"Arizona", "UnitedStates"}]]]],
-                  "Mouse"], ImageSize -> {{60, Full}, Automatic}, 
-                Alignment -> {Left, Baseline}]}, {SpanFromAbove, 
-               Item[
-                Annotation[
-                 EventHandler[
-                  MouseAppearance[
-                   Mouseover[
-                    Superscript["48 total \:203a ", ""], 
-                    Style[
-                    Superscript["48 total \:203a ", ""], FontColor -> 
-                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
-                  TypeSystem`NestedGrid`PackagePrivate`updateState[
-                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
-                    Key[
-                    EntityProperty[
-                    "AdministrativeDivision", "CivilianUnemploymentRate"]]}]], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
-                  GeneralUtilities`Slice[
-                   Key[
-                    EntityProperty[
-                    "AdministrativeDivision", "CivilianUnemploymentRate"]]]], 
-                 "Mouse"], BaseStyle -> {{
-                   RGBColor[
-                   0.5098039215686274, 0.5098039215686274, 
-                    0.5098039215686274], 8}, ContextMenu -> {
-                    MenuItem["Show 1 more row at this level", 
-                    KernelExecute[
-                    
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
-                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
-                    1]& , {All}]], MenuEvaluator -> Automatic], 
-                    MenuItem["Show 5 more rows at this level", 
-                    KernelExecute[
-                    
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
-                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
-                    5]& , {All}]], MenuEvaluator -> Automatic], Delimiter, 
-                    MenuItem["Show 1 fewer row at this level", 
-                    KernelExecute[
-                    
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
-                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -1]& \
-, {All}]], MenuEvaluator -> Automatic], 
-                    MenuItem["Show 5 fewer rows at this level", 
-                    KernelExecute[
-                    
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
-                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -5]& \
-, {All}]], MenuEvaluator -> Automatic]}}, Alignment -> {Left, Baseline}, 
-                Background -> GrayLevel[0.98]], SpanFromLeft}, {
-               Item[
-                Pane[
-                 Pane[
-                  Annotation[
-                   RawBoxes[
-                    StyleBox[
-                    "\"number of businesses\"", FontColor -> RGBColor[{
-                    Rational[33, 74], 
-                    Rational[27, 74], 
-                    Rational[117, 370]}]]], 
-                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
-                   239435360][
-                    GeneralUtilities`Slice[
-                    Key[
-                    EntityProperty["AdministrativeDivision", "Businesses"]]]],
-                    "Mouse"], ImageSize -> {{60, Full}, Automatic}, 
-                  Alignment -> {Left, Baseline}], 
-                 ImageSize -> {{60, Full}, Automatic}], Background -> 
-                GrayLevel[0.95], Alignment -> {Left, Baseline}], 
-               Item[
-                Pane[
-                 Annotation[
-                  EventHandler[
-                   MouseAppearance[
-                    Mouseover[
-                    RawBoxes[
-                    StyleBox[
-                    "\"Alabama, United States\"", FontColor -> RGBColor[{
-                    Rational[33, 74], 
-                    Rational[27, 74], 
-                    Rational[117, 370]}]]], 
-                    Style[
-                    RawBoxes[
-                    StyleBox[
-                    "\"Alabama, United States\"", FontColor -> 
-                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], FontColor -> 
-                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
-                   TypeSystem`NestedGrid`PackagePrivate`updateState[
-                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
-                    Key[
-                    EntityProperty["AdministrativeDivision", "Businesses"]], 
-                    Key[
-                    Entity[
-                    "AdministrativeDivision", {
-                    "Alabama", "UnitedStates"}]]}]], 
-                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                   GeneralUtilities`Slice[
-                    Key[
-                    EntityProperty["AdministrativeDivision", "Businesses"]], 
-                    Key[
-                    Entity[
-                    "AdministrativeDivision", {"Alabama", "UnitedStates"}]]]],
-                   "Mouse"], ImageSize -> {{150, Full}, Automatic}], 
-                Background -> GrayLevel[0.95], Alignment -> {Left, Baseline}], 
-               Pane[
-                Annotation[
-                 RawBoxes["0.0788452"], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
-                  GeneralUtilities`Slice[
-                   Key[
-                    EntityProperty["AdministrativeDivision", "Businesses"]], 
-                   Key[
-                    Entity[
-                    "AdministrativeDivision", {"Alabama", "UnitedStates"}]]]],
-                  "Mouse"], ImageSize -> {{60, Full}, Automatic}, 
-                Alignment -> {Left, Baseline}]}, {SpanFromAbove, 
-               Item[
-                Pane[
-                 Annotation[
-                  EventHandler[
-                   MouseAppearance[
-                    Mouseover[
-                    RawBoxes[
-                    StyleBox[
-                    "\"Arizona, United States\"", FontColor -> RGBColor[{
-                    Rational[33, 74], 
-                    Rational[27, 74], 
-                    Rational[117, 370]}]]], 
-                    Style[
-                    RawBoxes[
-                    StyleBox[
-                    "\"Arizona, United States\"", FontColor -> 
-                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], FontColor -> 
-                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
-                   TypeSystem`NestedGrid`PackagePrivate`updateState[
-                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
-                    Key[
-                    EntityProperty["AdministrativeDivision", "Businesses"]], 
-                    Key[
-                    Entity[
-                    "AdministrativeDivision", {
-                    "Arizona", "UnitedStates"}]]}]], 
-                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                   GeneralUtilities`Slice[
-                    Key[
-                    EntityProperty["AdministrativeDivision", "Businesses"]], 
-                    Key[
-                    Entity[
-                    "AdministrativeDivision", {"Arizona", "UnitedStates"}]]]],
-                   "Mouse"], ImageSize -> {{150, Full}, Automatic}], 
-                Background -> GrayLevel[0.95], Alignment -> {Left, Baseline}], 
-               Pane[
-                Annotation[
-                 RawBoxes["0.0730194"], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
-                  GeneralUtilities`Slice[
-                   Key[
-                    EntityProperty["AdministrativeDivision", "Businesses"]], 
-                   Key[
-                    Entity[
-                    "AdministrativeDivision", {"Arizona", "UnitedStates"}]]]],
-                  "Mouse"], ImageSize -> {{60, Full}, Automatic}, 
-                Alignment -> {Left, Baseline}]}, {SpanFromAbove, 
-               Item[
-                Annotation[
-                 EventHandler[
-                  MouseAppearance[
-                   Mouseover[
-                    Superscript["48 total \:203a ", ""], 
-                    Style[
-                    Superscript["48 total \:203a ", ""], FontColor -> 
-                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
-                  TypeSystem`NestedGrid`PackagePrivate`updateState[
-                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
-                    Key[
-                    EntityProperty[
-                    "AdministrativeDivision", "Businesses"]]}]], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
-                  GeneralUtilities`Slice[
-                   Key[
-                    EntityProperty["AdministrativeDivision", "Businesses"]]]],
-                  "Mouse"], BaseStyle -> {{
-                   RGBColor[
-                   0.5098039215686274, 0.5098039215686274, 
-                    0.5098039215686274], 8}, ContextMenu -> {
-                    MenuItem["Show 1 more row at this level", 
-                    KernelExecute[
-                    
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
-                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
-                    1]& , {All}]], MenuEvaluator -> Automatic], 
-                    MenuItem["Show 5 more rows at this level", 
-                    KernelExecute[
-                    
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
-                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
-                    5]& , {All}]], MenuEvaluator -> Automatic], Delimiter, 
-                    MenuItem["Show 1 fewer row at this level", 
-                    KernelExecute[
-                    
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
-                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -1]& \
-, {All}]], MenuEvaluator -> Automatic], 
-                    MenuItem["Show 5 fewer rows at this level", 
-                    KernelExecute[
-                    
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
-                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -5]& \
-, {All}]], MenuEvaluator -> Automatic]}}, Alignment -> {Left, Baseline}, 
-                Background -> GrayLevel[0.98]], SpanFromLeft}, {
-               Item[
-                Pane[
-                 Pane[
-                  Annotation[
-                   RawBoxes[
-                    StyleBox["\"disabled people\"", FontColor -> RGBColor[{
-                    Rational[33, 74], 
-                    Rational[27, 74], 
-                    Rational[117, 370]}]]], 
-                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
-                   239435360][
-                    GeneralUtilities`Slice[
-                    Key[
-                    EntityProperty[
-                    "AdministrativeDivision", "DisabledPersons"]]]], "Mouse"],
-                   ImageSize -> {{60, Full}, Automatic}, 
-                  Alignment -> {Left, Baseline}], 
-                 ImageSize -> {{60, Full}, Automatic}], Background -> 
-                GrayLevel[0.95], Alignment -> {Left, Baseline}], 
-               Item[
-                Pane[
-                 Annotation[
-                  EventHandler[
-                   MouseAppearance[
-                    Mouseover[
-                    RawBoxes[
-                    StyleBox[
-                    "\"Alabama, United States\"", FontColor -> RGBColor[{
-                    Rational[33, 74], 
-                    Rational[27, 74], 
-                    Rational[117, 370]}]]], 
-                    Style[
-                    RawBoxes[
-                    StyleBox[
-                    "\"Alabama, United States\"", FontColor -> 
-                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], FontColor -> 
-                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
-                   TypeSystem`NestedGrid`PackagePrivate`updateState[
-                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
-                    Key[
-                    EntityProperty[
-                    "AdministrativeDivision", "DisabledPersons"]], 
-                    Key[
-                    Entity[
-                    "AdministrativeDivision", {
-                    "Alabama", "UnitedStates"}]]}]], 
-                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                   GeneralUtilities`Slice[
-                    Key[
-                    EntityProperty[
-                    "AdministrativeDivision", "DisabledPersons"]], 
-                    Key[
-                    Entity[
-                    "AdministrativeDivision", {"Alabama", "UnitedStates"}]]]],
-                   "Mouse"], ImageSize -> {{150, Full}, Automatic}], 
-                Background -> GrayLevel[0.95], Alignment -> {Left, Baseline}], 
-               Pane[
-                Annotation[
-                 RawBoxes["0.195016"], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
-                  GeneralUtilities`Slice[
-                   Key[
-                    EntityProperty[
-                    "AdministrativeDivision", "DisabledPersons"]], 
-                   Key[
-                    Entity[
-                    "AdministrativeDivision", {"Alabama", "UnitedStates"}]]]],
-                  "Mouse"], ImageSize -> {{60, Full}, Automatic}, 
-                Alignment -> {Left, Baseline}]}, {SpanFromAbove, 
-               Item[
-                Pane[
-                 Annotation[
-                  EventHandler[
-                   MouseAppearance[
-                    Mouseover[
-                    RawBoxes[
-                    StyleBox[
-                    "\"Arizona, United States\"", FontColor -> RGBColor[{
-                    Rational[33, 74], 
-                    Rational[27, 74], 
-                    Rational[117, 370]}]]], 
-                    Style[
-                    RawBoxes[
-                    StyleBox[
-                    "\"Arizona, United States\"", FontColor -> 
-                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], FontColor -> 
-                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
-                   TypeSystem`NestedGrid`PackagePrivate`updateState[
-                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
-                    Key[
-                    EntityProperty[
-                    "AdministrativeDivision", "DisabledPersons"]], 
-                    Key[
-                    Entity[
-                    "AdministrativeDivision", {
-                    "Arizona", "UnitedStates"}]]}]], 
-                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                   GeneralUtilities`Slice[
-                    Key[
-                    EntityProperty[
-                    "AdministrativeDivision", "DisabledPersons"]], 
-                    Key[
-                    Entity[
-                    "AdministrativeDivision", {"Arizona", "UnitedStates"}]]]],
-                   "Mouse"], ImageSize -> {{150, Full}, Automatic}], 
-                Background -> GrayLevel[0.95], Alignment -> {Left, Baseline}], 
-               Pane[
-                Annotation[
-                 RawBoxes["0.134035"], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
-                  GeneralUtilities`Slice[
-                   Key[
-                    EntityProperty[
-                    "AdministrativeDivision", "DisabledPersons"]], 
-                   Key[
-                    Entity[
-                    "AdministrativeDivision", {"Arizona", "UnitedStates"}]]]],
-                  "Mouse"], ImageSize -> {{60, Full}, Automatic}, 
-                Alignment -> {Left, Baseline}]}, {SpanFromAbove, 
-               Item[
-                Annotation[
-                 EventHandler[
-                  MouseAppearance[
-                   Mouseover[
-                    Superscript["48 total \:203a ", ""], 
-                    Style[
-                    Superscript["48 total \:203a ", ""], FontColor -> 
-                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
-                  TypeSystem`NestedGrid`PackagePrivate`updateState[
-                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][{
-                    
-                    Key[
-                    EntityProperty[
-                    "AdministrativeDivision", "DisabledPersons"]]}]], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
-                 
-                  GeneralUtilities`Slice[
-                   Key[
-                    EntityProperty[
-                    "AdministrativeDivision", "DisabledPersons"]]]], "Mouse"],
-                 BaseStyle -> {{
-                   RGBColor[
-                   0.5098039215686274, 0.5098039215686274, 
-                    0.5098039215686274], 8}, ContextMenu -> {
-                    MenuItem["Show 1 more row at this level", 
-                    KernelExecute[
-                    
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
-                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
-                    1]& , {All}]], MenuEvaluator -> Automatic], 
-                    MenuItem["Show 5 more rows at this level", 
-                    KernelExecute[
-                    
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
-                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
-                    5]& , {All}]], MenuEvaluator -> Automatic], Delimiter, 
-                    MenuItem["Show 1 fewer row at this level", 
-                    KernelExecute[
-                    
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
-                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -1]& \
-, {All}]], MenuEvaluator -> Automatic], 
-                    MenuItem["Show 5 fewer rows at this level", 
-                    KernelExecute[
-                    
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
-                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -5]& \
-, {All}]], MenuEvaluator -> Automatic]}}, Alignment -> {Left, Baseline}, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, \
+-5]& , {All}]], MenuEvaluator -> Automatic]}}, Alignment -> {Left, Baseline}, 
                 Background -> GrayLevel[0.98]], SpanFromLeft}, {
                Item[
                 Deploy[
@@ -2617,6 +2568,7 @@ Cell[BoxData[
                     GrayLevel[0.3]]], 
                     GrayLevel[0.3], {
                     Thickness[0.026431741349551847`], 
+                    
                     FilledCurve[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
                     0}, {0, 1, 0}}}, {{{0.5499, 30.980699999999995`}, {
                     36.7969, 0.7526999999999973}, {36.7969, 
@@ -2723,7 +2675,6 @@ Cell[BoxData[
                     FilledCurve[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
                     36.571, 1.031}, {42.440999999999995`, 1.031}, {
                     42.440999999999995`, 60.967}, {36.571, 60.967}}}], 
-                    
                     FilledCurve[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
                     0}, {0, 1, 0}}}, {{{0.5598000000000001, 
                     53.788500000000006`}, {26.5668, 31.015500000000007`}, {
@@ -2968,7 +2919,6 @@ Cell[BoxData[
                     FilledCurve[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
                     36.571, 1.031}, {42.440999999999995`, 1.031}, {
                     42.440999999999995`, 60.967}, {36.571, 60.967}}}], 
-                    
                     FilledCurve[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
                     0}, {0, 1, 0}}}, {{{0.5598000000000001, 
                     53.788500000000006`}, {26.5668, 31.015500000000007`}, {
@@ -2991,8 +2941,8 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    1, {}]], MenuEvaluator -> Automatic], 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     1, {}]], MenuEvaluator -> Automatic], 
                     MenuItem["Show up to 10 rows", 
                     KernelExecute[
                     
@@ -3000,8 +2950,8 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    10, {}]], MenuEvaluator -> Automatic], 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     10, {}]], MenuEvaluator -> Automatic], 
                     MenuItem["Show up to 30 rows", 
                     KernelExecute[
                     
@@ -3009,8 +2959,8 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    30, {}]], MenuEvaluator -> Automatic], 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     30, {}]], MenuEvaluator -> Automatic], 
                     MenuItem["Show up to 100 rows", 
                     KernelExecute[
                     
@@ -3018,8 +2968,8 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    100, {}]], MenuEvaluator -> Automatic], 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     100, {}]], MenuEvaluator -> Automatic], 
                     MenuItem["Show all", 
                     KernelExecute[
                     
@@ -3027,8 +2977,8 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360}, 
-                    100000000, {}]], MenuEvaluator -> Automatic]}}], 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296},
+                     100000000, {}]], MenuEvaluator -> Automatic]}}], 
                SpanFromLeft, SpanFromLeft}}, BaseStyle -> {ContextMenu -> {
                  MenuItem["Copy position to clipboard", 
                   KernelExecute[
@@ -3076,7 +3026,7 @@ Cell[BoxData[
                 TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                  TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                  TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                 TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360][
+                 TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296][
                 TypeSystem`NestedGrid`PackagePrivate`tmpData$]]; If[
                Not[
                 FailureQ[TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]], 
@@ -3107,14 +3057,14 @@ Cell[BoxData[
            TypeSystem`NestedGrid`PackagePrivate`$state$$, 
             TypeSystem`NestedGrid`PackagePrivate`$path$$, 
             TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-            TypeSystem`NestedGrid`PackagePrivate`$grid$$, 239435360]]]], 
+            TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1299793296]]]], 
         TrackedSymbols :> {TypeSystem`NestedGrid`PackagePrivate`$path$$}], 
       TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$ = Framed[
         Dynamic[
          Replace[
           MouseAnnotation[Null], {
-          TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][Null] -> 
-           "", TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[239435360][
+          TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][Null] -> 
+           "", TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1299793296][
              Pattern[TypeSystem`NestedGrid`PackagePrivate`path, 
               Blank[]]] :> (
             TypeSystem`NestedGrid`PackagePrivate`$lastPath = 
@@ -3148,7 +3098,7 @@ Cell[BoxData[
            TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$]]}], Spacings -> 
         If[TypeSystem`NestedGrid`PackagePrivate`$path$$ == {}, 
           0, {{}, {0, 0.05, 0}}]], StandardForm], 
-      ImageSizeCache -> {440., {387.634033203125, 393.365966796875}}, 
+      ImageSizeCache -> {435., {387.634033203125, 393.365966796875}}, 
       TrackedSymbols :> {
        TypeSystem`NestedGrid`PackagePrivate`$state$$, 
         TypeSystem`NestedGrid`PackagePrivate`$grid$$}], 
@@ -3161,9 +3111,9 @@ Cell[BoxData[
   "CopyTag",
   DisplayFunction->(#& ),
   InterpretationFunction->("Dataset[<>]"& )]], "Output",
- CellChangeTimes->{3.770740467990954*^9},
- CellLabel->
-  "Out[184]=",ExpressionUUID->"85f04bd9-6002-4106-a8c4-0825cf63377c"]
+ CellChangeTimes->{
+  3.770740467990954*^9, {3.770763336819316*^9, 3.770763374167*^9}},
+ CellLabel->"Out[7]=",ExpressionUUID->"43fa37d8-23ea-4348-a5ac-b6a0b1b86f2a"]
 }, Open  ]]
 }, Open  ]],
 
@@ -51687,7 +51637,7 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Title", 3083173, 51682}
+ {"Title", 3082360, 51632}
  }
 *)
 (*NotebookFileOutline
@@ -51708,66 +51658,66 @@ Cell[4747, 111, 434, 7, 38, "Text",ExpressionUUID->"ffe92fe7-e66c-4b4f-9d5d-a9cc
 Cell[CellGroupData[{
 Cell[5218, 123, 196, 3, 67, "Section",ExpressionUUID->"4c216ab6-a6ad-4f09-8e23-a959638bb29b"],
 Cell[5417, 128, 867, 14, 64, "Text",ExpressionUUID->"c506c0d4-d609-41b7-9e17-624fd63827a7"],
-Cell[6287, 144, 328, 9, 30, "Input",ExpressionUUID->"39cfd5b7-7e2f-4343-8ade-d05c25beb930"],
+Cell[6287, 144, 323, 8, 30, "Input",ExpressionUUID->"39cfd5b7-7e2f-4343-8ade-d05c25beb930"],
 Cell[CellGroupData[{
-Cell[6640, 157, 344, 7, 30, "Input",ExpressionUUID->"76d16be5-7bb1-48fd-b54f-35397260fee1"],
-Cell[6987, 166, 2049, 40, 44, "Output",ExpressionUUID->"7ac2952f-77f4-4303-97c2-491225cd1e4f"]
+Cell[6635, 156, 344, 7, 30, "Input",ExpressionUUID->"76d16be5-7bb1-48fd-b54f-35397260fee1"],
+Cell[6982, 165, 2049, 40, 44, "Output",ExpressionUUID->"7ac2952f-77f4-4303-97c2-491225cd1e4f"]
 }, Open  ]],
-Cell[9051, 209, 449, 7, 64, "Text",ExpressionUUID->"a6d0aea0-0291-4664-8b35-2aec816f93c5"],
-Cell[9503, 218, 468, 9, 30, "Input",ExpressionUUID->"d53e93d6-d4ab-4fad-bc74-1214ed1ecc38"],
-Cell[9974, 229, 543, 8, 64, "Text",ExpressionUUID->"5ce6cc1c-b5ba-45b3-bcde-442d3e91a50b"],
-Cell[10520, 239, 3806, 73, 71, "Input",ExpressionUUID->"855ef9fa-5b0f-47dd-94e4-ccedfe4108bd"],
-Cell[14329, 314, 333, 6, 38, "Text",ExpressionUUID->"2d2d373a-bd06-4f13-b350-0c05e07dcbb6"]
+Cell[9046, 208, 449, 7, 64, "Text",ExpressionUUID->"a6d0aea0-0291-4664-8b35-2aec816f93c5"],
+Cell[9498, 217, 468, 9, 30, "Input",ExpressionUUID->"d53e93d6-d4ab-4fad-bc74-1214ed1ecc38"],
+Cell[9969, 228, 543, 8, 64, "Text",ExpressionUUID->"5ce6cc1c-b5ba-45b3-bcde-442d3e91a50b"],
+Cell[10515, 238, 3801, 72, 71, "Input",ExpressionUUID->"855ef9fa-5b0f-47dd-94e4-ccedfe4108bd"],
+Cell[14319, 312, 333, 6, 38, "Text",ExpressionUUID->"2d2d373a-bd06-4f13-b350-0c05e07dcbb6"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[14699, 325, 304, 5, 67, "Section",ExpressionUUID->"95555baf-968e-4378-bdaf-67ca54a4d986"],
-Cell[15006, 332, 679, 11, 64, "Text",ExpressionUUID->"f72b172d-ca66-4f9e-bb52-1fc868266e96"],
-Cell[15688, 345, 735, 15, 30, "Input",ExpressionUUID->"38c05087-c58e-473a-8bbb-06392ae90ab9"],
-Cell[16426, 362, 593, 10, 64, "Text",ExpressionUUID->"2200e2ac-31c8-41f7-af79-b754005f87c6"],
-Cell[17022, 374, 816, 20, 40, "Input",ExpressionUUID->"54065794-fd6d-48a3-b7d8-196cb94577f7"],
-Cell[17841, 396, 603, 13, 40, "Input",ExpressionUUID->"ba0587cb-a66f-4ca8-8aed-87c0348894e1"],
-Cell[18447, 411, 554, 12, 40, "Input",ExpressionUUID->"901760d8-aa8c-4b3a-8718-0fd7533814f4"],
-Cell[19004, 425, 547, 12, 40, "Input",ExpressionUUID->"172d5fc5-3141-4b1a-a36e-202d9f63b8e4"],
-Cell[19554, 439, 370, 6, 38, "Text",ExpressionUUID->"2b9e0f28-45a8-412e-871f-85ecfd12aace"],
+Cell[14689, 323, 304, 5, 67, "Section",ExpressionUUID->"95555baf-968e-4378-bdaf-67ca54a4d986"],
+Cell[14996, 330, 679, 11, 64, "Text",ExpressionUUID->"f72b172d-ca66-4f9e-bb52-1fc868266e96"],
+Cell[15678, 343, 730, 14, 30, "Input",ExpressionUUID->"38c05087-c58e-473a-8bbb-06392ae90ab9"],
+Cell[16411, 359, 593, 10, 64, "Text",ExpressionUUID->"2200e2ac-31c8-41f7-af79-b754005f87c6"],
+Cell[17007, 371, 816, 20, 40, "Input",ExpressionUUID->"54065794-fd6d-48a3-b7d8-196cb94577f7"],
+Cell[17826, 393, 603, 13, 40, "Input",ExpressionUUID->"ba0587cb-a66f-4ca8-8aed-87c0348894e1"],
+Cell[18432, 408, 554, 12, 40, "Input",ExpressionUUID->"901760d8-aa8c-4b3a-8718-0fd7533814f4"],
+Cell[18989, 422, 547, 12, 40, "Input",ExpressionUUID->"172d5fc5-3141-4b1a-a36e-202d9f63b8e4"],
+Cell[19539, 436, 370, 6, 38, "Text",ExpressionUUID->"2b9e0f28-45a8-412e-871f-85ecfd12aace"],
 Cell[CellGroupData[{
-Cell[19949, 449, 261, 5, 30, "Input",ExpressionUUID->"d8e50387-8471-4dc7-a3a9-8c871344c58c"],
-Cell[20213, 456, 135616, 2709, 801, "Output",ExpressionUUID->"85f04bd9-6002-4106-a8c4-0825cf63377c"]
+Cell[19934, 446, 351, 5, 30, "Input",ExpressionUUID->"d8e50387-8471-4dc7-a3a9-8c871344c58c"],
+Cell[20288, 453, 134728, 2662, 801, "Output",ExpressionUUID->"43fa37d8-23ea-4348-a5ac-b6a0b1b86f2a"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[155878, 3171, 274, 4, 67, "Section",ExpressionUUID->"d12282fd-40b3-4907-9735-f9fd0aa60bbc"],
-Cell[156155, 3177, 462, 8, 38, "Text",ExpressionUUID->"0bf279a9-6139-4a31-ad52-7d73e6d05660"],
-Cell[156620, 3187, 596, 9, 38, "Text",ExpressionUUID->"880f2250-62fd-44a9-be9a-1afe480a4953"],
+Cell[155065, 3121, 274, 4, 67, "Section",ExpressionUUID->"d12282fd-40b3-4907-9735-f9fd0aa60bbc"],
+Cell[155342, 3127, 462, 8, 38, "Text",ExpressionUUID->"0bf279a9-6139-4a31-ad52-7d73e6d05660"],
+Cell[155807, 3137, 596, 9, 38, "Text",ExpressionUUID->"880f2250-62fd-44a9-be9a-1afe480a4953"],
 Cell[CellGroupData[{
-Cell[157241, 3200, 844, 15, 40, "Input",ExpressionUUID->"d8b4d951-2cb7-47f8-a670-d3d75fd587dd"],
-Cell[158088, 3217, 1433016, 23593, 251, "Output",ExpressionUUID->"4e4e2fd2-306b-4f04-be53-2745cfce947d"]
+Cell[156428, 3150, 844, 15, 40, "Input",ExpressionUUID->"d8b4d951-2cb7-47f8-a670-d3d75fd587dd"],
+Cell[157275, 3167, 1433016, 23593, 251, "Output",ExpressionUUID->"4e4e2fd2-306b-4f04-be53-2745cfce947d"]
 }, Open  ]],
-Cell[1591119, 26813, 448, 7, 38, "Text",ExpressionUUID->"c87aa0c9-a1f1-4c1d-bb71-bdf90929c273"],
+Cell[1590306, 26763, 448, 7, 38, "Text",ExpressionUUID->"c87aa0c9-a1f1-4c1d-bb71-bdf90929c273"],
 Cell[CellGroupData[{
-Cell[1591592, 26824, 556, 12, 40, "Input",ExpressionUUID->"78acae58-b58d-4021-aa1c-c3e274b8eab5"],
-Cell[1592151, 26838, 1425153, 23468, 251, "Output",ExpressionUUID->"71e79b31-459a-4b64-b566-d338da2167ac"]
+Cell[1590779, 26774, 556, 12, 40, "Input",ExpressionUUID->"78acae58-b58d-4021-aa1c-c3e274b8eab5"],
+Cell[1591338, 26788, 1425153, 23468, 251, "Output",ExpressionUUID->"71e79b31-459a-4b64-b566-d338da2167ac"]
 }, Open  ]],
-Cell[3017319, 50309, 489, 8, 38, "Text",ExpressionUUID->"37f8632c-8c18-44a7-92d4-8179d2047fa7"],
-Cell[3017811, 50319, 1413, 33, 40, "Input",ExpressionUUID->"9fcc40a4-9060-409f-8829-55c2933b9488"],
+Cell[3016506, 50259, 489, 8, 38, "Text",ExpressionUUID->"37f8632c-8c18-44a7-92d4-8179d2047fa7"],
+Cell[3016998, 50269, 1413, 33, 40, "Input",ExpressionUUID->"9fcc40a4-9060-409f-8829-55c2933b9488"],
 Cell[CellGroupData[{
-Cell[3019249, 50356, 181, 3, 30, "Input",ExpressionUUID->"6abbc977-d0c1-4428-b7ac-e07f19310471"],
-Cell[3019433, 50361, 1338, 30, 60, "Output",ExpressionUUID->"2ae502c4-db26-4f11-bc67-5bc4511c71ac"]
+Cell[3018436, 50306, 181, 3, 30, "Input",ExpressionUUID->"6abbc977-d0c1-4428-b7ac-e07f19310471"],
+Cell[3018620, 50311, 1338, 30, 60, "Output",ExpressionUUID->"2ae502c4-db26-4f11-bc67-5bc4511c71ac"]
 }, Open  ]],
-Cell[3020786, 50394, 456, 7, 64, "Text",ExpressionUUID->"8a15c83d-7b84-4d5e-a40b-73b1d7820ae1"],
-Cell[3021245, 50403, 2410, 55, 207, "Input",ExpressionUUID->"dfb449fb-f35e-47f6-a462-98a388c07111"],
-Cell[3023658, 50460, 387, 9, 30, "Input",ExpressionUUID->"b9cf86a5-e136-4a24-96df-1bf2aad2165c"],
-Cell[3024048, 50471, 46947, 925, 1213, InheritFromParent,ExpressionUUID->"be1c8935-de5e-4c99-9180-e045ed838fd9"],
-Cell[3070998, 51398, 646, 10, 64, "Text",ExpressionUUID->"83a53f0e-4261-4b4e-ad6e-cd1060ed9b21"],
-Cell[3071647, 51410, 1925, 45, 60, "Input",ExpressionUUID->"e476c01d-da47-41e3-a2c9-2c55e660bb85"],
-Cell[3073575, 51457, 267, 5, 38, "Text",ExpressionUUID->"4ba11832-1ea7-45b0-a47e-59687ce5d549"],
+Cell[3019973, 50344, 456, 7, 64, "Text",ExpressionUUID->"8a15c83d-7b84-4d5e-a40b-73b1d7820ae1"],
+Cell[3020432, 50353, 2410, 55, 207, "Input",ExpressionUUID->"dfb449fb-f35e-47f6-a462-98a388c07111"],
+Cell[3022845, 50410, 387, 9, 30, "Input",ExpressionUUID->"b9cf86a5-e136-4a24-96df-1bf2aad2165c"],
+Cell[3023235, 50421, 46947, 925, 1213, "Input",ExpressionUUID->"be1c8935-de5e-4c99-9180-e045ed838fd9"],
+Cell[3070185, 51348, 646, 10, 64, "Text",ExpressionUUID->"83a53f0e-4261-4b4e-ad6e-cd1060ed9b21"],
+Cell[3070834, 51360, 1925, 45, 60, "Input",ExpressionUUID->"e476c01d-da47-41e3-a2c9-2c55e660bb85"],
+Cell[3072762, 51407, 267, 5, 38, "Text",ExpressionUUID->"4ba11832-1ea7-45b0-a47e-59687ce5d549"],
 Cell[CellGroupData[{
-Cell[3073867, 51466, 266, 5, 30, "Input",ExpressionUUID->"dd45cf5c-420b-4848-ae16-15906f58be7e"],
-Cell[3074136, 51473, 6812, 151, 315, "Output",ExpressionUUID->"9b57d8d4-05e1-4168-ba23-a69d316286d9"]
+Cell[3073054, 51416, 266, 5, 30, "Input",ExpressionUUID->"dd45cf5c-420b-4848-ae16-15906f58be7e"],
+Cell[3073323, 51423, 6812, 151, 315, "Output",ExpressionUUID->"9b57d8d4-05e1-4168-ba23-a69d316286d9"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3080997, 51630, 181, 3, 67, "Section",ExpressionUUID->"b399bb85-6a9a-4818-aa64-612e988a1f53"],
-Cell[3081181, 51635, 1208, 21, 142, "Text",ExpressionUUID->"48e75ddc-f259-4720-96c7-77c59242dcc3"]
+Cell[3080184, 51580, 181, 3, 67, "Section",ExpressionUUID->"b399bb85-6a9a-4818-aa64-612e988a1f53"],
+Cell[3080368, 51585, 1208, 21, 142, "Text",ExpressionUUID->"48e75ddc-f259-4720-96c7-77c59242dcc3"]
 }, Open  ]]
 }, Open  ]]
 }
