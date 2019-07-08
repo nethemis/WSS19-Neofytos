@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    404450,       9743]
-NotebookOptionsPosition[    369226,       9209]
-NotebookOutlinePosition[    369570,       9224]
-CellTagsIndexPosition[    369527,       9221]
+NotebookDataLength[    419263,      10002]
+NotebookOptionsPosition[    381636,       9443]
+NotebookOutlinePosition[    381980,       9458]
+CellTagsIndexPosition[    381937,       9455]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -7089,236 +7089,329 @@ Cell["complementary functions:", "Subsection",
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{
-   RowBox[{"FindCommaPositions", "[", 
-    RowBox[{"thisString_", "?", "StringQ"}], "]"}], ":=", 
+  RowBox[{"(*", " ", 
    RowBox[{
-    RowBox[{"StringPosition", "[", 
-     RowBox[{"thisString", ",", "\"\<,\>\""}], "]"}], "[", 
-    RowBox[{"[", 
-     RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}]], "Code",
+   "Returns", " ", "number", " ", "of", " ", "commas", " ", "in", " ", "a", 
+    " ", "give", " ", "string", " ", "expression"}], " ", "*)"}], "\n", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Has", " ", "to", " ", "be", " ", "improved", " ", "so", " ", "that", " ", 
+    "it", " ", "ignores", " ", "commas", " ", "in", " ", "comments"}], " ", 
+   "*)"}], "\n", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"FindCommaPositions", "[", 
+     RowBox[{"thisString_", "?", "StringQ"}], "]"}], ":=", 
+    RowBox[{
+     RowBox[{"StringPosition", "[", 
+      RowBox[{"thisString", ",", "\"\<,\>\""}], "]"}], "[", 
+     RowBox[{"[", 
+      RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}]}]], "Code",
  CellChangeTimes->{{3.77135040685737*^9, 3.771350447064413*^9}, {
    3.771350505406062*^9, 3.771350509760221*^9}, 3.771350640839282*^9, {
-   3.771361756103595*^9, 3.771361820265237*^9}, 3.7713635581525717`*^9},
+   3.771361756103595*^9, 3.771361820265237*^9}, 3.7713635581525717`*^9, {
+   3.77152004126474*^9, 3.771520078087325*^9}, {3.771520122200695*^9, 
+   3.771520127093384*^9}},
  CellLabel->"In[1]:=",ExpressionUUID->"9e5b62dc-dc5e-4d01-9467-b983945a4d32"],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{
-   RowBox[{"whatismyid", "[", 
-    RowBox[{"currentlevel_", ",", "thistreeStructure_"}], "]"}], ":=", 
-   RowBox[{"Length", "@", 
-    RowBox[{"KeySelect", "[", 
-     RowBox[{"thistreeStructure", ",", 
-      RowBox[{
-       RowBox[{
-        RowBox[{"#", "[", 
-         RowBox[{"[", "1", "]"}], "]"}], "\[Equal]", "currentlevel"}], 
-       "&"}]}], "]"}]}]}], ";"}]], "Code",
- CellChangeTimes->{{3.771256074968734*^9, 3.7712561304578342`*^9}, {
-  3.771361828631456*^9, 3.771361849324009*^9}, {3.771363605060474*^9, 
-  3.7713636159393044`*^9}, {3.771363676646055*^9, 3.771363685750206*^9}},
- CellLabel->"In[2]:=",ExpressionUUID->"c059a98e-453b-46d6-9627-45ec5769d90e"],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"newTreeEntry", "[", 
-   RowBox[{"level_", ",", "id_", ",", "head_", ",", "treeStructure_"}], "]"}],
-   ":=", "\[IndentingNewLine]", "\t", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{"level", ",", 
-     RowBox[{"id", "+", "1"}]}], "}"}], "\[Rule]", " ", "\n", "\t\t", 
-   RowBox[{"Association", "@@", "\[IndentingNewLine]", "\t\t", 
-    RowBox[{"{", "\n", "\t\t\t", 
-     RowBox[{
-      RowBox[{"\"\<head\>\"", "\[Rule]", " ", "head"}], ",", 
-      "\[IndentingNewLine]", "\t\t\t", 
-      RowBox[{"\"\<argnumber\>\"", "\[Rule]", " ", "1"}], ",", 
-      "\[IndentingNewLine]", "\t\t\t", 
-      RowBox[{"If", "[", 
-       RowBox[{
-        RowBox[{"level", ">", "1"}], ",", "\[IndentingNewLine]", "\t\t\t\t", 
-        RowBox[{"\"\<parent\>\"", "\[Rule]", " ", 
-         RowBox[{
-          RowBox[{"(", 
-           RowBox[{"Keys", "@", 
-            RowBox[{"KeySelect", "[", 
-             RowBox[{"treeStructure", ",", 
-              RowBox[{
-               RowBox[{
-                RowBox[{"#", "[", 
-                 RowBox[{"[", "1", "]"}], "]"}], "\[Equal]", 
-                RowBox[{"(", 
-                 RowBox[{"level", "-", "1"}], ")"}]}], "&"}]}], "]"}]}], 
-           ")"}], "[", 
-          RowBox[{"[", 
-           RowBox[{"-", "1"}], "]"}], "]"}]}], ",", "\[IndentingNewLine]", 
-        "\t\t\t\t", 
-        RowBox[{"\"\<parent\>\"", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0", ",", "0"}], "}"}]}]}], "\[IndentingNewLine]", "\t\t\t",
-        "]"}], ",", "\[IndentingNewLine]", "\t\t\t", 
-      RowBox[{"\"\<pattern\>\"", "\[Rule]", " ", "\"\<_\>\""}]}], 
-     "\[IndentingNewLine]", "\t\t", "}"}]}]}]}]], "Code",
- CellChangeTimes->{{3.771363691273745*^9, 3.771363713100438*^9}, {
-  3.7713637462010098`*^9, 3.771363767578844*^9}, {3.771363808999614*^9, 
-  3.771363837877503*^9}, {3.771363932743129*^9, 3.771363933221136*^9}},
- CellLabel->"In[3]:=",ExpressionUUID->"24e6a0cd-e320-46cb-9a2e-0cd902a0ac0d"],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"testPatternMatch", "[", 
-   RowBox[{"treeStructure_", ",", "level_", ",", "id_"}], "]"}], ":=", 
-  "\[IndentingNewLine]", "\t", 
-  RowBox[{"MatchQ", "[", " ", "\n", "\t\t", 
-   RowBox[{
-    RowBox[{"ToExpression", "[", " ", "\n", "\t\t\t", 
-     RowBox[{"StringJoin", "[", " ", "\n", "\t\t\t\t", 
-      RowBox[{"\"\<{\>\"", ",", "\n", "\t\t\t\t", 
-       RowBox[{"treeStructure", "[", 
-        RowBox[{
-         RowBox[{"{", 
-          RowBox[{"level", ",", "id"}], "}"}], ",", "\"\<pattern\>\""}], 
-        "]"}], ",", "\n", "\t\t\t\t", "\"\<}\>\""}], " ", "\n", "\t\t\t", 
-      "]"}], " ", "\n", "\t\t", "]"}], ",", " ", "\n", "\t", 
-    RowBox[{"Replace", "[", "\n", "\t\t", 
-     RowBox[{
-      RowBox[{"Lookup", "[", "\n", "\t\t\t", 
-       RowBox[{
-        RowBox[{"SyntaxInformation", "[", "\n", "\t\t\t\t", 
-         RowBox[{"Symbol", "@", "\n", "\t\t\t\t\t", 
-          RowBox[{"treeStructure", "[", 
-           RowBox[{
-            RowBox[{"{", 
-             RowBox[{"level", ",", "id"}], "}"}], ",", "\"\<head\>\""}], 
-           "]"}]}], "]"}], ",", " ", "\n", "\t\t\t", 
-        "\"\<ArgumentsPattern\>\""}], "\n", "\t\t", "]"}], ",", "\n", "\t\t", 
-      
-      RowBox[{
-       RowBox[{
-        RowBox[{"Verbatim", "[", "Optional", "]"}], "[", "x_", "]"}], 
-       "\[RuleDelayed]", 
-       RowBox[{"Repeated", "[", 
-        RowBox[{"x", ",", 
-         RowBox[{"{", 
-          RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}], ",", "1"}], "\n", "\t ", 
-     "]"}]}], "\n", "]"}], "\t\t"}]], "Code",
- CellChangeTimes->{{3.771363658402822*^9, 3.77136367267804*^9}, {
-  3.771363735704891*^9, 3.7713637428697357`*^9}, {3.771363955309753*^9, 
-  3.771364071239353*^9}, {3.7713641602880163`*^9, 3.771364168489171*^9}, {
-  3.7713642840517473`*^9, 3.771364284647542*^9}, {3.771457837038912*^9, 
-  3.771457855674863*^9}},
- CellLabel->"In[4]:=",ExpressionUUID->"fe1f5e60-6da5-453c-9d95-ac60552aaa52"],
-
-Cell[BoxData[{
- RowBox[{
-  RowBox[{"createAlternativeExpr", "[", 
-   RowBox[{
-    RowBox[{
-     RowBox[{"str_", "?", "StringQ"}], ".."}], ",", "commaPositions_", ",", 
-    "commasFound_"}], "]"}], ":=", "\n", 
-  RowBox[{"\"\<]\>\"", "<>", 
-   RowBox[{"StringTake", "[", 
-    RowBox[{"str", ",", 
-     RowBox[{
-      RowBox[{
-       RowBox[{"commaPositions", "[", 
-        RowBox[{"[", 
-         RowBox[{"commasFound", "+", "1"}], "]"}], "]"}], "+", "1"}], 
-      ";;"}]}], "]"}]}]}], "\n", 
- RowBox[{
-  RowBox[{"(*", "\t", 
-   RowBox[{"StringJoin", "[", "\n", "\t\t", 
-    RowBox[{
-     RowBox[{"StringTake", "[", 
-      RowBox[{"str", ",", 
-       RowBox[{";;", 
-        RowBox[{
-         RowBox[{"commaPositions", "[", 
-          RowBox[{"[", 
-           RowBox[{"commasFound", "+", "1"}], "]"}], "]"}], "-", "1"}]}]}], 
-      "]"}], ",", "\n", "\t\t", "\"\<]\>\"", ",", "\n", "\t\t", 
-     RowBox[{"StringTake", "[", 
-      RowBox[{"str", ",", 
-       RowBox[{
-        RowBox[{"commaPositions", "[", 
-         RowBox[{"[", 
-          RowBox[{"commasFound", "+", "1"}], "]"}], "]"}], ";;"}]}], "]"}]}], 
-    "\n", "\t", "]"}], "*)"}]}]}], "Code",
- CellChangeTimes->{{3.7713641775852222`*^9, 3.771364302898178*^9}, {
-  3.7713666737739162`*^9, 3.771366679178141*^9}, {3.7713707664973927`*^9, 
-  3.771370767985564*^9}, {3.771371075199223*^9, 3.771371079971534*^9}, {
-  3.771501494132326*^9, 3.771501513038288*^9}},
- CellLabel->"In[20]:=",ExpressionUUID->"6e0856e7-7ccc-4165-9fb5-8c663e47e7d5"],
 
 Cell[BoxData[
  RowBox[{
   RowBox[{"(*", " ", 
    RowBox[{
-   "THIS", " ", "IS", " ", "ALWAYS", " ", "TRUE", " ", "FOR", " ", "NOW", " ",
-     "BEFORE", " ", "EACH", " ", "RECURSIVE", " ", "FUNCTION", " ", "TAKES", 
-    " ", "A", " ", "SHORTER", " ", "AND", " ", "SHORTER", " ", "STRING"}], 
+    RowBox[{"Given", " ", "the", " ", "current", " ", "treeStructure", " ", 
+     RowBox[{"(", 
+      RowBox[{
+      "see", " ", "explanation", " ", "in", " ", "errorExplorer", " ", 
+       "function"}], ")"}], " ", "and", " ", "the", " ", "current", " ", 
+     "level"}], ",", " ", 
+    RowBox[{
+    "it", " ", "returns", " ", "the", " ", "index", " ", "of", " ", "the", 
+     " ", "last", " ", "item", " ", "in", " ", "that", " ", 
+     RowBox[{"level", ".", " ", "\n", "Given"}], " ", "that", " ", "the", " ",
+      "expression", " ", "is", " ", "being", " ", "processed", " ", "from", 
+     " ", "left", " ", "to", " ", "right"}], ",", " ", 
+    RowBox[{"item", " ", "is", " ", "the", " ", "current", " ", "item"}]}], 
    " ", "*)"}], "\n", 
-  RowBox[{"(*", 
+  RowBox[{
    RowBox[{
-    RowBox[{"CheckSyntax", "[", "newExpr_", "]"}], ":=", " ", 
-    RowBox[{"1", " ", "\[Equal]", " ", 
-     RowBox[{"1", "\n", 
-      RowBox[{"Length", "@", "\n", "\t", 
-       RowBox[{"StringCases", "[", 
-        RowBox[{"newExpr", ",", "\"\<[\>\""}], "]"}]}]}], "\[Equal]", "\n", 
-     RowBox[{"Length", "@", "\n", 
-      RowBox[{"StringCases", "[", 
-       RowBox[{"newExpr", ",", "\"\<]\>\""}], "]"}]}]}]}], "*)"}]}]], "Code",
- CellChangeTimes->{{3.771364448297462*^9, 3.771364500350638*^9}, {
-  3.771443405964909*^9, 3.771443457106752*^9}, {3.771443654393529*^9, 
-  3.7714436772615423`*^9}, {3.7714437608166447`*^9, 3.771443764933528*^9}, {
-  3.7714577141436653`*^9, 
-  3.771457718245535*^9}},ExpressionUUID->"abaeb584-bdbd-446e-81d2-\
-568b6ba9ec33"],
+    RowBox[{"whatismyid", "[", 
+     RowBox[{"currentlevel_", ",", "thistreeStructure_"}], "]"}], ":=", 
+    RowBox[{"Length", "@", 
+     RowBox[{"KeySelect", "[", 
+      RowBox[{"thistreeStructure", ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"#", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], "\[Equal]", "currentlevel"}], 
+        "&"}]}], "]"}]}]}], ";"}]}]], "Code",
+ CellChangeTimes->{{3.771256074968734*^9, 3.7712561304578342`*^9}, {
+  3.771361828631456*^9, 3.771361849324009*^9}, {3.771363605060474*^9, 
+  3.7713636159393044`*^9}, {3.771363676646055*^9, 3.771363685750206*^9}, {
+  3.771520084841639*^9, 3.771520276578233*^9}, {3.771520372390399*^9, 
+  3.771520386875601*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"c059a98e-453b-46d6-9627-45ec5769d90e"],
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"updateTreeEntry", "[", 
-   RowBox[{"level_", ",", "id_", ",", "treeStructure_"}], "]"}], ":=", "\n", 
-  "\t", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{"level", ",", "id"}], "}"}], "\[Rule]", "\n", "\t\t", 
-   RowBox[{"Association", "@@", "\[IndentingNewLine]", "\t\t", 
-    RowBox[{"{", "\n", "\t\t\t", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"Given", " ", "a", " ", "treeStructure", " ", 
+     RowBox[{"(", 
+      RowBox[{
+      "see", " ", "explanation", " ", "in", " ", "errorExplorer", " ", 
+       "function"}], ")"}]}], ",", " ", 
+    RowBox[{"current", " ", "level", " ", "in", " ", "the", " ", "tree"}], 
+    ",", " ", 
+    RowBox[{"unique", " ", "id"}], ",", " ", 
+    RowBox[{"and", " ", "the", " ", "current", " ", 
+     RowBox[{"function", "'"}], "s", " ", "head"}], ",", " ", "\n", 
+    RowBox[{
      RowBox[{
-      RowBox[{"\"\<head\>\"", "\[Rule]", " ", 
-       RowBox[{"treeStructure", "[", 
-        RowBox[{
-         RowBox[{"{", 
-          RowBox[{"level", ",", "id"}], "}"}], ",", "\"\<head\>\""}], "]"}]}],
-       ",", "\[IndentingNewLine]", "\t\t\t", 
-      RowBox[{"\"\<argnumber\>\"", "\[Rule]", " ", 
+      RowBox[{
        RowBox[{
+       "it", " ", "creates", " ", "a", " ", "new", " ", "entry", " ", "in", 
+        " ", "the", " ", "tree", " ", "with", " ", "those", " ", "details"}], 
+       " ", "&"}], " ", "argument", " ", "cound"}], " ", "=", " ", "0"}]}], 
+   " ", "*)"}], "\n", 
+  RowBox[{
+   RowBox[{"newTreeEntry", "[", 
+    RowBox[{"level_", ",", "id_", ",", "head_", ",", "treeStructure_"}], 
+    "]"}], ":=", "\[IndentingNewLine]", "\t", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"level", ",", 
+      RowBox[{"id", "+", "1"}]}], "}"}], "\[Rule]", " ", "\n", "\t\t", 
+    RowBox[{"Association", "@@", "\[IndentingNewLine]", "\t\t", 
+     RowBox[{"{", "\n", "\t\t\t", 
+      RowBox[{
+       RowBox[{"\"\<head\>\"", "\[Rule]", " ", "head"}], ",", 
+       "\[IndentingNewLine]", "\t\t\t", 
+       RowBox[{"\"\<argnumber\>\"", "\[Rule]", " ", "1"}], ",", 
+       "\[IndentingNewLine]", "\t\t\t", 
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{"level", ">", "1"}], ",", "\[IndentingNewLine]", "\t\t\t\t", 
+         
+         RowBox[{"\"\<parent\>\"", "\[Rule]", " ", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"Keys", "@", 
+             RowBox[{"KeySelect", "[", 
+              RowBox[{"treeStructure", ",", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"#", "[", 
+                  RowBox[{"[", "1", "]"}], "]"}], "\[Equal]", 
+                 RowBox[{"(", 
+                  RowBox[{"level", "-", "1"}], ")"}]}], "&"}]}], "]"}]}], 
+            ")"}], "[", 
+           RowBox[{"[", 
+            RowBox[{"-", "1"}], "]"}], "]"}]}], ",", "\[IndentingNewLine]", 
+         "\t\t\t\t", 
+         RowBox[{"\"\<parent\>\"", "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0"}], "}"}]}]}], "\[IndentingNewLine]", 
+        "\t\t\t", "]"}], ",", "\[IndentingNewLine]", "\t\t\t", 
+       RowBox[{"\"\<pattern\>\"", "\[Rule]", " ", "\"\<_\>\""}]}], 
+      "\[IndentingNewLine]", "\t\t", "}"}]}]}]}]}]], "Code",
+ CellChangeTimes->{{3.771363691273745*^9, 3.771363713100438*^9}, {
+   3.7713637462010098`*^9, 3.771363767578844*^9}, {3.771363808999614*^9, 
+   3.771363837877503*^9}, {3.771363932743129*^9, 3.771363933221136*^9}, 
+   3.7715044221954327`*^9, 3.7715202850733223`*^9, {3.771520356625848*^9, 
+   3.771520445901176*^9}, {3.771522801590138*^9, 3.771522802128112*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"24e6a0cd-e320-46cb-9a2e-0cd902a0ac0d"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"Given", " ", "a", " ", "treeStructure", " ", 
+     RowBox[{"(", 
+      RowBox[{
+      "see", " ", "explanation", " ", "in", " ", "errorExplorer", " ", 
+       "function"}], ")"}]}], ",", " ", 
+    RowBox[{"the", " ", "current", " ", "level", " ", "in", " ", "tree"}], 
+    ",", " ", 
+    RowBox[{"and", " ", "current", " ", "id"}], ",", "\n", 
+    RowBox[{
+    "It", " ", "checks", " ", "whether", " ", "the", " ", "pattern", " ", 
+     "for", " ", "the", " ", "current", " ", "level", " ", "and", " ", "id"}],
+     ",", " ", 
+    RowBox[{
+    "matches", " ", "the", " ", "syntax", " ", "information", " ", "of", " ", 
+     "the", " ", "head", " ", "and", " ", "returns", " ", 
+     RowBox[{"True", "/", "False"}]}]}], "\n", "  ", "*)"}], "\n", 
+  RowBox[{
+   RowBox[{"testPatternMatch", "[", 
+    RowBox[{"treeStructure_", ",", "level_", ",", "id_"}], "]"}], ":=", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"t", "=", "0"}], "}"}], ",", "\n", "\t", 
+     RowBox[{
+      RowBox[{"first", " ", "=", " ", "\n", "\t\t", 
+       RowBox[{"ToExpression", "[", " ", "\n", "\t\t\t", 
+        RowBox[{"StringJoin", "[", " ", "\n", "\t\t\t\t", 
+         RowBox[{"\"\<{\>\"", ",", "\n", "\t\t\t\t", 
+          RowBox[{"treeStructure", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"level", ",", "id"}], "}"}], ",", "\"\<pattern\>\""}], 
+           "]"}], ",", "\n", "\t\t\t\t", "\"\<}\>\""}], " ", "\n", "\t\t\t", 
+         "]"}], " ", "\n", "\t\t", "]"}]}], ";", " ", "\n", "\t", 
+      RowBox[{"second", " ", "=", " ", 
+       RowBox[{"Replace", "[", "\n", "\t\t", 
+        RowBox[{
+         RowBox[{"Lookup", "[", "\n", "\t\t\t", 
+          RowBox[{
+           RowBox[{"SyntaxInformation", "[", "\n", "\t\t\t\t", 
+            RowBox[{"Symbol", "@", "\n", "\t\t\t\t\t", 
+             RowBox[{"treeStructure", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{"level", ",", "id"}], "}"}], ",", "\"\<head\>\""}], 
+              "]"}]}], "]"}], ",", " ", "\n", "\t\t\t", 
+           "\"\<ArgumentsPattern\>\""}], "\n", "\t\t", "]"}], ",", "\n", 
+         "\t\t", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"Verbatim", "[", "Optional", "]"}], "[", "x_", "]"}], 
+          "\[RuleDelayed]", 
+          RowBox[{"Repeated", "[", 
+           RowBox[{"x", ",", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "1"}], "}"}]}], "]"}]}], ",", "1"}], "\n", 
+        "\t ", "]"}]}], ";", "\n", "\t ", 
+      RowBox[{"result", " ", "=", " ", 
+       RowBox[{"MatchQ", "[", 
+        RowBox[{"first", ",", " ", "second"}], "]"}]}], ";", "\n", "\t ", 
+      RowBox[{"(*", 
+       RowBox[{
+        RowBox[{"Print", "[", 
+         RowBox[{
+         "\"\<first: \>\"", ",", "first", ",", "\"\< second: \>\"", ",", " ", 
+          "second", ",", "\"\<result: \>\"", ",", "result"}], "]"}], ";"}], 
+       "*)"}], "\n", "\t ", "result"}]}], "\n", "\t", "]"}]}]}]], "Code",
+ CellChangeTimes->{{3.771363658402822*^9, 3.77136367267804*^9}, {
+   3.771363735704891*^9, 3.7713637428697357`*^9}, {3.771363955309753*^9, 
+   3.771364071239353*^9}, {3.7713641602880163`*^9, 3.771364168489171*^9}, {
+   3.7713642840517473`*^9, 3.771364284647542*^9}, {3.771457837038912*^9, 
+   3.771457855674863*^9}, {3.771511928623568*^9, 3.771511931063847*^9}, {
+   3.771511963034408*^9, 3.771511982930648*^9}, {3.771512093086596*^9, 
+   3.771512168782537*^9}, {3.77151220889163*^9, 3.771512315156314*^9}, {
+   3.7715124132316837`*^9, 3.7715124792865257`*^9}, 3.771519509256266*^9, {
+   3.771520458181898*^9, 3.771520536273493*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"fe1f5e60-6da5-453c-9d95-ac60552aaa52"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"Given", " ", "the", " ", "current", " ", "string"}], ",", " ", 
+    RowBox[{"and", " ", "information", " ", "regarding", " ", "commas"}], ",",
+     " ", 
+    RowBox[{
+    "it", " ", "returns", " ", "the", " ", "remaining", " ", "part", " ", 
+     "of", " ", "the", " ", "expression", " ", "with", " ", "added", " ", 
+     "\"\<],\>\"", " ", "in", " ", "prepended", " ", "in", " ", "order", " ", 
+     "to", " ", "be", " ", "used", " ", "when", " ", 
+     RowBox[{"branching", ".", "\n", "The"}], " ", "reason", " ", "for", " ", 
+     "this", " ", "is", " ", "that", " ", "the", " ", "proposed", " ", 
+     "\"\<]\>\"", " ", "will", " ", "check", " ", "if", " ", "the", " ", 
+     "current", " ", "function", " ", "should", " ", "stop", " ", "there"}], 
+    ",", " ", 
+    RowBox[{"while", " ", "the"}], " ", ",", " ", 
+    RowBox[{
+    "acts", " ", "as", " ", "a", " ", "reminder", " ", "for", " ", "the", " ",
+      "function", " ", "to", " ", "check", " ", "if", " ", "more", " ", 
+     "brackets", " ", "are", " ", "needed", " ", "\n", 
+     RowBox[{"(", 
+      RowBox[{
+      "eg", "  ", "two", " ", "brackets", " ", "were", " ", "missing", " ", 
+       "before", " ", "the", " ", "comma"}], " "}]}]}], "*)"}], "\n", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+    "I", " ", "believe", " ", "that", " ", "by", " ", "adding", " ", "the"}], 
+    " ", ",", " ", "here", ",", " ", 
+    RowBox[{"I", " ", "introduced", " ", "a", " ", "bug"}]}], " ", "*)"}], 
+  "\n", "\n", 
+  RowBox[{
+   RowBox[{"createAlternativeExpr", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"str_", "?", "StringQ"}], ".."}], ",", "commaPositions_", ",", 
+     "commasFound_"}], "]"}], ":=", "\n", 
+   RowBox[{"\"\<],\>\"", "<>", 
+    RowBox[{"StringTake", "[", 
+     RowBox[{"str", ",", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"commaPositions", "[", 
+         RowBox[{"[", 
+          RowBox[{"commasFound", "+", "1"}], "]"}], "]"}], "+", "1"}], 
+       ";;"}]}], "]"}]}]}]}]], "Code",
+ CellChangeTimes->{{3.7713641775852222`*^9, 3.771364302898178*^9}, {
+   3.7713666737739162`*^9, 3.771366679178141*^9}, {3.7713707664973927`*^9, 
+   3.771370767985564*^9}, {3.771371075199223*^9, 3.771371079971534*^9}, {
+   3.771501494132326*^9, 3.771501513038288*^9}, 3.771511751268634*^9, {
+   3.771512406988819*^9, 3.771512407902957*^9}, {3.771520541160372*^9, 
+   3.7715207434684362`*^9}, {3.771532880393689*^9, 3.771532932269122*^9}, {
+   3.771532963122829*^9, 3.771532980088702*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"6e0856e7-7ccc-4165-9fb5-8c663e47e7d5"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"Returns", " ", "the", " ", "treeStructure"}], ",", " ", 
+    RowBox[{
+    "with", " ", "the", " ", "argument", " ", "count", " ", "and", " ", "the",
+      " ", "pattern", " ", "count", " ", "of", " ", "the", " ", 
+     RowBox[{"(", 
+      RowBox[{"level", ",", "id"}], ")"}], " ", "position", " ", "both", " ", 
+     "incremented"}]}], " ", "*)"}], "\n", 
+  RowBox[{
+   RowBox[{"updateTreeEntry", "[", 
+    RowBox[{"level_", ",", "id_", ",", "treeStructure_"}], "]"}], ":=", "\n", 
+   "\t", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"level", ",", "id"}], "}"}], "\[Rule]", "\n", "\t\t", 
+    RowBox[{"Association", "@@", "\[IndentingNewLine]", "\t\t", 
+     RowBox[{"{", "\n", "\t\t\t", 
+      RowBox[{
+       RowBox[{"\"\<head\>\"", "\[Rule]", " ", 
         RowBox[{"treeStructure", "[", 
          RowBox[{
           RowBox[{"{", 
-           RowBox[{"level", ",", "id"}], "}"}], ",", "\"\<argnumber\>\""}], 
-         "]"}], "+", "1"}]}], ",", "\[IndentingNewLine]", "\t\t\t", 
-      RowBox[{"\"\<parent\>\"", "\[Rule]", " ", 
-       RowBox[{"treeStructure", "[", 
-        RowBox[{
-         RowBox[{"{", 
-          RowBox[{"level", ",", "id"}], "}"}], ",", "\"\<parent\>\""}], 
-        "]"}]}], ",", "\[IndentingNewLine]", "\t\t\t", 
-      RowBox[{"\"\<pattern\>\"", "\[Rule]", " ", 
-       RowBox[{"StringJoin", "[", 
+           RowBox[{"level", ",", "id"}], "}"}], ",", "\"\<head\>\""}], 
+         "]"}]}], ",", "\[IndentingNewLine]", "\t\t\t", 
+       RowBox[{"\"\<argnumber\>\"", "\[Rule]", " ", 
         RowBox[{
          RowBox[{"treeStructure", "[", 
           RowBox[{
            RowBox[{"{", 
-            RowBox[{"level", ",", "id"}], "}"}], ",", "\"\<pattern\>\""}], 
-          "]"}], ",", "\"\<, _\>\""}], "]"}]}]}], "\[IndentingNewLine]", 
-     "\t\t", "}"}]}]}]}]], "Code",
- CellChangeTimes->{{3.771364594343007*^9, 3.7713646691583853`*^9}},
- CellLabel->"In[5]:=",ExpressionUUID->"6928c97d-6ea2-49cf-a89e-e1ba6b815bef"]
+            RowBox[{"level", ",", "id"}], "}"}], ",", "\"\<argnumber\>\""}], 
+          "]"}], "+", "1"}]}], ",", "\[IndentingNewLine]", "\t\t\t", 
+       RowBox[{"\"\<parent\>\"", "\[Rule]", " ", 
+        RowBox[{"treeStructure", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"level", ",", "id"}], "}"}], ",", "\"\<parent\>\""}], 
+         "]"}]}], ",", "\[IndentingNewLine]", "\t\t\t", 
+       RowBox[{"\"\<pattern\>\"", "\[Rule]", " ", 
+        RowBox[{"StringJoin", "[", 
+         RowBox[{
+          RowBox[{"treeStructure", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"level", ",", "id"}], "}"}], ",", "\"\<pattern\>\""}], 
+           "]"}], ",", "\"\<, _\>\""}], "]"}]}]}], "\[IndentingNewLine]", 
+      "\t\t", "}"}]}]}]}]}]], "Code",
+ CellChangeTimes->{{3.771364594343007*^9, 3.7713646691583853`*^9}, {
+  3.771520746804092*^9, 3.77152080670232*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"6928c97d-6ea2-49cf-a89e-e1ba6b815bef"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -7331,94 +7424,322 @@ d865d6c99498"],
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"treeBuilder", "[", 
+  RowBox[{"(*", " ", 
    RowBox[{
-    RowBox[{"str_", "?", "StringQ"}], ",", "thistreeStructure_", ",", 
-    RowBox[{"thislevel_", "?", "IntegerQ"}], ",", 
-    RowBox[{"thisid_", "?", "IntegerQ"}], ",", 
-    RowBox[{"thishead_", "?", "StringQ"}]}], "]"}], ":=", "\n", "\t", 
-  RowBox[{"Module", "[", "\n", "\t\t", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{
-      RowBox[{"suggestions", "=", 
-       RowBox[{"{", "}"}]}], ",", "\n", "\t\t", 
-      RowBox[{"level", "=", "thislevel"}], ",", "\n", "\t\t", 
-      RowBox[{"treeStructure", "=", "thistreeStructure"}], ",", "\n", "\t\t", 
-      
-      RowBox[{"head", "=", "thishead"}], ",", "\n", "\t\t", 
-      RowBox[{"commasFound", "=", "0"}], ",", "\n", "\t\t", 
-      RowBox[{"(*", 
-       RowBox[{
-        RowBox[{"commasFound", "=", "thisCommasFound"}], ","}], "*)"}], "\n", 
-      "\t\t", 
-      RowBox[{"id", " ", "=", " ", "thisid"}], ",", "\n", "\t\t", 
-      RowBox[{"commaPositions", "=", 
-       RowBox[{"FindCommaPositions", "[", "str", "]"}]}]}], "\n", "\t\t", 
-     "}"}], ",", "\[IndentingNewLine]", 
     RowBox[{
-     RowBox[{"Reap", "[", "\n", "\t", 
-      RowBox[{
+    "See", " ", "is", " ", "the", " ", "main", " ", "function", " ", "that", 
+     " ", "attempts", " ", "to", " ", "recreate", " ", "the", " ", 
+     "expression", " ", "tree", "\n", "It", " ", "iterates", " ", "the", " ", 
+     "string"}], ",", " ", 
+    RowBox[{
+    "counts", " ", "the", " ", "number", " ", "of", " ", "arguments", " ", 
+     "each", " ", "function", " ", "currently", " ", "has", " ", "and", " ", 
+     "wether", " ", "a", " ", "bracket", " ", "should", " ", "be", " ", 
+     RowBox[{"added", ".", "\n", "\n", 
+      RowBox[{"Reccursion", ":", " ", 
        RowBox[{
-        RowBox[{"StringCases", "[", "\n", "\t\t", 
-         RowBox[{"str", ",", "\n", "\t\t", 
-          RowBox[{"{", "\n", "\t\t", 
+       "Every", " ", "time", " ", "there", " ", "are", " ", "more", " ", 
+        "than", " ", "one", " ", "options"}]}]}]}], ",", " ", 
+    RowBox[{
+    "the", " ", "functions", " ", "calls", " ", "itsel", " ", "with", " ", 
+     "the", " ", "new", " ", "expression", " ", "as", " ", "argument", " ", 
+     "in", " ", "order", " ", "to", " ", "be", " ", 
+     RowBox[{"tested", ".", " ", "That"}], " ", "is", " ", "the", " ", 
+     "reason"}], ",", "\n", " ", 
+    RowBox[{
+     RowBox[{
+     "some", " ", "of", " ", "the", " ", "arguments", " ", "the", " ", 
+      "function", " ", "accepts", " ", "are", " ", "to", " ", "describe", " ",
+       "at", " ", "which", " ", "stage", " ", "the", " ", "iteration", " ", 
+      "process", " ", 
+      RowBox[{"is", ".", "\n", "\n", "Comments"}], " ", "and", " ", "strings",
+       " ", "are", " ", "treated", " ", 
+      RowBox[{"specially", ".", "\n", 
+       RowBox[{"Arguments", ":", "\n", "\t", "str", ":", " ", 
+        RowBox[{
+        "The", " ", "string", " ", "from", " ", "which", " ", "the", " ", 
+         "syntactically", " ", "correct", " ", "expressions", " ", "will", 
+         " ", "be", " ", 
+         RowBox[{"created", ".", "\n", "\t", 
+          RowBox[{"treeStructure", ":", " ", 
            RowBox[{
+           "An", " ", "association", " ", "of", " ", "associations", " ", 
+            "of", " ", "the", " ", "form"}], ":", " ", 
+           RowBox[{"(", 
+            RowBox[{"level", ",", "id"}], ")"}]}]}]}]}]}]}], "\[Rule]", " ", 
+     RowBox[{"<", 
+      RowBox[{":", "head"}]}]}], ",", " ", 
+    RowBox[{"number", " ", "of", " ", "arguments"}], ",", " ", "parent", ",", 
+    " ", 
+    RowBox[{"current", " ", "pattern", " ", "\n", "\t", 
+     RowBox[{"level", ":", " ", 
+      RowBox[{
+      "corresponds", " ", "to", " ", "how", " ", "deep", " ", "in", " ", 
+       "the", " ", "the", " ", "iteration", " ", "process", " ", "is", " ", 
+       RowBox[{"currently", ".", "\n", "\t", "id"}]}], ":", " ", 
+      RowBox[{
+      "a", " ", "unique", " ", "number", " ", "of", " ", "each", " ", 
+       "function", " ", "of", " ", "the", " ", "same", " ", 
+       RowBox[{"level", ".", " ", "For"}], " ", "example", " ", "if", " ", 
+       "to", " ", 
+       RowBox[{"Cos", "[", "]"}], " ", "functions", " ", "exist", " ", "at", 
+       " ", "the", " ", "same", " ", "leve"}]}]}], ",", " ", 
+    RowBox[{
+     RowBox[{"they", "'"}], "ll", " ", "have", " ", "a", " ", "different", 
+     " ", "id", " ", 
+     RowBox[{"number", ".", "\n", "\t", 
+      RowBox[{"head", ":", " ", 
+       RowBox[{
+       "The", " ", "head", " ", "of", " ", "the", " ", "function", " ", 
+        "currently", " ", "being", " ", 
+        RowBox[{"iterated", "."}]}]}]}]}]}], "\n", "*)"}], "\n", 
+  RowBox[{
+   RowBox[{"treeBuilder", "[", 
+    RowBox[{
+     RowBox[{"str_", "?", "StringQ"}], ",", "thistreeStructure_", ",", 
+     RowBox[{"thislevel_", "?", "IntegerQ"}], ",", 
+     RowBox[{"thisid_", "?", "IntegerQ"}], ",", 
+     RowBox[{"thishead_", "?", "StringQ"}]}], "]"}], ":=", "\n", "\t", 
+   RowBox[{"Module", "[", "\n", "\t\t", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"suggestions", "=", 
+        RowBox[{"{", "}"}]}], ",", " ", "\n", "\t\t\t", 
+       RowBox[{"(*", " ", 
+        RowBox[{
+         RowBox[{
+         "The", " ", "variable", " ", "that", " ", "will", " ", "be", " ", 
+          "returned", " ", "by", " ", "the", " ", 
+          RowBox[{"function", ".", " ", "Every"}], " ", "time", " ", "a", " ",
+           "full", " ", "expression", " ", "has", " ", "passed", " ", "the", 
+          " ", "criteria"}], ",", " ", 
+         RowBox[{
+         "it", " ", "is", " ", "being", " ", "added", " ", "to", " ", "this", 
+          " ", 
+          RowBox[{"list", ".", "\n", "\t\t\t", "Currently"}], " ", "it", " ", 
+          "contains", " ", "full", " ", 
+          RowBox[{"treeStructures", ".", " ", "I"}], " ", "believe", " ", 
+          "that", " ", "in", " ", "the", " ", "end", " ", "it", " ", "will", 
+          " ", "also", " ", "contain", " ", "the", " ", "changes", " ", 
+          "made", " ", "and", " ", "the", " ", "final", " ", "expressino", 
+          " ", "string"}]}], "  ", "*)"}], "\n", "\t\t", 
+       RowBox[{"(*", 
+        RowBox[{
+         RowBox[{"iteratedStr", " ", "=", " ", "thisIteratedStr"}], ",", "\n",
+          "\t\t", 
+         RowBox[{"changes", " ", "=", " ", "thisChanges"}], ","}], "*)"}], 
+       "\n", "\t\t", 
+       RowBox[{"level", " ", "=", " ", "thislevel"}], ",", " ", "\n", "\t\t", 
+       
+       RowBox[{"treeStructure", " ", "=", " ", "thistreeStructure"}], ",", 
+       " ", "\n", "\t\t", 
+       RowBox[{"head", " ", "=", " ", "thishead"}], ",", "\n", "\t\t", 
+       RowBox[{"commasFound", " ", "=", " ", "0"}], ",", " ", 
+       RowBox[{"(*", " ", 
+        RowBox[{
+         RowBox[{"Commas", " ", "correspond", " ", "to", " ", 
+          RowBox[{"arguments", ".", " ", "Keeping"}], " ", "track", " ", "of",
+           " ", "how", " ", "many", " ", "commas", " ", "were", " ", 
+          "found"}], ",", " ", 
+         RowBox[{
+         "serves", " ", "to", " ", "know", " ", "where", " ", "the", " ", 
+          "iteratino", " ", "process", " ", "is"}]}], " ", "*)"}], "\n", 
+       "\t\t", 
+       RowBox[{"id", " ", "=", " ", "thisid"}], ",", "\n", "\t\t", 
+       RowBox[{"commaPositions", " ", "=", " ", 
+        RowBox[{"FindCommaPositions", "[", "str", "]"}]}], ",", " ", 
+       RowBox[{"(*", " ", 
+        RowBox[{
+        "Check", " ", "where", " ", "the", " ", "commas", " ", "are", " ", 
+         "in", " ", "the", " ", 
+         RowBox[{"string", ".", " ", "To"}], " ", "be", " ", "used", " ", 
+         "with", " ", "commas", " ", 
+         RowBox[{"found", ".", " ", "INNEFICIENT", ".", " ", "to"}], " ", 
+         "be", " ", 
+         RowBox[{"improved", "."}]}], " ", "*)"}], "\n", "\t\t", 
+       RowBox[{"inComment", " ", "=", " ", "False"}], ",", " ", 
+       RowBox[{"(*", " ", 
+        RowBox[{
+         RowBox[{
+         "Keep", " ", "track", " ", "of", " ", "whether", " ", "a", " ", 
+          "part", " ", "of", " ", "an", " ", "expression", " ", "is", " ", 
+          "a", " ", "comment"}], ",", " ", 
+         RowBox[{
+         "so", " ", "that", " ", "the", " ", "contents", " ", "can", " ", 
+          "be", " ", "ignored"}]}], " ", "*)"}], "\n", "\t\t", 
+       RowBox[{"inString", " ", "=", " ", "False"}]}], " ", 
+      RowBox[{"(*", " ", 
+       RowBox[{
+        RowBox[{
+        "Keep", " ", "track", " ", "whether", " ", "part", " ", "of", " ", 
+         "an", " ", "expressino", " ", "is", " ", "a", " ", "string"}], ",", 
+        " ", 
+        RowBox[{
+        "so", " ", "that", " ", "special", " ", "characters", " ", "will", 
+         " ", "be", " ", "ignored"}]}], " ", "*)"}], "\n", "\t\t", "}"}], ",",
+      "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Reap", "[", "\n", "\t", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"StringCases", "[", " ", 
+          RowBox[{"(*", " ", 
+           RowBox[{
+           "Iterate", " ", "until", " ", "some", " ", "special", " ", 
+            "characters", " ", "are", " ", "found"}], "  ", "*)"}], "\n", 
+          "\t\t", 
+          RowBox[{"str", ",", "\n", "\t\t", 
+           RowBox[{"{", "\n", "\t\t", 
+            RowBox[{"(*", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"\"\<[[\>\"", "/;", 
+                RowBox[{"!", "inPart"}]}], " ", "\[RuleDelayed]"}], ","}], 
+             "*)"}], "\n", "\t\t", 
             RowBox[{
-            "\"\<[\>\"", "\[RuleDelayed]", "\[IndentingNewLine]", "\t\t\t", 
-             RowBox[{"Sow", "[", 
-              RowBox[{"If", "[", 
+             RowBox[{"\"\<[\>\"", "\[RuleDelayed]", " ", 
+              RowBox[{"(*", " ", 
                RowBox[{
+               "Going", " ", "down", " ", "a", " ", "level", " ", "on", " ", 
+                "the", " ", "tree", " ", "because", " ", "a", " ", "new", " ",
+                 "function", " ", "has", " ", "started"}], "   ", "*)"}], 
+              "\n", "\t\t\t\t", 
+              RowBox[{"(*", " ", 
+               RowBox[{
+                RowBox[{"If", " ", "level"}], " ", "\[LessEqual]", " ", 
                 RowBox[{
-                 RowBox[{"level", " ", ">", " ", "0"}], " ", "||", " ", 
-                 RowBox[{"treeStructure", " ", "\[Equal]", " ", 
-                  RowBox[{"Association", "[", 
-                   RowBox[{"<|", " ", "|>"}], "]"}]}]}], ",", " ", 
+                "0", " ", "the", " ", "current", " ", "expression", " ", "is",
+                  " ", "wrong", " ", "except", " ", "if", " ", "the", " ", 
+                 "treeStructure", " ", "is", " ", "empty", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                  "which", " ", "corresponds", " ", "to", " ", "the", " ", 
+                   "first", " ", "function", " ", "call"}], ")"}]}]}], " ", 
+               "*)"}], "\n", "\t\t\t\t", 
+              RowBox[{"(*", " ", 
+               RowBox[{
+               "The", " ", "character", " ", "is", " ", "ignored", " ", "if", 
+                " ", "the", " ", 
+                RowBox[{"flags", ":", " ", 
+                 RowBox[{
+                 "inComment", " ", "or", " ", "inString", " ", "are", " ", 
+                  "activated"}]}]}], " ", "*)"}], "\[IndentingNewLine]", 
+              "\t\t\t", 
+              RowBox[{"Sow", "[", 
+               RowBox[{"If", "[", 
                 RowBox[{
-                 RowBox[{"Print", "[", "\"\<Going Down\>\"", 
-                  RowBox[{"(*", 
-                   RowBox[{",", "treeStructure"}], "*)"}], "]"}], ";", "\n", 
-                 "\t\t\t", 
-                 RowBox[{"level", "=", 
-                  RowBox[{"level", "+", "1"}]}], ";", "\[IndentingNewLine]", 
-                 "\t\t\t", 
-                 RowBox[{"id", " ", "=", " ", 
-                  RowBox[{"whatismyid", "[", 
-                   RowBox[{"level", ",", "treeStructure"}], "]"}]}], ";", 
-                 "\[IndentingNewLine]", "\t\t\t", 
-                 RowBox[{"treeStructure", "=", "\n", "\t\t\t\t", 
-                  RowBox[{"Append", "[", "\[IndentingNewLine]", "\t\t\t\t", 
-                   RowBox[{"treeStructure", ",", 
+                 RowBox[{
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"level", " ", ">", " ", "0"}], " ", "||", " ", 
+                    RowBox[{"treeStructure", " ", "\[Equal]", " ", 
+                    RowBox[{"Association", "[", 
+                    RowBox[{"<|", " ", "|>"}], "]"}]}]}], ")"}], " ", "&&", 
+                  " ", 
+                  RowBox[{"inComment", " ", "\[Equal]", "  ", "False"}], " ", 
+                  "&&", " ", 
+                  RowBox[{"inString", " ", "\[Equal]", " ", "False"}]}], ",", 
+                 " ", 
+                 RowBox[{
+                  RowBox[{"Print", "[", "\"\<Going Down\>\"", 
+                   RowBox[{"(*", 
+                    RowBox[{",", "treeStructure"}], "*)"}], "]"}], ";", "\n", 
+                  "\t\t\t", 
+                  RowBox[{"level", "=", 
+                   RowBox[{"level", "+", "1"}]}], ";", " ", 
+                  RowBox[{"(*", " ", 
+                   RowBox[{
+                   "goind", " ", "deeper", " ", "in", " ", "the", " ", 
+                    "expression", " ", "tree"}], "  ", "*)"}], 
+                  "\[IndentingNewLine]", "\t\t\t", 
+                  RowBox[{"id", " ", "=", " ", 
+                   RowBox[{"whatismyid", "[", 
+                    RowBox[{"level", ",", "treeStructure"}], "]"}]}], ";", 
+                  " ", 
+                  RowBox[{"(*", " ", 
+                   RowBox[{
+                   "figure", " ", "out", " ", "what", " ", "the", " ", 
+                    "current", " ", "id", " ", "is"}], " ", "*)"}], 
+                  "\[IndentingNewLine]", "\t\t\t", 
+                  RowBox[{"treeStructure", "=", "\n", "\t\t\t\t", 
+                   RowBox[{"Append", "[", "\[IndentingNewLine]", "\t\t\t\t", 
+                    RowBox[{"treeStructure", ",", 
                     RowBox[{"newTreeEntry", "[", 
                     RowBox[{
                     "level", ",", "id", ",", "head", ",", "treeStructure"}], 
                     "]"}]}], "\[IndentingNewLine]", "\t\t\t\t", "]"}]}], ";", 
-                 "\[IndentingNewLine]", "\t\t\t", 
-                 RowBox[{"Print", "[", 
-                  RowBox[{
-                  "\"\<current level, id, head is: \>\"", ",", "level", ",", 
-                   "\"\< \>\"", ",", "id", ",", " ", "\"\< \>\"", ",", " ", 
-                   "head"}], "]"}]}]}], "]"}], "]"}]}], ",", 
-            "\[IndentingNewLine]", "\t\t", 
-            RowBox[{"\"\<]\>\"", "\[RuleDelayed]", 
-             RowBox[{"If", "[", 
-              RowBox[{
-               RowBox[{"level", " ", ">", " ", "0"}], ",", 
-               RowBox[{"Sow", "[", 
-                RowBox[{
-                 RowBox[{"Print", "[", "\"\<Going Up\>\"", 
-                  RowBox[{"(*", 
-                   RowBox[{",", "treeStructure"}], "*)"}], "]"}], ",", 
-                 "\[IndentingNewLine]", "\t\t\t", 
-                 RowBox[{
-                  RowBox[{"level", "--"}], ";", "\[IndentingNewLine]", 
-                  "\t\t\t", 
-                  RowBox[{"id", " ", "=", " ", 
-                   RowBox[{"whatismyid", "[", 
-                    RowBox[{"level", ",", "treeStructure"}], "]"}]}], ";", 
-                  "\[IndentingNewLine]", "\t\t\t", 
-                  RowBox[{"If", "[", 
+                  " ", 
+                  RowBox[{"(*", " ", 
                    RowBox[{
+                   "Add", " ", "a", " ", "new", " ", "entry", " ", "to", " ", 
+                    "the", " ", "treeStructure"}], " ", "*)"}], 
+                  "\[IndentingNewLine]", "\t\t\t", 
+                  RowBox[{"Print", "[", 
+                   RowBox[{
+                   "\"\<current level, id, head is: \>\"", ",", "level", ",", 
+                    "\"\< \>\"", ",", "id", ",", " ", "\"\< \>\"", ",", " ", 
+                    "head"}], "]"}]}]}], "]"}], "]"}]}], ",", 
+             "\[IndentingNewLine]", "\t\t", 
+             RowBox[{"\"\<]\>\"", " ", "\[RuleDelayed]", " ", 
+              RowBox[{"(*", " ", 
+               RowBox[{
+                RowBox[{
+                "Going", " ", "up", " ", "one", " ", "a", " ", "level", " ", 
+                 "on", " ", "the", " ", "tree"}], ",", " ", 
+                RowBox[{
+                "because", " ", "the", " ", "current", " ", "function", " ", 
+                 "has", " ", "ended", " ", "\n", "\t\t\t  ", "The", " ", 
+                 "character", " ", "is", " ", "ignored", " ", "if", " ", 
+                 "the", " ", 
+                 RowBox[{"flags", ":", " ", 
+                  RowBox[{
+                   RowBox[{
+                   "inComment", " ", "or", " ", "inString", " ", "are", " ", 
+                    "activated", " ", "\n", "\t\t\t  ", "If", " ", "level", 
+                    " ", "is"}], " ", "\[LessEqual]", " ", "0"}]}]}], ",", 
+                " ", 
+                RowBox[{
+                "the", " ", "current", " ", "expression", " ", "under", " ", 
+                 "consideration", " ", "is", " ", "wrong", " ", "and", " ", 
+                 "this", " ", "part", " ", "is", " ", "skipped"}]}], "  ", 
+               "*)"}], "\n", "\t\t\t", 
+              RowBox[{"If", "[", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"inComment", " ", "\[Equal]", " ", "False"}], " ", "&&",
+                  " ", 
+                 RowBox[{"inString", " ", "\[Equal]", " ", "False"}]}], ",", 
+                " ", 
+                RowBox[{"If", "[", 
+                 RowBox[{
+                  RowBox[{"level", " ", ">", " ", "0"}], ",", " ", 
+                  RowBox[{"Sow", "[", 
+                   RowBox[{
+                    RowBox[{"Print", "[", "\"\<Going Up\>\"", 
+                    RowBox[{"(*", 
+                    RowBox[{",", "treeStructure"}], "*)"}], "]"}], ",", "\n", 
+                    "\t\t    ", 
+                    RowBox[{
+                    RowBox[{"id", " ", "=", " ", 
+                    RowBox[{"whatismyid", "[", 
+                    RowBox[{"level", ",", "treeStructure"}], "]"}]}], ";", 
+                    "\n", "\t\t\t", 
+                    RowBox[{"(*", 
+                    RowBox[{
+                    RowBox[{"updateTreeEntry", "[", 
+                    RowBox[{"level", ",", "id", ",", "treeStructure"}], "]"}],
+                     ";"}], " ", "*)"}], "\[IndentingNewLine]", "\t\t\t", 
+                    RowBox[{"level", "--"}], ";", " ", 
+                    RowBox[{"(*", " ", 
+                    RowBox[{"Going", " ", "up", " ", "one", " ", "level"}], 
+                    " ", "*)"}], "\[IndentingNewLine]", "\t\t\t", 
+                    RowBox[{"id", " ", "=", " ", 
+                    RowBox[{"whatismyid", "[", 
+                    RowBox[{"level", ",", "treeStructure"}], "]"}]}], ";", 
+                    "\[IndentingNewLine]", "\t\t\t", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
                     RowBox[{"level", ">", "0"}], ",", "\[IndentingNewLine]", 
                     "\t\t\t\t", 
                     RowBox[{"head", "=", 
@@ -7427,65 +7748,103 @@ Cell[BoxData[
                     RowBox[{"{", 
                     RowBox[{"level", ",", "id"}], "}"}], "]"}], "[", 
                     RowBox[{"[", "1", "]"}], "]"}]}], ",", 
-                    RowBox[{"head", "=", "\"\< \>\""}]}], "]"}], ";", 
-                  "\[IndentingNewLine]", "\t\t\t\t", 
-                  RowBox[{"Print", "[", 
-                   RowBox[{
-                   "\"\<current level, id, head is: \>\"", ",", "level", ",", 
-                    "\"\< \>\"", ",", "id", ",", " ", "\"\< \>\"", ",", " ", 
-                    "head"}], "]"}], ";"}]}], "]"}], ",", 
-               RowBox[{"level", "--"}]}], "]"}]}], ",", "\[IndentingNewLine]",
-             "\t\t", 
-            RowBox[{
-             RowBox[{"h", ":", 
-              RowBox[{"LetterCharacter", ".."}]}], "\[RuleDelayed]", 
-             RowBox[{"Sow", "[", 
+                    RowBox[{"head", "=", "\"\< \>\""}]}], "]"}], ";", " ", 
+                    RowBox[{"(*", " ", 
+                    RowBox[{
+                    "Go", " ", "back", " ", "to", " ", "however", " ", "the", 
+                    " ", "parent", " ", "of", " ", "the", " ", "previus", " ",
+                     "function", " ", "was"}], " ", "*)"}], 
+                    "\[IndentingNewLine]", "\t\t\t\t", 
+                    RowBox[{"Print", "[", 
+                    RowBox[{
+                    "\"\<current level, id, head is: \>\"", ",", "level", 
+                    ",", "\"\< \>\"", ",", "id", ",", " ", "\"\< \>\"", ",", 
+                    " ", "head"}], "]"}], ";"}]}], "]"}], ",", 
+                  RowBox[{"level", "--"}]}], "]"}]}], "]"}]}], ",", 
+             "\[IndentingNewLine]", "\t\t", 
+             RowBox[{
+              RowBox[{"h", ":", 
+               RowBox[{"LetterCharacter", ".."}]}], "\[RuleDelayed]", 
+              RowBox[{"Sow", "[", 
+               RowBox[{
+                RowBox[{"head", "=", "h"}], ",", "\"\<head\>\""}], "]"}]}], 
+             ",", 
+             RowBox[{"(*", " ", 
               RowBox[{
-               RowBox[{"head", "=", "h"}], ",", "\"\<head\>\""}], "]"}]}], 
-            ",", "\[IndentingNewLine]", "\t\t", 
-            RowBox[{"\"\<,\>\"", "\[RuleDelayed]", " ", 
-             RowBox[{"If", "[", 
-              RowBox[{
-               RowBox[{"level", " ", ">", " ", "0"}], ",", " ", 
-               RowBox[{"Sow", "[", 
+              "Find", " ", "the", " ", "head", " ", "of", " ", "each", " ", 
+               "function"}], " ", "*)"}], "\[IndentingNewLine]", "\t\t", 
+             RowBox[{"\"\<,\>\"", " ", "\[RuleDelayed]", " ", "\n", "\t\t", 
+              RowBox[{"(*", " ", 
+               RowBox[{
                 RowBox[{
-                 RowBox[{"Print", "[", 
-                  RowBox[{
-                  "\"\<A comma was found at position \>\"", ",", " ", 
-                   RowBox[{"commaPositions", "[", 
+                "Commas", " ", "are", " ", "the", " ", "way", " ", "the", " ",
+                  "number", " ", "of", " ", "arguments", " ", "in", " ", 
+                 "functions", " ", "are", " ", "infered", " ", "\n", "\t\t ", 
+                 "With", " ", "every", " ", "comma", " ", "found"}], ",", " ", 
+                RowBox[{"an", " ", "initial", " ", "check", " ", "whether"}], 
+                ",", " ", 
+                RowBox[{
+                "a", " ", "closing", " ", "square", " ", "bracket", " ", 
+                 "can", " ", "be", " ", "positioned", " ", "here"}], ",", " ", 
+                RowBox[{
+                "based", " ", "on", " ", "the", " ", "number", " ", "of", " ",
+                  "arguments"}]}], " \t", "*)"}], "\n", "\t\t\t", 
+              RowBox[{"If", "[", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"level", " ", ">", " ", "0"}], " ", "&&", " ", 
+                 RowBox[{"inComment", " ", "\[Equal]", " ", "False"}], " ", "&&",
+                  " ", 
+                 RowBox[{"inString", " ", "\[Equal]", " ", "False"}]}], ",", 
+                " ", 
+                RowBox[{"Sow", "[", 
+                 RowBox[{
+                  RowBox[{"Print", "[", 
+                   RowBox[{"\"\<A comma was found at position \>\"", ",", " ", 
+                    RowBox[{"commaPositions", "[", 
                     RowBox[{"[", 
                     RowBox[{"commasFound", "+", "1"}], "]"}], "]"}]}], "]"}], 
-                 ";", "\[IndentingNewLine]", "\t\t", 
-                 RowBox[{"id", " ", "=", " ", 
-                  RowBox[{"whatismyid", "[", 
-                   RowBox[{"level", ",", "treeStructure"}], "]"}]}], ";", 
-                 "\[IndentingNewLine]", "\t\t", 
-                 RowBox[{"matches", "=", " ", 
-                  RowBox[{"testPatternMatch", "[", 
-                   RowBox[{"treeStructure", ",", "level", ",", "id"}], 
-                   "]"}]}], ";", "\n", "\t\t", 
-                 RowBox[{"(*", 
-                  RowBox[{
-                   RowBox[{"Print", "[", 
-                    RowBox[{
-                    "\"\<Current function pattern matches correct function: \
-\>\"", ",", "matches"}], "]"}], ";"}], "*)"}], "\[IndentingNewLine]", "\t\t", 
-                 
-                 RowBox[{"(*", 
-                  RowBox[{
-                   RowBox[{"newExpr", " ", "=", " ", 
-                    RowBox[{"createAlternativeExpr", "[", 
-                    RowBox[{
-                    "str", ",", "commaPositions", ",", "commasFound"}], 
-                    "]"}]}], ";"}], "*)"}], "\n", "\t\t", 
-                 RowBox[{"(*", 
-                  RowBox[{
-                   RowBox[{"passedChecks", "=", 
-                    RowBox[{"CheckSyntax", "[", "newExpr", "]"}]}], ";"}], 
-                  "*)"}], "\[IndentingNewLine]", "\t\t", 
-                 RowBox[{"If", "[", 
-                  RowBox[{"matches", ",", "\n", "\t\t\t", 
+                  ";", "\[IndentingNewLine]", "\t\t\t", 
+                  RowBox[{"id", " ", "=", " ", 
+                   RowBox[{"whatismyid", "[", 
+                    RowBox[{"level", ",", "treeStructure"}], "]"}]}], ";", 
+                  "\[IndentingNewLine]", "\t\t\t", 
+                  RowBox[{"matches", "=", " ", 
+                   RowBox[{"testPatternMatch", "[", 
+                    RowBox[{"treeStructure", ",", "level", ",", "id"}], 
+                    "]"}]}], ";", " ", 
+                  RowBox[{"(*", " ", 
                    RowBox[{
+                    RowBox[{"Check", " ", "whether"}], ",", " ", 
+                    RowBox[{
+                    "if", " ", "the", " ", "current", " ", "function", " ", 
+                    "ends", " ", "here"}], ",", " ", 
+                    RowBox[{
+                    "it", " ", "will", " ", "be", " ", "syntactically", " ", 
+                    "correct"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+                  "\t\t\t", 
+                  RowBox[{"If", "[", 
+                   RowBox[{"matches", ",", " ", 
+                    RowBox[{"(*", " ", 
+                    RowBox[{
+                    RowBox[{"If", " ", "it", " ", "does"}], ",", " ", 
+                    RowBox[{
+                    "branch", " ", "and", " ", "follow", " ", "that", " ", 
+                    "path", " ", "to", " ", "the", " ", 
+                    RowBox[{"end", ".", " ", "Append"}], " ", "the", " ", 
+                    "result", " ", "to", " ", "the", " ", "suggestions", " ", 
+                    
+                    RowBox[{"list", ".", " ", "\n", "\t\t\t\t\t\t", 
+                    RowBox[{"Note", ":", " ", 
+                    RowBox[{
+                    "it", " ", "is", " ", "eventually", " ", "decided", " ", 
+                    "that", " ", "this", " ", "path", " ", "was", " ", "not", 
+                    " ", "corret"}]}]}]}], ",", " ", 
+                    RowBox[{
+                    "the", " ", "output", " ", "of", " ", "the", " ", 
+                    "function", " ", "will", " ", "be", " ", "empty"}]}], " ",
+                     "*)"}], "\n", "\t\t\t\t", 
+                    RowBox[{
                     RowBox[{"Print", "[", 
                     RowBox[{"\"\<Branching for: \>\"", ",", " ", 
                     RowBox[{"\"\<]\>\"", "<>", 
@@ -7497,7 +7856,7 @@ Cell[BoxData[
                     RowBox[{"[", 
                     RowBox[{"commasFound", "+", "1"}], "]"}], "]"}], "+", 
                     "1"}], ";;"}]}], "]"}]}]}], "]"}], ";", " ", "\n", 
-                    "\t\t\t", 
+                    "\t\t\t\t", 
                     RowBox[{"suggestions", " ", "=", " ", 
                     RowBox[{"Flatten", "\[NonBreakingSpace]", "@", " ", 
                     RowBox[{"Append", "[", 
@@ -7508,53 +7867,64 @@ Cell[BoxData[
                     RowBox[{
                     "str", ",", "commaPositions", ",", "commasFound"}], "]"}],
                      ",", "treeStructure", ",", "level", ",", "id", ",", 
-                    "head"}], "]"}]}], "]"}]}]}]}]}], "\n", "\t\t\t", "]"}], 
-                 ";", "\n", "\t\t", 
-                 RowBox[{"commasFound", "++"}], ";", "\[IndentingNewLine]", 
-                 "\t\t", 
-                 RowBox[{"treeStructure", "=", "\n", "\t\t\t", 
-                  RowBox[{"Append", "[", "\n", "\t\t\t\t", 
-                   RowBox[{"treeStructure", ",", "\n", "\t\t\t\t", 
+                    "head"}], "]"}]}], "]"}]}]}]}]}], "\n", "\t\t\t\t", "]"}],
+                   ";", "\n", "\t\t\t", 
+                  RowBox[{"commasFound", "++"}], ";", "\[IndentingNewLine]", 
+                  "\t\t\t", 
+                  RowBox[{"treeStructure", "=", "\n", "\t\t\t\t", 
+                   RowBox[{"Append", "[", "\n", "\t\t\t\t\t", 
+                    RowBox[{"treeStructure", ",", "\n", "\t\t\t\t\t", 
                     RowBox[{"updateTreeEntry", "[", 
                     RowBox[{"level", ",", "id", ",", "treeStructure"}], 
-                    "]"}]}], "\[IndentingNewLine]", "\t\t\t\t  ", "]"}]}]}], 
-                "\n", "\t\t\t\t", "]"}]}], "]"}]}]}], "\n", "\t\t", "}"}]}], 
-         "\[IndentingNewLine]", "\t", "]"}], ";"}], ",", "_", ",", "Rule"}], 
-      "]"}], ";", "\n", "\t", 
-     RowBox[{"Which", "[", "\n", "\t\t", 
-      RowBox[{
-       RowBox[{"level", " ", "<", " ", "0"}], ",", "\n", "\t\t\t", 
-       RowBox[{"Print", "[", "\"\<We do not like that one\>\"", "]"}], ",", 
-       "\n", "\t\t", 
-       RowBox[{"level", " ", "\[Equal]", " ", "0"}], ",", "\n", "\t\t\t", 
-       RowBox[{"suggestions", " ", "=", " ", 
-        RowBox[{"Append", "[", 
-         RowBox[{"suggestions", ",", "treeStructure"}], "]"}]}], ",", "\n", 
-       "\t\t", 
-       RowBox[{"level", ">", "0"}], ",", " ", 
+                    "]"}]}], "\[IndentingNewLine]", "\t\t\t\t\t  ", "]"}]}]}],
+                  "\n", "\t\t\t\t\t", "]"}]}], "]"}]}], ",", "\n", "\t\t", 
+             RowBox[{"\"\<(*\>\"", " ", "\[RuleDelayed]", " ", 
+              RowBox[{"Sow", "[", 
+               RowBox[{
+                RowBox[{"Print", "[", "\"\<Start of comment\>\"", "]"}], ";", 
+                " ", 
+                RowBox[{"inComment", " ", "=", " ", "True"}]}], "]"}]}], ",", 
+             "\n", "\t\t", 
+             RowBox[{"\"\<*)\>\"", " ", "\[RuleDelayed]", " ", 
+              RowBox[{"Sow", "[", 
+               RowBox[{
+                RowBox[{"Print", "[", "\"\<End of comment\>\"", "]"}], ";", 
+                " ", 
+                RowBox[{"inComment", " ", "=", " ", "False"}]}], "]"}]}], ",",
+              "\n", "\t\t", 
+             RowBox[{"\"\<\\\"\>\"", " ", "\[RuleDelayed]", " ", 
+              RowBox[{"If", "[", 
+               RowBox[{
+                RowBox[{"inComment", " ", "\[Equal]", " ", "False"}], ",", 
+                " ", 
+                RowBox[{"Sow", "[", 
+                 RowBox[{"inString", " ", "=", " ", 
+                  RowBox[{"!", "inString"}]}], "]"}]}], "]"}]}]}], "\n", 
+            "\t\t", "}"}]}], "\[IndentingNewLine]", "\t", "]"}], ";"}], ",", 
+        "_", ",", "Rule"}], "]"}], ";", "\n", "\t", 
+      RowBox[{"Which", "[", "\n", "\t\t", 
        RowBox[{
+        RowBox[{"level", " ", "<", " ", "0"}], ",", "\n", "\t\t\t", 
+        RowBox[{"Print", "[", "\"\<We do not like that one\>\"", "]"}], ",", 
+        "\n", "\t\t", 
+        RowBox[{"level", " ", "\[Equal]", " ", "0"}], ",", "\n", "\t\t\t", 
         RowBox[{"suggestions", " ", "=", " ", 
-         RowBox[{"Flatten", "\[NonBreakingSpace]", "@", " ", 
-          RowBox[{"Append", "[", 
-           RowBox[{"suggestions", ",", 
-            RowBox[{"treeBuilder", "[", 
-             RowBox[{
-             "\"\<]\>\"", ",", "treeStructure", ",", "level", ",", "id", ",", 
-              "head"}], "]"}]}], "]"}]}]}], ";"}]}], "\n", "\t\t\t", "]"}], 
-     ";", "\n", "\t", 
-     RowBox[{"(*", 
-      RowBox[{
-       RowBox[{"If", "[", 
+         RowBox[{"Append", "[", 
+          RowBox[{"suggestions", ",", "treeStructure"}], "]"}]}], ",", "\n", 
+        "\t\t", 
+        RowBox[{"level", ">", "0"}], ",", " ", 
         RowBox[{
-         RowBox[{"level", "\[Equal]", "0"}], ",", "\n", "\t\t", ","}], "\n", 
-        "\t\t", "]"}], ";"}], "*)"}], "\n", "\t", 
-     RowBox[{"Print", "[", 
-      RowBox[{"\"\<LEVEL: \>\"", ",", "level"}], "]"}], ";", "\n", "\t", 
-     RowBox[{"Print", "[", 
-      RowBox[{"\"\<SUGGESTIONS: \>\"", ",", "str", ",", "suggestions"}], 
-      "]"}], ";", "\n", "\t", 
-     RowBox[{"Print", "[", "\"\<End of Branching   \>\"", "]"}], ";", "\n", 
-     "\t", "suggestions"}]}], "\n", "]"}]}]], "Code",
+         RowBox[{"suggestions", " ", "=", " ", 
+          RowBox[{"Flatten", "\[NonBreakingSpace]", "@", " ", 
+           RowBox[{"Append", "[", 
+            RowBox[{"suggestions", ",", 
+             RowBox[{"treeBuilder", "[", 
+              RowBox[{
+              "\"\<]\>\"", ",", "treeStructure", ",", "level", ",", "id", ",",
+                "head"}], "]"}]}], "]"}]}]}], ";"}]}], "\n", "\t\t\t", "]"}], 
+      ";", "\n", "\t", 
+      RowBox[{"Print", "[", "\"\<End of Branching   \>\"", "]"}], ";", "\n", 
+      "\t", "suggestions"}]}], "\n", "]"}]}]}]], "Code",
  CellChangeTimes->{{3.771362006216511*^9, 3.771362015523728*^9}, 
    3.771362086420603*^9, {3.771362118045649*^9, 3.771362655589736*^9}, {
    3.771362756691988*^9, 3.771363173801856*^9}, {3.77136336177672*^9, 
@@ -7621,13 +7991,39 @@ Cell[BoxData[
    3.7715001552737083`*^9}, {3.771501484028212*^9, 3.77150148843279*^9}, 
    3.77150153125144*^9, {3.771501733539752*^9, 3.7715018321667013`*^9}, {
    3.77150186565837*^9, 3.771501869580326*^9}, {3.771501902602687*^9, 
-   3.771501950032485*^9}, {3.7715020357475557`*^9, 3.7715020389699574`*^9}},
- CellLabel->"In[28]:=",ExpressionUUID->"f7d2a069-af28-45f2-8b6e-a53b5d9323e8"],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.771501750428521*^9, 
-  3.771501757087811*^9}},ExpressionUUID->"91cf66d9-c803-4c48-8fb5-\
-949d50db45ce"]
+   3.771501950032485*^9}, {3.7715020357475557`*^9, 3.7715020389699574`*^9}, {
+   3.771504521255499*^9, 3.771504537070751*^9}, 3.771511210309855*^9, {
+   3.7715139592122583`*^9, 3.7715139735113173`*^9}, {3.771514013863624*^9, 
+   3.7715141772657433`*^9}, {3.7715142088747053`*^9, 3.771514301726138*^9}, {
+   3.771514429789418*^9, 3.7715144306713257`*^9}, {3.771514497832857*^9, 
+   3.771514523900888*^9}, {3.771515690651322*^9, 3.77151571905551*^9}, {
+   3.771515890020203*^9, 3.771515923794814*^9}, {3.771516223783848*^9, 
+   3.771516227375317*^9}, {3.771517140348637*^9, 3.771517183238338*^9}, {
+   3.771517402853936*^9, 3.771517462546172*^9}, {3.771518609625205*^9, 
+   3.7715186405252037`*^9}, {3.771518711677218*^9, 3.771518717963636*^9}, {
+   3.771519041124344*^9, 3.771519102174617*^9}, {3.77151914801582*^9, 
+   3.771519161467825*^9}, {3.7715208182540817`*^9, 3.7715210441687603`*^9}, {
+   3.7715211865410433`*^9, 3.771522019670351*^9}, {3.771522053280406*^9, 
+   3.7715222013749113`*^9}, {3.771522248864739*^9, 3.771522370166245*^9}, {
+   3.7715224030967093`*^9, 3.7715224815606947`*^9}, {3.7715226997328978`*^9, 
+   3.771522777297751*^9}, {3.771522812602989*^9, 3.771522971702385*^9}, {
+   3.7715230086328983`*^9, 3.7715232096012897`*^9}, {3.771523313171363*^9, 
+   3.771523325605304*^9}, {3.771527056467519*^9, 3.771527066115438*^9}, {
+   3.771527265277254*^9, 3.771527299584749*^9}, {3.771527342592696*^9, 
+   3.771527345192234*^9}, {3.771527470243064*^9, 3.771527472123252*^9}, {
+   3.771527729747238*^9, 3.771527731578205*^9}, {3.771527778457223*^9, 
+   3.771527832206325*^9}, 3.771527951522047*^9, {3.7715283935214853`*^9, 
+   3.771528486708242*^9}, {3.771528704347735*^9, 3.77152875663485*^9}, {
+   3.771528796930005*^9, 3.771528797973735*^9}, {3.7715288307667007`*^9, 
+   3.771528972791039*^9}, {3.771529090608733*^9, 3.771529096395255*^9}, {
+   3.771529139815501*^9, 3.771529146047682*^9}, {3.771529468779215*^9, 
+   3.771529481742841*^9}, {3.771532365374267*^9, 3.7715323656956167`*^9}, {
+   3.771532441780241*^9, 3.771532486600618*^9}, {3.7715326180050087`*^9, 
+   3.771532624066293*^9}, {3.77153268156149*^9, 3.771532690355977*^9}, {
+   3.771532736962655*^9, 3.771532788684617*^9}, {3.771532830065049*^9, 
+   3.771532831473065*^9}, {3.771533170038632*^9, 3.771533191425215*^9}, {
+   3.771533480270513*^9, 3.771533495880817*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"f7d2a069-af28-45f2-8b6e-a53b5d9323e8"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -7657,10 +8053,9 @@ Cell[BoxData[
       RowBox[{"id", "=", "1"}], ",", "\[IndentingNewLine]", "\t\t", 
       RowBox[{"commasFound", " ", "=", " ", "0"}], ",", "\[IndentingNewLine]",
        "\t\t", 
-      RowBox[{"(*", 
-       RowBox[{
-        RowBox[{"suggestions", "=", 
-         RowBox[{"{", "}"}]}], ","}], "*)"}], "\[IndentingNewLine]", "\t\t", 
+      RowBox[{"iteratedStr", "=", " ", "\"\<\>\""}], ",", "\n", "\t\t", 
+      RowBox[{"changes", "=", 
+       RowBox[{"{", "}"}]}], ",", "\[IndentingNewLine]", "\t\t", 
       RowBox[{"commaPositions", " ", "=", " ", 
        RowBox[{"FindCommaPositions", "[", "str", "]"}]}]}], 
      "\[IndentingNewLine]", "\t", "}"}], ",", "\[IndentingNewLine]", "\t", 
@@ -7676,8 +8071,10 @@ Cell[BoxData[
    3.771366297321278*^9}, {3.771366350770006*^9, 3.7713664388713427`*^9}, {
    3.771366516745023*^9, 3.77136651827549*^9}, {3.771366729408938*^9, 
    3.771366731731201*^9}, {3.7713671226822767`*^9, 3.771367123150505*^9}, 
-   3.7714492294722*^9, {3.7714500736785994`*^9, 3.771450113665509*^9}},
- CellLabel->"In[7]:=",ExpressionUUID->"a748e3a4-0c2b-4d5a-b23f-cab0e74172f1"]
+   3.7714492294722*^9, {3.7714500736785994`*^9, 3.771450113665509*^9}, {
+   3.7715273715168123`*^9, 3.7715274496684732`*^9}, {3.77153315006075*^9, 
+   3.7715331557819767`*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"a748e3a4-0c2b-4d5a-b23f-cab0e74172f1"]
 }, Open  ]]
 }, Open  ]],
 
@@ -7692,16 +8089,29 @@ Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"str", "=", 
-  "\"\<SortBy[Range[Cos[x],Cos[x]+1], Mod[#1, 3 & ]]\>\""}]], "Input",
+  "\"\<SortBy[Range[Cos[Cos[x]],Cos[x]+1, Mod[#1, 3 & ]]\>\""}]], "Input",
  CellChangeTimes->{{3.77136615387665*^9, 3.771366155042642*^9}, 
    3.771366197788577*^9, 3.771450025498583*^9, {3.771450589097364*^9, 
    3.771450608053233*^9}, 3.771455363375585*^9, {3.771457316114749*^9, 
    3.771457318306305*^9}, {3.771503147802655*^9, 3.771503150716071*^9}, {
-   3.771503372857057*^9, 3.771503372963524*^9}},
- CellLabel->
-  "In[104]:=",ExpressionUUID->"123ff8fc-7919-4e6f-81b2-fbb7cf4f7df4"],
+   3.771503372857057*^9, 3.771503372963524*^9}, 3.771503693630477*^9, {
+   3.77150796671493*^9, 3.771507974559361*^9}, 3.77150801545348*^9, {
+   3.771510752353735*^9, 3.771510777014737*^9}, {3.771511398285369*^9, 
+   3.771511419185089*^9}, {3.771511771048332*^9, 3.771511797631353*^9}, {
+   3.771512947878599*^9, 3.77151296297816*^9}, 3.7715129951798067`*^9, 
+   3.771513375390314*^9, 3.771513535123815*^9, 3.77151365357493*^9, {
+   3.7715137696989117`*^9, 3.771513771055685*^9}, {3.7715138435293217`*^9, 
+   3.771513846653245*^9}, 3.7715143276956787`*^9, 3.771515515111977*^9, {
+   3.7715156221304197`*^9, 3.7715156498753157`*^9}, {3.771515932337201*^9, 
+   3.771515932750491*^9}, {3.771515967532256*^9, 3.7715159971713133`*^9}, 
+   3.771516150106444*^9, {3.771516302404661*^9, 3.7715163039523706`*^9}, 
+   3.771516354433958*^9, {3.771516519910632*^9, 3.771516576923133*^9}, {
+   3.7715172058304167`*^9, 3.771517206272312*^9}, {3.771519870591948*^9, 
+   3.7715198724969673`*^9}, {3.7715304878560333`*^9, 3.771530488958199*^9}, {
+   3.7715332364756937`*^9, 3.771533237170702*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"123ff8fc-7919-4e6f-81b2-fbb7cf4f7df4"],
 
-Cell[BoxData["\<\"SortBy[Range[Cos[x],Cos[x]+1], Mod[#1, 3 & ]]\"\>"], \
+Cell[BoxData["\<\"SortBy[Range[Cos[Cos[x]],Cos[x]+1, Mod[#1, 3 & ]]\"\>"], \
 "Output",
  CellChangeTimes->{
   3.771366250268214*^9, 3.7713707883139353`*^9, 3.7713711213278713`*^9, 
@@ -7709,9 +8119,20 @@ Cell[BoxData["\<\"SortBy[Range[Cos[x],Cos[x]+1], Mod[#1, 3 & ]]\"\>"], \
    3.771450028966538*^9, {3.771450589785782*^9, 3.771450613489098*^9}, 
    3.77145542780201*^9, 3.771457225243806*^9, 3.771457318928954*^9, 
    3.7714577290485363`*^9, 3.771458015480657*^9, 3.771500241349874*^9, 
-   3.771501541924223*^9, 3.771503151739624*^9, 3.771503373888671*^9},
- CellLabel->
-  "Out[104]=",ExpressionUUID->"63e85316-f23e-4410-8bff-eb7b27a49232"]
+   3.771501541924223*^9, 3.771503151739624*^9, 3.771503373888671*^9, 
+   3.7715036944080877`*^9, 3.771504545455515*^9, 3.771507975171659*^9, 
+   3.771508015954769*^9, 3.771510609437274*^9, {3.771510763841361*^9, 
+   3.771510777611492*^9}, 3.771511096411684*^9, {3.7715114043048077`*^9, 
+   3.7715114215805597`*^9}, {3.771511775815572*^9, 3.771511799510467*^9}, 
+   3.771512328568331*^9, 3.771513543774871*^9, 3.7715136109674883`*^9, 
+   3.7715136543271017`*^9, 3.771513847248561*^9, 3.771514329255327*^9, 
+   3.7715155161546183`*^9, {3.771515629332745*^9, 3.771515650511742*^9}, 
+   3.771515933698842*^9, 3.7715159685499496`*^9, 3.771516013129986*^9, 
+   3.771516151090963*^9, 3.771516304755397*^9, 3.77151635518054*^9, {
+   3.77151652121828*^9, 3.771516577485468*^9}, 3.7715172069771976`*^9, {
+   3.771519864258018*^9, 3.7715198734652023`*^9}, 3.7715332386724033`*^9, 
+   3.771533516795352*^9},
+ CellLabel->"Out[11]=",ExpressionUUID->"e96edba5-9ee3-4ad1-8c33-d23838f49d2a"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -7723,19 +8144,16 @@ Cell[BoxData[
  CellChangeTimes->{{3.7713661495413017`*^9, 3.7713661498361797`*^9}, {
    3.771366199499984*^9, 3.771366204122319*^9}, {3.771370801402548*^9, 
    3.7713708030408993`*^9}, {3.7714441426963873`*^9, 3.771444149379023*^9}, 
-   3.77144507480059*^9},
- CellLabel->
-  "In[105]:=",ExpressionUUID->"890387c0-d740-4af7-8c8a-0fa9951b6b4f"],
+   3.77144507480059*^9, {3.77152921981566*^9, 3.771529222118256*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"890387c0-d740-4af7-8c8a-0fa9951b6b4f"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData["\<\"Going Down\"\>"], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.7715033768066463`*^9},
+ CellChangeTimes->{3.771533518567072*^9},
  CellLabel->
   "During evaluation of \
-In[105]:=",ExpressionUUID->"5b803583-72b7-4135-9162-9c5a8d5c768f"],
+In[12]:=",ExpressionUUID->"872bc1d8-c361-457b-bb5a-f1609ca9746d"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -7744,20 +8162,16 @@ Cell[BoxData[
    "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\"SortBy\"\>"}],
   SequenceForm["current level, id, head is: ", 1, " ", 0, " ", "SortBy"],
   Editable->False]], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.7715033768087673`*^9},
+ CellChangeTimes->{3.771533518569096*^9},
  CellLabel->
   "During evaluation of \
-In[105]:=",ExpressionUUID->"0d52d549-7ae8-4673-8aa5-f5255eb112f5"],
+In[12]:=",ExpressionUUID->"518e991b-b305-46b9-8f1a-fd6e54103b99"],
 
 Cell[BoxData["\<\"Going Down\"\>"], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376810656*^9},
+ CellChangeTimes->{3.7715335185775414`*^9},
  CellLabel->
   "During evaluation of \
-In[105]:=",ExpressionUUID->"2087a0af-ffd1-499d-8c7a-28065c45df4d"],
+In[12]:=",ExpressionUUID->"6970c016-ea13-4935-8a28-68c7e3399d44"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -7766,20 +8180,16 @@ Cell[BoxData[
    "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\"Range\"\>"}],
   SequenceForm["current level, id, head is: ", 2, " ", 0, " ", "Range"],
   Editable->False]], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376811915*^9},
+ CellChangeTimes->{3.771533518581172*^9},
  CellLabel->
   "During evaluation of \
-In[105]:=",ExpressionUUID->"cba00582-e953-4e06-9d66-bfaa4762e1ff"],
+In[12]:=",ExpressionUUID->"35c5f950-d584-44ac-9621-5274f3239152"],
 
 Cell[BoxData["\<\"Going Down\"\>"], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376813151*^9},
+ CellChangeTimes->{3.7715335185831738`*^9},
  CellLabel->
   "During evaluation of \
-In[105]:=",ExpressionUUID->"912c1d60-3ace-453f-8f21-c1845dc97a20"],
+In[12]:=",ExpressionUUID->"dc297d57-74eb-43ec-8370-abb862f439b2"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -7788,200 +8198,34 @@ Cell[BoxData[
    "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\"Cos\"\>"}],
   SequenceForm["current level, id, head is: ", 3, " ", 0, " ", "Cos"],
   Editable->False]], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.77150337681444*^9},
+ CellChangeTimes->{3.7715335185847187`*^9},
  CellLabel->
   "During evaluation of \
-In[105]:=",ExpressionUUID->"13f6752e-05ef-4a6f-858f-a175e34ed3b4"],
-
-Cell[BoxData["\<\"Going Up\"\>"], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376815735*^9},
- CellLabel->
-  "During evaluation of \
-In[105]:=",ExpressionUUID->"cf95cd03-8293-4a61-b7be-990f6182edd4"],
-
-Cell[BoxData[
- InterpretationBox[
-  RowBox[{"\<\"current level, id, head is: \"\>", "\[InvisibleSpace]", "2", 
-   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "1", 
-   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\"Range\"\>"}],
-  SequenceForm["current level, id, head is: ", 2, " ", 1, " ", "Range"],
-  Editable->False]], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.7715033768168077`*^9},
- CellLabel->
-  "During evaluation of \
-In[105]:=",ExpressionUUID->"4f087316-9014-43c0-b0c0-7a3eeed92c87"],
-
-Cell[BoxData[
- InterpretationBox[
-  RowBox[{"\<\"A comma was found at position \"\>", "\[InvisibleSpace]", 
-   "20"}],
-  SequenceForm["A comma was found at position ", 20],
-  Editable->False]], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376817964*^9},
- CellLabel->
-  "During evaluation of \
-In[105]:=",ExpressionUUID->"14cb2f90-e94b-49d3-b8d9-91568ebafee3"],
-
-Cell[BoxData[
- InterpretationBox[
-  RowBox[{"\<\"Branching for: \"\>", 
-   "\[InvisibleSpace]", "\<\"]Cos[x]+1], Mod[#1, 3 & ]]\"\>"}],
-  SequenceForm["Branching for: ", "]Cos[x]+1], Mod[#1, 3 & ]]"],
-  Editable->False]], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376819022*^9},
- CellLabel->
-  "During evaluation of \
-In[105]:=",ExpressionUUID->"e914b6e4-8368-47c0-8248-c02b5ac64c10"],
-
-Cell[BoxData["\<\"Going Up\"\>"], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376820101*^9},
- CellLabel->
-  "During evaluation of \
-In[105]:=",ExpressionUUID->"3fc102c6-751d-4e5e-83df-f40b1b2e4661"],
-
-Cell[BoxData[
- InterpretationBox[
-  RowBox[{"\<\"current level, id, head is: \"\>", "\[InvisibleSpace]", "1", 
-   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "1", 
-   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\"SortBy\"\>"}],
-  SequenceForm["current level, id, head is: ", 1, " ", 1, " ", "SortBy"],
-  Editable->False]], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.7715033768211412`*^9},
- CellLabel->
-  "During evaluation of \
-In[105]:=",ExpressionUUID->"bcf2efe8-6b0f-4031-81e6-cb1a9f64823a"],
+In[12]:=",ExpressionUUID->"0ff2eef7-b30f-4655-8744-7c1ca4b27380"],
 
 Cell[BoxData["\<\"Going Down\"\>"], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.7715033768222427`*^9},
+ CellChangeTimes->{3.771533518586316*^9},
  CellLabel->
   "During evaluation of \
-In[105]:=",ExpressionUUID->"66501d8f-da46-48fa-a6aa-d768f2cdaa76"],
+In[12]:=",ExpressionUUID->"b7949573-d1bd-4b37-8f45-96ef224651ab"],
 
 Cell[BoxData[
  InterpretationBox[
-  RowBox[{"\<\"current level, id, head is: \"\>", "\[InvisibleSpace]", "2", 
-   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "1", 
-   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\"Cos\"\>"}],
-  SequenceForm["current level, id, head is: ", 2, " ", 1, " ", "Cos"],
-  Editable->False]], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.77150337682331*^9},
- CellLabel->
-  "During evaluation of \
-In[105]:=",ExpressionUUID->"27dacf9d-6d2a-4bee-985e-9c59b67c7a1b"],
-
-Cell[BoxData["\<\"Going Up\"\>"], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376824418*^9},
- CellLabel->
-  "During evaluation of \
-In[105]:=",ExpressionUUID->"0acee1c2-c344-41db-81dd-2f596f9a0135"],
-
-Cell[BoxData[
- InterpretationBox[
-  RowBox[{"\<\"current level, id, head is: \"\>", "\[InvisibleSpace]", "1", 
-   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "1", 
-   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\"SortBy\"\>"}],
-  SequenceForm["current level, id, head is: ", 1, " ", 1, " ", "SortBy"],
-  Editable->False]], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.7715033768254757`*^9},
- CellLabel->
-  "During evaluation of \
-In[105]:=",ExpressionUUID->"8baebdcd-f4fb-4b90-8c39-22c8a84c0711"],
-
-Cell[BoxData["\<\"Going Up\"\>"], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376826583*^9},
- CellLabel->
-  "During evaluation of \
-In[105]:=",ExpressionUUID->"07af1213-efb8-4195-847c-eb4bdceb5c2e"],
-
-Cell[BoxData[
- InterpretationBox[
-  RowBox[{"\<\"current level, id, head is: \"\>", "\[InvisibleSpace]", "0", 
+  RowBox[{"\<\"current level, id, head is: \"\>", "\[InvisibleSpace]", "4", 
    "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "0", 
-   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\" \"\>"}],
-  SequenceForm["current level, id, head is: ", 0, " ", 0, " ", " "],
+   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\"Cos\"\>"}],
+  SequenceForm["current level, id, head is: ", 4, " ", 0, " ", "Cos"],
   Editable->False]], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.7715033768276253`*^9},
+ CellChangeTimes->{3.771533518587802*^9},
  CellLabel->
   "During evaluation of \
-In[105]:=",ExpressionUUID->"6034ed1a-9e7f-448f-98b5-919c7375f14e"],
+In[12]:=",ExpressionUUID->"746bc2b5-9578-47ff-a85e-340ac4ef6899"],
 
-Cell[BoxData["\<\"We do not like that one\"\>"], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.7715033768287153`*^9},
+Cell[BoxData["\<\"Going Up\"\>"], "Print",
+ CellChangeTimes->{3.771533518589329*^9},
  CellLabel->
   "During evaluation of \
-In[105]:=",ExpressionUUID->"b059bcdf-f625-44fd-8e75-00f41d010956"],
-
-Cell[BoxData[
- InterpretationBox[
-  RowBox[{"\<\"LEVEL: \"\>", "\[InvisibleSpace]", 
-   RowBox[{"-", "2"}]}],
-  SequenceForm["LEVEL: ", -2],
-  Editable->False]], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376829794*^9},
- CellLabel->
-  "During evaluation of \
-In[105]:=",ExpressionUUID->"a238a9fc-790b-46f3-b5c3-926f00698f26"],
-
-Cell[BoxData[
- InterpretationBox[
-  RowBox[{"\<\"SUGGESTIONS: \"\>", 
-   "\[InvisibleSpace]", "\<\"]Cos[x]+1], Mod[#1, 3 & ]]\"\>", 
-   "\[InvisibleSpace]", 
-   RowBox[{"{", "}"}]}],
-  SequenceForm["SUGGESTIONS: ", "]Cos[x]+1], Mod[#1, 3 & ]]", {}],
-  Editable->False]], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376830851*^9},
- CellLabel->
-  "During evaluation of \
-In[105]:=",ExpressionUUID->"a734d8f6-dce3-4317-98ea-c454d0461428"],
-
-Cell[BoxData["\<\"End of Branching   \"\>"], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376831949*^9},
- CellLabel->
-  "During evaluation of \
-In[105]:=",ExpressionUUID->"611aa151-a5f3-407b-b14a-bcc458b24026"],
-
-Cell[BoxData["\<\"Going Down\"\>"], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376832962*^9},
- CellLabel->
-  "During evaluation of \
-In[105]:=",ExpressionUUID->"b9c8d714-8ad8-4b44-a8c5-d80ace72b7ff"],
+In[12]:=",ExpressionUUID->"d83a71d0-8015-4364-9522-7315067c7500"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -7990,20 +8234,16 @@ Cell[BoxData[
    "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\"Cos\"\>"}],
   SequenceForm["current level, id, head is: ", 3, " ", 1, " ", "Cos"],
   Editable->False]], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376834054*^9},
+ CellChangeTimes->{3.771533518590993*^9},
  CellLabel->
   "During evaluation of \
-In[105]:=",ExpressionUUID->"10cac45a-1af9-4151-be84-a02f38f13d45"],
+In[12]:=",ExpressionUUID->"6107bf12-4696-4212-9e74-0d4a4f6cdc12"],
 
 Cell[BoxData["\<\"Going Up\"\>"], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376835149*^9},
+ CellChangeTimes->{3.77153351859258*^9},
  CellLabel->
   "During evaluation of \
-In[105]:=",ExpressionUUID->"d9508303-b440-41e9-92fc-6466f8ed6f8c"],
+In[12]:=",ExpressionUUID->"96d000e4-d2cb-40f2-aa99-0589c265a9e0"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -8012,20 +8252,38 @@ Cell[BoxData[
    "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\"Range\"\>"}],
   SequenceForm["current level, id, head is: ", 2, " ", 1, " ", "Range"],
   Editable->False]], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376836211*^9},
+ CellChangeTimes->{3.7715335185940733`*^9},
  CellLabel->
   "During evaluation of \
-In[105]:=",ExpressionUUID->"03aa1888-642c-45fb-baeb-0c1f736d3ff8"],
+In[12]:=",ExpressionUUID->"01f27701-83ea-46b0-aa26-b21b559cf34c"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"A comma was found at position \"\>", "\[InvisibleSpace]", 
+   "25"}],
+  SequenceForm["A comma was found at position ", 25],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.771533518595645*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"82a5442b-fcbf-41bb-a637-91c8b2bd16a3"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Branching for: \"\>", 
+   "\[InvisibleSpace]", "\<\"]Cos[x]+1, Mod[#1, 3 & ]]\"\>"}],
+  SequenceForm["Branching for: ", "]Cos[x]+1, Mod[#1, 3 & ]]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7715335187140503`*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"730c0392-c406-443d-97aa-d374bfdd61a6"],
 
 Cell[BoxData["\<\"Going Up\"\>"], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376837328*^9},
+ CellChangeTimes->{3.771533518715987*^9},
  CellLabel->
   "During evaluation of \
-In[105]:=",ExpressionUUID->"4fd38b47-bfa0-4097-b92f-d71a54061a61"],
+In[12]:=",ExpressionUUID->"120d76b1-2f5b-4fc0-93a8-a3aefb15ad5c"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -8034,46 +8292,37 @@ Cell[BoxData[
    "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\"SortBy\"\>"}],
   SequenceForm["current level, id, head is: ", 1, " ", 1, " ", "SortBy"],
   Editable->False]], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376838414*^9},
+ CellChangeTimes->{3.77153351871738*^9},
  CellLabel->
   "During evaluation of \
-In[105]:=",ExpressionUUID->"29ba7e87-130e-4683-b029-8061f04dff5d"],
+In[12]:=",ExpressionUUID->"519b8328-fdac-4bcc-a12f-110a33debc5d"],
 
 Cell[BoxData[
  InterpretationBox[
-  RowBox[{"\<\"A comma was found at position \"\>", "\[InvisibleSpace]", 
-   "30"}],
-  SequenceForm["A comma was found at position ", 30],
+  RowBox[{"\<\"A comma was found at position \"\>", "\[InvisibleSpace]", "2"}],
+  SequenceForm["A comma was found at position ", 2],
   Editable->False]], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376839614*^9},
+ CellChangeTimes->{3.771533518718924*^9},
  CellLabel->
   "During evaluation of \
-In[105]:=",ExpressionUUID->"09d516f3-5b72-4aca-bd9e-c03144385860"],
+In[12]:=",ExpressionUUID->"b039cc1b-1624-4302-ba2a-42b49fc4572d"],
 
 Cell[BoxData[
  InterpretationBox[
   RowBox[{"\<\"Branching for: \"\>", 
-   "\[InvisibleSpace]", "\<\"] Mod[#1, 3 & ]]\"\>"}],
-  SequenceForm["Branching for: ", "] Mod[#1, 3 & ]]"],
+   "\[InvisibleSpace]", "\<\"]Cos[x]+1, Mod[#1, 3 & ]]\"\>"}],
+  SequenceForm["Branching for: ", "]Cos[x]+1, Mod[#1, 3 & ]]"],
   Editable->False]], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.7715033768407383`*^9},
+ CellChangeTimes->{3.771533518720388*^9},
  CellLabel->
   "During evaluation of \
-In[105]:=",ExpressionUUID->"8cc2512e-8abd-4e2b-895a-239e96ed34ae"],
+In[12]:=",ExpressionUUID->"7b707175-2a78-434e-9296-9664e5981049"],
 
 Cell[BoxData["\<\"Going Up\"\>"], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376841847*^9},
+ CellChangeTimes->{3.771533518721882*^9},
  CellLabel->
   "During evaluation of \
-In[105]:=",ExpressionUUID->"98fef01e-582e-4ff2-8b04-dd6a7bcd4ffe"],
+In[12]:=",ExpressionUUID->"2663a868-cefe-4434-a3f3-18bacd3e0e8e"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -8082,63 +8331,314 @@ Cell[BoxData[
    "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\" \"\>"}],
   SequenceForm["current level, id, head is: ", 0, " ", 0, " ", " "],
   Editable->False]], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.7715033768429203`*^9},
+ CellChangeTimes->{3.771533518723413*^9},
  CellLabel->
   "During evaluation of \
-In[105]:=",ExpressionUUID->"adf10628-57fa-421c-a253-859403992a20"],
+In[12]:=",ExpressionUUID->"eb381255-8b7f-4bf3-b922-e1a67dad9605"],
 
 Cell[BoxData["\<\"We do not like that one\"\>"], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.7715033768440523`*^9},
+ CellChangeTimes->{3.7715335187249603`*^9},
  CellLabel->
   "During evaluation of \
-In[105]:=",ExpressionUUID->"4effc8e0-8533-4f5d-a531-0ea1ac17e26b"],
-
-Cell[BoxData[
- InterpretationBox[
-  RowBox[{"\<\"LEVEL: \"\>", "\[InvisibleSpace]", 
-   RowBox[{"-", "2"}]}],
-  SequenceForm["LEVEL: ", -2],
-  Editable->False]], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376845142*^9},
- CellLabel->
-  "During evaluation of \
-In[105]:=",ExpressionUUID->"7e645d50-01fb-4460-9065-65874a42e4fe"],
-
-Cell[BoxData[
- InterpretationBox[
-  RowBox[{"\<\"SUGGESTIONS: \"\>", 
-   "\[InvisibleSpace]", "\<\"] Mod[#1, 3 & ]]\"\>", "\[InvisibleSpace]", 
-   RowBox[{"{", "}"}]}],
-  SequenceForm["SUGGESTIONS: ", "] Mod[#1, 3 & ]]", {}],
-  Editable->False]], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376846251*^9},
- CellLabel->
-  "During evaluation of \
-In[105]:=",ExpressionUUID->"ca429799-7735-4819-9176-49cb30f71d08"],
+In[12]:=",ExpressionUUID->"af2992ee-6e51-4c47-be4a-2d853bebf929"],
 
 Cell[BoxData["\<\"End of Branching   \"\>"], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376847331*^9},
+ CellChangeTimes->{3.77153351872672*^9},
  CellLabel->
   "During evaluation of \
-In[105]:=",ExpressionUUID->"9776d3d1-3d14-43ef-a1b5-de90575105fa"],
+In[12]:=",ExpressionUUID->"060a14d4-77ec-4500-97d3-a27194901104"],
 
 Cell[BoxData["\<\"Going Down\"\>"], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.7715033768483477`*^9},
+ CellChangeTimes->{3.771533518728177*^9},
  CellLabel->
   "During evaluation of \
-In[105]:=",ExpressionUUID->"eff1b33b-b44a-48f0-899c-a71bb259d027"],
+In[12]:=",ExpressionUUID->"b8423c30-e695-40f3-8b57-bb2e32c8799d"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"current level, id, head is: \"\>", "\[InvisibleSpace]", "2", 
+   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\"Cos\"\>"}],
+  SequenceForm["current level, id, head is: ", 2, " ", 1, " ", "Cos"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.771533518729546*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"9cffee92-089c-494e-8848-d034cc5391f7"],
+
+Cell[BoxData["\<\"Going Up\"\>"], "Print",
+ CellChangeTimes->{3.771533518730913*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"2baea682-ca9a-446c-b11f-0f9f66ced0d5"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"current level, id, head is: \"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\"SortBy\"\>"}],
+  SequenceForm["current level, id, head is: ", 1, " ", 1, " ", "SortBy"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.771533518732111*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"1874f5aa-bc25-4bde-a4fb-a6924d6361b9"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"A comma was found at position \"\>", "\[InvisibleSpace]", 
+   "11"}],
+  SequenceForm["A comma was found at position ", 11],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.771533518733362*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"4f6fa93e-0f6f-443e-b14e-83ee5dadf41f"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Branching for: \"\>", 
+   "\[InvisibleSpace]", "\<\"] Mod[#1, 3 & ]]\"\>"}],
+  SequenceForm["Branching for: ", "] Mod[#1, 3 & ]]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.771533518734622*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"ecfe14ce-4f93-49b6-9da7-8f580c44efe7"],
+
+Cell[BoxData["\<\"Going Up\"\>"], "Print",
+ CellChangeTimes->{3.771533518735811*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"e4f4cda7-092e-4d38-904d-fd21d2945b46"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"current level, id, head is: \"\>", "\[InvisibleSpace]", "0", 
+   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "0", 
+   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\" \"\>"}],
+  SequenceForm["current level, id, head is: ", 0, " ", 0, " ", " "],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.771533518737094*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"a3920ee0-2fb7-458c-a3d5-fa6509bd62a5"],
+
+Cell[BoxData["\<\"We do not like that one\"\>"], "Print",
+ CellChangeTimes->{3.771533518738359*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"807177e4-4801-4430-9683-8318c876645a"],
+
+Cell[BoxData["\<\"End of Branching   \"\>"], "Print",
+ CellChangeTimes->{3.7715335187394667`*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"4e408bbf-e31d-4a25-9a4e-2eef5ad299d4"],
+
+Cell[BoxData["\<\"Going Down\"\>"], "Print",
+ CellChangeTimes->{3.771533518740543*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"cb533294-96a1-496f-847f-e043325e252a"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"current level, id, head is: \"\>", "\[InvisibleSpace]", "2", 
+   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "2", 
+   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\"Mod\"\>"}],
+  SequenceForm["current level, id, head is: ", 2, " ", 2, " ", "Mod"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.771533518741688*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"bd148a43-a4d2-463c-854a-9ee3575d5b68"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"A comma was found at position \"\>", "\[InvisibleSpace]", 
+   "19"}],
+  SequenceForm["A comma was found at position ", 19],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.771533518742914*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"0759e51d-f392-4d80-abc7-33f49781f40b"],
+
+Cell[BoxData["\<\"Going Up\"\>"], "Print",
+ CellChangeTimes->{3.771533518744039*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"1d26636c-4882-4874-96a1-b59da37be4fa"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"current level, id, head is: \"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\"SortBy\"\>"}],
+  SequenceForm["current level, id, head is: ", 1, " ", 1, " ", "SortBy"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7715335187452183`*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"49932d58-dfb7-47e2-8581-50ba687315ab"],
+
+Cell[BoxData["\<\"Going Up\"\>"], "Print",
+ CellChangeTimes->{3.771533518746773*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"a3371186-98b7-40c9-a237-b69c63f9c650"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"current level, id, head is: \"\>", "\[InvisibleSpace]", "0", 
+   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "0", 
+   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\" \"\>"}],
+  SequenceForm["current level, id, head is: ", 0, " ", 0, " ", " "],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.771533518747964*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"eb8e49ed-d7a2-411f-b0f5-4b76788c31cc"],
+
+Cell[BoxData["\<\"End of Branching   \"\>"], "Print",
+ CellChangeTimes->{3.771533518749165*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"caf7b20b-d1ff-4356-98b0-db686f36959b"],
+
+Cell[BoxData["\<\"Going Down\"\>"], "Print",
+ CellChangeTimes->{3.771533518750255*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"42fe5f95-7bcf-468d-9023-7191c80fc5a4"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"current level, id, head is: \"\>", "\[InvisibleSpace]", "3", 
+   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\"Cos\"\>"}],
+  SequenceForm["current level, id, head is: ", 3, " ", 1, " ", "Cos"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7715335187514277`*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"23312f40-baf3-41fe-aadd-6dd6dd3335c8"],
+
+Cell[BoxData["\<\"Going Up\"\>"], "Print",
+ CellChangeTimes->{3.771533518752686*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"20c506f3-e818-40b2-829c-edb4a743e3ba"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"current level, id, head is: \"\>", "\[InvisibleSpace]", "2", 
+   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\"Range\"\>"}],
+  SequenceForm["current level, id, head is: ", 2, " ", 1, " ", "Range"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.77153351875385*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"62c2250e-dd35-44fb-a38f-1417c5492508"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"A comma was found at position \"\>", "\[InvisibleSpace]", 
+   "34"}],
+  SequenceForm["A comma was found at position ", 34],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.771533518755087*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"6a6f066f-ffb5-4ffb-a794-24d0b7a0c20f"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Branching for: \"\>", 
+   "\[InvisibleSpace]", "\<\"] Mod[#1, 3 & ]]\"\>"}],
+  SequenceForm["Branching for: ", "] Mod[#1, 3 & ]]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.77153351875626*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"4ebb8583-8535-4844-b018-90b54681f790"],
+
+Cell[BoxData["\<\"Going Up\"\>"], "Print",
+ CellChangeTimes->{3.771533518757483*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"ca13eb0b-b5f1-42ad-bc44-04de10c59ad9"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"current level, id, head is: \"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\"SortBy\"\>"}],
+  SequenceForm["current level, id, head is: ", 1, " ", 1, " ", "SortBy"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7715335187586308`*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"b79c3140-ecc8-462b-8c94-6fad8bfcee69"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"A comma was found at position \"\>", "\[InvisibleSpace]", "2"}],
+  SequenceForm["A comma was found at position ", 2],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.771533518760181*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"628f39be-98b5-4114-b51f-beaa4edeae96"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Branching for: \"\>", 
+   "\[InvisibleSpace]", "\<\"] Mod[#1, 3 & ]]\"\>"}],
+  SequenceForm["Branching for: ", "] Mod[#1, 3 & ]]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.771533518761609*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"5b1e15ae-bc0d-4113-b2bc-20351838428a"],
+
+Cell[BoxData["\<\"Going Up\"\>"], "Print",
+ CellChangeTimes->{3.771533518762814*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"0524fe97-ff1b-4391-b90a-2663821cef01"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"current level, id, head is: \"\>", "\[InvisibleSpace]", "0", 
+   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "0", 
+   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\" \"\>"}],
+  SequenceForm["current level, id, head is: ", 0, " ", 0, " ", " "],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.771533518763973*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"98613ddd-222b-43bf-8a93-5a46cd5fbd97"],
+
+Cell[BoxData["\<\"We do not like that one\"\>"], "Print",
+ CellChangeTimes->{3.771533518765155*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"a67e5abf-608b-42f1-88ba-47cd9851336f"],
+
+Cell[BoxData["\<\"End of Branching   \"\>"], "Print",
+ CellChangeTimes->{3.7715335187663317`*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"24d2672b-9dcc-4341-94fc-ddbed7459204"],
+
+Cell[BoxData["\<\"Going Down\"\>"], "Print",
+ CellChangeTimes->{3.771533518767445*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"aaa1652e-9423-4d5d-b754-14c8f9e29fbe"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -8147,33 +8647,27 @@ Cell[BoxData[
    "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\"Mod\"\>"}],
   SequenceForm["current level, id, head is: ", 2, " ", 1, " ", "Mod"],
   Editable->False]], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376849422*^9},
+ CellChangeTimes->{3.771533518768578*^9},
  CellLabel->
   "During evaluation of \
-In[105]:=",ExpressionUUID->"8c478968-fb8c-4987-80d3-14907b6b4a8f"],
+In[12]:=",ExpressionUUID->"0fe89af9-f808-4606-ae87-790f76112f00"],
 
 Cell[BoxData[
  InterpretationBox[
   RowBox[{"\<\"A comma was found at position \"\>", "\[InvisibleSpace]", 
-   "38"}],
-  SequenceForm["A comma was found at position ", 38],
+   "10"}],
+  SequenceForm["A comma was found at position ", 10],
   Editable->False]], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376850574*^9},
+ CellChangeTimes->{3.771533518769829*^9},
  CellLabel->
   "During evaluation of \
-In[105]:=",ExpressionUUID->"a388c927-7eb4-4b6c-acba-7d32581c4033"],
+In[12]:=",ExpressionUUID->"0a7c17b1-6290-455e-896c-c4f315d3a75e"],
 
 Cell[BoxData["\<\"Going Up\"\>"], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376851615*^9},
+ CellChangeTimes->{3.7715335187710238`*^9},
  CellLabel->
   "During evaluation of \
-In[105]:=",ExpressionUUID->"293a5f33-7ab0-4a99-882d-a6d6b9056e18"],
+In[12]:=",ExpressionUUID->"c04ab7a8-4903-4d95-bc9d-907faa2350dd"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -8182,20 +8676,16 @@ Cell[BoxData[
    "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\"SortBy\"\>"}],
   SequenceForm["current level, id, head is: ", 1, " ", 1, " ", "SortBy"],
   Editable->False]], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376852702*^9},
+ CellChangeTimes->{3.771533518772217*^9},
  CellLabel->
   "During evaluation of \
-In[105]:=",ExpressionUUID->"f6b006ec-5c4f-443a-bc8f-a7b956337d5d"],
+In[12]:=",ExpressionUUID->"1a89f3e6-e681-4727-b34f-b6905201b962"],
 
 Cell[BoxData["\<\"Going Up\"\>"], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376853816*^9},
+ CellChangeTimes->{3.771533518773465*^9},
  CellLabel->
   "During evaluation of \
-In[105]:=",ExpressionUUID->"91099668-e305-45d4-bdfe-ffd23fbf33ed"],
+In[12]:=",ExpressionUUID->"63a908b0-ca13-4469-8235-e0ceb8dee2c1"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -8204,143 +8694,142 @@ Cell[BoxData[
    "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\" \"\>"}],
   SequenceForm["current level, id, head is: ", 0, " ", 0, " ", " "],
   Editable->False]], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.7715033768548822`*^9},
+ CellChangeTimes->{3.771533518774688*^9},
  CellLabel->
   "During evaluation of \
-In[105]:=",ExpressionUUID->"1ed027ac-d195-453b-ad1f-b4af0fd0852b"],
-
-Cell[BoxData[
- InterpretationBox[
-  RowBox[{"\<\"LEVEL: \"\>", "\[InvisibleSpace]", "0"}],
-  SequenceForm["LEVEL: ", 0],
-  Editable->False]], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376856035*^9},
- CellLabel->
-  "During evaluation of \
-In[105]:=",ExpressionUUID->"fadbec22-4422-44cf-b160-5741084ba672"],
-
-Cell[BoxData[
- InterpretationBox[
-  RowBox[{"\<\"SUGGESTIONS: \"\>", 
-   "\[InvisibleSpace]", "\<\"SortBy[Range[Cos[x],Cos[x]+1], Mod[#1, 3 & \
-]]\"\>", "\[InvisibleSpace]", 
-   RowBox[{"{", 
-    RowBox[{"\[LeftAssociation]", 
-     RowBox[{
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{"3", ",", "1"}], "}"}], "\[Rule]", 
-       RowBox[{"\[LeftAssociation]", 
-        RowBox[{
-         RowBox[{"\<\"head\"\>", "\[Rule]", "\<\"Cos\"\>"}], ",", 
-         RowBox[{"\<\"argnumber\"\>", "\[Rule]", "1"}], ",", 
-         RowBox[{"\<\"parent\"\>", "\[Rule]", 
-          RowBox[{"{", 
-           RowBox[{"2", ",", "1"}], "}"}]}], ",", 
-         RowBox[{"\<\"pattern\"\>", "\[Rule]", "\<\"_\"\>"}]}], 
-        "\[RightAssociation]"}]}], ",", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{"2", ",", "1"}], "}"}], "\[Rule]", 
-       RowBox[{"\[LeftAssociation]", 
-        RowBox[{
-         RowBox[{"\<\"head\"\>", "\[Rule]", "\<\"Range\"\>"}], ",", 
-         RowBox[{"\<\"argnumber\"\>", "\[Rule]", "2"}], ",", 
-         RowBox[{"\<\"parent\"\>", "\[Rule]", 
-          RowBox[{"{", 
-           RowBox[{"1", ",", "1"}], "}"}]}], ",", 
-         RowBox[{"\<\"pattern\"\>", "\[Rule]", "\<\"_, _\"\>"}]}], 
-        "\[RightAssociation]"}]}], ",", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{"3", ",", "2"}], "}"}], "\[Rule]", 
-       RowBox[{"\[LeftAssociation]", 
-        RowBox[{
-         RowBox[{"\<\"head\"\>", "\[Rule]", "\<\"Cos\"\>"}], ",", 
-         RowBox[{"\<\"argnumber\"\>", "\[Rule]", "1"}], ",", 
-         RowBox[{"\<\"parent\"\>", "\[Rule]", 
-          RowBox[{"{", 
-           RowBox[{"2", ",", "1"}], "}"}]}], ",", 
-         RowBox[{"\<\"pattern\"\>", "\[Rule]", "\<\"_\"\>"}]}], 
-        "\[RightAssociation]"}]}], ",", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{"1", ",", "1"}], "}"}], "\[Rule]", 
-       RowBox[{"\[LeftAssociation]", 
-        RowBox[{
-         RowBox[{"\<\"head\"\>", "\[Rule]", "\<\"SortBy\"\>"}], ",", 
-         RowBox[{"\<\"argnumber\"\>", "\[Rule]", "2"}], ",", 
-         RowBox[{"\<\"parent\"\>", "\[Rule]", 
-          RowBox[{"{", 
-           RowBox[{"0", ",", "0"}], "}"}]}], ",", 
-         RowBox[{"\<\"pattern\"\>", "\[Rule]", "\<\"_, _\"\>"}]}], 
-        "\[RightAssociation]"}]}], ",", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{"2", ",", "2"}], "}"}], "\[Rule]", 
-       RowBox[{"\[LeftAssociation]", 
-        RowBox[{
-         RowBox[{"\<\"head\"\>", "\[Rule]", "\<\"Mod\"\>"}], ",", 
-         RowBox[{"\<\"argnumber\"\>", "\[Rule]", "2"}], ",", 
-         RowBox[{"\<\"parent\"\>", "\[Rule]", 
-          RowBox[{"{", 
-           RowBox[{"1", ",", "1"}], "}"}]}], ",", 
-         RowBox[{"\<\"pattern\"\>", "\[Rule]", "\<\"_, _\"\>"}]}], 
-        "\[RightAssociation]"}]}]}], "\[RightAssociation]"}], "}"}]}],
-  SequenceForm[
-  "SUGGESTIONS: ", "SortBy[Range[Cos[x],Cos[x]+1], Mod[#1, 3 & ]]", {
-    Association[{3, 1} -> 
-     Association[
-      "head" -> "Cos", "argnumber" -> 1, "parent" -> {2, 1}, "pattern" -> 
-       "_"], {2, 1} -> 
-     Association[
-      "head" -> "Range", "argnumber" -> 2, "parent" -> {1, 1}, "pattern" -> 
-       "_, _"], {3, 2} -> 
-     Association[
-      "head" -> "Cos", "argnumber" -> 1, "parent" -> {2, 1}, "pattern" -> 
-       "_"], {1, 1} -> 
-     Association[
-      "head" -> "SortBy", "argnumber" -> 2, "parent" -> {0, 0}, "pattern" -> 
-       "_, _"], {2, 2} -> 
-     Association[
-      "head" -> "Mod", "argnumber" -> 2, "parent" -> {1, 1}, "pattern" -> 
-       "_, _"]]}],
-  Editable->False]], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.7715033768575487`*^9},
- CellLabel->
-  "During evaluation of \
-In[105]:=",ExpressionUUID->"776aac6e-bac1-4455-ac7d-1d36f59dd46f"],
+In[12]:=",ExpressionUUID->"c3088d6e-0a03-40c2-8714-907f7cc4f154"],
 
 Cell[BoxData["\<\"End of Branching   \"\>"], "Print",
- CellChangeTimes->{3.771500242904409*^9, 3.7715015433046513`*^9, 
-  3.771501955700643*^9, 3.7715020495698767`*^9, 3.77150315355343*^9, 
-  3.771503376859523*^9},
+ CellChangeTimes->{3.77153351877595*^9},
  CellLabel->
   "During evaluation of \
-In[105]:=",ExpressionUUID->"79519e57-d1f4-468b-bba2-d72f49c765a2"]
+In[12]:=",ExpressionUUID->"201eb29f-d97a-4d05-bdbc-3f248b6c6f40"],
+
+Cell[BoxData["\<\"Going Down\"\>"], "Print",
+ CellChangeTimes->{3.771533518777087*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"31cce79e-c175-404a-8342-0264e67b79eb"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"current level, id, head is: \"\>", "\[InvisibleSpace]", "3", 
+   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "2", 
+   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\"Mod\"\>"}],
+  SequenceForm["current level, id, head is: ", 3, " ", 2, " ", "Mod"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7715335187782927`*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"74d0b7d3-4121-4cf7-a7b6-af8bf03e0d50"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"A comma was found at position \"\>", "\[InvisibleSpace]", 
+   "42"}],
+  SequenceForm["A comma was found at position ", 42],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.771533518779727*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"af0bee1e-8fbb-47af-af76-174919527a42"],
+
+Cell[BoxData["\<\"Going Up\"\>"], "Print",
+ CellChangeTimes->{3.771533518781477*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"30463572-167e-4a23-95c7-6be01adc979f"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"current level, id, head is: \"\>", "\[InvisibleSpace]", "2", 
+   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\"Range\"\>"}],
+  SequenceForm["current level, id, head is: ", 2, " ", 1, " ", "Range"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.771533518783526*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"9c825ab8-ba7b-43f3-b864-49cef991284b"],
+
+Cell[BoxData["\<\"Going Up\"\>"], "Print",
+ CellChangeTimes->{3.77153351878605*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"03f611e1-975a-40ba-b7d7-6d35d8c6bc5a"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"current level, id, head is: \"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\"SortBy\"\>"}],
+  SequenceForm["current level, id, head is: ", 1, " ", 1, " ", "SortBy"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.771533518787709*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"8acc014b-a2c0-4036-abb6-07fa3f89b48a"],
+
+Cell[BoxData["\<\"Going Up\"\>"], "Print",
+ CellChangeTimes->{3.7715335187889977`*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"73a59c7e-1a59-48a7-8bdb-16702ed75225"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"current level, id, head is: \"\>", "\[InvisibleSpace]", "0", 
+   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "0", 
+   "\[InvisibleSpace]", "\<\" \"\>", "\[InvisibleSpace]", "\<\" \"\>"}],
+  SequenceForm["current level, id, head is: ", 0, " ", 0, " ", " "],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.771533518790175*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"1ff8b24f-e241-4f14-ad36-0fcb7bd458e7"],
+
+Cell[BoxData["\<\"End of Branching   \"\>"], "Print",
+ CellChangeTimes->{3.771533518791394*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"0182d4dd-06ab-48bf-a5d1-6a55c5effae9"],
+
+Cell[BoxData["\<\"End of Branching   \"\>"], "Print",
+ CellChangeTimes->{3.771533518792523*^9},
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"69b9ee80-8d39-4ba3-b978-454c5930b936"]
 }, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"suggestions", "//", "Length"}]], "Input",
+ RowBox[{"suggestions", "[", 
+  RowBox[{"[", "1", "]"}], "]"}]], "Input",
  CellChangeTimes->{{3.7715020634776907`*^9, 3.771502067229744*^9}, {
-  3.7715031596411343`*^9, 3.771503164094606*^9}},
- CellLabel->
-  "In[106]:=",ExpressionUUID->"90f547f7-9ced-47aa-9bbb-0be4469dd600"],
+  3.7715031596411343`*^9, 3.771503164094606*^9}, {3.771514536307088*^9, 
+  3.771514537067765*^9}, {3.771529005666339*^9, 3.7715290306526213`*^9}, {
+  3.7715292308600273`*^9, 3.771529243470467*^9}, {3.7715332589430428`*^9, 
+  3.771533259488326*^9}},
+ CellLabel->"In[41]:=",ExpressionUUID->"90f547f7-9ced-47aa-9bbb-0be4469dd600"],
 
-Cell[BoxData["1"], "Output",
- CellChangeTimes->{3.771502064954323*^9, 3.771503164502289*^9, 
-  3.771503379930891*^9},
- CellLabel->
-  "Out[106]=",ExpressionUUID->"cc4cf06c-0f7b-4abc-8a9f-a93a425dbd7c"]
+Cell[BoxData["\<\"SortBy[Range[Cos[Cos[x]],Cos[x]+1, Mod[#1, 3 & ]]\"\>"], \
+"Output",
+ CellChangeTimes->{
+  3.771502064954323*^9, 3.771503164502289*^9, 3.771503379930891*^9, 
+   3.77150455470989*^9, {3.771507935163192*^9, 3.771507954616193*^9}, 
+   3.771510618671215*^9, {3.771510771674019*^9, 3.77151078586047*^9}, 
+   3.771511136509633*^9, 3.771511242035112*^9, {3.771511409689301*^9, 
+   3.77151142914953*^9}, {3.77151178125459*^9, 3.771511810740562*^9}, 
+   3.771512524310411*^9, 3.771513617908307*^9, 3.771513869527645*^9, 
+   3.771514537512641*^9, 3.7715155231329603`*^9, 3.771515752006508*^9, 
+   3.771515976320916*^9, 3.7715160256250257`*^9, 3.771516161631616*^9, 
+   3.771516312428933*^9, {3.771516363440016*^9, 3.771516365156466*^9}, {
+   3.771516529943639*^9, 3.77151658101758*^9}, {3.771517196101571*^9, 
+   3.7715172137166433`*^9}, 3.771519290870867*^9, 3.771519882968728*^9, {
+   3.771533243125296*^9, 3.7715332599673147`*^9}},
+ CellLabel->"Out[41]=",ExpressionUUID->"1c230d62-943a-4cae-9064-fe9906be7888"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -8350,26 +8839,29 @@ Cell[BoxData[
   RowBox[{
    RowBox[{
     RowBox[{"suggestions", "[", 
-     RowBox[{"[", "1", "]"}], "]"}], "//", 
+     RowBox[{"[", "2", "]"}], "]"}], "//", 
     RowBox[{"SortBy", "[", 
      RowBox[{
       RowBox[{"#", "[", 
        RowBox[{"[", "1", "]"}], "]"}], "&"}], "]"}]}], "//", "Reverse"}], "//",
    "Dataset"}]], "Input",
  CellChangeTimes->{{3.771500247738433*^9, 3.771500311807914*^9}, {
-  3.7715004741005077`*^9, 3.7715004742337933`*^9}, {3.7715015486078978`*^9, 
-  3.771501548754303*^9}, {3.771502068834281*^9, 3.771502078160425*^9}, {
-  3.7715031667259483`*^9, 3.771503181159176*^9}, {3.771503394205518*^9, 
-  3.7715033983768797`*^9}},
+   3.7715004741005077`*^9, 3.7715004742337933`*^9}, {3.7715015486078978`*^9, 
+   3.771501548754303*^9}, {3.771502068834281*^9, 3.771502078160425*^9}, {
+   3.7715031667259483`*^9, 3.771503181159176*^9}, {3.771503394205518*^9, 
+   3.7715033983768797`*^9}, {3.7715108265813*^9, 3.771510875971477*^9}, {
+   3.771511142097331*^9, 3.771511178947575*^9}, {3.771511784371894*^9, 
+   3.771511784780504*^9}, {3.771511862992792*^9, 3.771511863340499*^9}, 
+   3.771516611283204*^9, {3.771519536350103*^9, 3.7715195431649323`*^9}},
  CellLabel->
-  "In[108]:=",ExpressionUUID->"60636356-6716-4af9-ae32-9c70b9755f74"],
+  "In[148]:=",ExpressionUUID->"60636356-6716-4af9-ae32-9c70b9755f74"],
 
 Cell[BoxData[
  TemplateBox[{TagBox[
     DynamicModuleBox[{
      TypeSystem`NestedGrid`PackagePrivate`$state$$ = 
       Data`UnorderedAssociation[
-       "RowCount" -> 5, "Length" -> 5, "InitialType" -> TypeSystem`Assoc[
+       "RowCount" -> 1, "Length" -> 1, "InitialType" -> TypeSystem`Assoc[
           TypeSystem`Vector[
            TypeSystem`Atom[Integer], 2], 
           TypeSystem`Struct[{"head", "argnumber", "parent", "pattern"}, {
@@ -8377,11 +8869,10 @@ Cell[BoxData[
             TypeSystem`Atom[Integer], 
             TypeSystem`Vector[
              TypeSystem`Atom[Integer], 2], 
-            TypeSystem`Atom[
-             TypeSystem`Enumeration["_", "_, _"]]}], 5], "Shape" -> 
+            TypeSystem`Atom[String]}], 1], "Shape" -> 
         TypeSystem`PackageScope`HeaderShape[
           Association[{All, 
-             TypeSystem`PackageScope`KeyDummy[16]} -> 1, {All, "head"} -> 
+             TypeSystem`PackageScope`KeyDummy[10]} -> 1, {All, "head"} -> 
            1, {All, "argnumber"} -> 1, {All, "parent"} -> 1, {All, "pattern"} -> 
            1], 
           TypeSystem`PackageScope`Limited[
@@ -8390,12 +8881,13 @@ Cell[BoxData[
             TypeSystem`PackageScope`UnknownShape, 
              TypeSystem`PackageScope`RowShape[
               Association[
-              "head" -> TypeSystem`PackageScope`AtomShape[57.60000000000001], 
+              "head" -> TypeSystem`PackageScope`AtomShape[96.00000000000001], 
                "argnumber" -> TypeSystem`PackageScope`AtomShape[34], "parent" -> 
                TypeSystem`PackageScope`UnknownShape, "pattern" -> 
-               TypeSystem`PackageScope`AtomShape[36.]]]]], 5, {}]], 
-        "InitialData" -> TypeSystem`PackageScope`CacheHandle[230131305], 
-        "Type" -> TypeSystem`Assoc[
+               TypeSystem`PackageScope`AtomShape[38.400000000000006`]]]]], 
+           1, {}]], "InitialData" -> 
+        TypeSystem`PackageScope`CacheHandle[2091823025], "Type" -> 
+        TypeSystem`Assoc[
           TypeSystem`Vector[
            TypeSystem`Atom[Integer], 2], 
           TypeSystem`Struct[{"head", "argnumber", "parent", "pattern"}, {
@@ -8403,10 +8895,8 @@ Cell[BoxData[
             TypeSystem`Atom[Integer], 
             TypeSystem`Vector[
              TypeSystem`Atom[Integer], 2], 
-            TypeSystem`Atom[
-             TypeSystem`Enumeration["_", "_, _"]]}], 5], "HandleQ" -> True, 
-        "RowTarget" -> 20, "Data" -> 
-        TypeSystem`PackageScope`CacheHandle[230131305]], 
+            TypeSystem`Atom[String]}], 1], "HandleQ" -> True, "RowTarget" -> 
+        20, "Data" -> TypeSystem`PackageScope`CacheHandle[2091823025]], 
       TypeSystem`NestedGrid`PackagePrivate`$path$$ = {}, 
       TypeSystem`NestedGrid`PackagePrivate`$pos$$ = 1, 
       TypeSystem`NestedGrid`PackagePrivate`$grid$$ = 
@@ -8442,8 +8932,8 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
-                    1832704240][{All, Keys}]], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1832704240][
+                    1852879255][{All, Keys}]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1852879255][
                   GeneralUtilities`Slice[All, Keys]], "Mouse"], Background -> 
                 GrayLevel[0.95], Alignment -> {Left, Baseline}], 
                Item[
@@ -8471,8 +8961,8 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
-                    1832704240][{All, "head"}]], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1832704240][
+                    1852879255][{All, "head"}]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1852879255][
                   GeneralUtilities`Slice[All, "head"]], "Mouse"], Background -> 
                 GrayLevel[0.95], Alignment -> {Left, Baseline}], 
                Item[
@@ -8501,8 +8991,8 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
-                    1832704240][{All, "argnumber"}]], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1832704240][
+                    1852879255][{All, "argnumber"}]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1852879255][
                   GeneralUtilities`Slice[All, "argnumber"]], "Mouse"], 
                 Background -> GrayLevel[0.95], Alignment -> {Left, Baseline}], 
                Item[
@@ -8530,8 +9020,8 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
-                    1832704240][{All, "parent"}]], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1832704240][
+                    1852879255][{All, "parent"}]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1852879255][
                   GeneralUtilities`Slice[All, "parent"]], "Mouse"], 
                 Background -> GrayLevel[0.95], Alignment -> {Left, Baseline}], 
                Item[
@@ -8559,8 +9049,8 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
-                    1832704240][{All, "pattern"}]], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1832704240][
+                    1852879255][{All, "pattern"}]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1852879255][
                   GeneralUtilities`Slice[All, "pattern"]], "Mouse"], 
                 Background -> GrayLevel[0.95], 
                 Alignment -> {Left, Baseline}]}, {
@@ -8581,26 +9071,26 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1832704240][{
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1852879255][{
                     Key[{1, 1}]}]], 
                    TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
-                   1832704240][
+                   1852879255][
                     GeneralUtilities`Slice[
                     Key[{1, 1}]]], "Mouse"]], 
                  ImageSize -> {{60, Full}, Automatic}], Background -> 
                 GrayLevel[0.95], Alignment -> {Left, Baseline}], 
                Pane[
-                Annotation["SortBy", 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1832704240][
+                Annotation["StringJoin", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1852879255][
                   GeneralUtilities`Slice[
                    Key[{1, 1}], 
                    Key["head"]]], "Mouse"], 
-                ImageSize -> {{57.60000000000001, Full}, Automatic}, 
+                ImageSize -> {{96.00000000000001, Full}, Automatic}, 
                 Alignment -> {Left, Baseline}], 
                Pane[
                 Annotation[
-                 RawBoxes["2"], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1832704240][
+                 RawBoxes["1"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1852879255][
                   GeneralUtilities`Slice[
                    Key[{1, 1}], 
                    Key["argnumber"]]], "Mouse"], 
@@ -8621,308 +9111,20 @@ Cell[BoxData[
                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1832704240][{
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1852879255][{
                     Key[{1, 1}], 
                     Key["parent"]}]], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1832704240][
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1852879255][
                   GeneralUtilities`Slice[
                    Key[{1, 1}], 
                    Key["parent"]]], "Mouse"]], 
                Pane[
                 Annotation["_, _", 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1832704240][
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1852879255][
                   GeneralUtilities`Slice[
                    Key[{1, 1}], 
                    Key["pattern"]]], "Mouse"], 
-                ImageSize -> {{36., Full}, Automatic}, 
-                Alignment -> {Left, Baseline}]}, {
-               Item[
-                Pane[
-                 Item[
-                  Annotation[
-                   EventHandler[
-                    MouseAppearance[
-                    Mouseover[
-                    Style[{2, 1}, ShowStringCharacters -> False], 
-                    Style[
-                    Style[{2, 1}, ShowStringCharacters -> False], FontColor -> 
-                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
-                    TypeSystem`NestedGrid`PackagePrivate`updateState[
-                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1832704240][{
-                    Key[{2, 1}]}]], 
-                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
-                   1832704240][
-                    GeneralUtilities`Slice[
-                    Key[{2, 1}]]], "Mouse"]], 
-                 ImageSize -> {{60, Full}, Automatic}], Background -> 
-                GrayLevel[0.95], Alignment -> {Left, Baseline}], 
-               Pane[
-                Annotation["Range", 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1832704240][
-                  GeneralUtilities`Slice[
-                   Key[{2, 1}], 
-                   Key["head"]]], "Mouse"], 
-                ImageSize -> {{57.60000000000001, Full}, Automatic}, 
-                Alignment -> {Left, Baseline}], 
-               Pane[
-                Annotation[
-                 RawBoxes["2"], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1832704240][
-                  GeneralUtilities`Slice[
-                   Key[{2, 1}], 
-                   Key["argnumber"]]], "Mouse"], 
-                ImageSize -> {{34, Full}, Automatic}, 
-                Alignment -> {Left, Baseline}], 
-               Item[
-                Annotation[
-                 EventHandler[
-                  MouseAppearance[
-                   Mouseover[
-                    Style[{1, 1}, ShowStringCharacters -> False], 
-                    Style[
-                    Style[{1, 1}, ShowStringCharacters -> False], FontColor -> 
-                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
-                  TypeSystem`NestedGrid`PackagePrivate`updateState[
-                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1832704240][{
-                    Key[{2, 1}], 
-                    Key["parent"]}]], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1832704240][
-                  GeneralUtilities`Slice[
-                   Key[{2, 1}], 
-                   Key["parent"]]], "Mouse"]], 
-               Pane[
-                Annotation["_, _", 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1832704240][
-                  GeneralUtilities`Slice[
-                   Key[{2, 1}], 
-                   Key["pattern"]]], "Mouse"], 
-                ImageSize -> {{36., Full}, Automatic}, 
-                Alignment -> {Left, Baseline}]}, {
-               Item[
-                Pane[
-                 Item[
-                  Annotation[
-                   EventHandler[
-                    MouseAppearance[
-                    Mouseover[
-                    Style[{2, 2}, ShowStringCharacters -> False], 
-                    Style[
-                    Style[{2, 2}, ShowStringCharacters -> False], FontColor -> 
-                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
-                    TypeSystem`NestedGrid`PackagePrivate`updateState[
-                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1832704240][{
-                    Key[{2, 2}]}]], 
-                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
-                   1832704240][
-                    GeneralUtilities`Slice[
-                    Key[{2, 2}]]], "Mouse"]], 
-                 ImageSize -> {{60, Full}, Automatic}], Background -> 
-                GrayLevel[0.95], Alignment -> {Left, Baseline}], 
-               Pane[
-                Annotation["Mod", 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1832704240][
-                  GeneralUtilities`Slice[
-                   Key[{2, 2}], 
-                   Key["head"]]], "Mouse"], 
-                ImageSize -> {{57.60000000000001, Full}, Automatic}, 
-                Alignment -> {Left, Baseline}], 
-               Pane[
-                Annotation[
-                 RawBoxes["2"], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1832704240][
-                  GeneralUtilities`Slice[
-                   Key[{2, 2}], 
-                   Key["argnumber"]]], "Mouse"], 
-                ImageSize -> {{34, Full}, Automatic}, 
-                Alignment -> {Left, Baseline}], 
-               Item[
-                Annotation[
-                 EventHandler[
-                  MouseAppearance[
-                   Mouseover[
-                    Style[{1, 1}, ShowStringCharacters -> False], 
-                    Style[
-                    Style[{1, 1}, ShowStringCharacters -> False], FontColor -> 
-                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
-                  TypeSystem`NestedGrid`PackagePrivate`updateState[
-                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1832704240][{
-                    Key[{2, 2}], 
-                    Key["parent"]}]], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1832704240][
-                  GeneralUtilities`Slice[
-                   Key[{2, 2}], 
-                   Key["parent"]]], "Mouse"]], 
-               Pane[
-                Annotation["_, _", 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1832704240][
-                  GeneralUtilities`Slice[
-                   Key[{2, 2}], 
-                   Key["pattern"]]], "Mouse"], 
-                ImageSize -> {{36., Full}, Automatic}, 
-                Alignment -> {Left, Baseline}]}, {
-               Item[
-                Pane[
-                 Item[
-                  Annotation[
-                   EventHandler[
-                    MouseAppearance[
-                    Mouseover[
-                    Style[{3, 2}, ShowStringCharacters -> False], 
-                    Style[
-                    Style[{3, 2}, ShowStringCharacters -> False], FontColor -> 
-                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
-                    TypeSystem`NestedGrid`PackagePrivate`updateState[
-                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1832704240][{
-                    Key[{3, 2}]}]], 
-                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
-                   1832704240][
-                    GeneralUtilities`Slice[
-                    Key[{3, 2}]]], "Mouse"]], 
-                 ImageSize -> {{60, Full}, Automatic}], Background -> 
-                GrayLevel[0.95], Alignment -> {Left, Baseline}], 
-               Pane[
-                Annotation["Cos", 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1832704240][
-                  GeneralUtilities`Slice[
-                   Key[{3, 2}], 
-                   Key["head"]]], "Mouse"], 
-                ImageSize -> {{57.60000000000001, Full}, Automatic}, 
-                Alignment -> {Left, Baseline}], 
-               Pane[
-                Annotation[
-                 RawBoxes["1"], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1832704240][
-                  GeneralUtilities`Slice[
-                   Key[{3, 2}], 
-                   Key["argnumber"]]], "Mouse"], 
-                ImageSize -> {{34, Full}, Automatic}, 
-                Alignment -> {Left, Baseline}], 
-               Item[
-                Annotation[
-                 EventHandler[
-                  MouseAppearance[
-                   Mouseover[
-                    Style[{2, 1}, ShowStringCharacters -> False], 
-                    Style[
-                    Style[{2, 1}, ShowStringCharacters -> False], FontColor -> 
-                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
-                  TypeSystem`NestedGrid`PackagePrivate`updateState[
-                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1832704240][{
-                    Key[{3, 2}], 
-                    Key["parent"]}]], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1832704240][
-                  GeneralUtilities`Slice[
-                   Key[{3, 2}], 
-                   Key["parent"]]], "Mouse"]], 
-               Pane[
-                Annotation["_", 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1832704240][
-                  GeneralUtilities`Slice[
-                   Key[{3, 2}], 
-                   Key["pattern"]]], "Mouse"], 
-                ImageSize -> {{36., Full}, Automatic}, 
-                Alignment -> {Left, Baseline}]}, {
-               Item[
-                Pane[
-                 Item[
-                  Annotation[
-                   EventHandler[
-                    MouseAppearance[
-                    Mouseover[
-                    Style[{3, 1}, ShowStringCharacters -> False], 
-                    Style[
-                    Style[{3, 1}, ShowStringCharacters -> False], FontColor -> 
-                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
-                    TypeSystem`NestedGrid`PackagePrivate`updateState[
-                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1832704240][{
-                    Key[{3, 1}]}]], 
-                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
-                   1832704240][
-                    GeneralUtilities`Slice[
-                    Key[{3, 1}]]], "Mouse"]], 
-                 ImageSize -> {{60, Full}, Automatic}], Background -> 
-                GrayLevel[0.95], Alignment -> {Left, Baseline}], 
-               Pane[
-                Annotation["Cos", 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1832704240][
-                  GeneralUtilities`Slice[
-                   Key[{3, 1}], 
-                   Key["head"]]], "Mouse"], 
-                ImageSize -> {{57.60000000000001, Full}, Automatic}, 
-                Alignment -> {Left, Baseline}], 
-               Pane[
-                Annotation[
-                 RawBoxes["1"], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1832704240][
-                  GeneralUtilities`Slice[
-                   Key[{3, 1}], 
-                   Key["argnumber"]]], "Mouse"], 
-                ImageSize -> {{34, Full}, Automatic}, 
-                Alignment -> {Left, Baseline}], 
-               Item[
-                Annotation[
-                 EventHandler[
-                  MouseAppearance[
-                   Mouseover[
-                    Style[{2, 1}, ShowStringCharacters -> False], 
-                    Style[
-                    Style[{2, 1}, ShowStringCharacters -> False], FontColor -> 
-                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
-                  TypeSystem`NestedGrid`PackagePrivate`updateState[
-                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1832704240][{
-                    Key[{3, 1}], 
-                    Key["parent"]}]], 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1832704240][
-                  GeneralUtilities`Slice[
-                   Key[{3, 1}], 
-                   Key["parent"]]], "Mouse"]], 
-               Pane[
-                Annotation["_", 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1832704240][
-                  GeneralUtilities`Slice[
-                   Key[{3, 1}], 
-                   Key["pattern"]]], "Mouse"], 
-                ImageSize -> {{36., Full}, Automatic}, 
+                ImageSize -> {{38.400000000000006`, Full}, Automatic}, 
                 Alignment -> {Left, Baseline}]}}, BaseStyle -> {ContextMenu -> {
                  MenuItem["Copy position to clipboard", 
                   KernelExecute[
@@ -8970,7 +9172,7 @@ Cell[BoxData[
                 TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                  TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                  TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                 TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1832704240][
+                 TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1852879255][
                 TypeSystem`NestedGrid`PackagePrivate`tmpData$]]; If[
                Not[
                 FailureQ[TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]], 
@@ -9001,14 +9203,14 @@ Cell[BoxData[
            TypeSystem`NestedGrid`PackagePrivate`$state$$, 
             TypeSystem`NestedGrid`PackagePrivate`$path$$, 
             TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-            TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1832704240]]]], 
+            TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1852879255]]]], 
         TrackedSymbols :> {TypeSystem`NestedGrid`PackagePrivate`$path$$}], 
       TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$ = Framed[
         Dynamic[
          Replace[
           MouseAnnotation[Null], {
-          TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1832704240][Null] -> 
-           "", TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1832704240][
+          TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1852879255][Null] -> 
+           "", TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1852879255][
              Pattern[TypeSystem`NestedGrid`PackagePrivate`path, 
               Blank[]]] :> (
             TypeSystem`NestedGrid`PackagePrivate`$lastPath = 
@@ -9042,7 +9244,7 @@ Cell[BoxData[
            TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$]]}], Spacings -> 
         If[TypeSystem`NestedGrid`PackagePrivate`$path$$ == {}, 
           0, {{}, {0, 0.05, 0}}]], StandardForm], 
-      ImageSizeCache -> {314., {79.634033203125, 85.365966796875}}, 
+      ImageSizeCache -> {353., {29.634033203125, 35.365966796875}}, 
       TrackedSymbols :> {
        TypeSystem`NestedGrid`PackagePrivate`$state$$, 
         TypeSystem`NestedGrid`PackagePrivate`$grid$$}], 
@@ -9056,12 +9258,16 @@ Cell[BoxData[
   DisplayFunction->(#& ),
   InterpretationFunction->("Dataset[<>]"& )]], "Output",
  CellChangeTimes->{{3.771500306303177*^9, 3.7715003121341*^9}, {
-  3.771500472025597*^9, 3.771500474694126*^9}, {3.771501546780302*^9, 
-  3.771501549106329*^9}, {3.771502058230301*^9, 3.7715020786747627`*^9}, {
-  3.771503168325966*^9, 3.77150318158705*^9}, {3.771503384506114*^9, 
-  3.771503398712467*^9}},
+   3.771500472025597*^9, 3.771500474694126*^9}, {3.771501546780302*^9, 
+   3.771501549106329*^9}, {3.771502058230301*^9, 3.7715020786747627`*^9}, {
+   3.771503168325966*^9, 3.77150318158705*^9}, {3.771503384506114*^9, 
+   3.771503398712467*^9}, 3.771504557014681*^9, {3.771507938655471*^9, 
+   3.771507957906108*^9}, 3.7715079906893063`*^9, 3.771510622277993*^9, {
+   3.771510827366572*^9, 3.771510876315959*^9}, {3.771511139468155*^9, 
+   3.771511180177228*^9}, 3.771511785364895*^9, 3.771511864082135*^9, 
+   3.7715166120491247`*^9, {3.7715195376540422`*^9, 3.771519543533688*^9}},
  CellLabel->
-  "Out[108]=",ExpressionUUID->"dc522ed6-0a6a-4175-a394-2772c851e4f7"]
+  "Out[148]=",ExpressionUUID->"ffe74a6d-8a66-46ac-98f7-e501145978f2"]
 }, Open  ]]
 }, Open  ]],
 
@@ -9096,13 +9302,19 @@ Cell[BoxData[
        RowBox[{"keys", "\[Rule]", "names"}], "]"}], "//", "Normal"}]}], ";", 
     RowBox[{"Graph", "[", 
      RowBox[{
-      RowBox[{
+      RowBox[{"Reverse", "[", 
        RowBox[{
-        RowBox[{"Lookup", "[", "\"\<parent\>\"", "]"}], "/@", 
-        RowBox[{"suggestions", "[", 
-         RowBox[{"[", "ii", "]"}], "]"}]}], "//", "Normal"}], ",", 
+        RowBox[{"Normal", "@", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Lookup", "[", "\"\<parent\>\"", "]"}], "/@", 
+           RowBox[{"suggestions", "[", 
+            RowBox[{"[", "ii", "]"}], "]"}]}], ")"}]}], ",", "2"}], "]"}], 
+      " ", ",", 
       RowBox[{"VertexLabels", "\[Rule]", "forgraph"}], ",", 
-      RowBox[{"VertexSize", "\[Rule]", "Large"}]}], "]"}]}], ",", 
+      RowBox[{"VertexSize", "\[Rule]", "Large"}], ",", 
+      RowBox[{"VertexShapeFunction", "\[Rule]", "\"\<Rectangle\>\""}]}], 
+     "]"}]}], ",", 
    RowBox[{"{", 
     RowBox[{
      RowBox[{"{", 
@@ -9111,26 +9323,31 @@ Cell[BoxData[
      RowBox[{"Length", "@", "suggestions"}], ",", "1"}], "}"}]}], 
   "]"}]], "Input",
  CellChangeTimes->{{3.771502689069165*^9, 3.771502807791832*^9}, {
-  3.7715032105629063`*^9, 3.7715032723195343`*^9}, {3.771503410986253*^9, 
-  3.771503414818947*^9}},
- CellLabel->
-  "In[110]:=",ExpressionUUID->"ff6c676c-769b-4ffc-9aaf-038f26f13a95"],
+   3.7715032105629063`*^9, 3.7715032723195343`*^9}, {3.771503410986253*^9, 
+   3.771503414818947*^9}, {3.771508272822485*^9, 3.771508287387491*^9}, {
+   3.771508375978509*^9, 3.771508377088346*^9}, {3.771508418112029*^9, 
+   3.771508420553891*^9}, {3.771508738137149*^9, 3.771508762987977*^9}, {
+   3.771509426822187*^9, 3.7715094282414417`*^9}, {3.771509493968111*^9, 
+   3.771509507524242*^9}, {3.771509867664549*^9, 3.771509895389971*^9}, 
+   3.7715099856812773`*^9, {3.771510133991891*^9, 3.77151013520874*^9}, {
+   3.771510276968664*^9, 3.771510340191934*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"ff6c676c-769b-4ffc-9aaf-038f26f13a95"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`ii$$ = 1, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`ii$$ = 3, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{{
-       Hold[$CellContext`ii$$], 1, "Suggestion"}, 1, 1, 1}}, 
-    Typeset`size$$ = {205., {214., 218.}}, Typeset`update$$ = 0, 
+       Hold[$CellContext`ii$$], 1, "Suggestion"}, 1, 3, 1}}, 
+    Typeset`size$$ = {360., {123., 127.}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`ii$31797$$ = 0}, 
+    True, $CellContext`ii$3019$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`ii$$ = 1}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`ii$$, $CellContext`ii$31797$$, 0]}, 
+        Hold[$CellContext`ii$$, $CellContext`ii$3019$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -9143,14 +9360,16 @@ $CellContext`names = Part[
            Part[$CellContext`suggestions, $CellContext`ii$$]], All, 
           "head"]; $CellContext`forgraph = Normal[
           AssociationThread[$CellContext`keys -> $CellContext`names]]; Graph[
-         Normal[
-          Map[
-           Lookup["parent"], 
-           Part[$CellContext`suggestions, $CellContext`ii$$]]], 
-         VertexLabels -> $CellContext`forgraph, VertexSize -> Large]), 
-      "Specifications" :> {{{$CellContext`ii$$, 1, "Suggestion"}, 1, 1, 1}}, 
+         Reverse[
+          Normal[
+           Map[
+            Lookup["parent"], 
+            Part[$CellContext`suggestions, $CellContext`ii$$]]], 2], 
+         VertexLabels -> $CellContext`forgraph, VertexSize -> Large, 
+         VertexShapeFunction -> "Rectangle"]), 
+      "Specifications" :> {{{$CellContext`ii$$, 1, "Suggestion"}, 1, 3, 1}}, 
       "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{290., {272., 278.}},
+     ImageSizeCache->{405., {181., 187.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -9161,12 +9380,16 @@ $CellContext`names = Part[
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{{3.771502752189962*^9, 3.77150281035643*^9}, {
-   3.771503044274789*^9, 3.771503047045044*^9}, 3.771503216020048*^9, {
-   3.771503251068482*^9, 3.771503275487903*^9}, {3.771503403360194*^9, 
-   3.771503417176033*^9}},
- CellLabel->
-  "Out[110]=",ExpressionUUID->"cf9227a9-df8e-46cb-a934-e5a8ffa3e3ff"]
+ CellChangeTimes->{{3.771514541219071*^9, 3.771514542898685*^9}, {
+   3.771515527997362*^9, 3.7715155293530283`*^9}, {3.7715156387947807`*^9, 
+   3.77151565793493*^9}, {3.7715160292899237`*^9, 3.771516032296363*^9}, {
+   3.771516168885427*^9, 3.771516171984116*^9}, {3.7715163793002863`*^9, 
+   3.771516382715343*^9}, {3.7715192945078573`*^9, 3.7715192960986433`*^9}, {
+   3.771519429775529*^9, 3.771519462409748*^9}, {3.7715195506963882`*^9, 
+   3.7715195529156322`*^9}, {3.7715198856747837`*^9, 3.771519887189163*^9}, {
+   3.77152367188571*^9, 3.771523673787097*^9}, 3.771533250177946*^9, {
+   3.771533525152377*^9, 3.7715335278889914`*^9}},
+ CellLabel->"Out[13]=",ExpressionUUID->"0b3f4ae4-c69e-4348-9ccb-54984a0c42c5"]
 }, Open  ]]
 }, Open  ]],
 
@@ -9179,30 +9402,41 @@ Cell["To do:\t", "Section",
 46fd579c2171"],
 
 Cell[TextData[{
- "Find a better way to visualise differences - currently returning the whole \
-tree\nMake the Search recursive - Fork ",
+ "Make sure I am not blind  to single/no argument functions\nFind a better \
+way to visualise differences - currently returning the whole tree: also send \
+the previous part of the string. If okay, append it.\nMake the Search \
+recursive - Fork ",
  StyleBox["(Kind of did that)",
   FontWeight->"Bold"],
  "\nThen implement: Two missing brackets ",
  StyleBox["(any number of missing closing brackets implemented)",
   FontWeight->"Bold"],
- " or one/two extra brackets\nThen implement: ",
- Cell[BoxData[
- "inPartlevel"], "Input",ExpressionUUID->
-  "068f969c-52dd-4bc9-b5c4-c4a85905eb40"],
- ", ",
- Cell[BoxData[
-  RowBox[{"inString", ","}]], "Input",ExpressionUUID->
-  "d618cb68-ad8f-4769-8d22-be099f1aaedc"],
- " ",
- Cell[BoxData[
- "inComment"], "Input",ExpressionUUID->"ad80353d-3cb1-436b-b00a-b45ed4a53fbd"],
- "\nAlso, implement branching for closing brackets"
+ "\nThen implement: inPartlevel, inString ",
+ StyleBox["(Kind of did that, BUT it has to be parsed with the escape \
+character \\\[CloseCurlyDoubleQuote])",
+  FontWeight->"Bold"],
+ ", inComment ",
+ StyleBox["(Kind of did that)",
+  FontWeight->"Bold"],
+ "\nAlso, implement branching for closing brackets\nError when closing two \
+consecutive brackets: \
+str=\[CloseCurlyDoubleQuote]SortBy[Range[Cos[Cos[x],Cos[x]+1], Mod[#1, 3 & ]]\
+\[CloseCurlyDoubleQuote] leads to wrong result",
+ StyleBox["\n",
+  FontWeight->"Bold"],
+ "Find a way to also check the heads of functions in testPatternMatch\nNumber \
+of arguments in treeStructure is wrong (but also unnecessary). Make a \
+decision. "
 }], "Subsection",
  CellChangeTimes->{{3.771371361580525*^9, 3.771371456549865*^9}, {
   3.771371542526084*^9, 3.771371594443203*^9}, {3.771454818915246*^9, 
-  3.771454819819859*^9}, {3.7714585454993963`*^9, 
-  3.7714585907981377`*^9}},ExpressionUUID->"68f671e8-7b38-4556-b63c-\
+  3.771454819819859*^9}, {3.7714585454993963`*^9, 3.7714585907981377`*^9}, {
+  3.771504290580604*^9, 3.7715043017862587`*^9}, {3.771513809633708*^9, 
+  3.771513834426865*^9}, {3.771515426198771*^9, 3.771515507927876*^9}, {
+  3.7715172686701117`*^9, 3.7715172972373238`*^9}, {3.771518329404993*^9, 
+  3.7715183528282537`*^9}, {3.771519566317685*^9, 3.771519637931766*^9}, {
+  3.771519900174068*^9, 3.771520028505003*^9}, {3.771520303920779*^9, 
+  3.7715203281418467`*^9}},ExpressionUUID->"68f671e8-7b38-4556-b63c-\
 8fe28210225b"]
 }, Open  ]]
 }, Open  ]]
@@ -9649,100 +9883,125 @@ Cell[CellGroupData[{
 Cell[272809, 7076, 164, 3, 67, "Section",ExpressionUUID->"d6324469-311f-40bd-be4e-bb16b48e5f1c"],
 Cell[CellGroupData[{
 Cell[272998, 7083, 277, 4, 54, "Subsection",ExpressionUUID->"5f29f9fb-56d3-468f-859d-1d54406bff50"],
-Cell[273278, 7089, 611, 13, 52, "Code",ExpressionUUID->"9e5b62dc-dc5e-4d01-9467-b983945a4d32"],
-Cell[273892, 7104, 700, 16, 52, "Code",ExpressionUUID->"c059a98e-453b-46d6-9627-45ec5769d90e"],
-Cell[274595, 7122, 1956, 44, 262, "Code",ExpressionUUID->"24e6a0cd-e320-46cb-9a2e-0cd902a0ac0d"],
-Cell[276554, 7168, 1932, 43, 395, "Code",ExpressionUUID->"fe1f5e60-6da5-453c-9d95-ac60552aaa52"],
-Cell[278489, 7213, 1492, 39, 167, "Code",ExpressionUUID->"6e0856e7-7ccc-4165-9fb5-8c663e47e7d5"],
-Cell[279984, 7254, 1098, 24, 148, "Code",ExpressionUUID->"abaeb584-bdbd-446e-81d2-568b6ba9ec33"],
-Cell[281085, 7280, 1670, 40, 205, "Code",ExpressionUUID->"6928c97d-6ea2-49cf-a89e-e1ba6b815bef"]
+Cell[273278, 7089, 1123, 25, 91, "Code",ExpressionUUID->"9e5b62dc-dc5e-4d01-9467-b983945a4d32"],
+Cell[274404, 7116, 1602, 35, 91, "Code",ExpressionUUID->"c059a98e-453b-46d6-9627-45ec5769d90e"],
+Cell[276009, 7153, 2982, 68, 300, "Code",ExpressionUUID->"24e6a0cd-e320-46cb-9a2e-0cd902a0ac0d"],
+Cell[278994, 7223, 3736, 80, 509, "Code",ExpressionUUID->"fe1f5e60-6da5-453c-9d95-ac60552aaa52"],
+Cell[282733, 7305, 2609, 55, 167, "Code",ExpressionUUID->"6e0856e7-7ccc-4165-9fb5-8c663e47e7d5"],
+Cell[285345, 7362, 2173, 51, 224, "Code",ExpressionUUID->"6928c97d-6ea2-49cf-a89e-e1ba6b815bef"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[282792, 7325, 263, 4, 54, "Subsection",ExpressionUUID->"430644ed-1213-42f8-a87e-d865d6c99498"],
-Cell[283058, 7331, 15751, 293, 1269, "Code",ExpressionUUID->"f7d2a069-af28-45f2-8b6e-a53b5d9323e8"],
-Cell[298812, 7626, 152, 3, 30, "Input",ExpressionUUID->"91cf66d9-c803-4c48-8fb5-949d50db45ce"]
+Cell[287555, 7418, 263, 4, 54, "Subsection",ExpressionUUID->"430644ed-1213-42f8-a87e-d865d6c99498"],
+Cell[287821, 7424, 32213, 601, 1763, "Code",ExpressionUUID->"f7d2a069-af28-45f2-8b6e-a53b5d9323e8"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[299001, 7634, 213, 4, 54, "Subsection",ExpressionUUID->"a3e0cc82-18b8-426e-8f8f-c1dcf91a59f5"],
-Cell[299217, 7640, 1988, 39, 281, "Code",ExpressionUUID->"a748e3a4-0c2b-4d5a-b23f-cab0e74172f1"]
+Cell[320071, 8030, 213, 4, 54, "Subsection",ExpressionUUID->"a3e0cc82-18b8-426e-8f8f-c1dcf91a59f5"],
+Cell[320287, 8036, 2112, 40, 300, "Code",ExpressionUUID->"a748e3a4-0c2b-4d5a-b23f-cab0e74172f1"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[301254, 7685, 165, 3, 67, "Section",ExpressionUUID->"b6eb74a4-20aa-4ad1-9858-30549f41f6bc"],
+Cell[322448, 8082, 165, 3, 67, "Section",ExpressionUUID->"b6eb74a4-20aa-4ad1-9858-30549f41f6bc"],
 Cell[CellGroupData[{
-Cell[301444, 7692, 520, 9, 30, "Input",ExpressionUUID->"123ff8fc-7919-4e6f-81b2-fbb7cf4f7df4"],
-Cell[301967, 7703, 615, 10, 34, "Output",ExpressionUUID->"63e85316-f23e-4410-8bff-eb7b27a49232"]
+Cell[322638, 8089, 1552, 22, 30, "Input",ExpressionUUID->"123ff8fc-7919-4e6f-81b2-fbb7cf4f7df4"],
+Cell[324193, 8113, 1441, 21, 34, "Output",ExpressionUUID->"e96edba5-9ee3-4ad1-8c33-d23838f49d2a"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[302619, 7718, 448, 9, 30, "Input",ExpressionUUID->"890387c0-d740-4af7-8c8a-0fa9951b6b4f"],
+Cell[325671, 8139, 489, 8, 30, "Input",ExpressionUUID->"890387c0-d740-4af7-8c8a-0fa9951b6b4f"],
 Cell[CellGroupData[{
-Cell[303092, 7731, 313, 6, 24, "Print",ExpressionUUID->"5b803583-72b7-4135-9162-9c5a8d5c768f"],
-Cell[303408, 7739, 625, 12, 24, "Print",ExpressionUUID->"0d52d549-7ae8-4673-8aa5-f5255eb112f5"],
-Cell[304036, 7753, 311, 6, 24, "Print",ExpressionUUID->"2087a0af-ffd1-499d-8c7a-28065c45df4d"],
-Cell[304350, 7761, 621, 12, 24, "Print",ExpressionUUID->"cba00582-e953-4e06-9d66-bfaa4762e1ff"],
-Cell[304974, 7775, 311, 6, 24, "Print",ExpressionUUID->"912c1d60-3ace-453f-8f21-c1845dc97a20"],
-Cell[305288, 7783, 616, 12, 24, "Print",ExpressionUUID->"13f6752e-05ef-4a6f-858f-a175e34ed3b4"],
-Cell[305907, 7797, 309, 6, 24, "Print",ExpressionUUID->"cf95cd03-8293-4a61-b7be-990f6182edd4"],
-Cell[306219, 7805, 623, 12, 24, "Print",ExpressionUUID->"4f087316-9014-43c0-b0c0-7a3eeed92c87"],
-Cell[306845, 7819, 469, 11, 24, "Print",ExpressionUUID->"14cb2f90-e94b-49d3-b8d9-91568ebafee3"],
-Cell[307317, 7832, 497, 11, 24, "Print",ExpressionUUID->"e914b6e4-8368-47c0-8248-c02b5ac64c10"],
-Cell[307817, 7845, 309, 6, 24, "Print",ExpressionUUID->"3fc102c6-751d-4e5e-83df-f40b1b2e4661"],
-Cell[308129, 7853, 625, 12, 24, "Print",ExpressionUUID->"bcf2efe8-6b0f-4031-81e6-cb1a9f64823a"],
-Cell[308757, 7867, 313, 6, 24, "Print",ExpressionUUID->"66501d8f-da46-48fa-a6aa-d768f2cdaa76"],
-Cell[309073, 7875, 616, 12, 24, "Print",ExpressionUUID->"27dacf9d-6d2a-4bee-985e-9c59b67c7a1b"],
-Cell[309692, 7889, 309, 6, 24, "Print",ExpressionUUID->"0acee1c2-c344-41db-81dd-2f596f9a0135"],
-Cell[310004, 7897, 625, 12, 24, "Print",ExpressionUUID->"8baebdcd-f4fb-4b90-8c39-22c8a84c0711"],
-Cell[310632, 7911, 309, 6, 24, "Print",ExpressionUUID->"07af1213-efb8-4195-847c-eb4bdceb5c2e"],
-Cell[310944, 7919, 615, 12, 24, "Print",ExpressionUUID->"6034ed1a-9e7f-448f-98b5-919c7375f14e"],
-Cell[311562, 7933, 326, 6, 24, "Print",ExpressionUUID->"b059bcdf-f625-44fd-8e75-00f41d010956"],
-Cell[311891, 7941, 437, 11, 24, "Print",ExpressionUUID->"a238a9fc-790b-46f3-b5c3-926f00698f26"],
-Cell[312331, 7954, 546, 13, 24, "Print",ExpressionUUID->"a734d8f6-dce3-4317-98ea-c454d0461428"],
-Cell[312880, 7969, 320, 6, 24, "Print",ExpressionUUID->"611aa151-a5f3-407b-b14a-bcc458b24026"],
-Cell[313203, 7977, 311, 6, 24, "Print",ExpressionUUID->"b9c8d714-8ad8-4b44-a8c5-d80ace72b7ff"],
-Cell[313517, 7985, 617, 12, 24, "Print",ExpressionUUID->"10cac45a-1af9-4151-be84-a02f38f13d45"],
-Cell[314137, 7999, 309, 6, 24, "Print",ExpressionUUID->"d9508303-b440-41e9-92fc-6466f8ed6f8c"],
-Cell[314449, 8007, 621, 12, 24, "Print",ExpressionUUID->"03aa1888-642c-45fb-baeb-0c1f736d3ff8"],
-Cell[315073, 8021, 309, 6, 24, "Print",ExpressionUUID->"4fd38b47-bfa0-4097-b92f-d71a54061a61"],
-Cell[315385, 8029, 623, 12, 24, "Print",ExpressionUUID->"29ba7e87-130e-4683-b029-8061f04dff5d"],
-Cell[316011, 8043, 469, 11, 24, "Print",ExpressionUUID->"09d516f3-5b72-4aca-bd9e-c03144385860"],
-Cell[316483, 8056, 479, 11, 24, "Print",ExpressionUUID->"8cc2512e-8abd-4e2b-895a-239e96ed34ae"],
-Cell[316965, 8069, 309, 6, 24, "Print",ExpressionUUID->"98fef01e-582e-4ff2-8b04-dd6a7bcd4ffe"],
-Cell[317277, 8077, 615, 12, 24, "Print",ExpressionUUID->"adf10628-57fa-421c-a253-859403992a20"],
-Cell[317895, 8091, 326, 6, 24, "Print",ExpressionUUID->"4effc8e0-8533-4f5d-a531-0ea1ac17e26b"],
-Cell[318224, 8099, 437, 11, 24, "Print",ExpressionUUID->"7e645d50-01fb-4460-9065-65874a42e4fe"],
-Cell[318664, 8112, 522, 12, 24, "Print",ExpressionUUID->"ca429799-7735-4819-9176-49cb30f71d08"],
-Cell[319189, 8126, 320, 6, 24, "Print",ExpressionUUID->"9776d3d1-3d14-43ef-a1b5-de90575105fa"],
-Cell[319512, 8134, 313, 6, 24, "Print",ExpressionUUID->"eff1b33b-b44a-48f0-899c-a71bb259d027"],
-Cell[319828, 8142, 617, 12, 24, "Print",ExpressionUUID->"8c478968-fb8c-4987-80d3-14907b6b4a8f"],
-Cell[320448, 8156, 469, 11, 24, "Print",ExpressionUUID->"a388c927-7eb4-4b6c-acba-7d32581c4033"],
-Cell[320920, 8169, 309, 6, 24, "Print",ExpressionUUID->"293a5f33-7ab0-4a99-882d-a6d6b9056e18"],
-Cell[321232, 8177, 623, 12, 24, "Print",ExpressionUUID->"f6b006ec-5c4f-443a-bc8f-a7b956337d5d"],
-Cell[321858, 8191, 309, 6, 24, "Print",ExpressionUUID->"91099668-e305-45d4-bdfe-ffd23fbf33ed"],
-Cell[322170, 8199, 615, 12, 24, "Print",ExpressionUUID->"1ed027ac-d195-453b-ad1f-b4af0fd0852b"],
-Cell[322788, 8213, 417, 10, 24, "Print",ExpressionUUID->"fadbec22-4422-44cf-b160-5741084ba672"],
-Cell[323208, 8225, 3787, 92, 69, "Print",ExpressionUUID->"776aac6e-bac1-4455-ac7d-1d36f59dd46f"],
-Cell[326998, 8319, 320, 6, 24, "Print",ExpressionUUID->"79519e57-d1f4-468b-bba2-d72f49c765a2"]
+Cell[326185, 8151, 191, 4, 24, "Print",ExpressionUUID->"872bc1d8-c361-457b-bb5a-f1609ca9746d"],
+Cell[326379, 8157, 503, 10, 24, "Print",ExpressionUUID->"518e991b-b305-46b9-8f1a-fd6e54103b99"],
+Cell[326885, 8169, 193, 4, 24, "Print",ExpressionUUID->"6970c016-ea13-4935-8a28-68c7e3399d44"],
+Cell[327081, 8175, 501, 10, 24, "Print",ExpressionUUID->"35c5f950-d584-44ac-9621-5274f3239152"],
+Cell[327585, 8187, 193, 4, 24, "Print",ExpressionUUID->"dc297d57-74eb-43ec-8370-abb862f439b2"],
+Cell[327781, 8193, 499, 10, 24, "Print",ExpressionUUID->"0ff2eef7-b30f-4655-8744-7c1ca4b27380"],
+Cell[328283, 8205, 191, 4, 24, "Print",ExpressionUUID->"b7949573-d1bd-4b37-8f45-96ef224651ab"],
+Cell[328477, 8211, 497, 10, 24, "Print",ExpressionUUID->"746bc2b5-9578-47ff-a85e-340ac4ef6899"],
+Cell[328977, 8223, 189, 4, 24, "Print",ExpressionUUID->"d83a71d0-8015-4364-9522-7315067c7500"],
+Cell[329169, 8229, 497, 10, 24, "Print",ExpressionUUID->"6107bf12-4696-4212-9e74-0d4a4f6cdc12"],
+Cell[329669, 8241, 188, 4, 24, "Print",ExpressionUUID->"96d000e4-d2cb-40f2-aa99-0589c265a9e0"],
+Cell[329860, 8247, 503, 10, 24, "Print",ExpressionUUID->"01f27701-83ea-46b0-aa26-b21b559cf34c"],
+Cell[330366, 8259, 349, 9, 24, "Print",ExpressionUUID->"82a5442b-fcbf-41bb-a637-91c8b2bd16a3"],
+Cell[330718, 8270, 377, 9, 24, "Print",ExpressionUUID->"730c0392-c406-443d-97aa-d374bfdd61a6"],
+Cell[331098, 8281, 189, 4, 24, "Print",ExpressionUUID->"120d76b1-2f5b-4fc0-93a8-a3aefb15ad5c"],
+Cell[331290, 8287, 502, 10, 24, "Print",ExpressionUUID->"519b8328-fdac-4bcc-a12f-110a33debc5d"],
+Cell[331795, 8299, 343, 8, 24, "Print",ExpressionUUID->"b039cc1b-1624-4302-ba2a-42b49fc4572d"],
+Cell[332141, 8309, 375, 9, 24, "Print",ExpressionUUID->"7b707175-2a78-434e-9296-9664e5981049"],
+Cell[332519, 8320, 189, 4, 24, "Print",ExpressionUUID->"2663a868-cefe-4434-a3f3-18bacd3e0e8e"],
+Cell[332711, 8326, 493, 10, 24, "Print",ExpressionUUID->"eb381255-8b7f-4bf3-b922-e1a67dad9605"],
+Cell[333207, 8338, 206, 4, 24, "Print",ExpressionUUID->"af2992ee-6e51-4c47-be4a-2d853bebf929"],
+Cell[333416, 8344, 199, 4, 24, "Print",ExpressionUUID->"060a14d4-77ec-4500-97d3-a27194901104"],
+Cell[333618, 8350, 191, 4, 24, "Print",ExpressionUUID->"b8423c30-e695-40f3-8b57-bb2e32c8799d"],
+Cell[333812, 8356, 497, 10, 24, "Print",ExpressionUUID->"9cffee92-089c-494e-8848-d034cc5391f7"],
+Cell[334312, 8368, 189, 4, 24, "Print",ExpressionUUID->"2baea682-ca9a-446c-b11f-0f9f66ced0d5"],
+Cell[334504, 8374, 503, 10, 24, "Print",ExpressionUUID->"1874f5aa-bc25-4bde-a4fb-a6924d6361b9"],
+Cell[335010, 8386, 349, 9, 24, "Print",ExpressionUUID->"4f6fa93e-0f6f-443e-b14e-83ee5dadf41f"],
+Cell[335362, 8397, 357, 9, 24, "Print",ExpressionUUID->"ecfe14ce-4f93-49b6-9da7-8f580c44efe7"],
+Cell[335722, 8408, 189, 4, 24, "Print",ExpressionUUID->"e4f4cda7-092e-4d38-904d-fd21d2945b46"],
+Cell[335914, 8414, 493, 10, 24, "Print",ExpressionUUID->"a3920ee0-2fb7-458c-a3d5-fa6509bd62a5"],
+Cell[336410, 8426, 204, 4, 24, "Print",ExpressionUUID->"807177e4-4801-4430-9683-8318c876645a"],
+Cell[336617, 8432, 202, 4, 24, "Print",ExpressionUUID->"4e408bbf-e31d-4a25-9a4e-2eef5ad299d4"],
+Cell[336822, 8438, 191, 4, 24, "Print",ExpressionUUID->"cb533294-96a1-496f-847f-e043325e252a"],
+Cell[337016, 8444, 497, 10, 24, "Print",ExpressionUUID->"bd148a43-a4d2-463c-854a-9ee3575d5b68"],
+Cell[337516, 8456, 349, 9, 24, "Print",ExpressionUUID->"0759e51d-f392-4d80-abc7-33f49781f40b"],
+Cell[337868, 8467, 189, 4, 24, "Print",ExpressionUUID->"1d26636c-4882-4874-96a1-b59da37be4fa"],
+Cell[338060, 8473, 505, 10, 24, "Print",ExpressionUUID->"49932d58-dfb7-47e2-8581-50ba687315ab"],
+Cell[338568, 8485, 189, 4, 24, "Print",ExpressionUUID->"a3371186-98b7-40c9-a237-b69c63f9c650"],
+Cell[338760, 8491, 493, 10, 24, "Print",ExpressionUUID->"eb8e49ed-d7a2-411f-b0f5-4b76788c31cc"],
+Cell[339256, 8503, 200, 4, 24, "Print",ExpressionUUID->"caf7b20b-d1ff-4356-98b0-db686f36959b"],
+Cell[339459, 8509, 191, 4, 24, "Print",ExpressionUUID->"42fe5f95-7bcf-468d-9023-7191c80fc5a4"],
+Cell[339653, 8515, 499, 10, 24, "Print",ExpressionUUID->"23312f40-baf3-41fe-aadd-6dd6dd3335c8"],
+Cell[340155, 8527, 189, 4, 24, "Print",ExpressionUUID->"20c506f3-e818-40b2-829c-edb4a743e3ba"],
+Cell[340347, 8533, 500, 10, 24, "Print",ExpressionUUID->"62c2250e-dd35-44fb-a38f-1417c5492508"],
+Cell[340850, 8545, 349, 9, 24, "Print",ExpressionUUID->"6a6f066f-ffb5-4ffb-a794-24d0b7a0c20f"],
+Cell[341202, 8556, 356, 9, 24, "Print",ExpressionUUID->"4ebb8583-8535-4844-b018-90b54681f790"],
+Cell[341561, 8567, 189, 4, 24, "Print",ExpressionUUID->"ca13eb0b-b5f1-42ad-bc44-04de10c59ad9"],
+Cell[341753, 8573, 505, 10, 24, "Print",ExpressionUUID->"b79c3140-ecc8-462b-8c94-6fad8bfcee69"],
+Cell[342261, 8585, 343, 8, 24, "Print",ExpressionUUID->"628f39be-98b5-4114-b51f-beaa4edeae96"],
+Cell[342607, 8595, 357, 9, 24, "Print",ExpressionUUID->"5b1e15ae-bc0d-4113-b2bc-20351838428a"],
+Cell[342967, 8606, 189, 4, 24, "Print",ExpressionUUID->"0524fe97-ff1b-4391-b90a-2663821cef01"],
+Cell[343159, 8612, 493, 10, 24, "Print",ExpressionUUID->"98613ddd-222b-43bf-8a93-5a46cd5fbd97"],
+Cell[343655, 8624, 204, 4, 24, "Print",ExpressionUUID->"a67e5abf-608b-42f1-88ba-47cd9851336f"],
+Cell[343862, 8630, 202, 4, 24, "Print",ExpressionUUID->"24d2672b-9dcc-4341-94fc-ddbed7459204"],
+Cell[344067, 8636, 191, 4, 24, "Print",ExpressionUUID->"aaa1652e-9423-4d5d-b754-14c8f9e29fbe"],
+Cell[344261, 8642, 497, 10, 24, "Print",ExpressionUUID->"0fe89af9-f808-4606-ae87-790f76112f00"],
+Cell[344761, 8654, 349, 9, 24, "Print",ExpressionUUID->"0a7c17b1-6290-455e-896c-c4f315d3a75e"],
+Cell[345113, 8665, 191, 4, 24, "Print",ExpressionUUID->"c04ab7a8-4903-4d95-bc9d-907faa2350dd"],
+Cell[345307, 8671, 503, 10, 24, "Print",ExpressionUUID->"1a89f3e6-e681-4727-b34f-b6905201b962"],
+Cell[345813, 8683, 189, 4, 24, "Print",ExpressionUUID->"63a908b0-ca13-4469-8235-e0ceb8dee2c1"],
+Cell[346005, 8689, 493, 10, 24, "Print",ExpressionUUID->"c3088d6e-0a03-40c2-8714-907f7cc4f154"],
+Cell[346501, 8701, 199, 4, 24, "Print",ExpressionUUID->"201eb29f-d97a-4d05-bdbc-3f248b6c6f40"],
+Cell[346703, 8707, 191, 4, 24, "Print",ExpressionUUID->"31cce79e-c175-404a-8342-0264e67b79eb"],
+Cell[346897, 8713, 499, 10, 24, "Print",ExpressionUUID->"74d0b7d3-4121-4cf7-a7b6-af8bf03e0d50"],
+Cell[347399, 8725, 349, 9, 24, "Print",ExpressionUUID->"af0bee1e-8fbb-47af-af76-174919527a42"],
+Cell[347751, 8736, 189, 4, 24, "Print",ExpressionUUID->"30463572-167e-4a23-95c7-6be01adc979f"],
+Cell[347943, 8742, 501, 10, 24, "Print",ExpressionUUID->"9c825ab8-ba7b-43f3-b864-49cef991284b"],
+Cell[348447, 8754, 188, 4, 24, "Print",ExpressionUUID->"03f611e1-975a-40ba-b7d7-6d35d8c6bc5a"],
+Cell[348638, 8760, 503, 10, 24, "Print",ExpressionUUID->"8acc014b-a2c0-4036-abb6-07fa3f89b48a"],
+Cell[349144, 8772, 191, 4, 24, "Print",ExpressionUUID->"73a59c7e-1a59-48a7-8bdb-16702ed75225"],
+Cell[349338, 8778, 493, 10, 24, "Print",ExpressionUUID->"1ff8b24f-e241-4f14-ad36-0fcb7bd458e7"],
+Cell[349834, 8790, 200, 4, 24, "Print",ExpressionUUID->"0182d4dd-06ab-48bf-a5d1-6a55c5effae9"],
+Cell[350037, 8796, 200, 4, 24, "Print",ExpressionUUID->"69b9ee80-8d39-4ba3-b978-454c5930b936"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[327367, 8331, 267, 5, 30, "Input",ExpressionUUID->"90f547f7-9ced-47aa-9bbb-0be4469dd600"],
-Cell[327637, 8338, 200, 4, 34, "Output",ExpressionUUID->"cc4cf06c-0f7b-4abc-8a9f-a93a425dbd7c"]
+Cell[350286, 8806, 484, 8, 30, "Input",ExpressionUUID->"90f547f7-9ced-47aa-9bbb-0be4469dd600"],
+Cell[350773, 8816, 1021, 15, 34, "Output",ExpressionUUID->"1c230d62-943a-4cae-9064-fe9906be7888"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[327874, 8347, 697, 17, 30, "Input",ExpressionUUID->"60636356-6716-4af9-ae32-9c70b9755f74"],
-Cell[328574, 8366, 35201, 697, 185, "Output",ExpressionUUID->"dc522ed6-0a6a-4175-a394-2772c851e4f7"]
+Cell[351831, 8836, 965, 20, 30, "Input",ExpressionUUID->"60636356-6716-4af9-ae32-9c70b9755f74"],
+Cell[352799, 8858, 21466, 411, 85, "Output",ExpressionUUID->"ffe74a6d-8a66-46ac-98f7-e501145978f2"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[363824, 9069, 164, 3, 67, "Section",ExpressionUUID->"94a6d29a-1c48-411c-8650-d7aa61286e54"],
+Cell[374314, 9275, 164, 3, 67, "Section",ExpressionUUID->"94a6d29a-1c48-411c-8650-d7aa61286e54"],
 Cell[CellGroupData[{
-Cell[364013, 9076, 1487, 40, 94, "Input",ExpressionUUID->"ff6c676c-769b-4ffc-9aaf-038f26f13a95"],
-Cell[365503, 9118, 2403, 50, 569, "Output",ExpressionUUID->"cf9227a9-df8e-46cb-a934-e5a8ffa3e3ff"]
+Cell[374503, 9282, 2152, 51, 115, "Input",ExpressionUUID->"ff6c676c-769b-4ffc-9aaf-038f26f13a95"],
+Cell[376658, 9335, 2876, 56, 387, "Output",ExpressionUUID->"0b3f4ae4-c69e-4348-9ccb-54984a0c42c5"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[367955, 9174, 202, 4, 67, "Section",ExpressionUUID->"0c65fa64-04c7-4d62-948e-46fd579c2171"],
-Cell[368160, 9180, 1038, 25, 162, "Subsection",ExpressionUUID->"68f671e8-7b38-4556-b63c-8fe28210225b"]
+Cell[379583, 9397, 202, 4, 67, "Section",ExpressionUUID->"0c65fa64-04c7-4d62-948e-46fd579c2171"],
+Cell[379788, 9403, 1820, 36, 270, "Subsection",ExpressionUUID->"68f671e8-7b38-4556-b63c-8fe28210225b"]
 }, Open  ]]
 }, Open  ]]
 }
